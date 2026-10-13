@@ -185,7 +185,7 @@ npx skills add zhu5859243-free/hongguo-shortdrama-screenwriting
 | [awesome-seedance](https://github.com/LearnPrompt/awesome-seedance)<br><sub>多语言 · 15 个 skill · MIT</sub> | Seedance 2.5/2.0 提示词库：600+ 条可追溯原帖的案例、260+ 次跨模型复测，附 skill<br><sub>🎬 Seedance / 即梦</sub> | 提示词 | 2k | 2026-10-13 |
 | [higgsfield-ai-prompt-skill](https://github.com/OSideMedia/higgsfield-ai-prompt-skill)<br><sub>英文 · 36 个 skill · MIT</sub> | Higgsfield 平台提示词：MCSLA 公式、Seedance 2.5 多参考导演、表演指导、Soul ID 角色一致性、镜头清单与失败诊断<br><sub>🎬 Seedance / 即梦 · 可灵 Kling · Veo · 通义万相 Wan</sub><br><sub>💡 面向 Higgsfield 付费平台，也含广告营销模块</sub> | 人物 · 提示词 | 736 | 2026-09-27 |
 | [make-prompt-seedance2](https://github.com/liangdabiao/make-prompt-seedance2)<br><sub>中文</sub> | Seedance 2.0 结构化提示词写法与通用 skill<br><sub>🎬 Seedance / 即梦</sub> | 提示词 | 712 | 2026-10-04 |
-| [seedance-2-5-video-director](https://github.com/liyue-aigc/seedance-2-5-video-director)<br><sub>中文 · MIT</sub> | Seedance 2.5 视频导演：提示词、脚本、诊断、人物锁定、续写、编辑、转场<br><sub>🎬 Seedance / 即梦</sub> | 剧本 · 审稿 · 提示词 | 665 | 2026-08-26 |
+| [seedance-2-5-video-director](https://github.com/liyue-aigc/seedance-2-5-video-director)<br><sub>中文 · MIT</sub> | Seedance 2.5 视频导演：提示词、脚本、诊断、人物锁定、续写、编辑、转场<br><sub>🎬 Seedance / 即梦</sub> | 剧本 · 审稿 · 提示词 | 667 | 2026-08-26 |
 | [zy-cinematic-realism](https://github.com/popopo-99/zy-cinematic-realism)<br><sub>英文</sub> | 造梦师：把剧本、故事或场景想法开发成有动机的叙事关键帧，编译成各生图模型的原生提示词，支持连续组图与结果修复<br><sub>🎬 Nano Banana</sub><br><sub>💡 README 为中文；主要面向静帧生图；CC BY-NC 4.0，商用需另行授权</sub> | 提示词 | 581 | 2026-10-03 |
 | [shanyin-director-master](https://github.com/Shanyin-ai/shanyin-director-master)<br><sub>中文 · MIT</sub> | 山音超级导演大师：剧本 → 导演定调、节奏规划、剧本微调、分镜拆解，输出九列分镜表（xlsx），内置类型片导演风格模板<br><sub>💡 面向 Claude App；可与山音超级编剧大师联用</sub> | 审稿 · 分镜 | 580 | 2026-05-11 |
 | [visual-skills](https://github.com/smixs/visual-skills)<br><sub>英文 · 2 个 skill · CC-BY-4.0</sub> | AI 电影导演：Murch 剪辑、走位、蒙太奇等戏剧法则 + Seedance 精确提示词语法<br><sub>🎬 Seedance / 即梦</sub> | 分镜 · 提示词 | 514 | 2026-09-16 |
@@ -194,16 +194,16 @@ npx skills add zhu5859243-free/hongguo-shortdrama-screenwriting
 | [lanshu-awesome-ai-video-kit](https://github.com/cclank/lanshu-awesome-ai-video-kit)<br><sub>中文 · 7 个 skill · MIT</sub> | 企业 AI 视频项目工具包：Seedance/可灵提示词、分镜、模型选择与调试，附 411 条 prompt 和方法论<br><sub>🎬 Seedance / 即梦 · 可灵 Kling</sub> | 分镜 · 提示词 | 418 | 2026-10-07 |
 | [minimax-h3-prompt-skill-T8](https://github.com/T8mars/minimax-h3-prompt-skill-T8)<br><sub>多语言 · 284 个 skill · MIT</sub> | MiniMax H3 / Seedance 2.0 视频提示词案例库与可安装 skill，附视频浏览器<br><sub>🎬 MiniMax H3 · Seedance / 即梦</sub> | 提示词 | 287 | 2026-10-11 |
 | [awesome-seedance-2.5-prompts-skills](https://github.com/AtlasCloudAI/awesome-seedance-2.5-prompts-skills)<br><sub>多语言 · 2 个 skill</sub> | Seedance 2.5 提示词库 + skill：按 T2V/R2V/I2V 选路线、Seedream 故事板、多参考与镜头连续性设计<br><sub>🎬 Seedance / 即梦</sub><br><sub>💡 厂商仓库，执行默认走 Atlas Cloud 付费 API；提示词库以广告、电商类居多</sub> | 提示词 | 234 | 2026-10-13 |
-| [DirectorSKILL](https://github.com/wuwangzhang1216/DirectorSKILL)<br><sub>多语言 · MIT</sub> | AI 拍片：镜头清单、关键帧与视频提示词，内置斯皮尔伯格等 10 种导演风格 | 分镜 · 提示词 | 219 | 2026-08-31 |
+| [DirectorSKILL](https://github.com/wuwangzhang1216/DirectorSKILL)<br><sub>多语言 · MIT</sub> | AI 拍片：镜头清单、关键帧与视频提示词，内置斯皮尔伯格等 10 种导演风格 | 分镜 · 提示词 | 221 | 2026-08-31 |
 | [qisi-video-remix](https://github.com/wyuzhi/qisi-video-remix)<br><sub>中文 · MIT</sub> | 视频创意改编：参考视频 → 剧本 → 分镜 → 分段生成提示词 | 改编 · 剧本 · 分镜 · 提示词 | 178 | 2026-09-11 |
 | [h3-storyboard-skill](https://github.com/phileiny/h3-storyboard-skill)<br><sub>英文 · MIT</sub> | MiniMax H3 分镜拆解与角色表演设计<br><sub>🎬 MiniMax H3</sub> | 分镜 · 提示词 | 177 | 2026-10-03 |
 | [smy-seedance-storyboard](https://github.com/liangdabiao/smy-seedance-storyboard)<br><sub>中文</sub> | 故事 → 上美影复古手绘风格的短剧制作文档：剧本、分镜、资产生图提示词，附完整示例项目<br><sub>🎬 Seedance / 即梦</sub> | 改编 · 剧本 · 分镜 · 提示词 | 165 | 2026-10-08 |
 | [film-studio-skills](https://github.com/machina-exm/film-studio-skills)<br><sub>英文 · 7 个 skill</sub> | 剧本 → 锁定、可直接生成的镜头：7 个 skill 复刻商业 AI 视频制作流程<br><sub>🎬 Seedance / 即梦</sub> | 剧本 · 分镜 · 提示词 | 150 | 2026-08-14 |
-| [Seedance-ShotDesign-Skills](https://github.com/woodfantasy/Seedance-ShotDesign-Skills)<br><sub>多语言 · MIT-0</sub> | Seedance 2.5 镜头设计<br><sub>🎬 Seedance / 即梦</sub> | 分镜 · 提示词 | 120 | 2026-08-19 |
+| [Seedance-ShotDesign-Skills](https://github.com/woodfantasy/Seedance-ShotDesign-Skills)<br><sub>多语言 · MIT-0</sub> | Seedance 2.5 镜头设计<br><sub>🎬 Seedance / 即梦</sub> | 分镜 · 提示词 | 121 | 2026-08-19 |
 | [ComfyUI-Agent-Kit](https://github.com/SlavaSexton/ComfyUI-Agent-Kit)<br><sub>英文 · 4 个 skill · Apache-2.0</sub> | 驱动本地 ComfyUI 出图出视频，附 Seedance、MiniMax H3 视频提示词 skill：多镜头分镜、参考素材标注、翻车排查<br><sub>🎬 ComfyUI（本地） · Seedance / 即梦 · MiniMax H3</sub><br><sub>💡 主体是本地 ComfyUI 驱动工具；短剧可用的是其中的 Seedance、MiniMax H3 提示词 skill</sub> | 提示词 · 出片 | 105 | 2026-09-03 |
 | [short-drama-skills](https://github.com/YvonneMovingon/short-drama-skills)<br><sub>📝 提示词 · 多语言 · MIT</sub> | LuxReal 生产验证的短剧提示词：叙事拆解、情绪刻画、动态描述、剧情拆分、视频提示词润色<br><sub>💡 prompt.md 形式，不是标准 SKILL.md</sub> | 改编 · 剧本 · 审稿 · 提示词 | 92 | 2026-07-01 |
 | [fight-video-create-skill](https://github.com/qualsenWeb/fight-video-create-skill)<br><sub>多语言</sub> | AI 打戏设计：从打斗构思到剧情、动作、分镜，带招式校验和参考库 | 剧本 · 分镜 | 90 | 2026-09-29 |
-| [seedance-2-5-fight-director](https://github.com/liyue-aigc/seedance-2-5-fight-director)<br><sub>中文</sub> | Seedance 2.5 高燃打戏导演：提示词与诊断<br><sub>🎬 Seedance / 即梦</sub> | 提示词 | 73 | 2026-10-04 |
+| [seedance-2-5-fight-director](https://github.com/liyue-aigc/seedance-2-5-fight-director)<br><sub>中文</sub> | Seedance 2.5 高燃打戏导演：提示词与诊断<br><sub>🎬 Seedance / 即梦</sub> | 提示词 | 74 | 2026-10-04 |
 | [fight-prompt-director](https://github.com/irenerachel/fight-prompt-director)<br><sub>中文 · MIT</sub> | AI 打戏提示词：角色差异化动作、交锋因果链、跨镜连续性，出高强度/慢节奏/中间型三版，适配 Seedance 与 H3<br><sub>🎬 Seedance / 即梦 · MiniMax H3</sub> | 分镜 · 提示词 | 57 | 2026-09-02 |
 | [storyboard-director](https://github.com/kevinchin12/storyboard-director)<br><sub>英文 · 5 个 skill · MIT</sub> | 故事 → 分镜脚本，子代理并行生成逐镜线稿，HTML 审片板返修指定镜头，确认后汇总成按镜头排序的视频提示词<br><sub>💡 README 为中文；逐镜线稿依赖 Codex 内置生图</sub> | 分镜 · 提示词 | 35 | 2026-10-11 |
 | [seedance-skill](https://github.com/alchaincyf/seedance-skill)<br><sub>中文 · MIT</sub> | 白模驱动的 Seedance 工作台：用 scene.json 渲染白模参考视频并做几何体检，可从照片反解白模，按白模几何写提示词<br><sub>🎬 Seedance / 即梦</sub><br><sub>💡 白模渲染需 Node、ffmpeg 与 hyperframes</sub> | 分镜 · 提示词 | 34 | 2026-10-13 |
@@ -365,7 +365,7 @@ npx skills add geslie1/kunka-screenwriting-master
 
 | 项目 | 简介 | 覆盖阶段 | ★ | 最近更新 |
 |---|---|---|--:|---|
-| [humanizer](https://github.com/blader/humanizer)<br><sub>英文 · MIT</sub> | 按维基百科「Signs of AI writing」清单去除 AI 写作痕迹 | 审稿 | 56.5k | 2026-09-28 |
+| [humanizer](https://github.com/blader/humanizer)<br><sub>英文 · MIT</sub> | 按维基百科「Signs of AI writing」清单去除 AI 写作痕迹 | 审稿 | 56.6k | 2026-09-28 |
 | [human-writing](https://github.com/KKKKhazix/human-writing)<br><sub>中文 · MIT</sub> | 活人感写作：让 AI 写的中文像具体的人在说话，适合打磨对白和旁白 | 审稿 | 4.1k | 2026-08-11 |
 | [sepia](https://github.com/Nanako0129/sepia)<br><sub>英文 · 6 个 skill · MIT</sub> | 面向小说的去 AI 味：修复叙事结构，按场合匹配文风规则，方法来自 StoryScope 论文 | 审稿 | 3.2k | 2026-10-09 |
 

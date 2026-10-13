@@ -40,13 +40,13 @@
     "ArcReel/ArcReel": {
       "archived": false,
       "description": "AI Agent 驱动的开源可自部署视频工作台：将小说与剧本转为角色、场景、道具资产、分镜、视频和剪映草稿，支持跨镜头一致性、多供应商与费用追踪 | Self-hosted AI video workspace for stories, storyboards and short-form video production",
-      "forks": 1072,
+      "forks": 1074,
       "full_name": "ArcReel/ArcReel",
       "license": "AGPL-3.0",
       "pushed_at": "2026-10-13",
       "skill_count": 51,
       "skill_count_truncated": false,
-      "stars": 5477,
+      "stars": 5479,
       "status": "ok"
     },
     "AtlasCloudAI/awesome-seedance-2.5-prompts-skills": {
@@ -76,37 +76,37 @@
     "HBAI-Ltd/Toonflow-app": {
       "archived": false,
       "description": "短剧、漫剧制作工具 Toonflow：开源 AI 视频创作平台，集成剧本创作、智能分镜、角色与场景资产管理、图像生成和视频生成。融合无限画布、AI Agent 与可视化工作流，支持本地部署、自选模型、跨平台客户端、MCP 与插件扩展。Open-source AI short drama and motion comic creation tool with an infinite canvas, AI agents, storyboarding, image and video generation. Self-hosted and extensible, with a canvas-based approach similar to LibTV and TapNow.",
-      "forks": 3099,
+      "forks": 3100,
       "full_name": "HBAI-Ltd/Toonflow-app",
       "license": "MIT",
       "pushed_at": "2026-10-13",
       "skill_count": 5,
       "skill_count_truncated": false,
-      "stars": 17498,
+      "stars": 17497,
       "status": "ok"
     },
     "HITsz-TMG/VideoClaw": {
       "archived": false,
       "description": "🚀 AI 全自动化视频生成员工 | Your First AIGC Coworker. Chat an Idea. Get a Film. 🦞",
-      "forks": 275,
+      "forks": 276,
       "full_name": "HITsz-TMG/VideoClaw",
       "license": "MIT",
       "pushed_at": "2026-08-26",
       "skill_count": 1,
       "skill_count_truncated": false,
-      "stars": 1857,
+      "stars": 1858,
       "status": "ok"
     },
     "HKUDS/ViMax": {
       "archived": false,
       "description": "\"ViMax: Agentic Video Generation (Director, Screenwriter, Producer, and Video Generator All-in-One)\"",
-      "forks": 1906,
+      "forks": 1907,
       "full_name": "HKUDS/ViMax",
       "license": "MIT",
       "pushed_at": "2026-09-30",
       "skill_count": 0,
       "skill_count_truncated": false,
-      "stars": 12653,
+      "stars": 12654,
       "status": "ok"
     },
     "Hao0321/ai-short-drama": {
@@ -154,7 +154,7 @@
       "pushed_at": "2026-10-13",
       "skill_count": 15,
       "skill_count_truncated": false,
-      "stars": 2019,
+      "stars": 2020,
       "status": "ok"
     },
     "LuoJiangYong/muse-video-skill": {
@@ -412,13 +412,13 @@
     "blader/humanizer": {
       "archived": false,
       "description": "Agent skill that removes signs of AI-generated writing from text",
-      "forks": 4471,
+      "forks": 4472,
       "full_name": "blader/humanizer",
       "license": "MIT",
       "pushed_at": "2026-09-28",
       "skill_count": 1,
       "skill_count_truncated": false,
-      "stars": 56540,
+      "stars": 56559,
       "status": "ok"
     },
     "catyiqian/qianqianwriting": {
@@ -454,7 +454,7 @@
       "pushed_at": "2026-10-05",
       "skill_count": 7,
       "skill_count_truncated": false,
-      "stars": 16153,
+      "stars": 16154,
       "status": "ok"
     },
     "ciel-oliver/analyze-hit-novel": {
@@ -502,7 +502,7 @@
       "pushed_at": "2026-10-13",
       "skill_count": 6,
       "skill_count_truncated": false,
-      "stars": 6277,
+      "stars": 6265,
       "status": "ok"
     },
     "e06084/claude-screenwriting": {
@@ -730,7 +730,7 @@
       "pushed_at": "2026-10-04",
       "skill_count": 1,
       "skill_count_truncated": false,
-      "stars": 73,
+      "stars": 74,
       "status": "ok"
     },
     "liyue-aigc/seedance-2-5-video-director": {
@@ -742,7 +742,7 @@
       "pushed_at": "2026-08-26",
       "skill_count": 1,
       "skill_count_truncated": false,
-      "stars": 665,
+      "stars": 667,
       "status": "ok"
     },
     "luanyi824-hash/xiaxia": {
@@ -922,7 +922,7 @@
       "pushed_at": "2026-10-06",
       "skill_count": 0,
       "skill_count_truncated": false,
-      "stars": 2320,
+      "stars": 2321,
       "status": "ok"
     },
     "smixs/visual-skills": {
@@ -982,7 +982,7 @@
       "pushed_at": "2026-08-19",
       "skill_count": 1,
       "skill_count_truncated": false,
-      "stars": 120,
+      "stars": 121,
       "status": "ok"
     },
     "wuwangzhang1216/DirectorSKILL": {
@@ -994,7 +994,7 @@
       "pushed_at": "2026-08-31",
       "skill_count": 1,
       "skill_count_truncated": false,
-      "stars": 219,
+      "stars": 221,
       "status": "ok"
     },
     "wyuzhi/qisi-video-remix": {
@@ -1036,13 +1036,13 @@
     "xuanyustudio/LocalMiniDrama": {
       "archived": false,
       "description": "🎬 seedance2接入  开源本地 AI 短剧 & 漫剧生成工具 —— 从故事到成片一站式完成，数据不出本机，短剧工作流管理平台，高灵活度，AI真人剧，AI漫剧本地搞定。 Open-source local AI short drama maker: story → storyboard → video, fully offline, your data stays yours. 纳米流水线",
-      "forks": 489,
+      "forks": 490,
       "full_name": "xuanyustudio/LocalMiniDrama",
       "license": "MIT",
       "pushed_at": "2026-10-13",
       "skill_count": 1,
       "skill_count_truncated": false,
-      "stars": 2046,
+      "stars": 2047,
       "status": "ok"
     },
     "yi1108/printfilm": {
