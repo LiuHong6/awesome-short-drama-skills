@@ -5,7 +5,7 @@
 满足以下全部条件：
 
 1. **服务短剧/漫剧创作**：选题、改编、剧本、审稿、分镜、视觉资产、视频提示词、出片，或直接服务这些环节的配套工具（如去 AI 味、通用编剧理论）。
-2. **能装进 agent 使用**：标准 `SKILL.md`、Claude Code 插件，或结构清晰的提示词工作流。提示词形式的项目会标 📝。完整应用只收进「相关开源平台」。
+2. **能装进 agent 使用**：标准 `SKILL.md`、Claude Code 插件，或结构清晰的提示词工作流。提示词形式的项目会标 📝。完整应用只收进「相关开源平台」，门槛是 1000★；应用里附带的 SKILL.md 如果能单独装进 agent 使用，可以按 skill 收录。
 3. **有说明**：README 写清楚做什么、怎么装。
 4. **还在维护**：近 6 个月有更新，或者内容足够稳定、不需要更新。
 5. **不涉及真实个人**：不收以真实个人为对象生成内容的项目。
@@ -36,7 +36,7 @@
 repo    = "owner/repo"            # 必填，GitHub 仓库
 desc    = "一句话说清做什么"         # 必填，≤ 80 字，写具体能力，少用形容词
 group   = "writing"               # 必填，类型，取值见 data/taxonomy.toml [groups]
-stages  = ["drafting", "visual"]  # 必填，覆盖的创作阶段，见 [stages]
+stages  = ["drafting", "prompt"]  # 必填，覆盖的创作阶段，见 [stages]
 format  = "skill"                 # 必填，skill / prompts / app
 lang    = "zh"                    # 必填，zh / en / multi（指 skill 正文的语言）
 agents  = ["claude-code"]         # 可选，仓库明确说明支持的 agent，见 [agents]

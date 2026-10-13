@@ -56,9 +56,13 @@ short = "剧本"
 label = "审稿 · 质检 · 去 AI 味"
 short = "审稿"
 
-[stages.visual]
-label = "分镜 · 视觉 · 视频提示词"
+[stages.storyboard]
+label = "分镜 · 镜头设计"
 short = "分镜"
+
+[stages.prompt]
+label = "视频 / 图像提示词"
+short = "提示词"
 
 [stages.production]
 label = "出片 · 配音 · 剪辑"

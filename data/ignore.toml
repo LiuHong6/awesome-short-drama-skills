@@ -113,3 +113,301 @@ reason = "下载红果短剧的工具，不是创作，且涉及版权"
 [[ignored]]
 repo   = "LucianaiB2004/novel-fan-graph"
 reason = "小说阅读辅助工具，不是创作"
+
+# 第二轮候选审核（2026-10-13）
+
+[[ignored]]
+repo   = "0xS4N4TG/papercut-explainer"
+reason = "剪纸风讲解短视频，不是短剧"
+
+[[ignored]]
+repo   = "RinDig/lecture-deck-skill"
+reason = "课件演示"
+
+[[ignored]]
+repo   = "smwbev/framewright"
+reason = "用代码生成的动效短视频，不是短剧"
+
+[[ignored]]
+repo   = "tttg2010/tj-short"
+reason = "短剧带货视频"
+
+[[ignored]]
+repo   = "wubin1836/ai-hive-agent-skills"
+reason = "通用 skill 大合集"
+
+[[ignored]]
+repo   = "Win-Hao/knowledge-video"
+reason = "知识讲解视频"
+
+[[ignored]]
+repo   = "qingyabailu-git/SketchNarrator"
+reason = "手绘讲解视频"
+
+[[ignored]]
+repo   = "mikefutia/ad-multiplier"
+reason = "视频广告"
+
+[[ignored]]
+repo   = "justynberk/reel-kit"
+reason = "口播视频"
+
+[[ignored]]
+repo   = "LeeYudok/doksam-skills"
+reason = "UX/UI 设计"
+
+[[ignored]]
+repo   = "erduo1998-cell/video-script-builder"
+reason = "逐字稿转讲解视频分镜"
+
+[[ignored]]
+repo   = "ouerf-man/kinetic-editorial-skill"
+reason = "字幕动效短视频"
+
+[[ignored]]
+repo   = "124zhe/xigua-msvideo-skill"
+reason = "YouTube 解说类视频"
+
+[[ignored]]
+repo   = "Fixed-Seed/game-changer"
+reason = "游戏 mod 工具"
+
+[[ignored]]
+repo   = "hanyangcg/video-story-clip"
+reason = "电影切条二创，涉及版权"
+
+[[ignored]]
+repo   = "alphaparkinc/genpark-personalized-video-sales-outreach-script-planner-skill"
+reason = "销售外联视频"
+
+[[ignored]]
+repo   = "LuZhong-Li/vibe-knowledge-video-skill"
+reason = "科普短视频"
+
+[[ignored]]
+repo   = "CzzzzzzJ/omi"
+reason = "小红书图文"
+
+[[ignored]]
+repo   = "NewTurn2017/make-awesome-video"
+reason = "产品发布动效视频"
+
+[[ignored]]
+repo   = "zsy2099/shuohao-skills"
+reason = "eternityspring/shuohao-skills 的镜像"
+
+[[ignored]]
+repo   = "lixiaoxiao9888-create/manju-laoli-skill-legacy"
+reason = "已收录的 manju-laoli-skill 的旧版归档"
+
+[[ignored]]
+repo   = "LiChangZheng10086/doyin_ai_video"
+reason = "抖音无水印下载工具，涉及版权"
+
+[[ignored]]
+repo   = "ssamba1/untell"
+reason = "AI 检测器审计工具，不是创作"
+
+[[ignored]]
+repo   = "ChrisChen667788/wind-comic"
+reason = "完整应用，未到平台门槛（≥1k★）；skill 依赖应用代码"
+
+[[ignored]]
+repo   = "anymouschina/TapCanvas"
+reason = "完整应用，未到平台门槛（≥1k★）；skill 绑定应用工具"
+
+[[ignored]]
+repo   = "UllrAI/CineGen-ShortDrama"
+reason = "完整应用，未到平台收录门槛（≥1k★）"
+
+[[ignored]]
+repo   = "Swayingleaves/novanova-studio"
+reason = "完整应用，未到平台收录门槛（≥1k★）"
+
+[[ignored]]
+repo   = "xeronsh/openOii"
+reason = "LangGraph 演示应用，未到平台收录门槛（≥1k★）"
+
+[[ignored]]
+repo   = "jeffstric/ZJT"
+reason = "完整应用，未到平台门槛（≥1k★）；skill 绑定应用工具"
+
+[[ignored]]
+repo   = "Tenney95/AI-Canvas-tauri"
+reason = "完整应用，未到平台收录门槛（≥1k★）"
+
+[[ignored]]
+repo   = "XiakeMan777/xiakeman-ai-short-drama"
+reason = "完整应用，未到平台收录门槛（≥1k★）"
+
+[[ignored]]
+repo   = "Agions/novella"
+reason = "完整应用，未到平台收录门槛（≥1k★）"
+
+[[ignored]]
+repo   = "ageerle/ruoyi-drama"
+reason = "完整应用，未到平台门槛（≥1k★）；skill 多为他人改编"
+
+[[ignored]]
+repo   = "yfge/ai-video-studio"
+reason = "完整应用，未到平台门槛（≥1k★）；skill 仅开发测试用"
+
+[[ignored]]
+repo   = "RenderTool/infinite-canvas-zeroexo"
+reason = "完整应用，未到平台门槛（≥1k★）；skill 为内部提示词"
+
+[[ignored]]
+repo   = "robiteame/easy_comic_agent"
+reason = "完整应用，未到平台收录门槛（≥1k★）"
+
+[[ignored]]
+repo   = "IvenKooLab/comfy-agent"
+reason = "ComfyUI 桌面应用，未到平台收录门槛（≥1k★）"
+
+[[ignored]]
+repo   = "bo961386926/manga-studio"
+reason = "完整应用，未到平台收录门槛（≥1k★）"
+
+[[ignored]]
+repo   = "wanglongxiao/seedance-drama-maker"
+reason = "完整应用，未到平台收录门槛（≥1k★）"
+
+[[ignored]]
+repo   = "xxx-888/super_gen"
+reason = "完整应用，未到平台收录门槛（≥1k★）"
+
+[[ignored]]
+repo   = "JerrIsTheBesta/AI-Short-Drama-Studio"
+reason = "完整应用，未到平台门槛（≥1k★）；skill 为内部提示词"
+
+[[ignored]]
+repo   = "ajoesoft/ai0-video-creator"
+reason = "通用视频桌面应用，未到平台收录门槛（≥1k★）"
+
+[[ignored]]
+repo   = "dc-tw/ai-video-drama-platform"
+reason = "早期后端骨架，未到平台收录门槛（≥1k★）"
+
+[[ignored]]
+repo   = "appolloqin/huohuo-drama"
+reason = "完整应用，未到平台门槛（≥1k★）；skill 绑定应用工具"
+
+[[ignored]]
+repo   = "lnblfkj-del/Dralo-Studio"
+reason = "完整应用，未到平台收录门槛（≥1k★）"
+
+[[ignored]]
+repo   = "jnMetaCode/openshorts"
+reason = "以口播科普短视频为主，SKILL.md 只是应用操作说明"
+
+[[ignored]]
+repo   = "LetMeHappyCode/auto-video-agent"
+reason = "SRT 旁白配插画拼接成片，属图文解说类视频"
+
+[[ignored]]
+repo   = "sjh00/minimax-h3-storyboard-prompt-skills"
+reason = "MiniMax 官方 H3 skill 的中文化派生"
+
+[[ignored]]
+repo   = "pipkinashcroft2/seedance-2-0-skill-codex"
+reason = "批量推广号，仅 API 调用流程"
+
+[[ignored]]
+repo   = "rutherfordcairn/seedance-2-0-skill"
+reason = "批量推广号，与另两个同名仓库同模板"
+
+[[ignored]]
+repo   = "sebastianwolfe4/seedance-2-0-agent-skill"
+reason = "批量推广号，仅 API 调用示例"
+
+[[ignored]]
+repo   = "whystrohm/shotkit"
+reason = "品牌内容分镜，偏品牌宣传和创始人讲解"
+
+[[ignored]]
+repo   = "buluslan/seedance-video-script"
+reason = "面向电商带货等商业视频的 Seedance 提示词"
+
+[[ignored]]
+repo   = "mightyhuman101/seedance2-skill"
+reason = "照搬 dexhunter/seedance2-skill 并诱导下载可疑 zip"
+
+[[ignored]]
+repo   = "DSeaStar/awesome-kling"
+reason = "Kling 提示词合集，多摘自 X，无 skill 或工作流"
+
+[[ignored]]
+repo   = "Susanzz101/Susan-AI-Video-Prompt-skill"
+reason = "吃播、口播带货、产品演示等电商视频提示词"
+
+[[ignored]]
+repo   = "lincwang123-bot/seedance-video-workflow"
+reason = "旁白驱动的纪录/品牌/解说短片流水线，不是短剧"
+
+[[ignored]]
+repo   = "ZC89757/story-claw"
+reason = "完整应用，未到平台收录门槛（≥1k★）"
+
+[[ignored]]
+repo   = "AveQY/comic-script-generator"
+reason = "以漫画分镜和轻小说为主，短剧只是附带路线"
+
+[[ignored]]
+repo   = "RICKY556677/ai-film-skills"
+reason = "主要 skill 搬运自 Higgsfield 公开文件，未注明来源"
+
+[[ignored]]
+repo   = "zhangxiansheng-888/chuanzhang-ai-shortdrama-skills"
+reason = "shuohao-skills 改名换品牌的派生版"
+
+[[ignored]]
+repo   = "Mdz-Bigdata/short-drama"
+reason = "完整应用，未到平台收录门槛（≥1k★）"
+
+[[ignored]]
+repo   = "daguaid341-cpu/write-30-second-storyboards"
+reason = "视频流程须远程授权才能用，制作模块打包自 shuohao"
+
+[[ignored]]
+repo   = "iPythoning/ai-video-studio"
+reason = "通用视频生成剪辑工具，偏产品宣传，短剧方法搬自火宝"
+
+[[ignored]]
+repo   = "LaplaceYoung/dsh-directorx"
+reason = "完整应用（DSH 插件），未到平台门槛（≥1k★）"
+
+[[ignored]]
+repo   = "ZeroLu/Ultimate-AI-Media-Generator-Skill"
+reason = "付费 API 封装，漫剧部分仅一段模板"
+
+[[ignored]]
+repo   = "maosika-ai/reshot"
+reason = "视频转深度/骨架控制视频的 Python 工具，不是 skill"
+
+[[ignored]]
+repo   = "moudanji/NAI5-SKILL"
+reason = "NovelAI 插画/漫画提示词，非漫剧；主打版权角色同人"
+
+[[ignored]]
+repo   = "dengzi008/DramaLens"
+reason = "完整应用，未到平台收录门槛（≥1k★）"
+
+[[ignored]]
+repo   = "sonlovinbot/Muse-animated-short-film"
+reason = "越南语动画短片流程，绑定 Muse AI 平台 CLI"
+
+[[ignored]]
+repo   = "cxm947/xige_screen"
+reason = "下载影视片段并克隆原演员音色做二创，涉版权与真人"
+
+[[ignored]]
+repo   = "pireel/pireel-agent"
+reason = "剪辑 SaaS 的 MCP 插件，主打口播剪辑"
+
+[[ignored]]
+repo   = "avenoxai/higgsfield-studio"
+reason = "Higgsfield 调用封装，主打广告、电商与营销视频"
+
+[[ignored]]
+repo   = "FrameCoreWorks/framecore-works-codex-chatgpt-workflow-kit"
+reason = "通用创意生产流程，主打广告/电商/MV，不针对短剧"

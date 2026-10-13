@@ -25,6 +25,18 @@
       "stars": 316,
       "status": "ok"
     },
+    "AharaOoO/acheng-director-skill": {
+      "archived": false,
+      "description": "Acheng Director — 电影级导演综合引擎 · 影视工业级 AI 导演中枢 (MiniMax H3 / Seedance / 132运镜白模)",
+      "forks": 4,
+      "full_name": "AharaOoO/acheng-director-skill",
+      "license": "Apache-2.0",
+      "pushed_at": "2026-10-01",
+      "skill_count": 11,
+      "skill_count_truncated": false,
+      "stars": 29,
+      "status": "ok"
+    },
     "ArcReel/ArcReel": {
       "archived": false,
       "description": "AI Agent 驱动的开源可自部署视频工作台：将小说与剧本转为角色、场景、道具资产、分镜、视频和剪映草稿，支持跨镜头一致性、多供应商与费用追踪 | Self-hosted AI video workspace for stories, storyboards and short-form video production",
@@ -35,6 +47,18 @@
       "skill_count": 51,
       "skill_count_truncated": false,
       "stars": 5477,
+      "status": "ok"
+    },
+    "AtlasCloudAI/awesome-seedance-2.5-prompts-skills": {
+      "archived": false,
+      "description": "100+ curated Seedance 2.5 prompts with real video previews, plus an installable Agent Skill that optimizes prompts, creates storyboards, and generates videos via Seedance models.",
+      "forks": 22,
+      "full_name": "AtlasCloudAI/awesome-seedance-2.5-prompts-skills",
+      "license": null,
+      "pushed_at": "2026-10-13",
+      "skill_count": 2,
+      "skill_count_truncated": false,
+      "stars": 234,
       "status": "ok"
     },
     "Forget-C/Jellyfish": {
@@ -97,6 +121,18 @@
       "stars": 71,
       "status": "ok"
     },
+    "JohnKeating1997/spark-video": {
+      "archived": false,
+      "description": "AI video production skill — premise → screenplay → storyboard → render → review → final mp4, with consistent characters / sets / props. Cross-platform (Claude Code, Qwen Code, …).",
+      "forks": 3,
+      "full_name": "JohnKeating1997/spark-video",
+      "license": null,
+      "pushed_at": "2026-09-01",
+      "skill_count": 7,
+      "skill_count_truncated": false,
+      "stars": 34,
+      "status": "ok"
+    },
     "KKKKhazix/human-writing": {
       "archived": false,
       "description": "让 AI 写的中文读起来像一个具体的人在说话。通用创作与改稿 Skill，开箱即用。",
@@ -133,6 +169,18 @@
       "stars": 43,
       "status": "ok"
     },
+    "MIKA6941/Comfy-H3-Director": {
+      "archived": false,
+      "description": "专为 MiniMax H3 本地（ComfyUI）打造的 AI 漫剧与影视总导演。支持资产决策、网文改分镜、文武双轨时长与动作连续性，一次性输出全集提示词包。/ Master AI comic drama & multi-shot continuity director skill for MiniMax H3 local workflows.",
+      "forks": 0,
+      "full_name": "MIKA6941/Comfy-H3-Director",
+      "license": null,
+      "pushed_at": "2026-08-30",
+      "skill_count": 10,
+      "skill_count_truncated": false,
+      "stars": 13,
+      "status": "ok"
+    },
     "Nanako0129/sepia": {
       "archived": false,
       "description": "De-AI writing skill for any Agent Skills-compatible agent (77+ via the Skills CLI), with native plugins for Claude Code, Codex, Grok Build, and Antigravity. Narrative-architecture repair for fiction, venue-matched rules for professional prose. Based on StoryScope (arXiv:2604.03136).",
@@ -143,6 +191,66 @@
       "skill_count": 6,
       "skill_count_truncated": false,
       "stars": 3154,
+      "status": "ok"
+    },
+    "OSideMedia/higgsfield-ai-prompt-skill": {
+      "archived": false,
+      "description": "Claude AI skill for cinematic Higgsfield AI prompts — 32 sub-skills covering Seedance 2.5 (omni-reference, video edit + extend) and 2.0, the Hell Grind feature-film pipeline, an acting system, Cinema Studio 2.5/3.0/3.5, MCSLA, Soul ID consistency, Kling 3.0 Motion Control, the DISCIPLINE framework, and 18 templates.",
+      "forks": 127,
+      "full_name": "OSideMedia/higgsfield-ai-prompt-skill",
+      "license": "MIT",
+      "pushed_at": "2026-09-27",
+      "skill_count": 36,
+      "skill_count_truncated": false,
+      "stars": 736,
+      "status": "ok"
+    },
+    "Shanyin-ai/shanyin-director-master": {
+      "archived": false,
+      "description": "专业影视导演 Agent，基于剧本完成导演定调→节奏规划→剧本微调→分镜拆解，最终输出标准九列分镜表（xlsx）； 深度融合世界顶级导演视听理论，内置数十种影片类型导演风格模板库，支持类型交叉组合； 覆盖概念超短片/短片/长片全格式，将文字剧本转化为可落地的专业拍摄方案。",
+      "forks": 77,
+      "full_name": "Shanyin-ai/shanyin-director-master",
+      "license": "MIT",
+      "pushed_at": "2026-05-11",
+      "skill_count": 1,
+      "skill_count_truncated": false,
+      "stars": 580,
+      "status": "ok"
+    },
+    "Shanyin-ai/shanyin-screenwriting-master": {
+      "archived": false,
+      "description": "山音超级编剧大师——由 @山音 设计的全格式影视编剧技能。 覆盖从1-3分钟概念超短片到90分钟电影长片、多集剧集的全格式剧本创作。 支持四种格式：概念超短片（how-to-tell/what-if）、5-10分钟叙事短片、90分钟长片（商业/文艺）、多集剧集。 覆盖从人物设计、结构大纲、场景拆解、到完整剧本写作的全流程。 ",
+      "forks": 188,
+      "full_name": "Shanyin-ai/shanyin-screenwriting-master",
+      "license": "MIT",
+      "pushed_at": "2026-04-01",
+      "skill_count": 0,
+      "skill_count_truncated": false,
+      "stars": 1320,
+      "status": "ok"
+    },
+    "SlavaSexton/ComfyUI-Agent-Kit": {
+      "archived": false,
+      "description": "One ComfyUI skill for every AI coding agent (Claude Code, Codex, Gemini CLI, Qwen Code): drives a local ComfyUI end to end. 75 model prompt recipes, 581 templates, plus standalone Seedance, Krea and MiniMax H3 skills. Hardware-aware selection, workflow building, multi-shot video, ControlNet, HDR. By AI VFX NEWS.",
+      "forks": 17,
+      "full_name": "SlavaSexton/ComfyUI-Agent-Kit",
+      "license": "Apache-2.0",
+      "pushed_at": "2026-09-03",
+      "skill_count": 4,
+      "skill_count_truncated": false,
+      "stars": 105,
+      "status": "ok"
+    },
+    "SoloEnt-AI/5min-drama-contest": {
+      "archived": false,
+      "description": "五分钟短剧大赛 Codex skill",
+      "forks": 4,
+      "full_name": "SoloEnt-AI/5min-drama-contest",
+      "license": null,
+      "pushed_at": "2026-08-29",
+      "skill_count": 1,
+      "skill_count_truncated": false,
+      "stars": 25,
       "status": "ok"
     },
     "Stonewuu/ai-fusion-video": {
@@ -241,6 +349,18 @@
       "stars": 92,
       "status": "ok"
     },
+    "ZzzAloong/fight-scene-director": {
+      "archived": false,
+      "description": "多画风 AI 视频打戏设计与轨迹图调度 Skill，输出适用于 Seedance 2.0、Seedance 2.5、MiniMax H3 等模型的结构化中文提示词。",
+      "forks": 5,
+      "full_name": "ZzzAloong/fight-scene-director",
+      "license": "MIT",
+      "pushed_at": "2026-09-06",
+      "skill_count": 1,
+      "skill_count_truncated": false,
+      "stars": 22,
+      "status": "ok"
+    },
     "adoria111/emma-screenwriting-skills": {
       "archived": false,
       "description": "艾玛短剧 Beta 八技能：结构拆解、故事改编、选题迭代、期待设计、逐集钩子、集纲扩写、中文对白诊断、剧本删减。可安装，也可复制方法用于普通AI聊天。",
@@ -253,6 +373,18 @@
       "stars": 1,
       "status": "ok"
     },
+    "alchaincyf/seedance-skill": {
+      "archived": false,
+      "description": "Seedance.skill — 白模驱动的 AI 视频工作台。白模参考视频与提示词出自同一份 scene.json，渲染前做几何体检，还能从一张照片反解出白模。Control AI video with clay renders — and a prompt that can't drift from them.",
+      "forks": 5,
+      "full_name": "alchaincyf/seedance-skill",
+      "license": "MIT",
+      "pushed_at": "2026-10-13",
+      "skill_count": 1,
+      "skill_count_truncated": false,
+      "stars": 34,
+      "status": "ok"
+    },
     "alibaba/lumenx": {
       "archived": false,
       "description": "LumenX Studio，AI 短漫剧一站式生产平台。它能够将小说文本转化为动态视频，打通了从剧本分析、角色定制、分镜绘制到视频合成的完整创作链路。",
@@ -263,6 +395,18 @@
       "skill_count": 1,
       "skill_count_truncated": false,
       "stars": 1359,
+      "status": "ok"
+    },
+    "babicat4242-svg/seedance-2-5-prompting": {
+      "archived": false,
+      "description": "Codex skill for production-ready Seedance 2.5 prompts, camera motion, R2V, and multimodal references.",
+      "forks": 0,
+      "full_name": "babicat4242-svg/seedance-2-5-prompting",
+      "license": "MIT",
+      "pushed_at": "2026-09-25",
+      "skill_count": 1,
+      "skill_count_truncated": false,
+      "stars": 16,
       "status": "ok"
     },
     "blader/humanizer": {
@@ -337,6 +481,18 @@
       "stars": 4281,
       "status": "ok"
     },
+    "djyy1031/ai-comic-drama-director-skills": {
+      "archived": false,
+      "description": "AI 漫剧全流程导演 Skills：资产规划、Seedance 2.0/2.5 分镜、连续性审核与声音设计",
+      "forks": 0,
+      "full_name": "djyy1031/ai-comic-drama-director-skills",
+      "license": "MIT",
+      "pushed_at": "2026-10-11",
+      "skill_count": 7,
+      "skill_count_truncated": false,
+      "stars": 13,
+      "status": "ok"
+    },
     "dramaclaw/dramaclaw": {
       "archived": false,
       "description": "A general-purpose AIGC video engine: script to finished film in one pipeline — dramas, ads, product videos, otome games, and more. | 通用 AIGC 视频引擎 —— 从剧本到成片一条流水线，漫剧、广告、电商、乙游皆可",
@@ -397,6 +553,42 @@
       "stars": 4,
       "status": "ok"
     },
+    "ilkaydemiralay/vision_art_creator": {
+      "archived": false,
+      "description": "AI film-production skill pack for Claude Code and OpenAI Codex: 11 creator-* skills from screenplay to final cut, with a recorded production graph. Docs in 12 languages.",
+      "forks": 1,
+      "full_name": "ilkaydemiralay/vision_art_creator",
+      "license": "MIT",
+      "pushed_at": "2026-10-07",
+      "skill_count": 11,
+      "skill_count_truncated": false,
+      "stars": 12,
+      "status": "ok"
+    },
+    "irenerachel/fight-prompt-director": {
+      "archived": false,
+      "description": "AI动作导演Skill | Fight-scene prompt choreography for Seedance, MiniMax-H3 and AI video models",
+      "forks": 6,
+      "full_name": "irenerachel/fight-prompt-director",
+      "license": "MIT",
+      "pushed_at": "2026-09-02",
+      "skill_count": 1,
+      "skill_count_truncated": false,
+      "stars": 57,
+      "status": "ok"
+    },
+    "jlam00-dev/hardcore-director": {
+      "archived": false,
+      "description": "影视与 AI 视频创作总控 Codex Skill：编剧、分镜、提示词、导演美学、声音、剪辑与发布",
+      "forks": 1,
+      "full_name": "jlam00-dev/hardcore-director",
+      "license": "MIT",
+      "pushed_at": "2026-10-01",
+      "skill_count": 1,
+      "skill_count_truncated": false,
+      "stars": 16,
+      "status": "ok"
+    },
     "jnMetaCode/ai-shortfilm-prompts": {
       "archived": false,
       "description": "Claude Code Skill that turns any idea into a cinematic, model-ready video prompt — Sora · Kling · Veo · Seedance. 21 genre templates, 5-stage structure, eval-tested. Distilled from the AI short Hollywood director PJ Ace called \"one of the best short films I've seen in years.\"",
@@ -431,6 +623,18 @@
       "skill_count": 1,
       "skill_count_truncated": false,
       "stars": 36,
+      "status": "ok"
+    },
+    "kevinchin12/storyboard-director": {
+      "archived": false,
+      "description": "Prompt-controlled Codex skill for script planning, parallel storyboard line art, HTML review, and aggregate video prompts.",
+      "forks": 1,
+      "full_name": "kevinchin12/storyboard-director",
+      "license": "MIT",
+      "pushed_at": "2026-10-11",
+      "skill_count": 5,
+      "skill_count_truncated": false,
+      "stars": 35,
       "status": "ok"
     },
     "leynos/visual-storytelling-skills": {
@@ -481,6 +685,18 @@
       "stars": 165,
       "status": "ok"
     },
+    "liuxiao20051106-prog/ai-manga-drama": {
+      "archived": false,
+      "description": "AI漫剧工坊 - Claude Code Skill：从零创造AI动态漫画短剧的全流程制作助手，覆盖3条工具路线、30+AI工具、8阶段完整工作流",
+      "forks": 1,
+      "full_name": "liuxiao20051106-prog/ai-manga-drama",
+      "license": "MIT",
+      "pushed_at": "2026-09-17",
+      "skill_count": 2,
+      "skill_count_truncated": false,
+      "stars": 16,
+      "status": "ok"
+    },
     "lixiaoxiao9888-create/manju-laoli-skill": {
       "archived": false,
       "description": "漫剧老李 AIGC 创作全流程 Skill · V6.9.8 轻量版（Short-Drama Director Suite）：面向 AIGC 视听创作的工业化全流程技能包——前置模型三选一锁（Seedance 2.5 / 2.0 / MiniMax H3 格式支线）+ 画幅锁 + 段缝锁、五阶门控剧本、4 View 资产锁定、《资产图册》台账、对白语气位、人物账·摆位必入画、首镜锚定与单主体、禁令失效三改法、文武双模分镜、七段式投喂提示词（选 H3 自动转 Ref2VA 六段式）、P0~P2 质检 + 稿件级机检（C1~C20 / H1~H12）与离线分镜看板，41 规则库。适配 OpenClaw·WorkBuddy·豆包Coze·Dify。测试版，二次修改整合开源内容。",
@@ -529,6 +745,18 @@
       "stars": 665,
       "status": "ok"
     },
+    "luanyi824-hash/xiaxia": {
+      "archived": false,
+      "description": "夏夏：面向中文电影、动画、短剧与 AI 视频生产的导演分镜 Skill",
+      "forks": 0,
+      "full_name": "luanyi824-hash/xiaxia",
+      "license": null,
+      "pushed_at": "2026-09-08",
+      "skill_count": 1,
+      "skill_count_truncated": false,
+      "stars": 13,
+      "status": "ok"
+    },
     "machina-exm/film-studio-skills": {
       "archived": false,
       "description": "7 installable agent skills that run the pipeline behind $2M AI video productions — script to locked, generation-ready shot prompts. Claude Code · Codex · Hermes · OpenCode",
@@ -551,6 +779,18 @@
       "skill_count": 1,
       "skill_count_truncated": false,
       "stars": 20,
+      "status": "ok"
+    },
+    "mini-yifan/open-source-video-gen-skill": {
+      "archived": false,
+      "description": "Vibe Video：一句话想法 → 成片。开源 MiniMax H3 + AutoDL 弹性 GPU + Agent 自动开关机，10 秒 1080p ≈ ¥0.3。10 个技能组成的 AI 剧组（编剧/美术/导演/配乐/配音），短剧、宣传片、创意视频都能做。",
+      "forks": 5,
+      "full_name": "mini-yifan/open-source-video-gen-skill",
+      "license": null,
+      "pushed_at": "2026-09-11",
+      "skill_count": 9,
+      "skill_count_truncated": false,
+      "stars": 33,
       "status": "ok"
     },
     "momo5213/live-action-drama-16x9": {
@@ -589,6 +829,30 @@
       "stars": 33,
       "status": "ok"
     },
+    "nigo-studio/ai-film-skills": {
+      "archived": false,
+      "description": "Claude Code skills from an AI action-film pipeline: video prompt direction and character consistency for Seedance 2.5",
+      "forks": 5,
+      "full_name": "nigo-studio/ai-film-skills",
+      "license": "MIT",
+      "pushed_at": "2026-08-23",
+      "skill_count": 2,
+      "skill_count_truncated": false,
+      "stars": 17,
+      "status": "ok"
+    },
+    "oiuv/ai-short-drama": {
+      "archived": false,
+      "description": "基于AI的单机部署版短剧智能创作系统，从一个想法或故事大纲生成专业剧本、形象、场景、道具和分镜脚本 ，只需6步创作短剧视频。",
+      "forks": 8,
+      "full_name": "oiuv/ai-short-drama",
+      "license": null,
+      "pushed_at": "2026-08-22",
+      "skill_count": 5,
+      "skill_count_truncated": false,
+      "stars": 44,
+      "status": "ok"
+    },
     "phileiny/h3-storyboard-skill": {
       "archived": false,
       "description": "Claude Code skill for MiniMax H3 shot breakdown and character performance. Facial expression only renders when the shot has a <d> dialogue tag — measured, 42 dB vs 18 dB.",
@@ -611,6 +875,18 @@
       "skill_count": 1,
       "skill_count_truncated": false,
       "stars": 5,
+      "status": "ok"
+    },
+    "popopo-99/zy-cinematic-realism": {
+      "archived": false,
+      "description": "Turn simple scene ideas into restrained, physically believable cinematic AIGC prompts.",
+      "forks": 51,
+      "full_name": "popopo-99/zy-cinematic-realism",
+      "license": null,
+      "pushed_at": "2026-10-03",
+      "skill_count": 1,
+      "skill_count_truncated": false,
+      "stars": 581,
       "status": "ok"
     },
     "qualsenWeb/fight-video-create-skill": {
@@ -824,6 +1100,18 @@
       "full_name": "zhlmi/screenplay-review-checklist",
       "license": null,
       "pushed_at": "2026-08-15",
+      "skill_count": 1,
+      "skill_count_truncated": false,
+      "stars": 13,
+      "status": "ok"
+    },
+    "zhouwei713/chinese-epic-scene-director": {
+      "archived": false,
+      "description": "将简单设定扩写成中国式宏大场景故事、连续分镜与成对图片视频提示词的 Codex Skill",
+      "forks": 3,
+      "full_name": "zhouwei713/chinese-epic-scene-director",
+      "license": "MIT",
+      "pushed_at": "2026-08-18",
       "skill_count": 1,
       "skill_count_truncated": false,
       "stars": 13,
