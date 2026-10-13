@@ -1,0 +1,27 @@
+# 推荐组合：按目标给出几个可以搭配使用的项目。
+# repos 里的仓库必须已在 skills.toml 收录。
+# 初版组合来自仓库说明的对照，尚未实测；完成 evals/ 实测后再更新。
+
+[[packs]]
+name  = "小说改编短剧"
+goal  = "手上有一本小说，要出剧本和分镜"
+repos = ["zhlmi/narrative-to-screen-reader", "eternityspring/shuohao-skills", "Vi7QY/screenwriter-skill"]
+why   = "narrative-to-screen-reader 先判断故事能不能拍、怎么改，shuohao-skills 从拆角色跑到分镜，screenwriter-skill 最后按 37 条规则审稿"
+
+[[packs]]
+name  = "原创红果/抖音爆款剧本"
+goal  = "从一句创意写出能上线的分集剧本"
+repos = ["lixiaoxiao9888-create/short-drama-factory", "catyiqian/qianqianwriting", "Vi7QY/screenwriter-skill"]
+why   = "short-drama-factory 管集数、付费卡点和钩子，qianqianwriting 补救猫咪节拍和爆款拆解，screenwriter-skill 审稿"
+
+[[packs]]
+name  = "用 Seedance 出片"
+goal  = "剧本已经有了，要变成 Seedance 能用的分镜和提示词"
+repos = ["liangdabiao/Seedance2-Storyboard-Generator", "cclank/lanshu-awesome-ai-video-kit"]
+why   = "Seedance2-Storyboard-Generator 把剧本拆成多集分镜和提示词，lanshu 工具包提供 Seedance 提示词调试和模型选择"
+
+[[packs]]
+name  = "漫剧长线连载"
+goal  = "做几十集的漫剧，人设和伏笔不能崩"
+repos = ["mengxiujie/ManjuForge", "jxshow/jingju-skills"]
+why   = "ManjuForge 用记忆文件和一致性检查管连载状态，jingju-skills 负责人设一致性提示词和 ComfyUI 批量出图"

@@ -1,0 +1,49 @@
+name: 推荐项目
+description: 推荐一个 AI 短剧 / 漫剧创作的 skill 或工作流
+title: "[推荐] owner/repo"
+labels: ["submission"]
+body:
+  - type: input
+    id: repo
+    attributes:
+      label: 仓库地址
+      placeholder: https://github.com/owner/repo
+    validations:
+      required: true
+  - type: dropdown
+    id: group
+    attributes:
+      label: 类型
+      options:
+        - 全流程：剧本 → 分镜 → 成片
+        - 编剧：剧本 · 改编 · 审稿
+        - 分镜 · 视觉资产 · 视频提示词
+        - 上游：IP 评估与故事拆解
+        - 编剧基本功
+        - 配套：去 AI 味
+        - 相关开源平台（完整应用）
+    validations:
+      required: true
+  - type: input
+    id: models
+    attributes:
+      label: 适配的视频模型
+      placeholder: 例如 Seedance、MiniMax H3、可灵（仓库里写了才填）
+  - type: textarea
+    id: desc
+    attributes:
+      label: 它做什么
+      description: 一两句话，写具体能力
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: 推荐理由
+      description: 用过的话说说效果；和已收录的同类项目比有什么不同
+  - type: checkboxes
+    id: relation
+    attributes:
+      label: 关系
+      options:
+        - label: 我是这个项目的作者或维护者

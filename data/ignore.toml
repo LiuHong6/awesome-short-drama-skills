@@ -1,0 +1,115 @@
+# 看过但不收录的仓库。discover.py 会跳过这里的项目，避免重复审核。
+
+[[ignored]]
+repo   = "hylarucoder/seedance-screenwriter-skills"
+reason = "只有一个极简的 Seedance 提示词，信息量不足"
+
+[[ignored]]
+repo   = "BaYue-SYJ/shuixian-manju-skills"
+reason = "派生自 shuohao-skills，与原版高度重合"
+
+[[ignored]]
+repo   = "yuanming1/shuohao-skills"
+reason = "eternityspring/shuohao-skills 的 fork"
+
+[[ignored]]
+repo   = "tomatoparkdao/omniailab-ai-director"
+reason = "偏广告、宣传片、MV，不是短剧"
+
+[[ignored]]
+repo   = "Pluviobyte/video-production-skills"
+reason = "通用视频动效和片头，不是短剧"
+
+[[ignored]]
+repo   = "aiskyhub/novel_to_comic"
+reason = "小说转漫画，不是漫剧"
+
+[[ignored]]
+repo   = "nateherkai/hyperframes-student-kit"
+reason = "视频剪辑工具，不是短剧创作"
+
+[[ignored]]
+repo   = "zhaotoday/awesome-ai-video"
+reason = "AI 视频资源索引，已放在「相关资源」"
+
+# 列表类：放进「相关资源」或不收
+[[ignored]]
+repo   = "PAMPAS-Lab/awesome-ai-short-drama"
+reason = "AI 短剧资源列表（英文），已放在「相关资源」"
+
+[[ignored]]
+repo   = "bestaidrama/awesome-ai-drama-generators"
+reason = "资源列表，收的是商业工具，不是 skill"
+
+# discover.py 首轮命中、但不属于短剧创作的项目
+[[ignored]]
+repo   = "lsdefine/GenericAgent"
+reason = "通用 agent 框架"
+
+[[ignored]]
+repo   = "op7418/guizang-product-video-skill"
+reason = "软件产品宣传片"
+
+[[ignored]]
+repo   = "nutllwhy/seedance-tvc-director"
+reason = "商业广告 TVC"
+
+[[ignored]]
+repo   = "huangbai-AI/post-production-skill"
+reason = "视频后期特效"
+
+[[ignored]]
+repo   = "huangbai-AI/ai-motion-poster-skill"
+reason = "商业动态海报"
+
+[[ignored]]
+repo   = "camilleroux/genart-skill"
+reason = "生成艺术"
+
+[[ignored]]
+repo   = "HeyChengC/vibe-knowledge-film"
+reason = "知识类短视频"
+
+[[ignored]]
+repo   = "liangdabiao/ecom-video-seedance-prompt"
+reason = "电商带货视频"
+
+[[ignored]]
+repo   = "xianyu110/ecommerce-video-skills"
+reason = "电商短视频"
+
+[[ignored]]
+repo   = "wangcanyu/daihuo-fanpai"
+reason = "带货短视频"
+
+[[ignored]]
+repo   = "ChangWenC/understanding-ladder"
+reason = "学习讲解内容"
+
+[[ignored]]
+repo   = "appautomaton/presentation"
+reason = "演示文稿"
+
+[[ignored]]
+repo   = "nutllwhy/whiteboard-book-video-skill"
+reason = "拆书类短视频"
+
+[[ignored]]
+repo   = "liyupi/ai-desktop-outfit-video"
+reason = "换装短视频"
+
+[[ignored]]
+repo   = "aipauloshimas/kinetic-multicam"
+reason = "口播视频"
+
+[[ignored]]
+repo   = "engenheirodevideo/get-brolls"
+reason = "B-roll 素材管理"
+
+[[ignored]]
+repo   = "M4St3r0/hongguo-downloader"
+reason = "下载红果短剧的工具，不是创作，且涉及版权"
+
+[[ignored]]
+repo   = "LucianaiB2004/novel-fan-graph"
+reason = "小说阅读辅助工具，不是创作"

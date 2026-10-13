@@ -1,0 +1,104 @@
+# 分类体系：skills.toml 里的 group / stages / format / lang / agents / models 只能取这里定义的值。
+# 表格的展示顺序 = 这里的书写顺序。
+
+# 类型：每个条目只属于一个类型。indexed = false 的类型不进入阶段索引和模型索引。
+[groups.pipeline]
+label = "全流程：剧本 → 分镜 → 成片"
+intro = "从一句话或一本小说一路跑到分镜、视频提示词甚至成片的完整工作流。"
+
+[groups.writing]
+label = "编剧：剧本 · 改编 · 审稿"
+intro = "专注剧本本身：集纲、钩子、付费卡点、对白、审稿。"
+
+[groups.visual]
+label = "分镜 · 视觉资产 · 视频提示词"
+intro = "把剧本变成镜头：分镜、角色和场景资产、给视频模型的提示词。"
+
+[groups.source]
+label = "上游：IP 评估与故事拆解"
+intro = "改编之前先判断：这个故事值不值得拍、怎么拆。"
+
+[groups.craft]
+label = "编剧基本功"
+intro = "不限于短剧的编剧理论：结构、场景、对白、人物。"
+
+[groups.companion]
+label = "配套：去 AI 味"
+intro = "让剧本和对白读起来不像 AI 写的。"
+
+[groups.platform]
+label = "相关开源平台（完整应用，非 skill）"
+intro = "可自行部署的短剧/漫剧生产平台，不是 skill，供对照参考。更多见 [awesome-ai-video](https://github.com/zhaotoday/awesome-ai-video)。"
+indexed = false
+
+# 创作流程阶段，按流程先后排列。label 用于索引，short 用于表格里的阶段列。
+[stages.market]
+label = "选题 · IP 评估"
+short = "选题"
+
+[stages.adaptation]
+label = "改编（小说 → 剧本）"
+short = "改编"
+
+[stages.character]
+label = "人物 · 角色资产"
+short = "人物"
+
+[stages.structure]
+label = "结构 · 集纲 · 钩子"
+short = "集纲"
+
+[stages.drafting]
+label = "剧本 · 对白"
+short = "剧本"
+
+[stages.revision]
+label = "审稿 · 质检 · 去 AI 味"
+short = "审稿"
+
+[stages.visual]
+label = "分镜 · 视觉 · 视频提示词"
+short = "分镜"
+
+[stages.production]
+label = "出片 · 配音 · 剪辑"
+short = "出片"
+
+[formats]
+skill   = "标准 SKILL.md，可用 npx skills / 插件安装"
+prompts = "提示词文件，非标准 skill，需手动使用"
+app     = "完整应用（可能附带 skill）"
+
+[langs]
+zh    = "中文"
+en    = "英文"
+multi = "多语言"
+
+[agents]
+claude-code = "Claude Code"
+codex       = "Codex"
+cursor      = "Cursor"
+opencode    = "OpenCode"
+openclaw    = "OpenClaw"
+gemini-cli  = "Gemini CLI"
+workbuddy   = "WorkBuddy"
+
+# 仓库说明里明确提到适配的图像/视频模型
+[models]
+seedance   = "Seedance / 即梦"
+minimax    = "MiniMax H3"
+kling      = "可灵 Kling"
+wan        = "通义万相 Wan"
+comfyui    = "ComfyUI（本地）"
+nanobanana = "Nano Banana"
+veo        = "Veo"
+sora       = "Sora"
+
+[discover]
+# scripts/discover.py 用这些关键词在 GitHub 搜候选项目
+queries = [
+  "短剧 skill", "漫剧 skill", "微短剧 skill", "AI短剧 skill", "红果 skill",
+  "剧本 skill", "编剧 skill", "分镜 skill", "seedance skill", "漫剧 agent",
+  "short drama skill", "micro drama skill", "drama skill", "storyboard skill",
+  "vertical drama", "ai short drama",
+]
