@@ -17,6 +17,7 @@ from lib import ROOT, load_meta, load_valid
 README = ROOT / "README.md"
 TEMPLATES = ROOT / "templates"
 STALE_DAYS = 180
+SPECIALIST_MAX = 3  # 阶段索引里，覆盖阶段数不超过这个值的算「专项」
 
 FORMAT_BADGE = {"prompts": "📝 提示词", "app": "🧩 应用"}
 LANG_LABEL = {"zh": "中文", "en": "英文", "multi": "多语言"}
@@ -135,14 +136,26 @@ def render_group(key: str, group: dict, items: list[dict], meta: dict, ref: dt.d
     return out + [""]
 
 
+def links(items) -> str:
+    return " · ".join(f"[{display_name(s)}]({gh_url(s['repo'])})" for s in items)
+
+
 def render_index(anchor: str, title: str, intro: str, labels: dict[str, str], field: str,
-                 skills: list[dict], meta: dict) -> list[str]:
+                 skills: list[dict], meta: dict, split: bool = False) -> list[str]:
+    """split=True 时每项拆成「专项」和「综合」两行，专项 = 覆盖阶段数 ≤ SPECIALIST_MAX。"""
     out = [f'<a id="{anchor}"></a>', f"## {title}", "", intro, ""]
     for key, label in labels.items():
         hits = by_stars((s for s in skills if key in s.get(field, [])), meta)
-        if hits:
-            links = " · ".join(f"[{display_name(s)}]({gh_url(s['repo'])})" for s in hits)
-            out += [f"**{label}**（{len(hits)}）：{links}", ""]
+        if not hits:
+            continue
+        if not split:
+            out += [f"**{label}**（{len(hits)}）：{links(hits)}", ""]
+            continue
+        focused = [s for s in hits if len(s["stages"]) <= SPECIALIST_MAX]
+        broad = [s for s in hits if len(s["stages"]) > SPECIALIST_MAX]
+        out += [f"**{label}**（{len(hits)}）", ""]
+        out += [f"- {name}（{len(items)}）：{links(items)}" for name, items in (("专项", focused), ("综合", broad)) if items]
+        out += [""]
     return out
 
 
@@ -177,8 +190,10 @@ def render(taxonomy: dict, skills: list[dict], packs: list[dict], meta_all: dict
         *toc,
         *render_packs(packs, by_repo),
         *body,
-        *render_index("by-stage", "按创作阶段查找", "卡在某一步时，从这里找能帮上忙的 skill（按星数排序）。",
-                      stage_labels, "stages", indexed, meta),
+        *render_index("by-stage", "按创作阶段查找",
+                      f"卡在某一步时，从这里找能帮上忙的 skill。「专项」只覆盖 {SPECIALIST_MAX} 个以内的阶段，"
+                      "「综合」是全流程或多环节项目；各自按星数排序。",
+                      stage_labels, "stages", indexed, meta, split=True),
         *render_index("by-model", "按视频模型查找", "仓库说明里明确提到适配的图像/视频模型（按星数排序）。",
                       taxonomy["models"], "models", indexed, meta),
         (TEMPLATES / "footer.md").read_text(encoding="utf-8").rstrip(),
