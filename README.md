@@ -50,7 +50,7 @@
 - [seedance-skill](https://github.com/alchaincyf/seedance-skill) ★34：白模驱动的 Seedance 工作台：用 scene.json 渲染白模参考视频并做几何体检，可从照片反解白模，按白模几何写提示词
 - [open-source-video-gen-skill](https://github.com/mini-yifan/open-source-video-gen-skill) ★33：Vibe Video：在 AutoDL 上跑开源 MiniMax H3 出片，短剧模板串起 Brief、分集概要、剧本台词、美术和视频，含 H3 提示词写法
 - [acheng-director-skill](https://github.com/AharaOoO/acheng-director-skill) ★30：Acheng 导演引擎：剧本、分镜、文戏五轨表演、打戏因果链、特效与资产，编译成 MiniMax H3 / Seedance 提示词
-- [5min-drama-contest](https://github.com/SoloEnt-AI/5min-drama-contest) ★25：五分钟短剧剧本：一步一问锁定赛道、立意、结构原型和前 30 秒开场，四幕卡点大纲 → 正式剧本 → 分镜脚本
+- [5min-drama-contest](https://github.com/SoloEnt-AI/5min-drama-contest) ★26：五分钟短剧剧本：一步一问锁定赛道、立意、结构原型和前 30 秒开场，四幕卡点大纲 → 正式剧本 → 分镜脚本
 - [fight-scene-director](https://github.com/ZzzAloong/fight-scene-director) ★22：多画风打戏设计：动作编排、空间调度、镜头与特效规则，可先出站位图/轨迹图生图词，再按轨迹写视频提示词
 - [ai-film-skills](https://github.com/nigo-studio/ai-film-skills) ★17：从 AI 动作片《CROW LINE》流程拆出的 skill：Seedance 2.5 参考生视频提示词导演，三联角色设定图保持跨镜一致
 - [ai-manga-drama](https://github.com/liuxiao20051106-prog/ai-manga-drama) ★16：AI 漫剧工坊：一句创意到成片的八步流程，任务卡剧本、角色参考图库、风格锚、分镜、图/视频提示词、配音字幕与合成终检
@@ -172,7 +172,7 @@ npx skills add ilkaydemiralay/vision_art_creator
 | [short-drama-factory](https://github.com/lixiaoxiao9888-create/short-drama-factory)<br><sub>中文 · MIT</sub> | 抖音/红果短剧工业化编剧：一句创意或一部网文 → 60–100 集带付费卡点的剧本，配钩子、断章、反转公式和机检规则 | 改编 · 集纲 · 剧本 · 审稿 | 354 | 2026-10-14 |
 | [screenwriter-skill](https://github.com/Vi7QY/screenwriter-skill)<br><sub>多语言 · MIT</sub> | 短剧/漫剧剧本审稿：红果 Top100 操盘经验蒸馏的 37 条规则 | 审稿 | 76 | 2026-04-12 💤 |
 | [qianqianwriting](https://github.com/catyiqian/qianqianwriting)<br><sub>中文</sub> | 短剧/漫剧编剧：救猫咪方法论 + 31 部爆款短剧分析 | 集纲 · 剧本 | 47 | 2026-03-05 💤 |
-| [5min-drama-contest](https://github.com/SoloEnt-AI/5min-drama-contest)<br><sub>中文</sub> | 五分钟短剧剧本：一步一问锁定赛道、立意、结构原型和前 30 秒开场，四幕卡点大纲 → 正式剧本 → 分镜脚本<br><sub>💡 灵蟹创作（SoloEnt）出品，面向其五分钟短剧大赛</sub> | 人物 · 集纲 · 剧本 | 25 | 2026-08-29 |
+| [5min-drama-contest](https://github.com/SoloEnt-AI/5min-drama-contest)<br><sub>中文</sub> | 五分钟短剧剧本：一步一问锁定赛道、立意、结构原型和前 30 秒开场，四幕卡点大纲 → 正式剧本 → 分镜脚本<br><sub>💡 灵蟹创作（SoloEnt）出品，面向其五分钟短剧大赛</sub> | 人物 · 集纲 · 剧本 | 26 | 2026-08-29 |
 | [screenplay-review-checklist](https://github.com/zhlmi/screenplay-review-checklist)<br><sub>中文</sub> | 对抗式剧本踩雷诊断：拿 37 条判据只给你的故事找问题 | 审稿 | 13 | 2026-08-15 |
 | [gushi-skill](https://github.com/pipivv/gushi-skill)<br><sub>中文</sub> | 从麦基《故事》蒸馏的短剧编剧方法 | 集纲 · 剧本 | 5 | 2026-06-16 |
 | [write-screenplay-skill](https://github.com/egguy886/write-screenplay-skill)<br><sub>中文 · MIT</sub> | 小说/设定转商业剧本，国内短剧与出海微短剧双模式 | 改编 · 剧本 | 3 | 2026-09-06 |

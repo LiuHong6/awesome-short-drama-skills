@@ -47,7 +47,7 @@
       "pushed_at": "2026-10-14",
       "skill_count": 51,
       "skill_count_truncated": false,
-      "stars": 5488,
+      "stars": 5490,
       "status": "ok"
     },
     "AtlasCloudAI/awesome-seedance-2.5-prompts-skills": {
@@ -259,7 +259,7 @@
       "pushed_at": "2026-08-29",
       "skill_count": 1,
       "skill_count_truncated": false,
-      "stars": 25,
+      "stars": 26,
       "status": "ok"
     },
     "Stonewuu/ai-fusion-video": {
@@ -424,13 +424,13 @@
     "blader/humanizer": {
       "archived": false,
       "description": "Agent skill that removes signs of AI-generated writing from text",
-      "forks": 4480,
+      "forks": 4481,
       "full_name": "blader/humanizer",
       "license": "MIT",
       "pushed_at": "2026-09-28",
       "skill_count": 1,
       "skill_count_truncated": false,
-      "stars": 56689,
+      "stars": 56693,
       "status": "ok"
     },
     "catyiqian/qianqianwriting": {
@@ -1089,7 +1089,7 @@
       "pushed_at": "2026-10-03",
       "skill_count": 12,
       "skill_count_truncated": false,
-      "stars": 2843,
+      "stars": 2844,
       "status": "ok"
     },
     "zhaihao118/Micro-Drama-Skills": {
