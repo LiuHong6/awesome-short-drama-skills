@@ -50,6 +50,10 @@ checked = 2026-10-13              # 可选，人工核对日期（TOML 日期，
 
 `agents` 和 `models` 只填仓库里明确写了的，不要推测。星数、许可证、最近更新时间、skill 数量由 `scripts/refresh.py` 自动抓取，不用手填。
 
+## 收录徽章
+
+项目被收录后，可以在自己的 README 里加上收录徽章，代码见 [README 的「收录徽章」一节](README.md#badge)。
+
 ## 不收录的项目
 
 看过但决定不收的项目记在 `data/ignore.toml`，并写明原因，这样 `discover.py` 不会再把它们列为候选。

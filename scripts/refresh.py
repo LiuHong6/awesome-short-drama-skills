@@ -92,6 +92,11 @@ def main() -> None:
             missing.append(repo)
             print(f"  ✗ {repo}  失效（404）")
             continue
+        # first_seen：第一次抓到这个仓库的日期，用于「本周新增」；首批种子数据没有这个字段
+        prev = meta["repos"].get(repo)
+        first_seen = prev.get("first_seen") if prev is not None else today.isoformat()
+        if first_seen:
+            m["first_seen"] = first_seen
         meta["repos"][repo] = m
         print(f"  ✓ {repo}  ★{m['stars']}  skills:{m['skill_count']}  {m['pushed_at']}")
 

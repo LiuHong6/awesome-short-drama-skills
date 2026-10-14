@@ -18,6 +18,7 @@ README = ROOT / "README.md"
 TEMPLATES = ROOT / "templates"
 STALE_DAYS = 180
 SPECIALIST_MAX = 3  # 阶段索引里，覆盖阶段数不超过这个值的算「专项」
+NEW_DAYS = 7        # 「本周新增」：first_seen 在 fetched_at 前 NEW_DAYS 天以内
 
 FORMAT_BADGE = {"prompts": "📝 提示词", "app": "🧩 应用"}
 LANG_LABEL = {"zh": "中文", "en": "英文", "multi": "多语言"}
@@ -136,6 +137,28 @@ def render_group(key: str, group: dict, items: list[dict], meta: dict, ref: dt.d
     return out + [""]
 
 
+def new_entries(skills: list[dict], meta: dict, ref: dt.date | None) -> list[dict]:
+    if ref is None:
+        return []
+    def age(s):
+        seen = meta.get(s["repo"], {}).get("first_seen")
+        return (ref - dt.date.fromisoformat(seen)).days if seen else None
+    hits = [s for s in skills if (a := age(s)) is not None and 0 <= a < NEW_DAYS]
+    return sorted(hits, key=lambda s: (age(s), -meta.get(s["repo"], {}).get("stars", -1)))
+
+
+def render_new(items: list[dict], meta: dict) -> list[str]:
+    out = ['<a id="new"></a>', "## 本周新增", ""]
+    if not items:
+        return out + ["本周暂无新增。发现好项目欢迎[推荐](../../issues/new?template=submit-skill.yml)。", ""]
+    out += [f"近 {NEW_DAYS} 天新收录 {len(items)} 个：", ""]
+    for s in items:
+        stars = meta.get(s["repo"], {}).get("stars")
+        star = f" ★{fmt_stars(stars)}" if stars is not None else ""
+        out.append(f"- [{display_name(s)}]({gh_url(s['repo'])}){star}：{cell(s['desc'])}")
+    return out + [""]
+
+
 def links(items) -> str:
     return " · ".join(f"[{display_name(s)}]({gh_url(s['repo'])})" for s in items)
 
@@ -172,9 +195,10 @@ def render(taxonomy: dict, skills: list[dict], packs: list[dict], meta_all: dict
                     .replace("{{platforms}}", str(len(skills) - len(indexed)))
                     .replace("{{updated}}", meta_all.get("fetched_at") or "—"))
 
-    toc = ["## 目录", "", "- [推荐组合](#packs)", "- [按类型](#by-group)"]
+    new = new_entries(skills, meta, ref)
+    toc = ["## 目录", "", f"- [本周新增](#new)（{len(new)}）", "- [推荐组合](#packs)", "- [按类型](#by-group)"]
     toc += [f"  - [{g['label']}](#group-{k})（{len(grouped[k])}）" for k, g in groups.items() if grouped[k]]
-    toc += ["- [按创作阶段查找](#by-stage)", "- [按视频模型查找](#by-model)", "- [相关资源](#resources)", ""]
+    toc += ["- [按创作阶段查找](#by-stage)", "- [按视频模型查找](#by-model)", "- [相关资源](#resources)", "- [收录徽章](#badge)", ""]
 
     body = ['<a id="by-group"></a>', "## 按类型", ""]
     for k, g in groups.items():
@@ -188,6 +212,7 @@ def render(taxonomy: dict, skills: list[dict], packs: list[dict], meta_all: dict
         header.rstrip(),
         "",
         *toc,
+        *render_new(new, meta),
         *render_packs(packs, by_repo),
         *body,
         *render_index("by-stage", "按创作阶段查找",

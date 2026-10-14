@@ -17,6 +17,7 @@
 
 ## 目录
 
+- [本周新增](#new)（24）
 - [推荐组合](#packs)
 - [按类型](#by-group)
   - [全流程：剧本 → 分镜 → 成片](#group-pipeline)（23）
@@ -29,6 +30,37 @@
 - [按创作阶段查找](#by-stage)
 - [按视频模型查找](#by-model)
 - [相关资源](#resources)
+- [收录徽章](#badge)
+
+<a id="new"></a>
+## 本周新增
+
+近 7 天新收录 24 个：
+
+- [shanyin-screenwriting-master](https://github.com/Shanyin-ai/shanyin-screenwriting-master) ★1.3k：山音超级编剧大师：概念超短片、叙事短片、长片、多集剧集四种格式的人物、大纲、场景拆解和完整剧本
+- [higgsfield-ai-prompt-skill](https://github.com/OSideMedia/higgsfield-ai-prompt-skill) ★738：Higgsfield 平台提示词：MCSLA 公式、Seedance 2.5 多参考导演、表演指导、Soul ID 角色一致性、镜头清单与失败诊断
+- [zy-cinematic-realism](https://github.com/popopo-99/zy-cinematic-realism) ★582：造梦师：把剧本、故事或场景想法开发成有动机的叙事关键帧，编译成各生图模型的原生提示词，支持连续组图与结果修复
+- [shanyin-director-master](https://github.com/Shanyin-ai/shanyin-director-master) ★582：山音超级导演大师：剧本 → 导演定调、节奏规划、剧本微调、分镜拆解，输出九列分镜表（xlsx），内置类型片导演风格模板
+- [awesome-seedance-2.5-prompts-skills](https://github.com/AtlasCloudAI/awesome-seedance-2.5-prompts-skills) ★235：Seedance 2.5 提示词库 + skill：按 T2V/R2V/I2V 选路线、Seedream 故事板、多参考与镜头连续性设计
+- [ComfyUI-Agent-Kit](https://github.com/SlavaSexton/ComfyUI-Agent-Kit) ★105：驱动本地 ComfyUI 出图出视频，附 Seedance、MiniMax H3 视频提示词 skill：多镜头分镜、参考素材标注、翻车排查
+- [fight-prompt-director](https://github.com/irenerachel/fight-prompt-director) ★57：AI 打戏提示词：角色差异化动作、交锋因果链、跨镜连续性，出高强度/慢节奏/中间型三版，适配 Seedance 与 H3
+- [ai-short-drama](https://github.com/oiuv/ai-short-drama) ★44：雪风爽剧：一句话补全创作需求，按爽点模型写分集剧本并同步角色/场景/道具档案，再拆镜写 Seedance 2.0 提示词
+- [storyboard-director](https://github.com/kevinchin12/storyboard-director) ★35：故事 → 分镜脚本，子代理并行生成逐镜线稿，HTML 审片板返修指定镜头，确认后汇总成按镜头排序的视频提示词
+- [spark-video](https://github.com/JohnKeating1997/spark-video) ★34：一句梗概 → 剧本、分镜、角色/场景/道具一致性、渲染、逐镜 AI 质检到成片 mp4，每阶段设确认关卡
+- [seedance-skill](https://github.com/alchaincyf/seedance-skill) ★34：白模驱动的 Seedance 工作台：用 scene.json 渲染白模参考视频并做几何体检，可从照片反解白模，按白模几何写提示词
+- [open-source-video-gen-skill](https://github.com/mini-yifan/open-source-video-gen-skill) ★33：Vibe Video：在 AutoDL 上跑开源 MiniMax H3 出片，短剧模板串起 Brief、分集概要、剧本台词、美术和视频，含 H3 提示词写法
+- [acheng-director-skill](https://github.com/AharaOoO/acheng-director-skill) ★30：Acheng 导演引擎：剧本、分镜、文戏五轨表演、打戏因果链、特效与资产，编译成 MiniMax H3 / Seedance 提示词
+- [5min-drama-contest](https://github.com/SoloEnt-AI/5min-drama-contest) ★25：五分钟短剧剧本：一步一问锁定赛道、立意、结构原型和前 30 秒开场，四幕卡点大纲 → 正式剧本 → 分镜脚本
+- [fight-scene-director](https://github.com/ZzzAloong/fight-scene-director) ★22：多画风打戏设计：动作编排、空间调度、镜头与特效规则，可先出站位图/轨迹图生图词，再按轨迹写视频提示词
+- [ai-film-skills](https://github.com/nigo-studio/ai-film-skills) ★17：从 AI 动作片《CROW LINE》流程拆出的 skill：Seedance 2.5 参考生视频提示词导演，三联角色设定图保持跨镜一致
+- [ai-manga-drama](https://github.com/liuxiao20051106-prog/ai-manga-drama) ★16：AI 漫剧工坊：一句创意到成片的八步流程，任务卡剧本、角色参考图库、风格锚、分镜、图/视频提示词、配音字幕与合成终检
+- [hardcore-director](https://github.com/jlam00-dev/hardcore-director) ★16：硬核导演：影视与 AI 视频总控，按阶段路由编剧/短剧、角色场景、分镜、Seedance 2.5/Wan 3.0/H3 提示词、声音与剪辑模块
+- [seedance-2-5-prompting](https://github.com/babicat4242-svg/seedance-2-5-prompting) ★16：Seedance 2.5 提示词：参考素材角色绑定、30 种运镜定义与冲突规则、R2V/白模、局部编辑与延长、多轮修改流程
+- [Comfy-H3-Director](https://github.com/MIKA6941/Comfy-H3-Director) ★13：MiniMax H3 漫剧导演：网文改分镜、核心/龙套资产分级、文戏长镜与武戏快切、动作连续性锁定、尾帧接力，一次出整集提示词
+- [xiaxia](https://github.com/luanyi824-hash/xiaxia) ★13：夏夏：把确认剧本转成带时长预算、机位焦段、真实光源、调度与动作因果的导演分镜，可编译为 Seedance 2.5 任务
+- [ai-comic-drama-director-skills](https://github.com/djyy1031/ai-comic-drama-director-skills) ★13：AI 漫剧导演：剧本 + 已有资产 → Seedance 2.0/2.5 分镜组提示词，含人物表演、导演摄影、场景资产、站位图、连续性与声音
+- [chinese-epic-scene-director](https://github.com/zhouwei713/chinese-epic-scene-director) ★13：中国式宏大场景：把一句设定扩写成仙侠/神话短片故事，建连续性台账，按镜头成对输出图片和视频提示词
+- [vision_art_creator](https://github.com/ilkaydemiralay/vision_art_creator) ★12：影视部门式 skill 包：编剧、导演、角色、美术、摄影、分镜、镜头表、提示词、声音、剪辑，由总监 skill 调度和质检
 
 <a id="packs"></a>
 ## 推荐组合
@@ -488,6 +520,17 @@ npx skills add Nanako0129/sepia
 ## 参与贡献
 
 推荐项目可以[提交 issue](../../issues/new?template=submit-skill.yml)，也可以直接改 `data/skills.toml` 发 PR，详见 [CONTRIBUTING.md](CONTRIBUTING.md)。自己写的短剧 skill 也欢迎自荐。
+
+<a id="badge"></a>
+## 收录徽章
+
+项目已被收录的作者，可以在自己的 README 里加上这个徽章：
+
+[![收录于 Awesome Short Drama Skills](https://img.shields.io/badge/%E6%94%B6%E5%BD%95%E4%BA%8E-Awesome_Short_Drama_Skills-e8590c)](https://github.com/UnderleveledBuilder/awesome-short-drama-skills)
+
+```markdown
+[![收录于 Awesome Short Drama Skills](https://img.shields.io/badge/%E6%94%B6%E5%BD%95%E4%BA%8E-Awesome_Short_Drama_Skills-e8590c)](https://github.com/UnderleveledBuilder/awesome-short-drama-skills)
+```
 
 ## 许可
 
