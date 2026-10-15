@@ -19,7 +19,10 @@ STALE_DAYS = 180
 
 def count_skills(full_name: str, branch: str) -> tuple[int, bool]:
     """统计仓库里的 SKILL.md。同名 skill 的多份副本只算一次。"""
-    tree = gh_get(f"repos/{full_name}/git/trees/{branch}?recursive=1")
+    try:
+        tree = gh_get(f"repos/{full_name}/git/trees/{branch}?recursive=1")
+    except NotFound:  # 空仓库
+        return 0, False
     names = set()
     for item in tree.get("tree", []):
         path = item["path"]

@@ -157,7 +157,7 @@ def gh_get(path: str) -> dict:
         with urllib.request.urlopen(req, timeout=30) as resp:
             return json.load(resp)
     except urllib.error.HTTPError as e:
-        if e.code in (404, 451):
+        if e.code in (404, 409, 451):  # 409：空仓库没有 git tree
             raise NotFound(path) from e
         if e.code == 403 and e.headers.get("X-RateLimit-Remaining") == "0":
             reset = dt.datetime.fromtimestamp(int(e.headers.get("X-RateLimit-Reset", "0")))
