@@ -1,72 +1,105 @@
 # 分类体系：skills.toml 里的 group / stages / format / lang / agents / models 只能取这里定义的值。
+# 带 _en 后缀的字段和 [models_en] 是英文版 README.en.md 用的。
 # 表格的展示顺序 = 这里的书写顺序。
 
 # 类型：每个条目只属于一个类型。indexed = false 的类型不进入阶段索引和模型索引。
 [groups.pipeline]
 label = "全流程：剧本 → 分镜 → 成片"
 intro = "从一句话或一本小说一路跑到分镜、视频提示词甚至成片的完整工作流。"
+label_en = "All-in-one: script → storyboard → video"
+intro_en = "Complete workflows that go from a one-line idea or a novel to storyboards, video prompts or even the finished video."
 
 [groups.writing]
 label = "编剧：剧本 · 改编 · 审稿"
 intro = "专注剧本本身：集纲、钩子、付费卡点、对白、审稿。"
+label_en = "Screenwriting: scripts · adaptation · review"
+intro_en = "Focused on the script itself: episode outlines, hooks, paywall points, dialogue and review."
 
 [groups.visual]
 label = "分镜 · 视觉资产 · 视频提示词"
 intro = "把剧本变成镜头：分镜、角色和场景资产、给视频模型的提示词。"
+label_en = "Storyboards · visual assets · video prompts"
+intro_en = "Turn a script into shots: storyboards, character and scene assets, and prompts for video models."
 
 [groups.source]
 label = "上游：IP 评估与故事拆解"
 intro = "改编之前先判断：这个故事值不值得拍、怎么拆。"
+label_en = "Upstream: IP evaluation and story breakdown"
+intro_en = "Before adapting, decide whether a story is worth shooting and how to break it down."
 
 [groups.craft]
 label = "编剧基本功"
 intro = "不限于短剧的编剧理论：结构、场景、对白、人物。"
+label_en = "Screenwriting fundamentals"
+intro_en = "Screenwriting theory beyond short drama: structure, scenes, dialogue, characters."
 
 [groups.companion]
 label = "配套：去 AI 味"
 intro = "让剧本和对白读起来不像 AI 写的。"
+label_en = "Companion: de-AI"
+intro_en = "Makes scripts and dialogue read less like AI wrote them."
 
 [groups.platform]
 label = "相关开源平台（完整应用，非 skill）"
 intro = "可自行部署的短剧/漫剧生产平台，不是 skill，供对照参考。更多见 [awesome-ai-video](https://github.com/zhaotoday/awesome-ai-video)。"
+label_en = "Related open-source platforms (full apps, not skills)"
+intro_en = "Self-hostable short-drama and manju production platforms; not skills, listed for comparison. See [awesome-ai-video](https://github.com/zhaotoday/awesome-ai-video) for more."
 indexed = false
 
 # 创作流程阶段，按流程先后排列。label 用于索引，short 用于表格里的阶段列。
 [stages.market]
 label = "选题 · IP 评估"
 short = "选题"
+label_en = "Topic selection · IP evaluation"
+short_en = "Topic"
 
 [stages.adaptation]
 label = "改编（小说 → 剧本）"
 short = "改编"
+label_en = "Adaptation (novel → script)"
+short_en = "Adaptation"
 
 [stages.character]
 label = "人物 · 角色资产"
 short = "人物"
+label_en = "Characters · character assets"
+short_en = "Characters"
 
 [stages.structure]
 label = "结构 · 集纲 · 钩子"
 short = "集纲"
+label_en = "Structure · episode outlines · hooks"
+short_en = "Episodes"
 
 [stages.drafting]
 label = "剧本 · 对白"
 short = "剧本"
+label_en = "Script · dialogue"
+short_en = "Script"
 
 [stages.revision]
 label = "审稿 · 质检 · 去 AI 味"
 short = "审稿"
+label_en = "Review · QA · de-AI"
+short_en = "Review"
 
 [stages.storyboard]
 label = "分镜 · 镜头设计"
 short = "分镜"
+label_en = "Storyboard · shot design"
+short_en = "Storyboard"
 
 [stages.prompt]
 label = "视频 / 图像提示词"
 short = "提示词"
+label_en = "Video / image prompts"
+short_en = "Prompts"
 
 [stages.production]
 label = "出片 · 配音 · 剪辑"
 short = "出片"
+label_en = "Video generation · voiceover · editing"
+short_en = "Production"
 
 [formats]
 skill   = "标准 SKILL.md，可用 npx skills / 插件安装"
@@ -94,6 +127,16 @@ minimax    = "MiniMax H3"
 kling      = "可灵 Kling"
 wan        = "通义万相 Wan"
 comfyui    = "ComfyUI（本地）"
+nanobanana = "Nano Banana"
+veo        = "Veo"
+sora       = "Sora"
+
+[models_en]
+seedance   = "Seedance / Jimeng"
+minimax    = "MiniMax H3"
+kling      = "Kling"
+wan        = "Wan (Tongyi Wanxiang)"
+comfyui    = "ComfyUI (local)"
 nanobanana = "Nano Banana"
 veo        = "Veo"
 sora       = "Sora"

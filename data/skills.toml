@@ -7,6 +7,7 @@
 [[skills]]
 repo    = "eternityspring/shuohao-skills"
 desc    = "短剧制作 skill 集：拆角色、改编大纲、场景与道具美术设定、剧本、分镜"
+desc_en = "Short-drama production skill set: character breakdown, adaptation outline, scene and prop art design, script, storyboard"
 group   = "pipeline"
 stages  = ["adaptation", "character", "structure", "drafting", "storyboard"]
 format  = "skill"
@@ -18,6 +19,7 @@ checked = 2026-10-13
 [[skills]]
 repo    = "zenstory-ai/drama-skills"
 desc    = "短剧/漫剧全链路：拆小说、开发、剧本、角色资产、分镜、图/视频提示词、审查"
+desc_en = "Full pipeline for short drama / manju: novel breakdown, development, script, character assets, storyboard, image/video prompts, review"
 group   = "pipeline"
 stages  = ["adaptation", "character", "drafting", "revision", "storyboard", "prompt"]
 format  = "skill"
@@ -29,6 +31,7 @@ checked = 2026-10-13
 [[skills]]
 repo    = "lixiaoxiao9888-create/manju-laoli-skill"
 desc    = "漫剧老李：AIGC 漫剧导演全流程，门控剧本、资产锁定、分镜、投喂提示词、规则化质检"
+desc_en = "Manju Lao Li: full AIGC manju directing workflow with gated scripts, asset locking, storyboard, model-ready feed prompts and rule-based QC"
 group   = "pipeline"
 stages  = ["drafting", "revision", "storyboard", "prompt"]
 format  = "skill"
@@ -37,11 +40,13 @@ agents  = ["openclaw", "workbuddy"]
 models  = ["seedance", "minimax"]
 tier    = "featured"
 note    = "作者标注为测试版，整合了其他开源内容"
+note_en = "Marked as a beta by the author; incorporates other open-source content"
 checked = 2026-10-13
 
 [[skills]]
 repo    = "A-cat-with-carrots/OnlyShot"
 desc    = "神仙鱼短剧流水线：一句话 → 剧本、分镜、分镜图、视频、剪辑五步，沉淀 17 种失败模式"
+desc_en = "Shenxianyu short-drama pipeline: one line → script, storyboard, storyboard images, video and editing in five steps, with 17 documented failure modes"
 group   = "pipeline"
 stages  = ["drafting", "storyboard", "prompt", "production"]
 format  = "skill"
@@ -53,6 +58,7 @@ checked = 2026-10-13
 [[skills]]
 repo    = "Tencent/workrally"
 desc    = "腾讯开源：面向 AI Agent 的 AIGC 漫剧视频创作全流程工具集"
+desc_en = "Open-sourced by Tencent: end-to-end toolkit for AI agents to create AIGC manju videos"
 group   = "pipeline"
 stages  = ["drafting", "storyboard", "prompt", "production"]
 format  = "skill"
@@ -62,17 +68,20 @@ checked = 2026-10-13
 [[skills]]
 repo    = "suihe1/short-drama-production"
 desc    = "短剧生产总控：小说大纲/人物/剧本、导演分镜、提示词、声音资产、粗剪与 QC（默认 16:9）"
+desc_en = "Short-drama production controller: novel outline/characters/script, director's storyboard, prompts, sound assets, rough cut and QC (16:9 by default)"
 group   = "pipeline"
 stages  = ["adaptation", "structure", "drafting", "storyboard", "prompt", "production"]
 format  = "skill"
 lang    = "zh"
 models  = ["minimax"]
 note    = "有 5 个 skill 与 shuohao-skills 同名，可能同源"
+note_en = "5 of its skills share names with shuohao-skills, possibly from the same source"
 checked = 2026-10-13
 
 [[skills]]
 repo    = "zhaihao118/Micro-Drama-Skills"
 desc    = "短剧全流程自动化：剧本、角色设计、分镜、出图出视频与提交"
+desc_en = "End-to-end short-drama automation: script, character design, storyboard, image and video generation, and submission"
 group   = "pipeline"
 stages  = ["drafting", "storyboard", "prompt", "production"]
 format  = "skill"
@@ -83,38 +92,45 @@ checked = 2026-10-13
 [[skills]]
 repo    = "Hao0321/ai-short-drama"
 desc    = "把「重生、逆袭、隐藏大佬」等题材编译成有爽点和追更钩子的连载：题材调研、故事架构、镜头时间线、连续性校验"
+desc_en = "Compiles premises such as rebirth, underdog comeback and hidden big shot into serials with payoff beats and keep-watching hooks: genre research, story architecture, shot timelines, continuity checks"
 group   = "pipeline"
 stages  = ["market", "structure", "drafting", "storyboard", "revision"]
 format  = "skill"
 lang    = "zh"
 agents  = ["codex", "claude-code"]
 note    = "README 为繁体中文"
+note_en = "README is in Traditional Chinese"
 checked = 2026-10-13
 
 [[skills]]
 repo    = "62656456/ai-film-skills"
 desc    = "21 个独立模块：短剧制作、分镜导演、角色资产、国风/科幻等视觉风格导演，附 3D 预演"
+desc_en = "21 independent modules: short-drama production, storyboard directing, character assets, visual-style directing (Chinese traditional, sci-fi and more), with 3D previs"
 group   = "pipeline"
 stages  = ["character", "storyboard", "production"]
 format  = "skill"
 lang    = "multi"
 note    = "含少量市场分析等非影视模块"
+note_en = "Includes a few non-film modules such as market analysis"
 checked = 2026-10-13
 
 [[skills]]
 repo    = "SwotAtmk/infinite-creation"
 desc    = "提交小说或剧本，用本地 ComfyUI + MiniMax H3 + Agent 自动连续生产视频，不限时长"
+desc_en = "Submit a novel or script and it produces video continuously with local ComfyUI + MiniMax H3 + an agent, with no length limit"
 group   = "pipeline"
 stages  = ["adaptation", "prompt", "production"]
 format  = "skill"
 lang    = "zh"
 models  = ["comfyui", "minimax"]
 note    = "28 个 skill 里也有广告、宣传片类"
+note_en = "Its 28 skills also include ad and promo-video ones"
 checked = 2026-10-13
 
 [[skills]]
 repo    = "xixihhhh/ai-short-drama-skill"
 desc    = "Dramake：文字转 AI 短剧，串起剧本、分镜、配音、剪辑与质检，适配抖音/红果和横竖屏，自带 evals"
+desc_en = "Dramake: text to AI short drama, chaining script, storyboard, voiceover, editing and QC, for Douyin/Hongguo in landscape or vertical, with built-in evals"
 group   = "pipeline"
 stages  = ["adaptation", "drafting", "revision", "storyboard", "prompt", "production"]
 format  = "skill"
@@ -126,6 +142,7 @@ checked = 2026-10-13
 [[skills]]
 repo    = "LuoJiangYong/muse-video-skill"
 desc    = "虚拟剧组：导演/编剧/摄影/美术/特效/声音六角色协作，创意 → 剧本、分镜、美术、提示词，38 个案例技法库"
+desc_en = "Virtual film crew: six roles (director, writer, cinematographer, art, VFX, sound) turn an idea into script, storyboard, art and prompts, with a 38-case technique library"
 group   = "pipeline"
 stages  = ["drafting", "revision", "storyboard", "prompt"]
 format  = "skill"
@@ -135,6 +152,7 @@ checked = 2026-10-13
 [[skills]]
 repo    = "jxshow/jingju-skills"
 desc    = "鲸剧：AI 漫剧全流程，大纲、人设一致性、分集剧本、分镜、图/视频提示词、ComfyUI 批量出图"
+desc_en = "Jingju: full AI manju workflow covering outline, character consistency, episode scripts, storyboard, image/video prompts and ComfyUI batch image generation"
 group   = "pipeline"
 stages  = ["character", "structure", "drafting", "storyboard", "prompt", "production"]
 format  = "skill"
@@ -146,6 +164,7 @@ checked = 2026-10-13
 [[skills]]
 repo    = "mengxiujie/ManjuForge"
 desc    = "漫剧/短剧连载引擎：一句话 → 剧本、分镜、配音、提示词，7 个记忆文件 + 22 项一致性检查防人设崩坏"
+desc_en = "Manju / short-drama serial engine: one line → script, storyboard, voiceover and prompts, with 7 memory files and 22 consistency checks to keep characters from breaking"
 group   = "pipeline"
 stages  = ["structure", "drafting", "revision", "storyboard", "prompt", "production"]
 format  = "skill"
@@ -156,6 +175,7 @@ checked = 2026-10-13
 [[skills]]
 repo    = "UncleWang2088/short-drama-director"
 desc    = "短剧导演专家包：剧本创作、平台标准审稿、镜头级分镜与表演指导，输出 Seedance 提示词"
+desc_en = "Short-drama director expert pack: scriptwriting, review against platform standards, shot-level storyboard and performance direction, outputting Seedance prompts"
 group   = "pipeline"
 stages  = ["drafting", "revision", "storyboard", "prompt"]
 format  = "skill"
@@ -166,6 +186,7 @@ checked = 2026-10-13
 [[skills]]
 repo    = "senmanx/novel-to-manju"
 desc    = "小说转漫剧全流程：爆款改文 → 剧本 → 人物/场景三视图 → 分镜 → 视频提示词"
+desc_en = "Novel-to-manju workflow: hit-style rewrite → script → three-view character/scene sheets → storyboard → video prompts"
 group   = "pipeline"
 stages  = ["adaptation", "drafting", "character", "storyboard", "prompt"]
 format  = "skill"
@@ -176,6 +197,7 @@ checked = 2026-10-13
 [[skills]]
 repo    = "muxia0396/novel-to-ai-short-drama-skill"
 desc    = "从导演视角把小说改编成 AI 短剧：分镜、运镜、表演调度与时长"
+desc_en = "Adapts novels into AI short drama from a director's view: storyboard, camera movement, blocking and timing"
 group   = "pipeline"
 stages  = ["adaptation", "storyboard"]
 format  = "skill"
@@ -185,17 +207,20 @@ checked = 2026-10-13
 [[skills]]
 repo    = "oiuv/ai-short-drama"
 desc    = "雪风爽剧：一句话补全创作需求，按爽点模型写分集剧本并同步角色/场景/道具档案，再拆镜写 Seedance 2.0 提示词"
+desc_en = "Xuefeng payoff drama: expands one line into a full brief, writes episode scripts on a payoff-beat model while syncing character/scene/prop files, then breaks shots into Seedance 2.0 prompts"
 group   = "pipeline"
 stages  = ["character", "structure", "drafting", "storyboard", "prompt"]
 format  = "skill"
 lang    = "zh"
 models  = ["seedance"]
 note    = "随「雪风AI短剧工坊」应用发布，README 未写 agent 安装步骤；仓库无许可证"
+note_en = "Released with the Xuefeng AI Short Drama Workshop app; README has no agent install steps; the repo has no license"
 checked = 2026-10-13
 
 [[skills]]
 repo    = "JohnKeating1997/spark-video"
 desc    = "一句梗概 → 剧本、分镜、角色/场景/道具一致性、渲染、逐镜 AI 质检到成片 mp4，每阶段设确认关卡"
+desc_en = "One-line premise → script, storyboard, character/scene/prop consistency, rendering and per-shot AI QC through to a final mp4, with a confirmation gate at each stage"
 group   = "pipeline"
 stages  = ["character", "drafting", "revision", "storyboard", "prompt", "production"]
 format  = "skill"
@@ -203,11 +228,13 @@ lang    = "en"
 agents  = ["claude-code", "cursor", "codex"]
 models  = ["wan", "seedance"]
 note    = "依赖阿里云百炼等付费视频 API；默认短剧模式，也有广告和科普示例"
+note_en = "Relies on paid video APIs such as Alibaba Cloud Bailian; defaults to short-drama mode but also has ad and science-explainer examples"
 checked = 2026-10-13
 
 [[skills]]
 repo    = "mini-yifan/open-source-video-gen-skill"
 desc    = "Vibe Video：在 AutoDL 上跑开源 MiniMax H3 出片，短剧模板串起 Brief、分集概要、剧本台词、美术和视频，含 H3 提示词写法"
+desc_en = "Vibe Video: runs open-source MiniMax H3 on AutoDL to render video; its short-drama template chains brief, episode synopses, script and dialogue, art and video, with H3 prompt-writing guidance"
 group   = "pipeline"
 stages  = ["character", "structure", "drafting", "prompt", "production"]
 format  = "skill"
@@ -215,11 +242,13 @@ lang    = "multi"
 agents  = ["cursor"]
 models  = ["minimax", "comfyui"]
 note    = "依赖 AutoDL GPU 实例（按时计费）；短剧模板只管流程关卡，叙事部分较薄"
+note_en = "Depends on AutoDL GPU instances (billed by time); the short-drama template only handles workflow gates and is thin on narrative"
 checked = 2026-10-13
 
 [[skills]]
 repo    = "liuxiao20051106-prog/ai-manga-drama"
 desc    = "AI 漫剧工坊：一句创意到成片的八步流程，任务卡剧本、角色参考图库、风格锚、分镜、图/视频提示词、配音字幕与合成终检"
+desc_en = "AI manju workshop: eight-step flow from one-line idea to final video with task-card scripts, character reference library, style anchors, storyboard, image/video prompts, voiceover, subtitles and final compositing check"
 group   = "pipeline"
 stages  = ["character", "structure", "drafting", "revision", "storyboard", "prompt", "production"]
 format  = "skill"
@@ -230,6 +259,7 @@ checked = 2026-10-13
 [[skills]]
 repo    = "jlam00-dev/hardcore-director"
 desc    = "硬核导演：影视与 AI 视频总控，按阶段路由编剧/短剧、角色场景、分镜、Seedance 2.5/Wan 3.0/H3 提示词、声音与剪辑模块"
+desc_en = "Hardcore Director: film and AI video controller that routes by stage to screenwriting/short drama, characters and scenes, storyboard, Seedance 2.5/Wan 3.0/H3 prompts, sound and editing modules"
 group   = "pipeline"
 stages  = ["character", "structure", "drafting", "revision", "storyboard", "prompt", "production"]
 format  = "skill"
@@ -237,11 +267,13 @@ lang    = "zh"
 agents  = ["codex"]
 models  = ["seedance", "wan", "minimax", "kling"]
 note    = "整合包：大部分模块是第三方 skill 快照（已注明来源），也覆盖广告和宣传片"
+note_en = "Bundle: most modules are snapshots of third-party skills (sources credited); also covers ads and promo videos"
 checked = 2026-10-13
 
 [[skills]]
 repo    = "ilkaydemiralay/vision_art_creator"
 desc    = "影视部门式 skill 包：编剧、导演、角色、美术、摄影、分镜、镜头表、提示词、声音、剪辑，由总监 skill 调度和质检"
+desc_en = "Skill pack organized like film departments: writing, directing, characters, art, cinematography, storyboard, shot list, prompts, sound and editing, dispatched and QC'd by a supervisor skill"
 group   = "pipeline"
 stages  = ["character", "drafting", "revision", "storyboard", "prompt", "production"]
 format  = "skill"
@@ -249,6 +281,7 @@ lang    = "en"
 agents  = ["claude-code", "codex"]
 models  = ["nanobanana", "sora", "veo", "kling"]
 note    = "偏电影，不专做短剧"
+note_en = "Film-oriented, not specific to short drama"
 checked = 2026-10-13
 
 # ───────────────────────── 编剧 ─────────────────────────
@@ -256,6 +289,7 @@ checked = 2026-10-13
 [[skills]]
 repo    = "lixiaoxiao9888-create/short-drama-factory"
 desc    = "抖音/红果短剧工业化编剧：一句创意或一部网文 → 60–100 集带付费卡点的剧本，配钩子、断章、反转公式和机检规则"
+desc_en = "Industrial short-drama writing for Douyin/Hongguo: a one-line idea or a web novel → a 60–100 episode script with paywall points, plus hook, cliffhanger and twist formulas and machine-check rules"
 group   = "writing"
 stages  = ["adaptation", "structure", "drafting", "revision"]
 format  = "skill"
@@ -265,6 +299,7 @@ checked = 2026-10-13
 [[skills]]
 repo    = "Vi7QY/screenwriter-skill"
 desc    = "短剧/漫剧剧本审稿：红果 Top100 操盘经验蒸馏的 37 条规则"
+desc_en = "Short drama / manju script review: 37 rules distilled from experience running Hongguo Top 100 shows"
 group   = "writing"
 stages  = ["revision"]
 format  = "skill"
@@ -274,6 +309,7 @@ checked = 2026-10-13
 [[skills]]
 repo    = "catyiqian/qianqianwriting"
 desc    = "短剧/漫剧编剧：救猫咪方法论 + 31 部爆款短剧分析"
+desc_en = "Short drama / manju screenwriting: Save the Cat methodology plus analysis of 31 hit short dramas"
 group   = "writing"
 stages  = ["structure", "drafting"]
 format  = "skill"
@@ -283,6 +319,7 @@ checked = 2026-10-13
 [[skills]]
 repo    = "pipivv/gushi-skill"
 desc    = "从麦基《故事》蒸馏的短剧编剧方法"
+desc_en = "Short-drama screenwriting method distilled from Robert McKee's Story"
 group   = "writing"
 stages  = ["structure", "drafting"]
 format  = "skill"
@@ -292,6 +329,7 @@ checked = 2026-10-13
 [[skills]]
 repo    = "egguy886/write-screenplay-skill"
 desc    = "小说/设定转商业剧本，国内短剧与出海微短剧双模式"
+desc_en = "Turns novels or settings into commercial scripts, with two modes: domestic short drama and micro-drama for overseas audiences"
 group   = "writing"
 stages  = ["adaptation", "drafting"]
 format  = "skill"
@@ -301,6 +339,7 @@ checked = 2026-10-13
 [[skills]]
 repo    = "adoria111/emma-screenwriting-skills"
 desc    = "艾玛短剧技能组：结构拆解、改编、选题迭代、期待设计、逐集钩子、集纲扩写、对白诊断、剧本删减"
+desc_en = "Emma short-drama skill set: structure teardown, adaptation, topic iteration, expectation design, per-episode hooks, episode outline expansion, dialogue diagnosis, script cuts"
 group   = "writing"
 stages  = ["market", "adaptation", "structure", "drafting", "revision"]
 format  = "skill"
@@ -310,16 +349,19 @@ checked = 2026-10-13
 [[skills]]
 repo    = "zhu5859243-free/hongguo-shortdrama-screenwriting"
 desc    = "红果/抖音爆款短剧编剧：短剧工厂引擎 + 《短剧编剧第一课》01–10 期方法论"
+desc_en = "Hit short-drama screenwriting for Hongguo/Douyin: the short-drama-factory engine plus the methodology of \"Short Drama Writing Lesson 1\" issues 01–10"
 group   = "writing"
 stages  = ["structure", "drafting"]
 format  = "skill"
 lang    = "zh"
 note    = "方法论来源为作者自述，未核实"
+note_en = "The methodology source is the author's own claim and unverified"
 checked = 2026-10-13
 
 [[skills]]
 repo    = "zhlmi/screenplay-review-checklist"
 desc    = "对抗式剧本踩雷诊断：拿 37 条判据只给你的故事找问题"
+desc_en = "Adversarial script pitfall diagnosis: uses 37 criteria to look only for problems in your story"
 group   = "writing"
 stages  = ["revision"]
 format  = "skill"
@@ -329,12 +371,14 @@ checked = 2026-10-13
 [[skills]]
 repo    = "SoloEnt-AI/5min-drama-contest"
 desc    = "五分钟短剧剧本：一步一问锁定赛道、立意、结构原型和前 30 秒开场，四幕卡点大纲 → 正式剧本 → 分镜脚本"
+desc_en = "Five-minute short-drama scripts: one question per step locks genre niche, theme, structural archetype and the first-30-second opening, then four-act beat outline → full script → storyboard script"
 group   = "writing"
 stages  = ["character", "structure", "drafting"]
 format  = "skill"
 lang    = "zh"
 agents  = ["codex"]
 note    = "灵蟹创作（SoloEnt）出品，面向其五分钟短剧大赛"
+note_en = "Made by SoloEnt (Lingxie Chuangzuo) for its five-minute short-drama contest"
 checked = 2026-10-13
 
 # ───────────────────────── 分镜 · 视觉 ─────────────────────────
@@ -342,6 +386,7 @@ checked = 2026-10-13
 [[skills]]
 repo    = "liangdabiao/Seedance2-Storyboard-Generator"
 desc    = "把小说或故事改成多集视频剧本和分镜，产出 Seedance 2.0 提示词"
+desc_en = "Turns a novel or story into multi-episode video scripts and storyboards, producing Seedance 2.0 prompts"
 group   = "visual"
 stages  = ["adaptation", "drafting", "storyboard", "prompt"]
 format  = "skill"
@@ -353,6 +398,7 @@ checked = 2026-10-13
 [[skills]]
 repo    = "cclank/lanshu-awesome-ai-video-kit"
 desc    = "企业 AI 视频项目工具包：Seedance/可灵提示词、分镜、模型选择与调试，附 411 条 prompt 和方法论"
+desc_en = "Toolkit from enterprise AI video projects: Seedance/Kling prompts, storyboards, model selection and debugging, with 411 prompts and methodology write-ups"
 group   = "visual"
 stages  = ["storyboard", "prompt"]
 format  = "skill"
@@ -363,6 +409,7 @@ checked = 2026-10-13
 [[skills]]
 repo    = "liangdabiao/smy-seedance-storyboard"
 desc    = "故事 → 上美影复古手绘风格的短剧制作文档：剧本、分镜、资产生图提示词，附完整示例项目"
+desc_en = "Story → short-drama production docs in the retro hand-drawn style of Shanghai Animation Film Studio: script, storyboard, asset image prompts, with a complete sample project"
 group   = "visual"
 stages  = ["adaptation", "drafting", "storyboard", "prompt"]
 format  = "skill"
@@ -373,6 +420,7 @@ checked = 2026-10-13
 [[skills]]
 repo    = "zlbigger/story-video-director"
 desc    = "把任意故事变成图片素材、分镜、中文视听提示词与 API 调用清单"
+desc_en = "Turns any story into image assets, storyboard, Chinese audiovisual prompts and a list of API calls"
 group   = "visual"
 stages  = ["character", "storyboard", "prompt"]
 format  = "skill"
@@ -383,6 +431,7 @@ checked = 2026-10-13
 [[skills]]
 repo    = "wddxh/ShortVideoDirector"
 desc    = "4 个子代理协作，把故事创意转成视频分镜提示词和资产图像提示词"
+desc_en = "4 subagents collaborate to turn a story idea into video storyboard prompts and asset image prompts"
 group   = "visual"
 stages  = ["structure", "character", "storyboard", "prompt"]
 format  = "skill"
@@ -394,6 +443,7 @@ checked = 2026-10-13
 [[skills]]
 repo    = "leynos/visual-storytelling-skills"
 desc    = "从文字到画面：场景清单、镜头设计、视频模型提示词、视频生成"
+desc_en = "From text to picture: scene list, shot design, video-model prompts, video generation"
 group   = "visual"
 stages  = ["storyboard", "prompt", "production"]
 format  = "skill"
@@ -404,6 +454,7 @@ checked = 2026-10-13
 [[skills]]
 repo    = "momo5213/live-action-drama-16x9"
 desc    = "16:9 真人精品短剧：剧本分析、分镜运镜、光影与细微表演、视频提示词、连续性审查"
+desc_en = "Premium 16:9 live-action short drama: script analysis, storyboard and camera movement, lighting and subtle performance, video prompts, continuity review"
 group   = "visual"
 stages  = ["revision", "storyboard", "prompt"]
 format  = "skill"
@@ -413,26 +464,31 @@ checked = 2026-10-13
 [[skills]]
 repo    = "zhurui0523/XiaoLuo-AI-Drama-Skill"
 desc    = "小逻系列：剧本分析、原创改编、分镜脚本、角色三视图/服装/表情、场景布局"
+desc_en = "XiaoLuo series: script analysis, original adaptation, storyboard script, character three-views/costumes/expressions, scene layout"
 group   = "visual"
 stages  = ["adaptation", "character", "drafting", "storyboard"]
 format  = "prompts"
 lang    = "zh"
 note    = "一组提示词 .md，不是标准 SKILL.md"
+note_en = "A set of prompt .md files, not standard SKILL.md"
 checked = 2026-10-13
 
 [[skills]]
 repo    = "YvonneMovingon/short-drama-skills"
 desc    = "LuxReal 生产验证的短剧提示词：叙事拆解、情绪刻画、动态描述、剧情拆分、视频提示词润色"
+desc_en = "Short-drama prompts proven in LuxReal production: narrative breakdown, emotion portrayal, motion description, plot splitting, video prompt polishing"
 group   = "visual"
 stages  = ["adaptation", "drafting", "revision", "prompt"]
 format  = "prompts"
 lang    = "multi"
 note    = "prompt.md 形式，不是标准 SKILL.md"
+note_en = "In prompt.md form, not standard SKILL.md"
 checked = 2026-10-13
 
 [[skills]]
 repo    = "dexhunter/seedance2-skill"
 desc    = "为 Seedance 2.0 生成高质量视频提示词"
+desc_en = "Generates video prompts for Seedance 2.0"
 group   = "visual"
 stages  = ["prompt"]
 format  = "skill"
@@ -443,6 +499,7 @@ checked = 2026-10-13
 [[skills]]
 repo    = "LearnPrompt/awesome-seedance"
 desc    = "Seedance 2.5/2.0 提示词库：600+ 条可追溯原帖的案例、260+ 次跨模型复测，附 skill"
+desc_en = "Seedance 2.5/2.0 prompt library: 600+ cases traceable to original posts and 260+ cross-model retests, with skills"
 group   = "visual"
 stages  = ["prompt"]
 format  = "skill"
@@ -453,6 +510,7 @@ checked = 2026-10-13
 [[skills]]
 repo    = "liangdabiao/make-prompt-seedance2"
 desc    = "Seedance 2.0 结构化提示词写法与通用 skill"
+desc_en = "Structured prompt-writing method for Seedance 2.0, with a general-purpose skill"
 group   = "visual"
 stages  = ["prompt"]
 format  = "skill"
@@ -463,6 +521,7 @@ checked = 2026-10-13
 [[skills]]
 repo    = "liyue-aigc/seedance-2-5-video-director"
 desc    = "Seedance 2.5 视频导演：提示词、脚本、诊断、人物锁定、续写、编辑、转场"
+desc_en = "Seedance 2.5 video director: prompts, scripts, diagnosis, character locking, continuation, editing, transitions"
 group   = "visual"
 stages  = ["drafting", "revision", "prompt"]
 format  = "skill"
@@ -473,6 +532,7 @@ checked = 2026-10-13
 [[skills]]
 repo    = "smixs/visual-skills"
 desc    = "AI 电影导演：Murch 剪辑、走位、蒙太奇等戏剧法则 + Seedance 精确提示词语法"
+desc_en = "AI film director: dramaturgy rules such as Murch's editing principles, blocking and montage, plus exact Seedance prompt syntax"
 group   = "visual"
 stages  = ["storyboard", "prompt"]
 format  = "skill"
@@ -483,6 +543,7 @@ checked = 2026-10-13
 [[skills]]
 repo    = "jnMetaCode/ai-shortfilm-prompts"
 desc    = "把任意想法变成电影感、可直接投喂模型的视频提示词"
+desc_en = "Turns any idea into cinematic, model-ready video prompts"
 group   = "visual"
 stages  = ["prompt"]
 format  = "skill"
@@ -494,6 +555,7 @@ checked = 2026-10-13
 [[skills]]
 repo    = "T8mars/minimax-h3-prompt-skill-T8"
 desc    = "MiniMax H3 / Seedance 2.0 视频提示词案例库与可安装 skill，附视频浏览器"
+desc_en = "Video prompt case library and installable skills for MiniMax H3 / Seedance 2.0, with a video viewer"
 group   = "visual"
 stages  = ["prompt"]
 format  = "skill"
@@ -504,6 +566,7 @@ checked = 2026-10-13
 [[skills]]
 repo    = "wuwangzhang1216/DirectorSKILL"
 desc    = "AI 拍片：镜头清单、关键帧与视频提示词，内置斯皮尔伯格等 10 种导演风格"
+desc_en = "AI filmmaking: shot lists, keyframe and video prompts, with 10 built-in director styles such as Spielberg"
 group   = "visual"
 stages  = ["storyboard", "prompt"]
 format  = "skill"
@@ -514,6 +577,7 @@ checked = 2026-10-13
 [[skills]]
 repo    = "phileiny/h3-storyboard-skill"
 desc    = "MiniMax H3 分镜拆解与角色表演设计"
+desc_en = "MiniMax H3 shot breakdown and character performance design"
 group   = "visual"
 stages  = ["storyboard", "prompt"]
 format  = "skill"
@@ -525,6 +589,7 @@ checked = 2026-10-13
 [[skills]]
 repo    = "machina-exm/film-studio-skills"
 desc    = "剧本 → 锁定、可直接生成的镜头：7 个 skill 复刻商业 AI 视频制作流程"
+desc_en = "Script → locked, generation-ready shots: 7 skills replicating a commercial AI video production pipeline"
 group   = "visual"
 stages  = ["drafting", "storyboard", "prompt"]
 format  = "skill"
@@ -535,6 +600,7 @@ checked = 2026-10-13
 [[skills]]
 repo    = "woodfantasy/Seedance-ShotDesign-Skills"
 desc    = "Seedance 2.5 镜头设计"
+desc_en = "Shot design for Seedance 2.5"
 group   = "visual"
 stages  = ["storyboard", "prompt"]
 format  = "skill"
@@ -545,6 +611,7 @@ checked = 2026-10-13
 [[skills]]
 repo    = "qualsenWeb/fight-video-create-skill"
 desc    = "AI 打戏设计：从打斗构思到剧情、动作、分镜，带招式校验和参考库"
+desc_en = "AI fight-scene design: from fight concept to plot, action and storyboard, with move checks and a reference library"
 group   = "visual"
 stages  = ["drafting", "storyboard"]
 format  = "skill"
@@ -554,6 +621,7 @@ checked = 2026-10-13
 [[skills]]
 repo    = "liyue-aigc/seedance-2-5-fight-director"
 desc    = "Seedance 2.5 高燃打戏导演：提示词与诊断"
+desc_en = "Seedance 2.5 high-energy fight-scene director: prompts and diagnosis"
 group   = "visual"
 stages  = ["prompt"]
 format  = "skill"
@@ -565,6 +633,7 @@ checked = 2026-10-13
 [[skills]]
 repo    = "wyuzhi/qisi-video-remix"
 desc    = "视频创意改编：参考视频 → 剧本 → 分镜 → 分段生成提示词"
+desc_en = "Creative video remix: reference video → script → storyboard → per-segment generation prompts"
 group   = "visual"
 stages  = ["adaptation", "drafting", "storyboard", "prompt"]
 format  = "skill"
@@ -574,6 +643,7 @@ checked = 2026-10-13
 [[skills]]
 repo    = "OSideMedia/higgsfield-ai-prompt-skill"
 desc    = "Higgsfield 平台提示词：MCSLA 公式、Seedance 2.5 多参考导演、表演指导、Soul ID 角色一致性、镜头清单与失败诊断"
+desc_en = "Prompts for the Higgsfield platform: MCSLA formula, Seedance 2.5 multi-reference directing, performance direction, Soul ID character consistency, shot lists and failure diagnosis"
 group   = "visual"
 stages  = ["character", "prompt"]
 format  = "skill"
@@ -581,22 +651,26 @@ lang    = "en"
 agents  = ["claude-code"]
 models  = ["seedance", "kling", "veo", "wan"]
 note    = "面向 Higgsfield 付费平台，也含广告营销模块"
+note_en = "Targets the paid Higgsfield platform; also includes advertising and marketing modules"
 checked = 2026-10-13
 
 [[skills]]
 repo    = "AtlasCloudAI/awesome-seedance-2.5-prompts-skills"
 desc    = "Seedance 2.5 提示词库 + skill：按 T2V/R2V/I2V 选路线、Seedream 故事板、多参考与镜头连续性设计"
+desc_en = "Seedance 2.5 prompt library plus skill: picks a T2V/R2V/I2V route, Seedream storyboards, multi-reference and shot-continuity design"
 group   = "visual"
 stages  = ["prompt"]
 format  = "skill"
 lang    = "multi"
 models  = ["seedance"]
 note    = "厂商仓库，执行默认走 Atlas Cloud 付费 API；提示词库以广告、电商类居多"
+note_en = "Vendor repo; execution defaults to the paid Atlas Cloud API; the prompt library is mostly ads and e-commerce"
 checked = 2026-10-13
 
 [[skills]]
 repo    = "irenerachel/fight-prompt-director"
 desc    = "AI 打戏提示词：角色差异化动作、交锋因果链、跨镜连续性，出高强度/慢节奏/中间型三版，适配 Seedance 与 H3"
+desc_en = "AI fight-scene prompts: character-specific moves, cause-and-effect exchange chains, cross-shot continuity, in three versions (high intensity, slow pace, in between) for Seedance and H3"
 group   = "visual"
 stages  = ["storyboard", "prompt"]
 format  = "skill"
@@ -608,17 +682,20 @@ checked = 2026-10-13
 [[skills]]
 repo    = "kevinchin12/storyboard-director"
 desc    = "故事 → 分镜脚本，子代理并行生成逐镜线稿，HTML 审片板返修指定镜头，确认后汇总成按镜头排序的视频提示词"
+desc_en = "Story → storyboard script; subagents draw per-shot line art in parallel, an HTML review board sends chosen shots back for revision, and approved shots become video prompts in shot order"
 group   = "visual"
 stages  = ["storyboard", "prompt"]
 format  = "skill"
 lang    = "en"
 agents  = ["codex"]
 note    = "README 为中文；逐镜线稿依赖 Codex 内置生图"
+note_en = "README is in Chinese; per-shot line art relies on Codex's built-in image generation"
 checked = 2026-10-13
 
 [[skills]]
 repo    = "alchaincyf/seedance-skill"
 desc    = "白模驱动的 Seedance 工作台：用 scene.json 渲染白模参考视频并做几何体检，可从照片反解白模，按白模几何写提示词"
+desc_en = "Clay-render-driven Seedance workbench: renders clay reference videos from scene.json with geometry checks, can reverse-engineer a clay model from a photo, and writes prompts from the clay geometry"
 group   = "visual"
 stages  = ["storyboard", "prompt"]
 format  = "skill"
@@ -626,11 +703,13 @@ lang    = "zh"
 agents  = ["claude-code", "codex", "cursor", "openclaw"]
 models  = ["seedance"]
 note    = "白模渲染需 Node、ffmpeg 与 hyperframes"
+note_en = "Clay rendering requires Node, ffmpeg and hyperframes"
 checked = 2026-10-13
 
 [[skills]]
 repo    = "ZzzAloong/fight-scene-director"
 desc    = "多画风打戏设计：动作编排、空间调度、镜头与特效规则，可先出站位图/轨迹图生图词，再按轨迹写视频提示词"
+desc_en = "Multi-style fight-scene design: choreography, spatial blocking, camera and VFX rules; can first output image prompts for position/trajectory maps, then write video prompts following the trajectories"
 group   = "visual"
 stages  = ["storyboard", "prompt"]
 format  = "skill"
@@ -638,11 +717,13 @@ lang    = "en"
 agents  = ["codex"]
 models  = ["seedance", "minimax"]
 note    = "skill 正文为英文，输出中文提示词"
+note_en = "Skill body is in English; it outputs Chinese prompts"
 checked = 2026-10-13
 
 [[skills]]
 repo    = "babicat4242-svg/seedance-2-5-prompting"
 desc    = "Seedance 2.5 提示词：参考素材角色绑定、30 种运镜定义与冲突规则、R2V/白模、局部编辑与延长、多轮修改流程"
+desc_en = "Seedance 2.5 prompting: character binding to reference assets, 30 camera-move definitions with conflict rules, R2V/clay renders, local edits and extensions, multi-round revision flow"
 group   = "visual"
 stages  = ["prompt"]
 format  = "skill"
@@ -650,22 +731,26 @@ lang    = "en"
 agents  = ["codex"]
 models  = ["seedance"]
 note    = "README 为韩文；示例偏产品广告"
+note_en = "README is in Korean; examples lean toward product ads"
 checked = 2026-10-13
 
 [[skills]]
 repo    = "MIKA6941/Comfy-H3-Director"
 desc    = "MiniMax H3 漫剧导演：网文改分镜、核心/龙套资产分级、文戏长镜与武戏快切、动作连续性锁定、尾帧接力，一次出整集提示词"
+desc_en = "MiniMax H3 manju director: web novel to storyboard, core vs. extra asset tiers, long takes for dialogue and fast cuts for fights, action-continuity locks, last-frame relay, a whole episode's prompts in one pass"
 group   = "visual"
 stages  = ["adaptation", "character", "storyboard", "prompt"]
 format  = "skill"
 lang    = "multi"
 models  = ["minimax", "comfyui"]
 note    = "另附 9 个 MiniMax 官方 H3 skill 的搬运/中译版；README 开头有要求 agent 直接执行流程的指令"
+note_en = "Also bundles copied/Chinese-translated versions of 9 official MiniMax H3 skills; the README opens with instructions telling the agent to run the workflow directly"
 checked = 2026-10-13
 
 [[skills]]
 repo    = "SlavaSexton/ComfyUI-Agent-Kit"
 desc    = "驱动本地 ComfyUI 出图出视频，附 Seedance、MiniMax H3 视频提示词 skill：多镜头分镜、参考素材标注、翻车排查"
+desc_en = "Drives a local ComfyUI for image and video generation, with Seedance and MiniMax H3 video-prompt skills: multi-shot storyboards, reference-asset tagging, failure troubleshooting"
 group   = "visual"
 stages  = ["prompt", "production"]
 format  = "skill"
@@ -674,11 +759,13 @@ agents  = ["claude-code", "codex", "gemini-cli"]
 models  = ["comfyui", "seedance", "minimax"]
 install = "/plugin marketplace add SlavaSexton/ComfyUI-Agent-Kit"
 note    = "主体是本地 ComfyUI 驱动工具；短剧可用的是其中的 Seedance、MiniMax H3 提示词 skill"
+note_en = "Mainly a local ComfyUI driver; the parts usable for short drama are its Seedance and MiniMax H3 prompt skills"
 checked = 2026-10-13
 
 [[skills]]
 repo    = "AharaOoO/acheng-director-skill"
 desc    = "Acheng 导演引擎：剧本、分镜、文戏五轨表演、打戏因果链、特效与资产，编译成 MiniMax H3 / Seedance 提示词"
+desc_en = "Acheng director engine: script, storyboard, five-track performance for dialogue scenes, cause-and-effect chains for fights, VFX and assets, compiled into MiniMax H3 / Seedance prompts"
 group   = "visual"
 stages  = ["character", "drafting", "revision", "storyboard", "prompt"]
 format  = "skill"
@@ -686,11 +773,13 @@ lang    = "zh"
 agents  = ["claude-code", "cursor", "codex"]
 models  = ["minimax", "seedance"]
 note    = "CC BY-NC-ND 4.0（禁商用、禁演绎）；附 132 段运镜白模视频，仓库体积较大"
+note_en = "CC BY-NC-ND 4.0 (no commercial use, no derivatives); includes 132 camera-move clay-render videos, so the repo is large"
 checked = 2026-10-13
 
 [[skills]]
 repo    = "nigo-studio/ai-film-skills"
 desc    = "从 AI 动作片《CROW LINE》流程拆出的 skill：Seedance 2.5 参考生视频提示词导演，三联角色设定图保持跨镜一致"
+desc_en = "Skills extracted from the pipeline of the AI action film CROW LINE: Seedance 2.5 reference-to-video prompt direction, with triptych character sheets for cross-shot consistency"
 group   = "visual"
 stages  = ["character", "prompt"]
 format  = "skill"
@@ -698,11 +787,13 @@ lang    = "en"
 agents  = ["claude-code"]
 models  = ["seedance"]
 note    = "作者计划陆续发布故事、分镜、声音等其余阶段"
+note_en = "The author plans to release the remaining stages, such as story, storyboard and sound, over time"
 checked = 2026-10-13
 
 [[skills]]
 repo    = "luanyi824-hash/xiaxia"
 desc    = "夏夏：把确认剧本转成带时长预算、机位焦段、真实光源、调度与动作因果的导演分镜，可编译为 Seedance 2.5 任务"
+desc_en = "Xiaxia: turns an approved script into a director's storyboard with duration budgets, camera positions and focal lengths, real light sources, blocking and action causality, compilable into Seedance 2.5 tasks"
 group   = "visual"
 stages  = ["storyboard", "prompt"]
 format  = "skill"
@@ -710,11 +801,13 @@ lang    = "zh"
 agents  = ["codex"]
 models  = ["seedance"]
 note    = "视觉方法改编自 popopo-99/zy-cinematic-realism；CC BY-NC 4.0，商用需另行授权"
+note_en = "Visual method adapted from popopo-99/zy-cinematic-realism; CC BY-NC 4.0, commercial use needs a separate license"
 checked = 2026-10-13
 
 [[skills]]
 repo    = "popopo-99/zy-cinematic-realism"
 desc    = "造梦师：把剧本、故事或场景想法开发成有动机的叙事关键帧，编译成各生图模型的原生提示词，支持连续组图与结果修复"
+desc_en = "Zaomengshi (Dreammaker): develops a script, story or scene idea into motivated narrative keyframes, compiled into native prompts for each image model, with sequential image sets and result fixes"
 group   = "visual"
 stages  = ["prompt"]
 format  = "skill"
@@ -722,11 +815,13 @@ lang    = "en"
 agents  = ["codex"]
 models  = ["nanobanana"]
 note    = "README 为中文；主要面向静帧生图；CC BY-NC 4.0，商用需另行授权"
+note_en = "README is in Chinese; mainly for still-image generation; CC BY-NC 4.0, commercial use needs a separate license"
 checked = 2026-10-13
 
 [[skills]]
 repo    = "djyy1031/ai-comic-drama-director-skills"
 desc    = "AI 漫剧导演：剧本 + 已有资产 → Seedance 2.0/2.5 分镜组提示词，含人物表演、导演摄影、场景资产、站位图、连续性与声音"
+desc_en = "AI manju director: script + existing assets → Seedance 2.0/2.5 storyboard-group prompts, covering character performance, direction and cinematography, scene assets, blocking diagrams, continuity and sound"
 group   = "visual"
 stages  = ["adaptation", "character", "revision", "storyboard", "prompt"]
 format  = "skill"
@@ -738,22 +833,26 @@ checked = 2026-10-13
 [[skills]]
 repo    = "zhouwei713/chinese-epic-scene-director"
 desc    = "中国式宏大场景：把一句设定扩写成仙侠/神话短片故事，建连续性台账，按镜头成对输出图片和视频提示词"
+desc_en = "Chinese epic scenes: expands a one-line premise into a xianxia/mythology short-film story, builds a continuity ledger, and outputs paired image and video prompts per shot"
 group   = "visual"
 stages  = ["character", "drafting", "storyboard", "prompt"]
 format  = "skill"
 lang    = "zh"
 agents  = ["codex"]
 note    = "分叙事运镜和视觉展览两种模式，后者偏氛围、景观展示"
+note_en = "Has two modes, narrative camera work and visual showcase; the latter leans toward atmosphere and landscape display"
 checked = 2026-10-13
 
 [[skills]]
 repo    = "Shanyin-ai/shanyin-director-master"
 desc    = "山音超级导演大师：剧本 → 导演定调、节奏规划、剧本微调、分镜拆解，输出九列分镜表（xlsx），内置类型片导演风格模板"
+desc_en = "Shanyin Super Director Master: script → director's tone-setting, pacing plan, script tweaks, storyboard breakdown, output as a nine-column storyboard sheet (xlsx), with built-in genre director-style templates"
 group   = "visual"
 stages  = ["revision", "storyboard"]
 format  = "skill"
 lang    = "zh"
 note    = "面向 Claude App；可与山音超级编剧大师联用"
+note_en = "Built for the Claude app; can be paired with Shanyin Super Screenwriting Master"
 checked = 2026-10-13
 
 # ───────────────────────── 上游：IP 评估与故事拆解 ─────────────────────────
@@ -761,16 +860,19 @@ checked = 2026-10-13
 [[skills]]
 repo    = "VanGong1999/screen-creative-skills"
 desc    = "影视策划与评估：小说/IP 评估、情节点拆解、人物小传与关系、大纲、小说改编短剧或长剧"
+desc_en = "Film and TV development and evaluation: novel/IP evaluation, plot-point breakdown, character bios and relationships, outline, adapting novels into short drama or long series"
 group   = "source"
 stages  = ["market", "adaptation", "character", "structure"]
 format  = "skill"
 lang    = "zh"
 note    = "31 个 skill 在仓库里有两份副本"
+note_en = "The repo contains two copies of its 31 skills"
 checked = 2026-10-13
 
 [[skills]]
 repo    = "zhlmi/narrative-to-screen-reader"
 desc    = "把手上的故事翻译成影视开发语言：快速诊断、编剧改编读本、导演视听读本、演员读本、制片摘要"
+desc_en = "Translates your story into film-development language: quick diagnosis, a screenwriter's adaptation reader, a director's audiovisual reader, an actor's reader and a producer's summary"
 group   = "source"
 stages  = ["market", "adaptation", "character"]
 format  = "skill"
@@ -780,6 +882,7 @@ checked = 2026-10-13
 [[skills]]
 repo    = "ciel-oliver/analyze-hit-novel"
 desc    = "爆款小说拆文：把爆款小说/漫剧拆成可验证的叙事系统，供改编参考"
+desc_en = "Hit-novel teardown: breaks a hit novel or manju into a verifiable narrative system for adaptation reference"
 group   = "source"
 stages  = ["market", "adaptation", "structure"]
 format  = "skill"
@@ -791,6 +894,7 @@ checked = 2026-10-13
 [[skills]]
 repo    = "jtydhr88/screenwriting-skills"
 desc    = "编剧理论最系统的一套：结构、Truby、场景、对白、剧集圣经、编剧室，含日韩法美与中国戏曲案例"
+desc_en = "The most systematic screenwriting-theory set here: structure, Truby, scenes, dialogue, series bible, writers' room, with cases from Japan, Korea, France, the US and Chinese opera"
 group   = "craft"
 stages  = ["character", "structure", "drafting", "revision", "adaptation"]
 format  = "skill"
@@ -799,11 +903,13 @@ agents  = ["claude-code", "codex"]
 install = "/plugin marketplace add jtydhr88/screenwriting-skills"
 tier    = "featured"
 note    = "skill 正文为中文，README 有五种语言"
+note_en = "Skill body is in Chinese; README is in five languages"
 checked = 2026-10-13
 
 [[skills]]
 repo    = "e06084/claude-screenwriting"
 desc    = "编剧知识引擎：把 Vogler/McKee/救猫咪落成 Obsidian 故事 wiki，15-beat 节奏、三层角色卡、结构诊断"
+desc_en = "Screenwriting knowledge engine: turns Vogler/McKee/Save the Cat into an Obsidian story wiki with 15-beat pacing, three-layer character cards and structural diagnosis"
 group   = "craft"
 stages  = ["character", "structure", "revision"]
 format  = "skill"
@@ -814,6 +920,7 @@ checked = 2026-10-13
 [[skills]]
 repo    = "geslie1/kunka-screenwriting-master"
 desc    = "昆卡编剧大师：中文优先的编剧 skill 组，覆盖构思、改稿、连续性检查与剧集开发"
+desc_en = "Kunka Screenwriting Master: Chinese-first screenwriting skill set covering ideation, revision, continuity checks and series development"
 group   = "craft"
 stages  = ["structure", "drafting", "revision"]
 format  = "skill"
@@ -824,6 +931,7 @@ checked = 2026-10-13
 [[skills]]
 repo    = "mudden2380078550-creator/write-chinese-long-screenplay"
 desc    = "中文电影与长剧集剧本写作"
+desc_en = "Script writing for Chinese feature films and long-form series"
 group   = "craft"
 stages  = ["structure", "drafting"]
 format  = "skill"
@@ -833,12 +941,14 @@ checked = 2026-10-13
 [[skills]]
 repo    = "Shanyin-ai/shanyin-screenwriting-master"
 desc    = "山音超级编剧大师：概念超短片、叙事短片、长片、多集剧集四种格式的人物、大纲、场景拆解和完整剧本"
+desc_en = "Shanyin Super Screenwriting Master: characters, outline, scene breakdown and full script in four formats: concept micro-film, narrative short, feature and multi-episode series"
 group   = "craft"
 stages  = ["character", "structure", "drafting"]
 format  = "skill"
 lang    = "zh"
 install = "# 下载仓库里的 .skill 文件，在 Claude App 的 Skills 中导入（另有通用 .md 版）"
 note    = "以 .skill 文件分发，不能用 npx skills 安装"
+note_en = "Distributed as a .skill file; cannot be installed with npx skills"
 checked = 2026-10-13
 
 # ───────────────────────── 配套：去 AI 味 ─────────────────────────
@@ -846,6 +956,7 @@ checked = 2026-10-13
 [[skills]]
 repo    = "KKKKhazix/human-writing"
 desc    = "活人感写作：让 AI 写的中文像具体的人在说话，适合打磨对白和旁白"
+desc_en = "Human-voice writing: makes AI-written Chinese read like a specific person talking, suited to polishing dialogue and narration"
 group   = "companion"
 stages  = ["revision"]
 format  = "skill"
@@ -855,6 +966,7 @@ checked = 2026-10-13
 [[skills]]
 repo    = "Nanako0129/sepia"
 desc    = "面向小说的去 AI 味：修复叙事结构，按场合匹配文风规则，方法来自 StoryScope 论文"
+desc_en = "De-AI for fiction: repairs narrative structure and matches style rules to the venue, with methods from the StoryScope paper"
 group   = "companion"
 stages  = ["revision"]
 format  = "skill"
@@ -865,6 +977,7 @@ checked = 2026-10-13
 [[skills]]
 repo    = "blader/humanizer"
 desc    = "按维基百科「Signs of AI writing」清单去除 AI 写作痕迹"
+desc_en = "Removes signs of AI writing following Wikipedia's \"Signs of AI writing\" list"
 group   = "companion"
 stages  = ["revision"]
 format  = "skill"
@@ -877,6 +990,7 @@ checked = 2026-10-13
 [[skills]]
 repo    = "HBAI-Ltd/Toonflow-app"
 desc    = "Toonflow：开源 AI 短剧/漫剧平台，剧本、智能分镜、角色场景资产、图像和视频生成，无限画布 + Agent"
+desc_en = "Toonflow: open-source AI short drama / manju platform with script, smart storyboarding, character and scene assets, image and video generation, on an infinite canvas with agents"
 group   = "platform"
 stages  = ["drafting", "storyboard", "production"]
 format  = "app"
@@ -886,6 +1000,7 @@ checked = 2026-10-13
 [[skills]]
 repo    = "chatfire-AI/huobao-drama"
 desc    = "火宝短剧：一句话生成完整短剧，从剧本到成片全自动"
+desc_en = "Huobao Drama: generates a complete short drama from one sentence, fully automated from script to final video"
 group   = "platform"
 stages  = ["drafting", "storyboard", "production"]
 format  = "app"
@@ -895,6 +1010,7 @@ checked = 2026-10-13
 [[skills]]
 repo    = "waooAI/waoowaoo"
 desc    = "工业级全流程 AI 影视 Agent 平台，从短片到真人可控成片"
+desc_en = "Industrial-grade end-to-end AI film and video agent platform, from shorts to controllable live-action output"
 group   = "platform"
 stages  = ["drafting", "storyboard", "production"]
 format  = "app"
@@ -904,6 +1020,7 @@ checked = 2026-10-13
 [[skills]]
 repo    = "HKUDS/ViMax"
 desc    = "港大 ViMax：导演、编剧、制片、视频生成一体的 Agent 化视频生成"
+desc_en = "ViMax from HKU: agentic video generation combining director, screenwriter, producer and video generator in one"
 group   = "platform"
 stages  = ["drafting", "storyboard", "production"]
 format  = "app"
@@ -913,6 +1030,7 @@ checked = 2026-10-13
 [[skills]]
 repo    = "Forget-C/Jellyfish"
 desc    = "AI 短剧端到端工作台：剧本输入、结构化分镜、一致性管理、视频生成"
+desc_en = "End-to-end AI short-drama workspace: script input, structured storyboarding, consistency management, video generation"
 group   = "platform"
 stages  = ["drafting", "storyboard", "production"]
 format  = "app"
@@ -922,6 +1040,7 @@ checked = 2026-10-13
 [[skills]]
 repo    = "dramaclaw/dramaclaw"
 desc    = "通用 AIGC 视频引擎：剧本到成片一条流水线，覆盖漫剧、广告、电商、乙游"
+desc_en = "General-purpose AIGC video engine: one pipeline from script to final video, covering manju, ads, e-commerce and otome games"
 group   = "platform"
 stages  = ["drafting", "storyboard", "production"]
 format  = "app"
@@ -931,6 +1050,7 @@ checked = 2026-10-13
 [[skills]]
 repo    = "ArcReel/ArcReel"
 desc    = "可自部署视频工作台：小说/剧本 → 角色场景道具资产、分镜、视频和剪映草稿，含跨镜头一致性与费用追踪"
+desc_en = "Self-hostable video workspace: novel/script → character, scene and prop assets, storyboard, video and Jianying (CapCut) drafts, with cross-shot consistency and cost tracking"
 group   = "platform"
 stages  = ["adaptation", "character", "storyboard", "production"]
 format  = "app"
@@ -940,6 +1060,7 @@ checked = 2026-10-13
 [[skills]]
 repo    = "shuyu-labs/BigBanana-AI-Director"
 desc    = "BigBanana AI 导演：短剧/漫剧一站式平台，「剧本 → 资产 → 关键帧」工业化流程"
+desc_en = "BigBanana AI Director: all-in-one short drama / manju platform with an industrial script → asset → keyframe workflow"
 group   = "platform"
 stages  = ["drafting", "storyboard", "production"]
 format  = "app"
@@ -949,6 +1070,7 @@ checked = 2026-10-13
 [[skills]]
 repo    = "xuanyustudio/LocalMiniDrama"
 desc    = "本地离线 AI 短剧/漫剧工具：故事到成片一站式，数据不出本机，已接入 Seedance 2"
+desc_en = "Local offline AI short drama / manju tool: story to final video in one place, data stays on your machine, with Seedance 2 integrated"
 group   = "platform"
 stages  = ["drafting", "storyboard", "production"]
 format  = "app"
@@ -958,6 +1080,7 @@ checked = 2026-10-13
 [[skills]]
 repo    = "xhongc/ai_story"
 desc    = "AI 视频、动漫、短剧、漫剧自动化生成工具"
+desc_en = "Automated generation tool for AI video, anime, short drama and manju"
 group   = "platform"
 stages  = ["storyboard", "production"]
 format  = "app"
@@ -967,6 +1090,7 @@ checked = 2026-10-13
 [[skills]]
 repo    = "alibaba/lumenx"
 desc    = "阿里 LumenX Studio：小说到动态视频的短漫剧一站式生产，剧本分析、角色定制、分镜、视频合成"
+desc_en = "Alibaba's LumenX Studio: all-in-one production of short manju from novel to motion video, with script analysis, character customization, storyboard and video compositing"
 group   = "platform"
 stages  = ["adaptation", "character", "storyboard", "production"]
 format  = "app"
@@ -976,6 +1100,7 @@ checked = 2026-10-13
 [[skills]]
 repo    = "yi1108/printfilm"
 desc    = "PRINTFILM：AI 短视频营销与 AI 短剧创作平台"
+desc_en = "PRINTFILM: platform for AI short-video marketing and AI short-drama creation"
 group   = "platform"
 stages  = ["drafting", "storyboard", "production"]
 format  = "app"
@@ -985,6 +1110,7 @@ checked = 2026-10-13
 [[skills]]
 repo    = "Stonewuu/ai-fusion-video"
 desc    = "融光：基于 Agent 的全流程 AI 短剧/漫剧/视频创作平台（Java + AgentScope）"
+desc_en = "Rongguang: agent-based end-to-end creation platform for AI short drama, manju and video (Java + AgentScope)"
 group   = "platform"
 stages  = ["drafting", "storyboard", "production"]
 format  = "app"
@@ -994,6 +1120,7 @@ checked = 2026-10-13
 [[skills]]
 repo    = "HITsz-TMG/VideoClaw"
 desc    = "哈工大（深圳）VideoClaw：AI 视频员工，聊一个想法出一部片，覆盖短剧全流程"
+desc_en = "VideoClaw from Harbin Institute of Technology (Shenzhen): an AI video coworker that turns a chatted idea into a film, covering the full short-drama workflow"
 group   = "platform"
 stages  = ["drafting", "storyboard", "production"]
 format  = "app"

@@ -2,6 +2,8 @@
 
 # Awesome Short Drama Skills
 
+**中文** · [English](README.en.md)
+
 > AI 短剧 · 漫剧 Skill 精选：从小说改编、分集剧本到分镜、视频提示词和出片，装进 Claude Code / Codex 就能用。
 >
 > A curated list of agent skills for AI short drama (micro drama / vertical drama) and AI manju: screenwriting, adaptation, storyboards, video prompts and production.
