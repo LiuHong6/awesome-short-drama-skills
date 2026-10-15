@@ -56,7 +56,7 @@
 - [fight-scene-director](https://github.com/ZzzAloong/fight-scene-director) ★22：多画风打戏设计：动作编排、空间调度、镜头与特效规则，可先出站位图/轨迹图生图词，再按轨迹写视频提示词
 - [ai-film-skills](https://github.com/nigo-studio/ai-film-skills) ★19：从 AI 动作片《CROW LINE》流程拆出的 skill：Seedance 2.5 参考生视频提示词导演，三联角色设定图保持跨镜一致
 - [ai-manga-drama](https://github.com/liuxiao20051106-prog/ai-manga-drama) ★17：AI 漫剧工坊：一句创意到成片的八步流程，任务卡剧本、角色参考图库、风格锚、分镜、图/视频提示词、配音字幕与合成终检
-- [hardcore-director](https://github.com/jlam00-dev/hardcore-director) ★16：硬核导演：影视与 AI 视频总控，按阶段路由编剧/短剧、角色场景、分镜、Seedance 2.5/Wan 3.0/H3 提示词、声音与剪辑模块
+- [hardcore-director](https://github.com/jlam00-dev/hardcore-director) ★17：硬核导演：影视与 AI 视频总控，按阶段路由编剧/短剧、角色场景、分镜、Seedance 2.5/Wan 3.0/H3 提示词、声音与剪辑模块
 - [seedance-2-5-prompting](https://github.com/babicat4242-svg/seedance-2-5-prompting) ★16：Seedance 2.5 提示词：参考素材角色绑定、30 种运镜定义与冲突规则、R2V/白模、局部编辑与延长、多轮修改流程
 - [Comfy-H3-Director](https://github.com/MIKA6941/Comfy-H3-Director) ★14：MiniMax H3 漫剧导演：网文改分镜、核心/龙套资产分级、文戏长镜与武戏快切、动作连续性锁定、尾帧接力，一次出整集提示词
 - [xiaxia](https://github.com/luanyi824-hash/xiaxia) ★13：夏夏：把确认剧本转成带时长预算、机位焦段、真实光源、调度与动作因果的导演分镜，可编译为 Seedance 2.5 任务
@@ -132,7 +132,7 @@
 
 - **[ai-manga-drama](https://github.com/liuxiao20051106-prog/ai-manga-drama)** · ★ 17<br>AI 漫剧工坊：一句创意到成片的八步流程，任务卡剧本、角色参考图库、风格锚、分镜、图/视频提示词、配音字幕与合成终检<br><sub>阶段：人物 · 集纲 · 剧本 · 审稿 · 分镜 · 提示词 · 出片</sub><br><sub>更新于 2026-09-17 · 多语言 · 2 个 skill · MIT</sub>
 
-- **[hardcore-director](https://github.com/jlam00-dev/hardcore-director)** · ★ 16<br>硬核导演：影视与 AI 视频总控，按阶段路由编剧/短剧、角色场景、分镜、Seedance 2.5/Wan 3.0/H3 提示词、声音与剪辑模块<br><sub>阶段：人物 · 集纲 · 剧本 · 审稿 · 分镜 · 提示词 · 出片</sub><br><sub>更新于 2026-10-01 · 中文 · MIT</sub><br><sub>🎬 Seedance / 即梦 · 通义万相 Wan · MiniMax H3 · 可灵 Kling</sub><br><sub>💡 整合包：大部分模块是第三方 skill 快照（已注明来源），也覆盖广告和宣传片</sub>
+- **[hardcore-director](https://github.com/jlam00-dev/hardcore-director)** · ★ 17<br>硬核导演：影视与 AI 视频总控，按阶段路由编剧/短剧、角色场景、分镜、Seedance 2.5/Wan 3.0/H3 提示词、声音与剪辑模块<br><sub>阶段：人物 · 集纲 · 剧本 · 审稿 · 分镜 · 提示词 · 出片</sub><br><sub>更新于 2026-10-01 · 中文 · MIT</sub><br><sub>🎬 Seedance / 即梦 · 通义万相 Wan · MiniMax H3 · 可灵 Kling</sub><br><sub>💡 整合包：大部分模块是第三方 skill 快照（已注明来源），也覆盖广告和宣传片</sub>
 
 - **[vision_art_creator](https://github.com/ilkaydemiralay/vision_art_creator)** · ★ 12<br>影视部门式 skill 包：编剧、导演、角色、美术、摄影、分镜、镜头表、提示词、声音、剪辑，由总监 skill 调度和质检<br><sub>阶段：人物 · 剧本 · 审稿 · 分镜 · 提示词 · 出片</sub><br><sub>更新于 2026-10-07 · 英文 · 11 个 skill · MIT</sub><br><sub>🎬 Nano Banana · Sora · Veo · 可灵 Kling</sub><br><sub>💡 偏电影，不专做短剧</sub>
 
@@ -196,7 +196,7 @@ npx skills add ilkaydemiralay/vision_art_creator
 
 专注剧本本身：集纲、钩子、付费卡点、对白、审稿。
 
-- **[short-drama-factory](https://github.com/lixiaoxiao9888-create/short-drama-factory)** · ★ 370<br>抖音/红果短剧工业化编剧：一句创意或一部网文 → 60–100 集带付费卡点的剧本，配钩子、断章、反转公式和机检规则<br><sub>阶段：改编 · 集纲 · 剧本 · 审稿</sub><br><sub>更新于 2026-10-15 · 中文 · MIT</sub>
+- **[short-drama-factory](https://github.com/lixiaoxiao9888-create/short-drama-factory)** · ★ 371<br>抖音/红果短剧工业化编剧：一句创意或一部网文 → 60–100 集带付费卡点的剧本，配钩子、断章、反转公式和机检规则<br><sub>阶段：改编 · 集纲 · 剧本 · 审稿</sub><br><sub>更新于 2026-10-15 · 中文 · MIT</sub>
 
 - **[screenwriter-skill](https://github.com/Vi7QY/screenwriter-skill)** · ★ 78<br>短剧/漫剧剧本审稿：红果 Top100 操盘经验蒸馏的 37 条规则<br><sub>阶段：审稿</sub><br><sub>更新于 2026-04-12 💤 · 多语言 · MIT</sub>
 

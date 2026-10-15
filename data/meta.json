@@ -66,7 +66,7 @@
     "Forget-C/Jellyfish": {
       "archived": false,
       "description": "An end-to-end production workspace for AI-generated short dramas. From script input to structured storyboarding, consistency management, shot preparation, video generation, and export.",
-      "forks": 1154,
+      "forks": 1153,
       "full_name": "Forget-C/Jellyfish",
       "license": "Apache-2.0",
       "pushed_at": "2026-07-30",
@@ -84,7 +84,7 @@
       "pushed_at": "2026-10-13",
       "skill_count": 5,
       "skill_count_truncated": false,
-      "stars": 17871,
+      "stars": 17873,
       "status": "ok"
     },
     "HITsz-TMG/VideoClaw": {
@@ -430,7 +430,7 @@
       "pushed_at": "2026-09-28",
       "skill_count": 1,
       "skill_count_truncated": false,
-      "stars": 57269,
+      "stars": 57275,
       "status": "ok"
     },
     "catyiqian/qianqianwriting": {
@@ -466,7 +466,7 @@
       "pushed_at": "2026-10-05",
       "skill_count": 7,
       "skill_count_truncated": false,
-      "stars": 16276,
+      "stars": 16277,
       "status": "ok"
     },
     "ciel-oliver/analyze-hit-novel": {
@@ -602,7 +602,7 @@
       "pushed_at": "2026-10-01",
       "skill_count": 1,
       "skill_count_truncated": false,
-      "stars": 16,
+      "stars": 17,
       "status": "ok"
     },
     "jnMetaCode/ai-shortfilm-prompts": {
@@ -675,7 +675,7 @@
       "pushed_at": "2026-09-21",
       "skill_count": 1,
       "skill_count_truncated": false,
-      "stars": 2602,
+      "stars": 2603,
       "status": "ok"
     },
     "liangdabiao/make-prompt-seedance2": {
@@ -736,7 +736,7 @@
       "pushed_at": "2026-10-15",
       "skill_count": 1,
       "skill_count_truncated": false,
-      "stars": 370,
+      "stars": 371,
       "status": "ok"
     },
     "liyue-aigc/seedance-2-5-fight-director": {
@@ -1041,7 +1041,7 @@
       "pushed_at": "2026-10-13",
       "skill_count": 0,
       "skill_count_truncated": false,
-      "stars": 1820,
+      "stars": 1821,
       "status": "ok"
     },
     "xixihhhh/ai-short-drama-skill": {
