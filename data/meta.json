@@ -84,7 +84,7 @@
       "pushed_at": "2026-10-13",
       "skill_count": 5,
       "skill_count_truncated": false,
-      "stars": 17864,
+      "stars": 17866,
       "status": "ok"
     },
     "HITsz-TMG/VideoClaw": {
@@ -151,13 +151,13 @@
     "LearnPrompt/awesome-seedance": {
       "archived": false,
       "description": "🎬 Evidence-led Seedance 2.5 / 2.0 prompt library: 600+ cases traced to original posts, 260+ cross-model retest runs with public verdicts, 25 copy-ready templates, 50+ installable AI-video Skills. Synced daily from goodcase.ai. EN / 中文 / 日本語.",
-      "forks": 346,
+      "forks": 347,
       "full_name": "LearnPrompt/awesome-seedance",
       "license": "MIT",
       "pushed_at": "2026-10-15",
       "skill_count": 15,
       "skill_count_truncated": false,
-      "stars": 2079,
+      "stars": 2080,
       "status": "ok"
     },
     "LuoJiangYong/muse-video-skill": {
@@ -424,13 +424,13 @@
     "blader/humanizer": {
       "archived": false,
       "description": "Agent skill that removes signs of AI-generated writing from text",
-      "forks": 4538,
+      "forks": 4539,
       "full_name": "blader/humanizer",
       "license": "MIT",
       "pushed_at": "2026-09-28",
       "skill_count": 1,
       "skill_count_truncated": false,
-      "stars": 57242,
+      "stars": 57256,
       "status": "ok"
     },
     "catyiqian/qianqianwriting": {
@@ -509,13 +509,13 @@
     "dramaclaw/dramaclaw": {
       "archived": false,
       "description": "A general-purpose AIGC video engine: script to finished film in one pipeline — dramas, ads, product videos, otome games, and more. | 通用 AIGC 视频引擎 —— 从剧本到成片一条流水线，漫剧、广告、电商、乙游皆可",
-      "forks": 853,
+      "forks": 854,
       "full_name": "dramaclaw/dramaclaw",
       "license": null,
       "pushed_at": "2026-10-15",
       "skill_count": 6,
       "skill_count_truncated": false,
-      "stars": 6300,
+      "stars": 6301,
       "status": "ok"
     },
     "e06084/claude-screenwriting": {
@@ -551,7 +551,7 @@
       "pushed_at": "2026-10-15",
       "skill_count": 7,
       "skill_count_truncated": false,
-      "stars": 4606,
+      "stars": 4608,
       "status": "ok"
     },
     "geslie1/kunka-screenwriting-master": {
@@ -724,7 +724,7 @@
       "pushed_at": "2026-10-15",
       "skill_count": 13,
       "skill_count_truncated": false,
-      "stars": 1295,
+      "stars": 1297,
       "status": "ok"
     },
     "lixiaoxiao9888-create/short-drama-factory": {
@@ -884,7 +884,7 @@
       "pushed_at": "2026-10-03",
       "skill_count": 1,
       "skill_count_truncated": false,
-      "stars": 177,
+      "stars": 178,
       "status": "ok"
     },
     "pipivv/gushi-skill": {
@@ -975,13 +975,13 @@
     "waooAI/waoowaoo": {
       "archived": false,
       "description": "首家工业级全流程 AI 影视生产平台。Industry-first professional AI Agent platform for controllable film & video production. From shorts to live-action with Hollywood-standard workflows.",
-      "forks": 3198,
+      "forks": 3204,
       "full_name": "waooAI/waoowaoo",
       "license": null,
       "pushed_at": "2026-09-21",
       "skill_count": 6,
       "skill_count_truncated": false,
-      "stars": 14560,
+      "stars": 14561,
       "status": "ok"
     },
     "wddxh/ShortVideoDirector": {
@@ -1089,7 +1089,7 @@
       "pushed_at": "2026-10-15",
       "skill_count": 12,
       "skill_count_truncated": false,
-      "stars": 2921,
+      "stars": 2922,
       "status": "ok"
     },
     "zhaihao118/Micro-Drama-Skills": {

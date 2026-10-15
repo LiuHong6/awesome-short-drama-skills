@@ -276,7 +276,7 @@ npx skills add zhu5859243-free/hongguo-shortdrama-screenwriting
 
 - **[qisi-video-remix](https://github.com/wyuzhi/qisi-video-remix)** · ★ 179<br>视频创意改编：参考视频 → 剧本 → 分镜 → 分段生成提示词<br><sub>阶段：改编 · 剧本 · 分镜 · 提示词</sub><br><sub>更新于 2026-09-11 · 中文 · MIT</sub>
 
-- **[h3-storyboard-skill](https://github.com/phileiny/h3-storyboard-skill)** · ★ 177<br>MiniMax H3 分镜拆解与角色表演设计<br><sub>阶段：分镜 · 提示词</sub><br><sub>更新于 2026-10-03 · 英文 · MIT</sub><br><sub>🎬 MiniMax H3</sub>
+- **[h3-storyboard-skill](https://github.com/phileiny/h3-storyboard-skill)** · ★ 178<br>MiniMax H3 分镜拆解与角色表演设计<br><sub>阶段：分镜 · 提示词</sub><br><sub>更新于 2026-10-03 · 英文 · MIT</sub><br><sub>🎬 MiniMax H3</sub>
 
 - **[smy-seedance-storyboard](https://github.com/liangdabiao/smy-seedance-storyboard)** · ★ 172<br>故事 → 上美影复古手绘风格的短剧制作文档：剧本、分镜、资产生图提示词，附完整示例项目<br><sub>阶段：改编 · 剧本 · 分镜 · 提示词</sub><br><sub>更新于 2026-10-08 · 中文</sub><br><sub>🎬 Seedance / 即梦</sub>
 
@@ -470,7 +470,7 @@ npx skills add geslie1/kunka-screenwriting-master
 
 让剧本和对白读起来不像 AI 写的。
 
-- **[humanizer](https://github.com/blader/humanizer)** · ★ 57.2k<br>按维基百科「Signs of AI writing」清单去除 AI 写作痕迹<br><sub>阶段：审稿</sub><br><sub>更新于 2026-09-28 · 英文 · MIT</sub>
+- **[humanizer](https://github.com/blader/humanizer)** · ★ 57.3k<br>按维基百科「Signs of AI writing」清单去除 AI 写作痕迹<br><sub>阶段：审稿</sub><br><sub>更新于 2026-09-28 · 英文 · MIT</sub>
 
 - **[human-writing](https://github.com/KKKKhazix/human-writing)** · ★ 4.1k<br>活人感写作：让 AI 写的中文像具体的人在说话，适合打磨对白和旁白<br><sub>阶段：审稿</sub><br><sub>更新于 2026-08-11 · 中文 · MIT</sub>
 
