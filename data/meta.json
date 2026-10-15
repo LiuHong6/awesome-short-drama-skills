@@ -78,13 +78,13 @@
     "HBAI-Ltd/Toonflow-app": {
       "archived": false,
       "description": "短剧、漫剧制作工具 Toonflow：开源 AI 视频创作平台，集成剧本创作、智能分镜、角色与场景资产管理、图像生成和视频生成。融合无限画布、AI Agent 与可视化工作流，支持本地部署、自选模型、跨平台客户端、MCP 与插件扩展。Open-source AI short drama and motion comic creation tool with an infinite canvas, AI agents, storyboarding, image and video generation. Self-hosted and extensible, with a canvas-based approach similar to LibTV and TapNow.",
-      "forks": 3170,
+      "forks": 3171,
       "full_name": "HBAI-Ltd/Toonflow-app",
       "license": "MIT",
       "pushed_at": "2026-10-13",
       "skill_count": 5,
       "skill_count_truncated": false,
-      "stars": 17866,
+      "stars": 17871,
       "status": "ok"
     },
     "HITsz-TMG/VideoClaw": {
@@ -102,7 +102,7 @@
     "HKUDS/ViMax": {
       "archived": false,
       "description": "\"ViMax: Agentic Video Generation (Director, Screenwriter, Producer, and Video Generator All-in-One)\"",
-      "forks": 1915,
+      "forks": 1916,
       "full_name": "HKUDS/ViMax",
       "license": "MIT",
       "pushed_at": "2026-09-30",
@@ -151,13 +151,13 @@
     "LearnPrompt/awesome-seedance": {
       "archived": false,
       "description": "🎬 Evidence-led Seedance 2.5 / 2.0 prompt library: 600+ cases traced to original posts, 260+ cross-model retest runs with public verdicts, 25 copy-ready templates, 50+ installable AI-video Skills. Synced daily from goodcase.ai. EN / 中文 / 日本語.",
-      "forks": 347,
+      "forks": 348,
       "full_name": "LearnPrompt/awesome-seedance",
       "license": "MIT",
       "pushed_at": "2026-10-15",
       "skill_count": 15,
       "skill_count_truncated": false,
-      "stars": 2080,
+      "stars": 2081,
       "status": "ok"
     },
     "LuoJiangYong/muse-video-skill": {
@@ -194,7 +194,7 @@
       "pushed_at": "2026-10-15",
       "skill_count": 6,
       "skill_count_truncated": false,
-      "stars": 3186,
+      "stars": 3188,
       "status": "ok"
     },
     "OSideMedia/higgsfield-ai-prompt-skill": {
@@ -207,7 +207,7 @@
       "pushed_at": "2026-09-27",
       "skill_count": 36,
       "skill_count_truncated": false,
-      "stars": 745,
+      "stars": 746,
       "status": "ok"
     },
     "Shanyin-ai/shanyin-director-master": {
@@ -271,7 +271,7 @@
       "pushed_at": "2026-10-11",
       "skill_count": 1,
       "skill_count_truncated": false,
-      "stars": 1628,
+      "stars": 1629,
       "status": "ok"
     },
     "SwotAtmk/infinite-creation": {
@@ -424,13 +424,13 @@
     "blader/humanizer": {
       "archived": false,
       "description": "Agent skill that removes signs of AI-generated writing from text",
-      "forks": 4539,
+      "forks": 4538,
       "full_name": "blader/humanizer",
       "license": "MIT",
       "pushed_at": "2026-09-28",
       "skill_count": 1,
       "skill_count_truncated": false,
-      "stars": 57256,
+      "stars": 57269,
       "status": "ok"
     },
     "catyiqian/qianqianwriting": {
@@ -515,7 +515,7 @@
       "pushed_at": "2026-10-15",
       "skill_count": 6,
       "skill_count_truncated": false,
-      "stars": 6301,
+      "stars": 6302,
       "status": "ok"
     },
     "e06084/claude-screenwriting": {
@@ -551,7 +551,7 @@
       "pushed_at": "2026-10-15",
       "skill_count": 7,
       "skill_count_truncated": false,
-      "stars": 4608,
+      "stars": 4609,
       "status": "ok"
     },
     "geslie1/kunka-screenwriting-master": {
@@ -620,13 +620,13 @@
     "jtydhr88/screenwriting-skills": {
       "archived": false,
       "description": "Professional agent skills for screenwriting, television writing and dramaturgy",
-      "forks": 175,
+      "forks": 176,
       "full_name": "jtydhr88/screenwriting-skills",
       "license": "MIT",
       "pushed_at": "2026-10-03",
       "skill_count": 26,
       "skill_count_truncated": false,
-      "stars": 1676,
+      "stars": 1677,
       "status": "ok"
     },
     "jxshow/jingju-skills": {
@@ -945,7 +945,7 @@
       "pushed_at": "2026-10-06",
       "skill_count": 0,
       "skill_count_truncated": false,
-      "stars": 2331,
+      "stars": 2333,
       "status": "ok"
     },
     "smixs/visual-skills": {
@@ -975,7 +975,7 @@
     "waooAI/waoowaoo": {
       "archived": false,
       "description": "首家工业级全流程 AI 影视生产平台。Industry-first professional AI Agent platform for controllable film & video production. From shorts to live-action with Hollywood-standard workflows.",
-      "forks": 3204,
+      "forks": 3209,
       "full_name": "waooAI/waoowaoo",
       "license": null,
       "pushed_at": "2026-09-21",
@@ -1035,7 +1035,7 @@
     "xhongc/ai_story": {
       "archived": false,
       "description": "AI视频, AI动漫,AI 短剧,AI漫剧自动化生成工具",
-      "forks": 361,
+      "forks": 360,
       "full_name": "xhongc/ai_story",
       "license": null,
       "pushed_at": "2026-10-13",
@@ -1065,7 +1065,7 @@
       "pushed_at": "2026-10-14",
       "skill_count": 1,
       "skill_count_truncated": false,
-      "stars": 2090,
+      "stars": 2091,
       "status": "ok"
     },
     "yi1108/printfilm": {
@@ -1089,7 +1089,7 @@
       "pushed_at": "2026-10-15",
       "skill_count": 12,
       "skill_count_truncated": false,
-      "stars": 2922,
+      "stars": 2925,
       "status": "ok"
     },
     "zhaihao118/Micro-Drama-Skills": {
