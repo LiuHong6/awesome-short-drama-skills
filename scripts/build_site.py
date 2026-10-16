@@ -24,7 +24,7 @@ import urllib.parse
 
 from build import NEW_DAYS, SPECIALIST_MAX, STALE_DAYS, by_stars, display_name, fmt_stars, install_cmd, new_entries, \
     sort_key, tr
-from lib import DATA, ROOT, load_meta, load_valid, third_party_text
+from lib import DATA, ROOT, load_meta, load_toml, load_valid, third_party_text
 
 WEB = ROOT / "web"
 DIST = WEB / "dist"
@@ -64,6 +64,7 @@ def L(lang: str, zh: str, en: str) -> str:
 
 
 e = functools.partial(html.escape, quote=True)
+CJK = re.compile(r"[\u3400-\u9fff]")
 
 
 # ───────────────────────── 数据 ─────────────────────────
@@ -82,6 +83,23 @@ class Data:
         self.groups = self.taxonomy["groups"]
         self.indexed = [s for s in self.skills if self.groups[s["group"]].get("indexed", True)]
         self.new = new_entries(self.skills, self.meta, self.ref)
+        # 编者说明和第三方中文文字的英文译文，只有网站用
+        self.overviews = load_toml("overviews.toml") if (DATA / "overviews.toml").exists() else {}
+        tr_path = DATA / "translations.json"
+        self.translations = json.loads(tr_path.read_text(encoding="utf-8")) if tr_path.exists() else {}
+        self.untranslated: set[str] = set()
+
+    def quote(self, text: str, lang: str) -> tuple[str, bool]:
+        """第三方文字的展示版本和它是不是译文。英文页遇到中文换成译文，没有译文就先不显示。"""
+        text = (text or "").strip()
+        if not third_party_text(text):
+            return "", False
+        if lang == "zh" or not CJK.search(text):
+            return third_party_text(text), False
+        if text in self.translations:
+            return third_party_text(self.translations[text]), True
+        self.untranslated.add(text)
+        return "", False
 
     def m(self, s: dict) -> dict:
         return self.meta.get(s["repo"], {})
@@ -519,15 +537,18 @@ class Site:
             (L(lang, "最近更新", "Last updated"), e(m.get("pushed_at") or "—") + " " + self.status(s, lang)),
             (L(lang, "许可证", "License"), e(m.get("license") or L(lang, "未声明", "None declared"))),
         ]
-        if m.get("skill_count"):
-            facts.append((L(lang, "SKILL.md 数量", "SKILL.md files"), str(m["skill_count"])))
+        if total := d.index.get(s["repo"], {}).get("total"):  # 应用里和短剧无关的 SKILL.md 不算
+            facts.append((L(lang, "SKILL.md 数量", "SKILL.md files"), str(total)))
         if s.get("checked"):
             facts.append((L(lang, "人工核对", "Checked by hand"), e(str(s["checked"]))))
         facts_html = '<dl class="facts">' + "".join(f"<dt>{k}</dt><dd>{v}</dd>" for k, v in facts) + "</dl>"
 
         note = f'<div class="note"><p>{e(tr(s, "note", lang))}</p></div>' if s.get("note") else ""
-        gh_desc = third_party_text(m.get("description", ""))
+        ov = d.overviews.get(s["repo"], {})
+        overview = f'<h2>{L(lang, "编者说明", "Editor\'s notes")}</h2><p>{e(ov[lang])}</p>' if ov.get(lang) else ""
+        gh_desc, translated = d.quote(m.get("description", ""), lang)
         about = (f'<h2>{L(lang, "仓库自述", "In the author\'s words")}</h2><blockquote><p>{e(gh_desc)}</p></blockquote>'
+                 + ('<p class="sub">Translated from the Chinese original.</p>' if translated else "")
                  if gh_desc else "")
 
         idx = d.index.get(s["repo"], {})
@@ -536,12 +557,12 @@ class Site:
             branch = idx.get("branch", "main")
             lis = "".join(
                 f'<li><b><a href="https://github.com/{e(s["repo"])}/blob/{e(branch)}/{e(k["path"])}">{e(k["name"])}</a></b>'
-                + (f'<p>{e(desc)}</p>' if (desc := third_party_text(k["description"])) else "") + "</li>"
+                + (f'<p>{e(desc)}</p>' if (desc := d.quote(k["description"], lang)[0]) else "") + "</li>"
                 for k in idx["skills"])
             more = idx["total"] - len(idx["skills"])
             more_html = f'<p class="sub">{L(lang, f"另有 {more} 个未列出。", f"{more} more not listed.")}</p>' if more > 0 else ""
             skill_html = (f'<h2>{L(lang, f"仓库里的 skill（{idx['total']} 个）", f"Skills in this repo ({idx['total']})")}</h2>'
-                          f'<p class="sub">{L(lang, "名字和说明取自各 SKILL.md 的 frontmatter。", "Names and descriptions come from each SKILL.md frontmatter.")}</p>'
+                          f'<p class="sub">{L(lang, "名字和说明取自各 SKILL.md 的 frontmatter。", "Names and descriptions come from each SKILL.md frontmatter; Chinese descriptions are shown in our English translation.")}</p>'
                           f'<ul class="skill-list">{lis}</ul>{more_html}')
 
         cmd = install_cmd(s)
@@ -581,6 +602,7 @@ class Site:
 <p class="sub">{e(s['repo'])}</p>
 <p class="lead">{e(summary)}</p>
 {note}
+{overview}
 {facts_html}
 <div class="actions"><a class="btn primary" href="https://github.com/{e(s['repo'])}">{L(lang, '在 GitHub 查看', 'View on GitHub')}</a><a class="btn" href="{issue}">{L(lang, '信息有误？提交更正', 'Report an error')}</a></div>
 {about}
@@ -686,6 +708,7 @@ class Site:
                 "page": {"zh": abs_url("zh", repo_path(s)), "en": abs_url("en", repo_path(s))},
                 "desc": {"zh": s["desc"], "en": s.get("desc_en") or s["desc"]},
                 "note": {"zh": s.get("note"), "en": s.get("note_en") or s.get("note")} if s.get("note") else None,
+                "overview": d.overviews.get(s["repo"]) and {k: d.overviews[s["repo"]].get(k) for k in ("zh", "en")},
                 "type": s["group"], "stages": s["stages"], "models": s.get("models", []), "agents": s.get("agents", []),
                 "format": s["format"], "language": s["lang"], "featured": s.get("tier") == "featured",
                 "install": install_cmd(s), "checked": str(s["checked"]) if s.get("checked") else None,
@@ -806,6 +829,9 @@ def main() -> None:
     site.build()
     n = sum(1 for _ in DIST.rglob("index.html"))
     print(f"已生成 {DIST.relative_to(ROOT)}：{n} 个页面（中英各 {len(site.pages)}）。")
+    if site.d.untranslated:
+        print(f"提示：英文版有 {len(site.d.untranslated)} 段第三方中文说明没有译文，暂不显示；"
+              "把「原文: 译文」补进 data/translations.json 即可。")
     if args.serve:
         handler = functools.partial(http.server.SimpleHTTPRequestHandler, directory=DIST)
         print("预览：http://localhost:8000")

@@ -100,7 +100,7 @@
 
 - **[OnlyShot](https://github.com/A-cat-with-carrots/OnlyShot)** · ★ 322<br>神仙鱼短剧流水线：一句话 → 剧本、分镜、分镜图、视频、剪辑五步，沉淀 17 种失败模式<br><sub>阶段：剧本 · 分镜 · 提示词 · 出片</sub><br><sub>更新于 2026-07-07 · 中文 · MIT</sub><br><sub>🎬 Seedance / 即梦</sub>
 
-- **[short-drama-production](https://github.com/suihe1/short-drama-production)** · ★ 183<br>短剧生产总控：小说大纲/人物/剧本、导演分镜、提示词、声音资产、粗剪与 QC（默认 16:9）<br><sub>阶段：改编 · 集纲 · 剧本 · 分镜 · 提示词 · 出片</sub><br><sub>更新于 2026-09-16 · 中文 · 8 个 skill · Apache-2.0</sub><br><sub>🎬 MiniMax H3</sub><br><sub>💡 有 5 个 skill 与 shuohao-skills 同名，可能同源</sub>
+- **[short-drama-production](https://github.com/suihe1/short-drama-production)** · ★ 183<br>短剧生产总控：小说大纲/人物/剧本、导演分镜、提示词、声音资产、粗剪与 QC（默认 16:9）<br><sub>阶段：改编 · 集纲 · 剧本 · 分镜 · 提示词 · 出片</sub><br><sub>更新于 2026-09-16 · 中文 · 8 个 skill · Apache-2.0</sub><br><sub>🎬 MiniMax H3</sub><br><sub>💡 5 个 novel-* skill 与 shuohao-skills 的文件结构和示例相同，仓库未注明来源</sub>
 
 - **[workrally](https://github.com/Tencent/workrally)** · ★ 172<br>腾讯开源：面向 AI Agent 的 AIGC 漫剧视频创作全流程工具集<br><sub>阶段：剧本 · 分镜 · 提示词 · 出片</sub><br><sub>更新于 2026-09-29 · 中文</sub>
 
@@ -126,7 +126,7 @@
 
 - **[novel-to-ai-short-drama-skill](https://github.com/muxia0396/novel-to-ai-short-drama-skill)** · ★ 33<br>从导演视角把小说改编成 AI 短剧：分镜、运镜、表演调度与时长<br><sub>阶段：改编 · 分镜</sub><br><sub>更新于 2026-09-04 · 中文 · MIT</sub>
 
-- **[short-drama-director](https://github.com/UncleWang2088/short-drama-director)** · ★ 23<br>短剧导演专家包：剧本创作、平台标准审稿、镜头级分镜与表演指导，输出 Seedance 提示词<br><sub>阶段：剧本 · 审稿 · 分镜 · 提示词</sub><br><sub>更新于 2026-10-13 · 中文 · 9 个 skill</sub><br><sub>🎬 Seedance / 即梦</sub>
+- **[short-drama-director](https://github.com/UncleWang2088/short-drama-director)** · ★ 23<br>短剧导演专家包：剧本创作、平台标准审稿、镜头级分镜与表演指导，输出 Seedance 提示词<br><sub>阶段：剧本 · 审稿 · 分镜 · 提示词</sub><br><sub>更新于 2026-10-13 · 中文 · 9 个 skill</sub><br><sub>🎬 Seedance / 即梦</sub><br><sub>💡 整合了 0xsline/short-drama、Vi7QY/screenwriter-skill 等项目的修改版（README 已注明）；仓库无许可证</sub>
 
 - **[ManjuForge](https://github.com/mengxiujie/ManjuForge)** · ★ 21<br>漫剧/短剧连载引擎：一句话 → 剧本、分镜、配音、提示词，7 个记忆文件 + 22 项一致性检查防人设崩坏<br><sub>阶段：集纲 · 剧本 · 审稿 · 分镜 · 提示词 · 出片</sub><br><sub>更新于 2026-10-13 · 中文 · MIT-0</sub>
 
@@ -198,7 +198,7 @@ npx skills add ilkaydemiralay/vision_art_creator
 
 - **[short-drama-factory](https://github.com/lixiaoxiao9888-create/short-drama-factory)** · ★ 387<br>抖音/红果短剧工业化编剧：一句创意或一部网文 → 60–100 集带付费卡点的剧本，配钩子、断章、反转公式和机检规则<br><sub>阶段：改编 · 集纲 · 剧本 · 审稿</sub><br><sub>更新于 2026-10-16 · 中文 · MIT</sub>
 
-- **[screenwriter-skill](https://github.com/Vi7QY/screenwriter-skill)** · ★ 79<br>短剧/漫剧剧本审稿：红果 Top100 操盘经验蒸馏的 37 条规则<br><sub>阶段：审稿</sub><br><sub>更新于 2026-04-12 💤 · 多语言 · MIT</sub>
+- **[screenwriter-skill](https://github.com/Vi7QY/screenwriter-skill)** · ★ 79<br>短剧/漫剧剧本审稿：红果 Top100 操盘经验蒸馏的 38 条规则<br><sub>阶段：审稿</sub><br><sub>更新于 2026-04-12 💤 · 多语言 · MIT</sub>
 
 - **[qianqianwriting](https://github.com/catyiqian/qianqianwriting)** · ★ 47<br>短剧/漫剧编剧：救猫咪方法论 + 31 部爆款短剧分析<br><sub>阶段：集纲 · 剧本</sub><br><sub>更新于 2026-03-05 💤 · 中文</sub>
 
@@ -212,7 +212,7 @@ npx skills add ilkaydemiralay/vision_art_creator
 
 - **[emma-screenwriting-skills](https://github.com/adoria111/emma-screenwriting-skills)** · ★ 1<br>艾玛短剧技能组：结构拆解、改编、选题迭代、期待设计、逐集钩子、集纲扩写、对白诊断、剧本删减<br><sub>阶段：选题 · 改编 · 集纲 · 剧本 · 审稿</sub><br><sub>更新于 2026-10-13 · 中文 · 10 个 skill · MIT</sub>
 
-- **[hongguo-shortdrama-screenwriting](https://github.com/zhu5859243-free/hongguo-shortdrama-screenwriting)** · ★ 0<br>红果/抖音爆款短剧编剧：短剧工厂引擎 + 《短剧编剧第一课》01–10 期方法论<br><sub>阶段：集纲 · 剧本</sub><br><sub>更新于 2026-09-22 · 中文 · MIT</sub><br><sub>💡 方法论来源为作者自述，未核实</sub>
+- **[hongguo-shortdrama-screenwriting](https://github.com/zhu5859243-free/hongguo-shortdrama-screenwriting)** · ★ 0<br>红果/抖音爆款短剧编剧：短剧工厂引擎 + 《短剧编剧第一课》01–10 期方法论<br><sub>阶段：集纲 · 剧本</sub><br><sub>更新于 2026-09-22 · 中文 · MIT</sub><br><sub>💡 基于 short-drama-factory v3.2 改编（README 已注明）；方法论来源为作者自述，未核实</sub>
 
 
 <details><summary>安装命令</summary>
@@ -250,7 +250,7 @@ npx skills add zhu5859243-free/hongguo-shortdrama-screenwriting
 
 - **[seedance2-skill](https://github.com/dexhunter/seedance2-skill)** · ★ 4.3k<br>为 Seedance 2.0 生成高质量视频提示词<br><sub>阶段：提示词</sub><br><sub>更新于 2026-09-19 · 多语言 · 2 个 skill · MIT</sub><br><sub>🎬 Seedance / 即梦</sub>
 
-- **[awesome-seedance](https://github.com/LearnPrompt/awesome-seedance)** · ★ 2.1k<br>Seedance 2.5/2.0 提示词库：600+ 条可追溯原帖的案例、260+ 次跨模型复测，附 skill<br><sub>阶段：提示词</sub><br><sub>更新于 2026-10-16 · 多语言 · 15 个 skill · MIT</sub><br><sub>🎬 Seedance / 即梦</sub>
+- **[awesome-seedance](https://github.com/LearnPrompt/awesome-seedance)** · ★ 2.1k<br>Seedance 2.5/2.0 提示词库：800+ 条可追溯原帖的案例、近 500 次跨模型复测，附 skill<br><sub>阶段：提示词</sub><br><sub>更新于 2026-10-16 · 多语言 · 15 个 skill · MIT</sub><br><sub>🎬 Seedance / 即梦</sub>
 
 - **[higgsfield-ai-prompt-skill](https://github.com/OSideMedia/higgsfield-ai-prompt-skill)** · ★ 749<br>Higgsfield 平台提示词：MCSLA 公式、Seedance 2.5 多参考导演、表演指导、Soul ID 角色一致性、镜头清单与失败诊断<br><sub>阶段：人物 · 提示词</sub><br><sub>更新于 2026-09-27 · 英文 · 36 个 skill · MIT</sub><br><sub>🎬 Seedance / 即梦 · 可灵 Kling · Veo · 通义万相 Wan</sub><br><sub>💡 面向 Higgsfield 付费平台，也含广告营销模块</sub>
 
@@ -268,13 +268,13 @@ npx skills add zhu5859243-free/hongguo-shortdrama-screenwriting
 
 - **[ai-shortfilm-prompts](https://github.com/jnMetaCode/ai-shortfilm-prompts)** · ★ 475<br>把任意想法变成电影感、可直接投喂模型的视频提示词<br><sub>阶段：提示词</sub><br><sub>更新于 2026-10-12 · 多语言 · MIT</sub><br><sub>🎬 Sora · 可灵 Kling · Veo · Seedance / 即梦</sub>
 
-- **[lanshu-awesome-ai-video-kit](https://github.com/cclank/lanshu-awesome-ai-video-kit)** · ★ 422<br>企业 AI 视频项目工具包：Seedance/可灵提示词、分镜、模型选择与调试，附 411 条 prompt 和方法论<br><sub>阶段：分镜 · 提示词</sub><br><sub>更新于 2026-10-07 · 中文 · 7 个 skill · MIT</sub><br><sub>🎬 Seedance / 即梦 · 可灵 Kling</sub>
+- **[lanshu-awesome-ai-video-kit](https://github.com/cclank/lanshu-awesome-ai-video-kit)** · ★ 422<br>企业 AI 视频项目工具包：Seedance/可灵提示词、分镜、模型选择与调试，附 600 多条 prompt 和方法论<br><sub>阶段：分镜 · 提示词</sub><br><sub>更新于 2026-10-07 · 中文 · 7 个 skill · MIT</sub><br><sub>🎬 Seedance / 即梦 · 可灵 Kling</sub>
 
 - **[minimax-h3-prompt-skill-T8](https://github.com/T8mars/minimax-h3-prompt-skill-T8)** · ★ 290<br>MiniMax H3 / Seedance 2.0 视频提示词案例库与可安装 skill，附视频浏览器<br><sub>阶段：提示词</sub><br><sub>更新于 2026-10-11 · 多语言 · 284 个 skill · MIT</sub><br><sub>🎬 MiniMax H3 · Seedance / 即梦</sub>
 
 - **[awesome-seedance-2.5-prompts-skills](https://github.com/AtlasCloudAI/awesome-seedance-2.5-prompts-skills)** · ★ 239<br>Seedance 2.5 提示词库 + skill：按 T2V/R2V/I2V 选路线、Seedream 故事板、多参考与镜头连续性设计<br><sub>阶段：提示词</sub><br><sub>更新于 2026-10-16 · 多语言 · 2 个 skill</sub><br><sub>🎬 Seedance / 即梦</sub><br><sub>💡 厂商仓库，执行默认走 Atlas Cloud 付费 API；提示词库以广告、电商类居多</sub>
 
-- **[DirectorSKILL](https://github.com/wuwangzhang1216/DirectorSKILL)** · ★ 234<br>AI 拍片：镜头清单、关键帧与视频提示词，内置斯皮尔伯格等 10 种导演风格<br><sub>阶段：分镜 · 提示词</sub><br><sub>更新于 2026-08-31 · 多语言 · MIT</sub>
+- **[DirectorSKILL](https://github.com/wuwangzhang1216/DirectorSKILL)** · ★ 234<br>AI 拍片：镜头清单、关键帧与视频提示词，内置斯皮尔伯格等 20 种导演风格<br><sub>阶段：分镜 · 提示词</sub><br><sub>更新于 2026-08-31 · 多语言 · MIT</sub>
 
 - **[qisi-video-remix](https://github.com/wyuzhi/qisi-video-remix)** · ★ 179<br>视频创意改编：参考视频 → 剧本 → 分镜 → 分段生成提示词<br><sub>阶段：改编 · 剧本 · 分镜 · 提示词</sub><br><sub>更新于 2026-09-11 · 中文 · MIT</sub>
 
@@ -288,7 +288,7 @@ npx skills add zhu5859243-free/hongguo-shortdrama-screenwriting
 
 - **[ComfyUI-Agent-Kit](https://github.com/SlavaSexton/ComfyUI-Agent-Kit)** · ★ 106<br>驱动本地 ComfyUI 出图出视频，附 Seedance、MiniMax H3 视频提示词 skill：多镜头分镜、参考素材标注、翻车排查<br><sub>阶段：提示词 · 出片</sub><br><sub>更新于 2026-09-03 · 英文 · 4 个 skill · Apache-2.0</sub><br><sub>🎬 ComfyUI（本地） · Seedance / 即梦 · MiniMax H3</sub><br><sub>💡 主体是本地 ComfyUI 驱动工具；短剧可用的是其中的 Seedance、MiniMax H3 提示词 skill</sub>
 
-- **[fight-video-create-skill](https://github.com/qualsenWeb/fight-video-create-skill)** · ★ 94<br>AI 打戏设计：从打斗构思到剧情、动作、分镜，带招式校验和参考库<br><sub>阶段：剧本 · 分镜</sub><br><sub>更新于 2026-09-29 · 多语言</sub>
+- **[fight-video-create-skill](https://github.com/qualsenWeb/fight-video-create-skill)** · ★ 94<br>AI 打戏设计：从打斗构思到剧情、动作、分镜，带招式校验和参考库<br><sub>阶段：剧本 · 分镜</sub><br><sub>更新于 2026-09-29 · 多语言</sub><br><sub>💡 参考库和检索代码经加密，由混淆的 Python 加载器运行，内容无法审阅；许可证 CC BY-NC-ND 4.0</sub>
 
 - **[short-drama-skills](https://github.com/YvonneMovingon/short-drama-skills)** · ★ 93<br>LuxReal 生产验证的短剧提示词：叙事拆解、情绪刻画、动态描述、剧情拆分、视频提示词润色<br><sub>阶段：改编 · 剧本 · 审稿 · 提示词</sub><br><sub>更新于 2026-07-01 · 📝 提示词 · 多语言 · MIT</sub><br><sub>💡 prompt.md 形式，不是标准 SKILL.md</sub>
 
@@ -306,7 +306,7 @@ npx skills add zhu5859243-free/hongguo-shortdrama-screenwriting
 
 - **[fight-scene-director](https://github.com/ZzzAloong/fight-scene-director)** · ★ 22<br>多画风打戏设计：动作编排、空间调度、镜头与特效规则，可先出站位图/轨迹图生图词，再按轨迹写视频提示词<br><sub>阶段：分镜 · 提示词</sub><br><sub>更新于 2026-09-06 · 英文 · MIT</sub><br><sub>🎬 Seedance / 即梦 · MiniMax H3</sub><br><sub>💡 skill 正文为英文，输出中文提示词</sub>
 
-- **[ShortVideoDirector](https://github.com/wddxh/ShortVideoDirector)** · ★ 21<br>4 个子代理协作，把故事创意转成视频分镜提示词和资产图像提示词<br><sub>阶段：人物 · 集纲 · 分镜 · 提示词</sub><br><sub>更新于 2026-09-16 · 中文 · 35 个 skill · MIT</sub><br><sub>🎬 Seedance / 即梦</sub>
+- **[ShortVideoDirector](https://github.com/wddxh/ShortVideoDirector)** · ★ 21<br>4 个子代理协作，把故事创意转成视频分镜和资产提示词，可调用即梦 CLI 出图、提交视频任务<br><sub>阶段：人物 · 集纲 · 分镜 · 提示词</sub><br><sub>更新于 2026-09-16 · 中文 · 35 个 skill · MIT</sub><br><sub>🎬 Seedance / 即梦</sub>
 
 - **[ai-film-skills](https://github.com/nigo-studio/ai-film-skills)** · ★ 19<br>从 AI 动作片《CROW LINE》流程拆出的 skill：Seedance 2.5 参考生视频提示词导演，三联角色设定图保持跨镜一致<br><sub>阶段：人物 · 提示词</sub><br><sub>更新于 2026-08-23 · 英文 · 2 个 skill · MIT</sub><br><sub>🎬 Seedance / 即梦</sub><br><sub>💡 作者计划陆续发布故事、分镜、声音等其余阶段</sub>
 
@@ -442,7 +442,7 @@ npx skills add ciel-oliver/analyze-hit-novel
 
 - **[shanyin-screenwriting-master](https://github.com/Shanyin-ai/shanyin-screenwriting-master)** · ★ 1.3k<br>山音超级编剧大师：概念超短片、叙事短片、长片、多集剧集四种格式的人物、大纲、场景拆解和完整剧本<br><sub>阶段：人物 · 集纲 · 剧本</sub><br><sub>更新于 2026-04-01 💤 · 中文 · MIT</sub><br><sub>💡 以 .skill 文件分发，不能用 npx skills 安装</sub>
 
-- **[write-chinese-long-screenplay](https://github.com/mudden2380078550-creator/write-chinese-long-screenplay)** · ★ 23<br>中文电影与长剧集剧本写作<br><sub>阶段：集纲 · 剧本</sub><br><sub>更新于 2026-09-12 · 中文 · 2 个 skill · GPL-3.0</sub>
+- **[write-chinese-long-screenplay](https://github.com/mudden2380078550-creator/write-chinese-long-screenplay)** · ★ 23<br>Narrative Harness：中文小说与剧本创作的本地状态工具，旧版长剧本写作模板保留在 legacy/<br><sub>阶段：集纲 · 剧本</sub><br><sub>更新于 2026-09-12 · 中文 · 2 个 skill · GPL-3.0</sub>
 
 - **[claude-screenwriting](https://github.com/e06084/claude-screenwriting)** · ★ 9<br>编剧知识引擎：把 Vogler/McKee/救猫咪落成 Obsidian 故事 wiki，15-beat 节奏、三层角色卡、结构诊断<br><sub>阶段：人物 · 集纲 · 审稿</sub><br><sub>更新于 2026-10-08 · 中文 · 8 个 skill · MIT</sub>
 
@@ -502,7 +502,7 @@ npx skills add Nanako0129/sepia
 
 - **[huobao-drama](https://github.com/chatfire-AI/huobao-drama)** · ★ 16.3k<br>火宝短剧：一句话生成完整短剧，从剧本到成片全自动<br><sub>阶段：剧本 · 分镜 · 出片</sub><br><sub>更新于 2026-10-05 · 🧩 应用 · 多语言 · 7 个 skill</sub>
 
-- **[waoowaoo](https://github.com/waooAI/waoowaoo)** · ★ 14.6k<br>工业级全流程 AI 影视 Agent 平台，从短片到真人可控成片<br><sub>阶段：剧本 · 分镜 · 出片</sub><br><sub>更新于 2026-09-21 · 🧩 应用 · 多语言 · 6 个 skill</sub>
+- **[waoowaoo](https://github.com/waooAI/waoowaoo)** · ★ 14.6k<br>AI 影视 Agent 工作台（预览版）：图片与视频创作，从短片到真人可控成片<br><sub>阶段：剧本 · 分镜 · 出片</sub><br><sub>更新于 2026-09-21 · 🧩 应用 · 多语言 · 6 个 skill</sub><br><sub>💡 许可证为 Elastic 2.0：源码可见，但不是 OSI 认定的开源许可证</sub>
 
 - **[ViMax](https://github.com/HKUDS/ViMax)** · ★ 12.7k<br>港大 ViMax：导演、编剧、制片、视频生成一体的 Agent 化视频生成<br><sub>阶段：剧本 · 分镜 · 出片</sub><br><sub>更新于 2026-09-30 · 🧩 应用 · 英文 · MIT</sub>
 
@@ -514,9 +514,9 @@ npx skills add Nanako0129/sepia
 
 - **[printfilm](https://github.com/yi1108/printfilm)** · ★ 5.2k<br>PRINTFILM：AI 短视频营销与 AI 短剧创作平台<br><sub>阶段：剧本 · 分镜 · 出片</sub><br><sub>更新于 2026-10-15 · 🧩 应用 · 多语言 · MIT</sub>
 
-- **[BigBanana-AI-Director](https://github.com/shuyu-labs/BigBanana-AI-Director)** · ★ 2.3k<br>BigBanana AI 导演：短剧/漫剧一站式平台，「剧本 → 资产 → 关键帧」工业化流程<br><sub>阶段：剧本 · 分镜 · 出片</sub><br><sub>更新于 2026-10-06 · 🧩 应用 · 中文</sub>
+- **[BigBanana-AI-Director](https://github.com/shuyu-labs/BigBanana-AI-Director)** · ★ 2.3k<br>BigBanana AI 导演：短剧/漫剧一站式平台，「剧本 → 资产 → 关键帧」工业化流程<br><sub>阶段：剧本 · 分镜 · 出片</sub><br><sub>更新于 2026-10-06 · 🧩 应用 · 中文</sub><br><sub>💡 仓库里只有文档和拉取预构建镜像的 docker-compose，README 称已停止同步源码</sub>
 
-- **[LocalMiniDrama](https://github.com/xuanyustudio/LocalMiniDrama)** · ★ 2.1k<br>本地离线 AI 短剧/漫剧工具：故事到成片一站式，数据不出本机，已接入 Seedance 2<br><sub>阶段：剧本 · 分镜 · 出片</sub><br><sub>更新于 2026-10-16 · 🧩 应用 · 多语言 · 2 个 skill · MIT</sub>
+- **[LocalMiniDrama](https://github.com/xuanyustudio/LocalMiniDrama)** · ★ 2.1k<br>本地运行的 AI 短剧/漫剧工具：故事到成片，项目数据存在本机，图片和视频走云端 API，已接入 Seedance 2<br><sub>阶段：剧本 · 分镜 · 出片</sub><br><sub>更新于 2026-10-16 · 🧩 应用 · 多语言 · 2 个 skill · MIT</sub>
 
 - **[VideoClaw](https://github.com/HITsz-TMG/VideoClaw)** · ★ 1.9k<br>哈工大（深圳）VideoClaw：AI 视频员工，聊一个想法出一部片，覆盖短剧全流程<br><sub>阶段：剧本 · 分镜 · 出片</sub><br><sub>更新于 2026-08-26 · 🧩 应用 · 多语言 · MIT</sub>
 

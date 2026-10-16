@@ -74,8 +74,8 @@ stages  = ["adaptation", "structure", "drafting", "storyboard", "prompt", "produ
 format  = "skill"
 lang    = "zh"
 models  = ["minimax"]
-note    = "有 5 个 skill 与 shuohao-skills 同名，可能同源"
-note_en = "5 of its skills share names with shuohao-skills, possibly from the same source"
+note    = "5 个 novel-* skill 与 shuohao-skills 的文件结构和示例相同，仓库未注明来源"
+note_en = "Its 5 novel-* skills match shuohao-skills in file layout and examples; the repo does not credit it"
 checked = 2026-10-13
 
 [[skills]]
@@ -181,6 +181,8 @@ stages  = ["drafting", "revision", "storyboard", "prompt"]
 format  = "skill"
 lang    = "zh"
 models  = ["seedance"]
+note    = "整合了 0xsline/short-drama、Vi7QY/screenwriter-skill 等项目的修改版（README 已注明）；仓库无许可证"
+note_en = "Bundles modified copies of 0xsline/short-drama, Vi7QY/screenwriter-skill and others (credited in the README); no license"
 checked = 2026-10-13
 
 [[skills]]
@@ -298,8 +300,8 @@ checked = 2026-10-13
 
 [[skills]]
 repo    = "Vi7QY/screenwriter-skill"
-desc    = "短剧/漫剧剧本审稿：红果 Top100 操盘经验蒸馏的 37 条规则"
-desc_en = "Short drama / manju script review: 37 rules distilled from experience running Hongguo Top 100 shows"
+desc    = "短剧/漫剧剧本审稿：红果 Top100 操盘经验蒸馏的 38 条规则"
+desc_en = "Short drama / manju script review: 38 rules distilled from experience running Hongguo Top 100 shows"
 group   = "writing"
 stages  = ["revision"]
 format  = "skill"
@@ -354,8 +356,8 @@ group   = "writing"
 stages  = ["structure", "drafting"]
 format  = "skill"
 lang    = "zh"
-note    = "方法论来源为作者自述，未核实"
-note_en = "The methodology source is the author's own claim and unverified"
+note    = "基于 short-drama-factory v3.2 改编（README 已注明）；方法论来源为作者自述，未核实"
+note_en = "Adapted from short-drama-factory v3.2 (credited in the README); the methodology source is the author's own claim and unverified"
 checked = 2026-10-13
 
 [[skills]]
@@ -397,8 +399,8 @@ checked = 2026-10-13
 
 [[skills]]
 repo    = "cclank/lanshu-awesome-ai-video-kit"
-desc    = "企业 AI 视频项目工具包：Seedance/可灵提示词、分镜、模型选择与调试，附 411 条 prompt 和方法论"
-desc_en = "Toolkit from enterprise AI video projects: Seedance/Kling prompts, storyboards, model selection and debugging, with 411 prompts and methodology write-ups"
+desc    = "企业 AI 视频项目工具包：Seedance/可灵提示词、分镜、模型选择与调试，附 600 多条 prompt 和方法论"
+desc_en = "Toolkit from enterprise AI video projects: Seedance/Kling prompts, storyboards, model selection and debugging, with 600+ prompts and methodology write-ups"
 group   = "visual"
 stages  = ["storyboard", "prompt"]
 format  = "skill"
@@ -430,8 +432,8 @@ checked = 2026-10-13
 
 [[skills]]
 repo    = "wddxh/ShortVideoDirector"
-desc    = "4 个子代理协作，把故事创意转成视频分镜提示词和资产图像提示词"
-desc_en = "4 subagents collaborate to turn a story idea into video storyboard prompts and asset image prompts"
+desc    = "4 个子代理协作，把故事创意转成视频分镜和资产提示词，可调用即梦 CLI 出图、提交视频任务"
+desc_en = "4 subagents collaborate to turn a story idea into video storyboard and asset prompts, and can call the Dreamina CLI to generate images and submit video tasks"
 group   = "visual"
 stages  = ["structure", "character", "storyboard", "prompt"]
 format  = "skill"
@@ -498,8 +500,8 @@ checked = 2026-10-13
 
 [[skills]]
 repo    = "LearnPrompt/awesome-seedance"
-desc    = "Seedance 2.5/2.0 提示词库：600+ 条可追溯原帖的案例、260+ 次跨模型复测，附 skill"
-desc_en = "Seedance 2.5/2.0 prompt library: 600+ cases traceable to original posts and 260+ cross-model retests, with skills"
+desc    = "Seedance 2.5/2.0 提示词库：800+ 条可追溯原帖的案例、近 500 次跨模型复测，附 skill"
+desc_en = "Seedance 2.5/2.0 prompt library: 800+ cases traceable to original posts and nearly 500 cross-model retests, with skills"
 group   = "visual"
 stages  = ["prompt"]
 format  = "skill"
@@ -565,8 +567,8 @@ checked = 2026-10-13
 
 [[skills]]
 repo    = "wuwangzhang1216/DirectorSKILL"
-desc    = "AI 拍片：镜头清单、关键帧与视频提示词，内置斯皮尔伯格等 10 种导演风格"
-desc_en = "AI filmmaking: shot lists, keyframe and video prompts, with 10 built-in director styles such as Spielberg"
+desc    = "AI 拍片：镜头清单、关键帧与视频提示词，内置斯皮尔伯格等 20 种导演风格"
+desc_en = "AI filmmaking: shot lists, keyframe and video prompts, with 20 built-in director styles such as Spielberg"
 group   = "visual"
 stages  = ["storyboard", "prompt"]
 format  = "skill"
@@ -616,6 +618,8 @@ group   = "visual"
 stages  = ["drafting", "storyboard"]
 format  = "skill"
 lang    = "multi"
+note    = "参考库和检索代码经加密，由混淆的 Python 加载器运行，内容无法审阅；许可证 CC BY-NC-ND 4.0"
+note_en = "The reference library and search code are encrypted and run through an obfuscated Python loader, so they cannot be reviewed; licensed CC BY-NC-ND 4.0"
 checked = 2026-10-13
 
 [[skills]]
@@ -930,8 +934,8 @@ checked = 2026-10-13
 
 [[skills]]
 repo    = "mudden2380078550-creator/write-chinese-long-screenplay"
-desc    = "中文电影与长剧集剧本写作"
-desc_en = "Script writing for Chinese feature films and long-form series"
+desc    = "Narrative Harness：中文小说与剧本创作的本地状态工具，旧版长剧本写作模板保留在 legacy/"
+desc_en = "Narrative Harness: a local state tool for writing Chinese novels and scripts; the older long-form screenplay templates remain in legacy/"
 group   = "craft"
 stages  = ["structure", "drafting"]
 format  = "skill"
@@ -1009,12 +1013,14 @@ checked = 2026-10-13
 
 [[skills]]
 repo    = "waooAI/waoowaoo"
-desc    = "工业级全流程 AI 影视 Agent 平台，从短片到真人可控成片"
-desc_en = "Industrial-grade end-to-end AI film and video agent platform, from shorts to controllable live-action output"
+desc    = "AI 影视 Agent 工作台（预览版）：图片与视频创作，从短片到真人可控成片"
+desc_en = "AI film and video agent workspace (preview): image and video creation, from shorts to controllable live-action output"
 group   = "platform"
 stages  = ["drafting", "storyboard", "production"]
 format  = "app"
 lang    = "multi"
+note    = "许可证为 Elastic 2.0：源码可见，但不是 OSI 认定的开源许可证"
+note_en = "Licensed under Elastic 2.0: source-available, not an OSI-approved open-source license"
 checked = 2026-10-13
 
 [[skills]]
@@ -1055,6 +1061,7 @@ group   = "platform"
 stages  = ["adaptation", "character", "storyboard", "production"]
 format  = "app"
 lang    = "multi"
+skill_paths = ["skills/", "agent_runtime_profile/.claude/skills/"]
 checked = 2026-10-13
 
 [[skills]]
@@ -1065,12 +1072,14 @@ group   = "platform"
 stages  = ["drafting", "storyboard", "production"]
 format  = "app"
 lang    = "zh"
+note    = "仓库里只有文档和拉取预构建镜像的 docker-compose，README 称已停止同步源码"
+note_en = "The repo holds only docs and a docker-compose file that pulls prebuilt images; the README says source syncing has stopped"
 checked = 2026-10-13
 
 [[skills]]
 repo    = "xuanyustudio/LocalMiniDrama"
-desc    = "本地离线 AI 短剧/漫剧工具：故事到成片一站式，数据不出本机，已接入 Seedance 2"
-desc_en = "Local offline AI short drama / manju tool: story to final video in one place, data stays on your machine, with Seedance 2 integrated"
+desc    = "本地运行的 AI 短剧/漫剧工具：故事到成片，项目数据存在本机，图片和视频走云端 API，已接入 Seedance 2"
+desc_en = "Locally run AI short drama / manju tool: story to final video, project data stays on your machine while images and video go through cloud APIs, with Seedance 2 integrated"
 group   = "platform"
 stages  = ["drafting", "storyboard", "production"]
 format  = "app"

@@ -22,7 +22,7 @@ META_PATH = DATA / "meta.json"
 REPO_RE = re.compile(r"^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$")
 SKILL_FIELDS = {
     "required": {"repo", "desc", "group", "stages", "format", "lang"},
-    "optional": {"name", "agents", "models", "install", "tier", "note", "checked", "desc_en", "note_en"},
+    "optional": {"name", "agents", "models", "install", "tier", "note", "checked", "desc_en", "note_en", "skill_paths"},
 }
 TIERS = {"featured", "listed"}
 DESC_MAX = 80

@@ -53,8 +53,8 @@ def parse_frontmatter(text: str) -> dict[str, str]:
     return out
 
 
-def skill_paths(full_name: str, branch: str) -> tuple[list[str], int]:
-    """返回去重后的 SKILL.md 路径（同名目录只取最短路径）和总数。"""
+def skill_paths(full_name: str, branch: str, prefixes: list[str] | None = None) -> tuple[list[str], int]:
+    """返回去重后的 SKILL.md 路径（同名目录只取最短路径）和总数。prefixes 非空时只看这些目录。"""
     try:
         tree = gh_get(f"repos/{full_name}/git/trees/{branch}?recursive=1")
     except NotFound:
@@ -62,6 +62,8 @@ def skill_paths(full_name: str, branch: str) -> tuple[list[str], int]:
     by_name: dict[str, str] = {}
     for item in tree.get("tree", []):
         path = item["path"]
+        if prefixes and not path.startswith(tuple(prefixes)):
+            continue
         if item["type"] == "blob" and path.rsplit("/", 1)[-1].lower() == "skill.md":
             parent = path.rsplit("/", 1)[0] if "/" in path else ""
             name = parent.rsplit("/", 1)[-1]
@@ -87,12 +89,12 @@ def fetch_raw(full_name: str, branch: str, path: str) -> str | None:
     return None
 
 
-def index_repo(repo: str, meta: dict, old: dict) -> dict:
+def index_repo(repo: str, meta: dict, old: dict, prefixes: list[str] | None = None) -> dict:
     full_name = meta.get("full_name", repo)
     old_skills = {k["path"]: k for k in old.get("skills", [])}
     info = gh_get(f"repos/{full_name}")
     branch = info["default_branch"]
-    paths, total = skill_paths(full_name, branch)
+    paths, total = skill_paths(full_name, branch, prefixes)
     skills = []
     with cf.ThreadPoolExecutor(max_workers=8) as pool:
         texts = list(pool.map(lambda p: fetch_raw(full_name, branch, p), paths[:MAX_PER_REPO]))
@@ -117,7 +119,9 @@ def main() -> None:
     _, skills, _, _ = load_valid()
     meta = load_meta().get("repos", {})
     index = json.loads(INDEX_PATH.read_text(encoding="utf-8")) if INDEX_PATH.exists() else {"repos": {}}
-    repos = [s["repo"] for s in skills if s["format"] != "app" or meta.get(s["repo"], {}).get("skill_count")]
+    # 完整应用里的 SKILL.md 多是开发工具，只有在 skills.toml 写了 skill_paths 时才收录
+    paths_of = {s["repo"]: s.get("skill_paths") for s in skills}
+    repos = [s["repo"] for s in skills if s["format"] != "app" or s.get("skill_paths")]
     if args.only:
         wanted = {r.lower() for r in args.only}
         repos = [r for r in repos if r.lower() in wanted]
@@ -132,7 +136,7 @@ def main() -> None:
         if meta.get(repo, {}).get("status") == "missing":
             continue
         try:
-            entry = index_repo(repo, meta.get(repo, {}), index["repos"].get(repo, {}))
+            entry = index_repo(repo, meta.get(repo, {}), index["repos"].get(repo, {}), paths_of[repo])
         except NotFound:
             print(f"  ✗ {repo}  失效（404）")
             continue

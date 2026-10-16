@@ -47,10 +47,13 @@ name    = "显示名"                 # 可选，默认取仓库名
 tier    = "featured"              # 可选，精选；默认 listed
 note    = "需要注意的地方"           # 可选，显示在简介下方
 note_en = "English note"          # 可选，note 的英文版
+skill_paths = ["skills/"]         # 可选，只给 format = "app" 用：只把这些目录下的 SKILL.md 列到网站上
 checked = 2026-10-13              # 可选，人工核对日期（TOML 日期，不加引号）
 ```
 
 `agents` 和 `models` 只填仓库里明确写了的，不要推测。星数、许可证、最近更新时间、skill 数量由 `scripts/refresh.py` 自动抓取，不用手填。
+
+网站项目页另有两份数据：`data/overviews.toml` 是每个项目的编者说明（中英文，写怎么用、具体做法和前提，只写从仓库核实过的事实）；`data/translations.json` 是仓库简介和 SKILL.md 说明的英文译文，以原文为键，原文变了就要重新翻译，没有译文的段落在英文页暂不显示，`build_site.py` 会提示还差几段。
 
 英文版 README.en.md 的分类名和简介在 `data/taxonomy.toml` 的 `*_en` 字段，界面文字在 `scripts/build.py` 的 `UI`。PR 里不会写英文简介也没关系，维护者合并时补上。
 

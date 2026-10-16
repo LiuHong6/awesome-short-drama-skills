@@ -188,207 +188,62 @@
       "branch": "main",
       "skills": [
         {
-          "description": "起草指定版本的版本亮点；确认后同步到 Changelog 与 GitHub Release，并推送 main。",
-          "name": "add-release-highlights",
-          "path": ".agents/skills/add-release-highlights/SKILL.md"
+          "description": "当用户要求把采用 JSON 提交后轮询协议的视频或图片供应商接入 ArcReel，或要求编写、验证、测试、保存自定义调用端点定义时使用。",
+          "name": "adapt-custom-endpoint",
+          "path": "agent_runtime_profile/.claude/skills/adapt-custom-endpoint/SKILL.md"
         },
         {
-          "description": "评估 AFK 批次的工程、产品、知识与执行改进，生成可留存报告供用户裁决。",
-          "name": "afk-retrospective",
-          "path": ".agents/skills/afk-retrospective/SKILL.md"
+          "description": "在剪辑时间线上剪辑一集，并按要求出成片或导出剪映草稿。本集视频已齐、要剪一版时使用；用户按片段编号提出修改（如「c3 太拖」），或要求配 BGM、出成片、导出剪映草稿、复制或重命名剪辑时间线、回到旧修订时，也使用本 skill。",
+          "name": "edit-video",
+          "path": "agent_runtime_profile/.claude/skills/edit-video/SKILL.md"
         },
         {
-          "description": "把一个 Spec 的全部子 issue 或一批零散 issue 组建团队无人值守跑到全部合并或明确暂停。",
-          "name": "afk-team-workflow",
-          "path": ".agents/skills/afk-team-workflow/SKILL.md"
+          "description": "统一资产生成 skill：接受 `--type=character|scene|prop|product`，或不传自动扫所有 pending（缺 sheet）资源并按类型分发。当用户说“生成角色图”/“生成场景图”/“生成道具图”/“生成商品图”、想为新资产创建参考图、或有资产缺少 *_sheet 时使用。",
+          "name": "generate-assets",
+          "path": "agent_runtime_profile/.claude/skills/generate-assets/SKILL.md"
         },
         {
-          "description": "Browser automation CLI for AI agents. Use when the user needs to interact with websites, including navigating pages, filling forms, clicking buttons, taking screenshots, extracting data, testing web apps, or automating any browser task. Triggers include requests to \"open a website\", \"fill out a for…",
-          "name": "agent-browser",
-          "path": ".agents/skills/agent-browser/SKILL.md"
+          "description": "生成宫格分镜图。当用户说\"生成宫格\"、\"宫格生图\"、\"用宫格装配生成分镜\"时使用。自动按 segment_break 分组，选择最优宫格大小，生成链式过渡帧宫格联合图；用户审阅联合图并同意后，再切分落格为各分镜的起始分镜图。",
+          "name": "generate-grid",
+          "path": "agent_runtime_profile/.claude/skills/generate-grid/SKILL.md"
         },
         {
-          "description": "Ask which skill or flow fits your situation. A router over the skills in this repo.",
-          "name": "ask-matt",
-          "path": ".agents/skills/ask-matt/SKILL.md"
+          "description": "为旁白/解说剧本逐分镜生成旁白配音（TTS）。当 TTS 项目首轮自动剪辑需要补齐缺失配音、用户要求生成或重新生成某个分镜或某集旁白配音，或批量配音中断需要补齐时使用。",
+          "name": "generate-narration-audio",
+          "path": "agent_runtime_profile/.claude/skills/generate-narration-audio/SKILL.md"
         },
         {
-          "description": "Review the changes since a fixed point (commit, branch, tag, or merge-base) along two axes: Standards (does the code follow this repo's documented coding standards?) and Spec (does the code match what the originating issue/spec asked for?). Runs both reviews in parallel sub-agents and reports them…",
-          "name": "code-review",
-          "path": ".agents/skills/code-review/SKILL.md"
+          "description": "提示词编写：调用项目配置的文本模型，为正式脚本中待编写的分镜 / 视频单元补出 image_prompt 与 video_prompt（参考生视频改写单元正文）；ad 项目尚无正式脚本时整份生成。由 create-episode-script 子智能体调用，输入是正式脚本自身的内容与 project.json。",
+          "name": "generate-script",
+          "path": "agent_runtime_profile/.claude/skills/generate-script/SKILL.md"
         },
         {
-          "description": "Shared vocabulary for designing deep modules. Use when the user wants to design or improve a module's interface, find deepening opportunities, decide where a seam goes, make code more testable or AI-navigable, or when another skill needs the deep-module vocabulary.",
-          "name": "codebase-design",
-          "path": ".agents/skills/codebase-design/SKILL.md"
+          "description": "为分镜生成分镜图。当用户说\"生成分镜\"、\"预览分镜画面\"、想重新生成某些分镜图、或剧本中有分镜缺少分镜图时使用。自动保持角色和画面连续性。",
+          "name": "generate-storyboard",
+          "path": "agent_runtime_profile/.claude/skills/generate-storyboard/SKILL.md"
         },
         {
-          "description": "Diagnosis loop for hard bugs and performance regressions. Use when the user says \"diagnose\"/\"debug this\", or reports something broken/throwing/failing/slow.",
-          "name": "diagnosing-bugs",
-          "path": ".agents/skills/diagnosing-bugs/SKILL.md"
+          "description": "为分镜或自包含视频单元生成视频。当用户要求生成或重做视频时使用；支持整集、单项与批量自选。",
+          "name": "generate-video",
+          "path": "agent_runtime_profile/.claude/skills/generate-video/SKILL.md"
         },
         {
-          "description": "Build and sharpen a project's domain model. Use when discussing codebase terminology, writing or editing a GLOSSARY.md, or recording or editing an ADR.",
-          "name": "domain-modeling",
-          "path": ".agents/skills/domain-modeling/SKILL.md"
+          "description": "项目管理工具集。使用场景：新增/修改角色/场景/道具到 project.json（经 patch_project 工具，按 table+name upsert）、级联重命名资产（rename_asset 工具）、合并同一身份被重复登记的资产（merge_asset 工具）、写顶层 settings 字段、编辑项目概述 overview，以及查询视频模型能力（get_video_capabilities）。分集规划不在本 skill：走 mcp__arcreel__plan_episodes / reset_episode_planning 服务端工具。",
+          "name": "manage-project",
+          "path": "agent_runtime_profile/.claude/skills/manage-project/SKILL.md"
         },
         {
-          "description": "This skill encodes Emil Kowalski's philosophy on UI polish, component design, animation decisions, and the invisible details that make software feel great.",
-          "name": "emil-design-eng",
-          "path": ".agents/skills/emil-design-eng/SKILL.md"
+          "description": "将当前 Agent 宿主连接到 ArcReel 远程 MCP 服务并验证访问。",
+          "name": "setup-arcreel-skills",
+          "path": "skills/setup-arcreel-skills/SKILL.md"
         },
         {
-          "description": "Guidance for distinctive, intentional visual design when building new UI or reshaping an existing one. Helps with aesthetic direction, typography, and making choices that don't read as templated defaults.",
-          "name": "frontend-design",
-          "path": ".agents/skills/frontend-design/SKILL.md"
-        },
-        {
-          "description": "A relentless interview to sharpen a plan or design.",
-          "name": "grill-me",
-          "path": ".agents/skills/grill-me/SKILL.md"
-        },
-        {
-          "description": "A relentless interview to sharpen a plan or design, which also creates docs (ADR's and glossary) as we go.",
-          "name": "grill-with-docs",
-          "path": ".agents/skills/grill-with-docs/SKILL.md"
-        },
-        {
-          "description": "Grill the user relentlessly about a plan, decision, or idea. Use when the user wants to stress-test their thinking, or uses any 'grill' trigger phrases.",
-          "name": "grilling",
-          "path": ".agents/skills/grilling/SKILL.md"
-        },
-        {
-          "description": "Compact the current conversation into a handoff document for another agent to pick up.",
-          "name": "handoff",
-          "path": ".agents/skills/handoff/SKILL.md"
-        },
-        {
-          "description": "Implement the result of /to-spec and /to-tickets in code.",
-          "name": "implement-spec",
-          "path": ".agents/skills/implement-spec/SKILL.md"
-        },
-        {
-          "description": "Implement a piece of work based on a spec or set of tickets.",
-          "name": "implement",
-          "path": ".agents/skills/implement/SKILL.md"
-        },
-        {
-          "description": "Scan a codebase for deepening opportunities, present them as a visual HTML report, then grill through whichever one you pick.",
-          "name": "improve-codebase-architecture",
-          "path": ".agents/skills/improve-codebase-architecture/SKILL.md"
-        },
-        {
-          "description": "PR AI review 收敛。用户或 team-lead 要求启动或继续审查—修复循环时使用；供本地实现者或受委派的 review-looper 调用，不用于 GitHub reviewer 产出审查意见或仅处理单条评论。",
-          "name": "pr-ai-review-loop",
-          "path": ".agents/skills/pr-ai-review-loop/SKILL.md"
-        },
-        {
-          "description": "Use when writing a PR body.",
-          "name": "pr",
-          "path": ".agents/skills/pr/SKILL.md"
-        },
-        {
-          "description": "Build a throwaway prototype to answer a design question. Use when the user wants to sanity-check whether a state model or logic feels right, or explore what a UI should look like.",
-          "name": "prototype",
-          "path": ".agents/skills/prototype/SKILL.md"
-        },
-        {
-          "description": "Investigate a question against high-trust primary sources and capture the findings as a Markdown file in the repo. Use when the user wants a topic researched, docs or API facts gathered, or reading legwork delegated to a background agent.",
-          "name": "research",
-          "path": ".agents/skills/research/SKILL.md"
-        },
-        {
-          "description": "Conduct a retrospective on a coding session.",
-          "name": "retro",
-          "path": ".agents/skills/retro/SKILL.md"
-        },
-        {
-          "description": "Configure this repo for the engineering skills: set up its issue tracker, triage label vocabulary, and domain doc layout. Run once before first use of the other engineering skills.",
-          "name": "setup-matt-pocock-skills",
-          "path": ".agents/skills/setup-matt-pocock-skills/SKILL.md"
-        },
-        {
-          "description": "Manages shadcn components and projects — adding, searching, fixing, debugging, styling, and composing UI, including chat interfaces. Provides project context, component docs, and usage examples. Applies when working with shadcn/ui, component registries, presets, --preset codes, or any project with…",
-          "name": "shadcn",
-          "path": ".agents/skills/shadcn/SKILL.md"
-        },
-        {
-          "description": "Test-driven development. Use when the user wants to build features or fix bugs test-first, mentions \"red-green-refactor\", or wants integration tests.",
-          "name": "tdd",
-          "path": ".agents/skills/tdd/SKILL.md"
-        },
-        {
-          "description": "Teach the user a new skill or concept, within this workspace.",
-          "name": "teach",
-          "path": ".agents/skills/teach/SKILL.md"
-        },
-        {
-          "description": "在撰写、改写、校对或审阅中文技术文档、产品文案、界面文案、Markdown 文档、API 说明、操作手册、故障排查或运维文档时使用。采用克制、准确、可扫读的中文技术写作风格；保留原文事实、限制和机器可读内容；按任务读取术语排版、API 状态文案、项目覆盖或受控中文技术写作参考。",
-          "name": "tech-doc-style-chinese",
-          "path": ".agents/skills/tech-doc-style-chinese/SKILL.md"
-        },
-        {
-          "description": "Turn a decision you can't fully answer into a questionnaire for someone else to fill in.",
-          "name": "to-questionnaire",
-          "path": ".agents/skills/to-questionnaire/SKILL.md"
-        },
-        {
-          "description": "Turn the current conversation into a spec and publish it to the project issue tracker: no interview, just synthesis of what you've already discussed.",
-          "name": "to-spec",
-          "path": ".agents/skills/to-spec/SKILL.md"
-        },
-        {
-          "description": "Break a plan, spec, or the current conversation into a set of tracer-bullet tickets, each declaring its blocking edges, published to the configured tracker (edges as text in one file per ticket locally, or native blocking links on a real tracker).",
-          "name": "to-tickets",
-          "path": ".agents/skills/to-tickets/SKILL.md"
-        },
-        {
-          "description": "Move issues and external PRs through a state machine of triage roles, categorise, verify, grill if needed, and write agent-ready briefs.",
-          "name": "triage",
-          "path": ".agents/skills/triage/SKILL.md"
-        },
-        {
-          "description": "根据最近的 git 改动，更新面向用户的文档（README 双语、入门教程、部署、剪映导出等）。手动调用。",
-          "name": "update-docs",
-          "path": ".agents/skills/update-docs/SKILL.md"
-        },
-        {
-          "description": "React and Next.js performance optimization guidelines from Vercel Engineering. This skill should be used when writing, reviewing, or refactoring React/Next.js code to ensure optimal performance patterns. Triggers on tasks involving React components, Next.js pages, data fetching, bundle optimization…",
-          "name": "vercel-react-best-practices",
-          "path": ".agents/skills/vercel-react-best-practices/SKILL.md"
-        },
-        {
-          "description": "Stop. That last message did not land: re-pitch it.",
-          "name": "wait-what",
-          "path": ".agents/skills/wait-what/SKILL.md"
-        },
-        {
-          "description": "Plan a huge chunk of work (more than one agent session can hold) as a shared map of decision tickets on your issue tracker, and resolve them one at a time until the way to the destination is clear.",
-          "name": "wayfinder",
-          "path": ".agents/skills/wayfinder/SKILL.md"
-        },
-        {
-          "description": "Review UI code for Web Interface Guidelines compliance. Use when asked to \"review my UI\", \"check accessibility\", \"audit design\", \"review UX\", or \"check my site against best practices\".",
-          "name": "web-design-guidelines",
-          "path": ".agents/skills/web-design-guidelines/SKILL.md"
-        },
-        {
-          "description": "Generate an interactive bash wizard that walks a human through steps only they can perform. Use when provisioning infrastructure, setting up credentials or CI secrets, walking an unfamiliar third-party dashboard, or running a one-off migration or cutover. Don't invoke this for steps the agent can p…",
-          "name": "wizard",
-          "path": ".agents/skills/wizard/SKILL.md"
-        },
-        {
-          "description": "Writing documents for agents. Use when creating or editing skills, or modifying AGENTS.md or CLAUDE.md.",
-          "name": "writing-for-agents",
-          "path": ".agents/skills/writing-for-agents/SKILL.md"
-        },
-        {
-          "description": "Translate every dirty ArcReel documentation source into English and refresh the translation lockfile.",
-          "name": "translate-docs",
-          "path": ".claude/skills/translate-docs/SKILL.md"
+          "description": "当用户要求创建视频、新建或继续项目、推进下一步、检查进度、完成或导出时，编排 ArcReel 视频项目。用于端到端工作流请求，不用于仅编辑某个现有产物。",
+          "name": "video-workflow",
+          "path": "skills/video-workflow/SKILL.md"
         }
       ],
-      "total": 51
+      "total": 11
     },
     "AtlasCloudAI/awesome-seedance-2.5-prompts-skills": {
       "branch": "main",
@@ -405,59 +260,6 @@
         }
       ],
       "total": 2
-    },
-    "Forget-C/Jellyfish": {
-      "branch": "main",
-      "skills": [
-        {
-          "description": "",
-          "name": "ui-ux-pro-max",
-          "path": ".cursor/skills/ui-ux-pro-max/SKILL.md"
-        }
-      ],
-      "total": 1
-    },
-    "HBAI-Ltd/Toonflow-app": {
-      "branch": "master",
-      "skills": [
-        {
-          "description": "通过 Toonflow MCP 操作工作区、实时画布、节点、文档和媒体生成，以及管理插件、技能和模型。当用户希望控制正在运行的 Toonflow 或修改其中的内容与配置时使用。",
-          "name": "toonflow",
-          "path": "packages/mcp/skills/toonflow/SKILL.md"
-        },
-        {
-          "description": "Toonflow 画布操作手册。使用画布工具创建、切换和重命名画布，添加、移动、重命名、连接和删除节点，自动整理整幅画布、调整视口，以及调用节点注册的函数。用户要求操作当前画布或搭建节点流程时使用。",
-          "name": "canvas",
-          "path": "packages/skills/canvas/SKILL.md"
-        },
-        {
-          "description": "融合 Toonflow v1.1.8 的编剧方法、12 类叙事技法、11 种美术风格及资产、分镜、图像和视频提示词知识，将小说或剧本逐阶段制作并确认。统一维护剧本画布、资产画布和每集制作画布；用于旧版流程复现、分集制作或续作，讨论或编辑技能本身时不启动制作。",
-          "name": "v118workflow",
-          "path": "packages/skills/v118workflow/SKILL.md"
-        },
-        {
-          "description": "在 Toonflow 当前画布中把创意、小说或定稿剧本制作成可查看的文本、图片资产和视频片段，支持复用素材、续作与局部修改。用于实际制作或继续已有项目；明确只要对话文字时不操作画布，讨论或编辑技能本身时不启动制作。",
-          "name": "workflow",
-          "path": "packages/skills/workflow/SKILL.md"
-        },
-        {
-          "description": "将已明确的故事与约束转化为可审阅的文字分镜，并保持镜头之间的叙事连续性。",
-          "name": "storyboard",
-          "path": "packages/teams/storyboardTeam/skills/storyboard/SKILL.md"
-        }
-      ],
-      "total": 5
-    },
-    "HITsz-TMG/VideoClaw": {
-      "branch": "main",
-      "skills": [
-        {
-          "description": "AI 视频生成全流程：通过 6 个阶段（剧本→角色/场景设计→分镜→参考图→视频生成→后期剪辑）将用户想法转化为完整视频。支持临时工作台（单独调用 LLM、VLM、文生图、图生图、视频生成）和一次性短流程 Pipeline（文艺短视频、动作迁移、数字人口播）。触发词：视频生成、AI视频、AIGC、创作视频、制作视频、AI画图、文艺短视频、静态短视频、动作迁移、数字人口播。",
-          "name": "video-claw",
-          "path": "video-claw/SKILL.md"
-        }
-      ],
-      "total": 1
     },
     "Hao0321/ai-short-drama": {
       "branch": "main",
@@ -941,17 +743,6 @@
           "description": "引导参赛者从零推演并写出高质量的五分钟短剧剧本。适用于五分钟短剧大赛选题、世界与角色设定、首尾设计、四幕卡点大纲、正式剧本和分镜脚本创作；强调前 30 秒入戏、结构承诺兑现与设定一致性。",
           "name": "5min-drama-contest",
           "path": "SKILL.md"
-        }
-      ],
-      "total": 1
-    },
-    "Stonewuu/ai-fusion-video": {
-      "branch": "main",
-      "skills": [
-        {
-          "description": "测试技能描述",
-          "name": "test-skill",
-          "path": "ai-fusion-video/src/test/resources/agentscope/skills/test-skill/SKILL.md"
         }
       ],
       "total": 1
@@ -1635,17 +1426,6 @@
       ],
       "total": 1
     },
-    "alibaba/lumenx": {
-      "branch": "main",
-      "skills": [
-        {
-          "description": "Manual intent elicitation skill. Use when the user asks to clarify a fuzzy idea, run an elicitation session, design an agent/skill/workflow, identify strategic tension, do a postmortem, align taste/brand direction, or turn vague judgment into an actionable Intent Brief. The skill asks 3–5 sharp que…",
-          "name": "elicitation-agent",
-          "path": "skills/elicitation-skill/SKILL.md"
-        }
-      ],
-      "total": 1
-    },
     "babicat4242-svg/seedance-2-5-prompting": {
       "branch": "main",
       "skills": [
@@ -1720,47 +1500,6 @@
       ],
       "total": 7
     },
-    "chatfire-AI/huobao-drama": {
-      "branch": "master",
-      "skills": [
-        {
-          "description": "角色、场景和道具提取的规范与方法",
-          "name": "extractor",
-          "path": "backend/workspace/skills/extractor/SKILL.md"
-        },
-        {
-          "description": "角色最终提示词规范 — 正脸特写 + 三视图（character turnaround：正面/90 度侧面/背面），作为后续所有生成的形象锚点",
-          "name": "character-prompt",
-          "path": "backend/workspace/skills/prompt-generator/character-prompt/SKILL.md"
-        },
-        {
-          "description": "道具最终提示词规范 — 白底单品静物，标准产品摄影视角：比例准确、边缘完整、背景不承载叙事",
-          "name": "prop-prompt",
-          "path": "backend/workspace/skills/prompt-generator/prop-prompt/SKILL.md"
-        },
-        {
-          "description": "场景最终提示词规范 — 清晰广角建立镜头：前景/中景/后景/出入口/地面/墙面/主要陈设的固定相对位置，空间连续自洽可复用，无人物",
-          "name": "scene-prompt",
-          "path": "backend/workspace/skills/prompt-generator/scene-prompt/SKILL.md"
-        },
-        {
-          "description": "视频提示词规范 — 根据分镜段落内容生成按时间分段、段内可切镜的视频生成提示词",
-          "name": "video-prompt",
-          "path": "backend/workspace/skills/prompt-generator/video-prompt/SKILL.md"
-        },
-        {
-          "description": "小说改写为格式化剧本的方法论和规范",
-          "name": "script-rewriter",
-          "path": "backend/workspace/skills/script-rewriter/SKILL.md"
-        },
-        {
-          "description": "分镜拆解专业规范 — 将剧本拆分为可承载多个子镜头的分镜段落",
-          "name": "storyboard-breaker",
-          "path": "backend/workspace/skills/storyboard-breaker/SKILL.md"
-        }
-      ],
-      "total": 7
-    },
     "ciel-oliver/analyze-hit-novel": {
       "branch": "main",
       "skills": [
@@ -1828,42 +1567,6 @@
         }
       ],
       "total": 7
-    },
-    "dramaclaw/dramaclaw": {
-      "branch": "main",
-      "skills": [
-        {
-          "description": "Use for explicit DramaClaw/虾导 production work: ingesting a screenplay; checking or resuming a bound pipeline; generating or displaying portraits, identity images, sketches, first frames, audio, beat videos or final episodes; and reading or updating project artifacts. Also use for identity questions…",
-          "name": "dramaclaw",
-          "path": ".hermes/skills/dramaclaw/SKILL.md"
-        },
-        {
-          "description": "Use when the active chat surface is 虾画/Freezone/canvas, or when the user asks about canvas nodes, visual boards, selections, graph edits, canvas actions, layout, or Freezone short-video workflow work.",
-          "name": "freezone",
-          "path": ".hermes/skills/freezone/SKILL.md"
-        },
-        {
-          "description": "Use when doing single-beat sketch quality control and preparing correction labels from a SuperTale project path and episode number. This skill turns one episode's selected sketches plus local script beat data into select_result.jsonl, select_summary.json, tasks.jsonl, and labels.jsonl for edit exec…",
-          "name": "sketch-correction-worker",
-          "path": ".hermes/skills/sketch-correction-worker/SKILL.md"
-        },
-        {
-          "description": "Use when doing a separate post-QC storyboard-directing pass on SuperTale sketches. This skill focuses on shot scale, camera angle, staging, composition, and beat-to-beat visual rhythm after basic sketch correctness has already passed QC.",
-          "name": "sketch-storyboard-director",
-          "path": ".hermes/skills/sketch-storyboard-director/SKILL.md"
-        },
-        {
-          "description": "Use in Freezone/虾画 chat when the user selects a Skill or asks to create, plan, analyze, or expand a dynamic canvas workflow for short drama, ads, ecommerce, product video, MV, text, image, video, or audio production.",
-          "name": "workflows",
-          "path": ".hermes/skills/workflows/SKILL.md"
-        },
-        {
-          "description": "Create, revise, confirm, run, or resume multi-node DramaClaw Freezone canvas workflows. Use for requests involving a workflow, several connected nodes, grouped production stages, storyboards, or text/image/video/audio pipelines; do not use for one standalone canvas operation.",
-          "name": "dramaclaw-workflows",
-          "path": "agent-kit/skills/dramaclaw-workflows/SKILL.md"
-        }
-      ],
-      "total": 6
     },
     "e06084/claude-screenwriting": {
       "branch": "main",
@@ -2821,42 +2524,6 @@
       ],
       "total": 8
     },
-    "waooAI/waoowaoo": {
-      "branch": "main",
-      "skills": [
-        {
-          "description": "Scope reusable production assets and define stable visible designs from an exact source text.",
-          "name": "asset-development",
-          "path": "src/lib/creative-skills/skills/asset-development/SKILL.md"
-        },
-        {
-          "description": "Apply shared creative fact boundaries, scope control, duration discipline, and delivery checks.",
-          "name": "creative-core",
-          "path": "src/lib/creative-skills/skills/creative-core/SKILL.md"
-        },
-        {
-          "description": "Establish one coherent visual, narrative, directing, editing, sound, and asset direction.",
-          "name": "creative-direction",
-          "path": "src/lib/creative-skills/skills/creative-direction/SKILL.md"
-        },
-        {
-          "description": "Plan narrative score windows and author precise Eleven Music v2 Composition Plans.",
-          "name": "music-direction",
-          "path": "src/lib/creative-skills/skills/music-direction/SKILL.md"
-        },
-        {
-          "description": "Write the project's source text — a faithful, magnetic story screenplay, an executable timed commercial script, a brand or corporate promo script, or an attention-driven short-video script — from the user's need, choosing the interview, direction candidates, and judging ruler by need type.",
-          "name": "script-development",
-          "path": "src/lib/creative-skills/skills/script-development/SKILL.md"
-        },
-        {
-          "description": "Direct source-text-based video generation with explicit state continuity, physical performance, minimal segment count, structured shot timing, reference identity, sound relationships, and executable final prompts.",
-          "name": "video-direction",
-          "path": "src/lib/creative-skills/skills/video-direction/SKILL.md"
-        }
-      ],
-      "total": 6
-    },
     "wddxh/ShortVideoDirector": {
       "branch": "main",
       "skills": [
@@ -3078,33 +2745,6 @@
           "description": "面向 Codex、Claude Code、WorkBuddy 和其他 Agent Skills 客户端，把一句话点子、故事梗概、小说、文案、剧本、分镜或已有素材，串成可理解、可衔接、可发布的 AI 短剧与 AI 短片。适用于抖音、红果短剧、视频号、快手、B站、YouTube 等横屏或竖屏内容；支持真人、独立短片、单元剧、连续剧、宠物、拟人奇幻、动画/漫剧、UGC 和品牌剧情。用于故事诊断、编剧、分镜、角色/重复道具一致性、Wan 3、Seedance 2.5/2.0/Fast、MiniMax H3 等模型选路、15–30 秒长段、原生对白、参考音频、配音、付费预算、连续性剪辑、物理质检和冷观…",
           "name": "dramake",
           "path": "skills/dramake/SKILL.md"
-        }
-      ],
-      "total": 1
-    },
-    "xuanyustudio/LocalMiniDrama": {
-      "branch": "main",
-      "skills": [
-        {
-          "description": "在当前打开的短剧里写剧本、生成角色、场景、分镜并出图。",
-          "name": "short-drama",
-          "path": "backend-node/skills/short-drama/SKILL.md"
-        },
-        {
-          "description": "LocalMiniDrama 本地短剧助手 — 通过自然语言控制短剧项目全流程：创建剧本、生成角色/场景/道具、生成分镜、批量出图、出视频、合成完整剧集、支持小说导入和工程导入导出",
-          "name": "local-mini-drama",
-          "path": "openclaw-skill/SKILL.md"
-        }
-      ],
-      "total": 2
-    },
-    "yi1108/printfilm": {
-      "branch": "main",
-      "skills": [
-        {
-          "description": "面向 Seedance 生视频的镜头导演手册：约束分镜规划（shot_plan）与 视频提示词（video_prompt）的运镜、第一帧与空间站位写法。",
-          "name": "CINEDANCE Seedance 镜头导演",
-          "path": "backend/app/data/agent_skills/cinedance-seedance/SKILL.md"
         }
       ],
       "total": 1
