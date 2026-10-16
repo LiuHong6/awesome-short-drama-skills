@@ -1,7 +1,7 @@
 <a id="resources"></a>
 ## Resources
 
-- [awesome-llm-storytelling](https://github.com/UnderleveledBuilder/awesome-llm-storytelling/blob/main/README.en.md): open-source methods for getting LLMs to tell stories; covers the script and story side (outlines, characters, review, de-AI), with a method guide
+- [awesome-story-skills](https://github.com/UnderleveledBuilder/awesome-story-skills/blob/main/README.en.md): open-source methods for getting LLMs to tell stories; covers the script and story side (outlines, characters, review, de-AI), with a method guide
 - [PAMPAS-Lab/awesome-ai-short-drama](https://github.com/PAMPAS-Lab/awesome-ai-short-drama): a resource list on AI short-drama production, focused on open-source systems, research papers and commercial products
 - [zhaotoday/awesome-ai-video](https://github.com/zhaotoday/awesome-ai-video): an overview of AI video production resources, from short-drama platforms to editing, ComfyUI and distribution
 - [awesome-novel-skills](https://github.com/UnderleveledBuilder/awesome-novel-skills/blob/main/README.en.md): skills for writing novels and web fiction, the usual source material for short-drama adaptation
