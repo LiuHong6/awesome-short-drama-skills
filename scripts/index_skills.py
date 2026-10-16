@@ -71,7 +71,8 @@ def skill_paths(full_name: str, branch: str) -> tuple[list[str], int]:
     return paths, len(paths)
 
 
-def fetch_raw(full_name: str, branch: str, path: str) -> str:
+def fetch_raw(full_name: str, branch: str, path: str) -> str | None:
+    """返回文件内容；文件不存在返回空串，重试后仍失败返回 None（调用方沿用上次的结果）。"""
     url = f"https://raw.githubusercontent.com/{full_name}/{branch}/{urllib.parse.quote(path)}"
     req = urllib.request.Request(url, headers={"User-Agent": "awesome-short-drama-skills"})
     for attempt in range(3):
@@ -81,16 +82,14 @@ def fetch_raw(full_name: str, branch: str, path: str) -> str:
         except urllib.error.HTTPError as e:
             if e.code == 404:
                 return ""
-            if attempt == 2:
-                return ""
         except OSError:
-            if attempt == 2:
-                return ""
-    return ""
+            pass
+    return None
 
 
-def index_repo(repo: str, meta: dict) -> dict:
+def index_repo(repo: str, meta: dict, old: dict) -> dict:
     full_name = meta.get("full_name", repo)
+    old_skills = {k["path"]: k for k in old.get("skills", [])}
     info = gh_get(f"repos/{full_name}")
     branch = info["default_branch"]
     paths, total = skill_paths(full_name, branch)
@@ -98,7 +97,10 @@ def index_repo(repo: str, meta: dict) -> dict:
     with cf.ThreadPoolExecutor(max_workers=8) as pool:
         texts = list(pool.map(lambda p: fetch_raw(full_name, branch, p), paths[:MAX_PER_REPO]))
     for path, text in zip(paths[:MAX_PER_REPO], texts):
-        fm = parse_frontmatter(text)
+        if text is None and path in old_skills:
+            skills.append(old_skills[path])
+            continue
+        fm = parse_frontmatter(text or "")
         folder = path.rsplit("/", 2)[-2] if "/" in path else full_name.split("/")[1]
         desc = fm.get("description", "")
         if len(desc) > DESC_MAX:
@@ -125,13 +127,18 @@ def main() -> None:
     if not has_token():
         print("提示：未检测到 GITHUB_TOKEN 或 gh 登录，匿名配额每小时 60 次。", file=sys.stderr)
 
+    failed = []
     for repo in repos:
         if meta.get(repo, {}).get("status") == "missing":
             continue
         try:
-            entry = index_repo(repo, meta.get(repo, {}))
+            entry = index_repo(repo, meta.get(repo, {}), index["repos"].get(repo, {}))
         except NotFound:
             print(f"  ✗ {repo}  失效（404）")
+            continue
+        except Exception as exc:  # 单个仓库出错（限流、5xx、网络）不拖垮整次刷新，沿用上次的数据
+            failed.append(repo)
+            print(f"  ! {repo}  抓取失败，沿用上次的数据：{exc}")
             continue
         index["repos"][repo] = entry
         print(f"  ✓ {repo}  {entry['total']} 个 SKILL.md")
@@ -139,6 +146,9 @@ def main() -> None:
     index["fetched_at"] = dt.date.today().isoformat()
     INDEX_PATH.write_text(json.dumps(index, ensure_ascii=False, indent=2, sort_keys=True) + "\n", encoding="utf-8")
     print(f"\n已写入 {INDEX_PATH}")
+    if failed:
+        # ::warning:: 会在 GitHub Actions 的运行摘要里显示
+        print(f"::warning::{len(failed)} 个仓库的 SKILL.md 没抓到，沿用上次的数据：{', '.join(failed)}")
 
 
 if __name__ == "__main__":

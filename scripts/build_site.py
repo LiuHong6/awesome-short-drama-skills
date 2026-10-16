@@ -24,7 +24,7 @@ import urllib.parse
 
 from build import NEW_DAYS, SPECIALIST_MAX, STALE_DAYS, by_stars, display_name, fmt_stars, install_cmd, new_entries, \
     sort_key, tr
-from lib import DATA, ROOT, load_meta, load_valid
+from lib import DATA, ROOT, load_meta, load_valid, third_party_text
 
 WEB = ROOT / "web"
 DIST = WEB / "dist"
@@ -226,7 +226,7 @@ class Site:
         return f"""<footer class="site-footer"><div class="wrap">
 {follow}
 <p>{L(lang, '数据更新于', 'Data updated')} {self.d.updated} · {L(lang, '每周一自动刷新星数和更新时间', 'Stars and update dates refresh every Monday')} · <a href="{REPO_URL}">GitHub</a> · <a href="{REPO_URL}/issues/new?template=submit-skill.yml">{L(lang, '推荐项目', 'Suggest a skill')}</a> · <a href="/llms.txt">llms.txt</a> · <a href="/data.json">data.json</a></p>
-<p>{L(lang, '收录数据以 CC0 发布，可自由引用。「人工核对」指核对过仓库说明和分类，不代表实测过效果。', 'Data released under CC0. "Checked" means the README and category were reviewed by hand, not that the skill was tested.')}</p>
+<p>{L(lang, '我们写的简介、点评和分类以 CC0 发布，可自由引用；「仓库自述」和 SKILL.md 说明摘自原仓库，版权归原作者，作者希望撤下可以提 issue。「人工核对」指核对过仓库说明和分类，不代表实测过效果。', 'Our summaries, notes and categories are released under CC0. Repo descriptions and SKILL.md text are quoted from each repo and belong to their authors; authors can ask for removal via an issue. "Checked" means the README and category were reviewed by hand, not that the skill was tested.')}</p>
 </div></footer>"""
 
     # ───────────────────────── 组件 ─────────────────────────
@@ -526,7 +526,7 @@ class Site:
         facts_html = '<dl class="facts">' + "".join(f"<dt>{k}</dt><dd>{v}</dd>" for k, v in facts) + "</dl>"
 
         note = f'<div class="note"><p>{e(tr(s, "note", lang))}</p></div>' if s.get("note") else ""
-        gh_desc = m.get("description", "").strip()
+        gh_desc = third_party_text(m.get("description", ""))
         about = (f'<h2>{L(lang, "仓库自述", "In the author\'s words")}</h2><blockquote><p>{e(gh_desc)}</p></blockquote>'
                  if gh_desc else "")
 
@@ -536,7 +536,8 @@ class Site:
             branch = idx.get("branch", "main")
             lis = "".join(
                 f'<li><b><a href="https://github.com/{e(s["repo"])}/blob/{e(branch)}/{e(k["path"])}">{e(k["name"])}</a></b>'
-                + (f'<p>{e(k["description"])}</p>' if k["description"] else "") + "</li>" for k in idx["skills"])
+                + (f'<p>{e(desc)}</p>' if (desc := third_party_text(k["description"])) else "") + "</li>"
+                for k in idx["skills"])
             more = idx["total"] - len(idx["skills"])
             more_html = f'<p class="sub">{L(lang, f"另有 {more} 个未列出。", f"{more} more not listed.")}</p>' if more > 0 else ""
             skill_html = (f'<h2>{L(lang, f"仓库里的 skill（{idx['total']} 个）", f"Skills in this repo ({idx['total']})")}</h2>'
@@ -695,6 +696,7 @@ class Site:
         t = d.taxonomy
         out = {
             "name": "Awesome Short Drama Skills", "url": BASE + "/", "source": REPO_URL, "license": "CC0-1.0",
+            "license_note": "CC0 covers our summaries, notes and categories. Linked repos keep their own licenses.",
             "updated": d.updated, "count": len(items),
             "taxonomy": {
                 "types": {k: {"zh": g["label"], "en": g.get("label_en")} for k, g in t["groups"].items()},

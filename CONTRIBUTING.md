@@ -70,6 +70,7 @@ checked = 2026-10-13              # 可选，人工核对日期（TOML 日期，
 | `scripts/build.py` | 生成 README.md 和 README.en.md；`--check` 检查是否最新，`--validate` 只校验数据 |
 | `scripts/discover.py` | 按 taxonomy.toml 里的关键词搜候选项目，输出待审清单 |
 | `scripts/index_skills.py` | 抓取每个仓库的 SKILL.md 名字和说明，写入 `data/skill_index.json` |
+| `scripts/text_changes.py` | 列出本次刷新里新增或改动的仓库简介和 SKILL.md 说明（网站会直接展示），每周开成 issue 供人工过目 |
 | `scripts/build_site.py` | 生成网站 [shortdramaskills.com](https://shortdramaskills.com) 到 `web/dist/`；`--serve` 本地预览 |
 
-GitHub Actions 每周一自动刷新元数据和 SKILL.md 索引、重新生成 README，并把新候选开成 issue；网站在 Cloudflare Pages 上随每次推送重新生成。
+GitHub Actions 每周一自动刷新元数据和 SKILL.md 索引、重新生成 README，并把新候选和第三方文字的变化开成 issue；网站在 Cloudflare Pages 上随每次推送重新生成。

@@ -32,10 +32,15 @@ jobs:
         run: python scripts/refresh.py --fix-renames
 
       - name: 刷新 SKILL.md 索引（网站项目页用）
+        continue-on-error: true   # 只影响网站项目页；失败时沿用上次的索引，不挡 README
         run: python scripts/index_skills.py
 
       - name: 生成 README
         run: python scripts/build.py
+
+      - name: 列出第三方文字变化
+        continue-on-error: true
+        run: python scripts/text_changes.py --out text-changes.md
 
       - name: 提交变更
         run: |
@@ -55,4 +60,10 @@ jobs:
           python scripts/discover.py --days 7 --out candidates.md
           if grep -q '^| \[' candidates.md; then
             gh issue create --title "候选项目 $(date +%F)" --body-file candidates.md
+          fi
+
+      - name: 第三方文字变化开成 issue
+        run: |
+          if [ -f text-changes.md ]; then
+            gh issue create --title "网站上的第三方文字有变化 $(date +%F)" --body-file text-changes.md
           fi

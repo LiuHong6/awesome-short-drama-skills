@@ -29,6 +29,24 @@ DESC_MAX = 80
 DESC_EN_MAX = 260
 
 
+# 网站直接展示的第三方文字（仓库简介、SKILL.md 说明）每周自动刷新、不经人工，展示前去掉链接，
+# 像引流或针对 AI 的指令的整段不展示。scripts/text_changes.py 每周把变化列进 issue 供人工过目。
+THIRD_PARTY_URL = re.compile(r"(https?://|www\.)\S+", re.I)
+THIRD_PARTY_BLOCK = re.compile(
+    r"ignore\s+(all\s+|any\s+)?(previous|prior|above)\s+(instructions|prompts)|system\s+prompt"
+    r"|忽略(之前|以上|上面|前面)"
+    r"|加\s*(微信|vx|v信|wx|qq|群)|微信号|qq\s*群|vx\s*[:：]|wx\s*[:：]",
+    re.I,
+)
+
+
+def third_party_text(text: str) -> str:
+    """第三方文字展示前的清洗：去掉链接；命中拦截规则时返回空串。"""
+    if not text or THIRD_PARTY_BLOCK.search(text):
+        return ""
+    return re.sub(r"\s{2,}", " ", THIRD_PARTY_URL.sub("", text)).strip()
+
+
 def load_toml(name: str) -> dict:
     with open(DATA / name, "rb") as f:
         return tomllib.load(f)
