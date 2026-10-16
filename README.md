@@ -288,7 +288,7 @@ npx skills add zhu5859243-free/hongguo-shortdrama-screenwriting
 
 - **[ComfyUI-Agent-Kit](https://github.com/SlavaSexton/ComfyUI-Agent-Kit)** · ★ 106<br>驱动本地 ComfyUI 出图出视频，附 Seedance、MiniMax H3 视频提示词 skill：多镜头分镜、参考素材标注、翻车排查<br><sub>阶段：提示词 · 出片</sub><br><sub>更新于 2026-09-03 · 英文 · 4 个 skill · Apache-2.0</sub><br><sub>🎬 ComfyUI（本地） · Seedance / 即梦 · MiniMax H3</sub><br><sub>💡 主体是本地 ComfyUI 驱动工具；短剧可用的是其中的 Seedance、MiniMax H3 提示词 skill</sub>
 
-- **[fight-video-create-skill](https://github.com/qualsenWeb/fight-video-create-skill)** · ★ 93<br>AI 打戏设计：从打斗构思到剧情、动作、分镜，带招式校验和参考库<br><sub>阶段：剧本 · 分镜</sub><br><sub>更新于 2026-09-29 · 多语言</sub>
+- **[fight-video-create-skill](https://github.com/qualsenWeb/fight-video-create-skill)** · ★ 94<br>AI 打戏设计：从打斗构思到剧情、动作、分镜，带招式校验和参考库<br><sub>阶段：剧本 · 分镜</sub><br><sub>更新于 2026-09-29 · 多语言</sub>
 
 - **[short-drama-skills](https://github.com/YvonneMovingon/short-drama-skills)** · ★ 93<br>LuxReal 生产验证的短剧提示词：叙事拆解、情绪刻画、动态描述、剧情拆分、视频提示词润色<br><sub>阶段：改编 · 剧本 · 审稿 · 提示词</sub><br><sub>更新于 2026-07-01 · 📝 提示词 · 多语言 · MIT</sub><br><sub>💡 prompt.md 形式，不是标准 SKILL.md</sub>
 

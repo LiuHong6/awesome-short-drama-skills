@@ -288,7 +288,7 @@ Turn a script into shots: storyboards, character and scene assets, and prompts f
 
 - **[ComfyUI-Agent-Kit](https://github.com/SlavaSexton/ComfyUI-Agent-Kit)** · ★ 106<br>Drives a local ComfyUI for image and video generation, with Seedance and MiniMax H3 video-prompt skills: multi-shot storyboards, reference-asset tagging, failure troubleshooting<br><sub>Stages: Prompts · Production</sub><br><sub>updated 2026-09-03 · English · 4 skills · Apache-2.0</sub><br><sub>🎬 ComfyUI (local) · Seedance / Jimeng · MiniMax H3</sub><br><sub>💡 Mainly a local ComfyUI driver; the parts usable for short drama are its Seedance and MiniMax H3 prompt skills</sub>
 
-- **[fight-video-create-skill](https://github.com/qualsenWeb/fight-video-create-skill)** · ★ 93<br>AI fight-scene design: from fight concept to plot, action and storyboard, with move checks and a reference library<br><sub>Stages: Script · Storyboard</sub><br><sub>updated 2026-09-29 · Multilingual</sub>
+- **[fight-video-create-skill](https://github.com/qualsenWeb/fight-video-create-skill)** · ★ 94<br>AI fight-scene design: from fight concept to plot, action and storyboard, with move checks and a reference library<br><sub>Stages: Script · Storyboard</sub><br><sub>updated 2026-09-29 · Multilingual</sub>
 
 - **[short-drama-skills](https://github.com/YvonneMovingon/short-drama-skills)** · ★ 93<br>Short-drama prompts proven in LuxReal production: narrative breakdown, emotion portrayal, motion description, plot splitting, video prompt polishing<br><sub>Stages: Adaptation · Script · Review · Prompts</sub><br><sub>updated 2026-07-01 · 📝 prompts · Multilingual · MIT</sub><br><sub>💡 In prompt.md form, not standard SKILL.md</sub>
 
