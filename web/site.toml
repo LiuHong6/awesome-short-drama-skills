@@ -1,0 +1,10 @@
+# 网站配置。页面内容来自 data/ 和 web/content/，由 scripts/build_site.py 生成到 web/dist/。
+
+base_url = "https://shortdramaskills.com"
+repo     = "UnderleveledBuilder/awesome-short-drama-skills"
+og_image = "/static/og.png"
+
+# 公众号。name 留空时不显示关注入口；qr 是 web/static/ 下的二维码文件名
+[wechat]
+name = ""
+qr   = ""

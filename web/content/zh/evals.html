@@ -1,0 +1,36 @@
+<!--
+title: 短剧 Skill 实测
+seo_title: AI 短剧 Skill 实测对比：同一个梗概交给不同 skill，产出并排比较
+description: 把同一个短剧梗概交给不同的 AI 短剧 skill，在同样的 agent、模型和版本下运行，完整保留产出并排比较。第一轮测剧本：钩子、人物、结构、对白、AI 味和可用性。
+crumb: 实测
+updated: 2026-10-17
+-->
+<p class="lead">目录里的「人工核对」只说明项目信息准确，不说明好不好用。这一页放实测：<strong>同一个梗概交给不同的 skill，把产出原样并排摆出来</strong>，让你自己判断。</p>
+
+<div class="note"><p><strong>进度：</strong>第一轮测剧本类 skill，正在准备，结果出来后会发在这里，也会在公众号推送。</p></div>
+
+<h2>怎么测</h2>
+<ol>
+  <li><strong>同一份输入</strong>：一个梗概，写清题材、集数和平台，所有参赛 skill 共用。</li>
+  <li><strong>同一个环境</strong>：同一个 agent、同一个模型、同样的推理强度，记下版本号。</li>
+  <li><strong>固定 skill 版本</strong>：记下每个仓库测试时的 commit。</li>
+  <li><strong>按 skill 自己的流程走</strong>：skill 要问问题就如实回答，不额外加指令；问答过程全部记录。</li>
+  <li><strong>完整保留产出</strong>：不挑最好的一次，跑几次就放几次。</li>
+</ol>
+
+<h2>看什么</h2>
+<table>
+  <thead><tr><th>维度</th><th>看什么</th></tr></thead>
+  <tbody>
+    <tr><td>钩子</td><td>开头和每集结尾能不能让人想往下看</td></tr>
+    <tr><td>人物</td><td>动机清不清楚，行为前后一不一致</td></tr>
+    <tr><td>结构</td><td>节奏、冲突升级、反转成不成立</td></tr>
+    <tr><td>对白</td><td>像不像人说的话，角色之间有没有区别</td></tr>
+    <tr><td>AI 味</td><td>套话、排比、空洞形容词多不多</td></tr>
+    <tr><td>可用性</td><td>离能直接用还差多少修改，流程顺不顺手</td></tr>
+  </tbody>
+</table>
+<p>点评只写观察和例子，不打总分。原始产出和记录都放在 <a href="{{repo_url}}/tree/main/evals">GitHub 的 evals 目录</a>，任何人都可以按同样的方法复现。</p>
+
+<h2>想推荐 skill 参加实测？</h2>
+<p>在 <a href="{{repo_url}}/issues">GitHub 提 issue</a>，写上仓库地址和它擅长的题材。</p>

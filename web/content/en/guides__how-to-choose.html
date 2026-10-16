@@ -1,0 +1,42 @@
+<!--
+title: How to choose a short drama skill: six things to check first
+seo_title: How to choose an AI short drama skill: output, video model, agent, language, license, maintenance
+description: Before installing an AI short drama skill, check six things: what it hands back, which video model it targets, which agents it supports, what language it is written in, whether the license allows commercial use, and whether it is maintained.
+crumb: How to choose
+updated: 2026-10-17
+-->
+<p class="lead"><strong>Start with what you want it to hand back</strong>, then check that the video model and agent match, then look at the license and maintenance. Stars show attention, not quality.</p>
+
+<h2>1. What does it hand back?</h2>
+<ul>
+  <li><strong>Text only</strong>: episode outlines, scripts, review notes. See <a href="/en/type/writing/">screenwriting</a>.</li>
+  <li><strong>Storyboards and prompts</strong>: a shot list you can paste into a video model. See <a href="/en/type/visual/">storyboards and visuals</a>.</li>
+  <li><strong>Finished video</strong>: calls video and voice APIs and returns an edited cut. See <a href="/en/type/pipeline/">full pipelines</a>. This needs your own API keys and costs money.</li>
+</ul>
+<p>Live-action short dramas and manju also need different things: manju depends on character consistency and art style, live-action on dialogue and pacing.</p>
+
+<h2>2. Which video model will you use?</h2>
+<p>Prompt syntax is tied to the model; a prompt written for Seedance may not work in Kling. Settle on the model first, then pick from <a href="/en/model/">by video model</a>. Only models that a repo's README names are listed.</p>
+
+<h2>3. Which agent do you use?</h2>
+<p>Most agents can use a standard SKILL.md. A few projects are written for one agent or depend on one agent's features. "Agents" on each project page lists only the agents the repo names.</p>
+
+<h2>4. What language is it written in?</h2>
+<p>Of the listed projects, {{lang_zh}} are written in Chinese, {{lang_en}} in English and {{lang_multi}} in both. Language does not decide whether a skill works, but it shapes the output: Chinese skills often follow the hit formulas of Hongguo and Douyin, English ones tend to follow Hollywood screenwriting or the format of overseas vertical dramas. For dramas aimed at overseas viewers, start with English or bilingual skills.</p>
+
+<h2>5. Does the license allow commercial use?</h2>
+<ul>
+  <li>Permissive licenses such as MIT and Apache-2.0 generally allow commercial use and modification.</li>
+  <li>Creative Commons licenses with NC (non-commercial) do not.</li>
+  <li><strong>No license declared</strong> means all rights reserved by default: strictly speaking you may read it but not reuse it. {{no_license}} listed projects declare no license. Ask the author before commercial use.</li>
+</ul>
+
+<h2>6. Is it still maintained?</h2>
+<p>Project pages show the last update date and flag projects with no updates in 180 days. Video models change fast, and prompts written for an older model version may be out of date.</p>
+
+<h2>After you choose</h2>
+<ul>
+  <li><strong>Run one episode through a single project first</strong>, then think about mixing. Full pipelines each use their own file layout and rarely line up with each other.</li>
+  <li>If you do not know where to start, use the <a href="/en/packs/">suggested stacks</a>.</li>
+  <li>We give the same premise to different skills and put the outputs side by side on the <a href="/en/evals/">tests</a> page.</li>
+</ul>

@@ -1,0 +1,36 @@
+<!--
+title: Short drama skill tests
+seo_title: AI short drama skill tests: the same premise, different skills, outputs side by side
+description: We give the same short drama premise to different AI short drama skills, run them with the same agent, model and versions, keep every output and compare them side by side. Round one tests scripts: hooks, characters, structure, dialogue, AI tells and usability.
+crumb: Tests
+updated: 2026-10-17
+-->
+<p class="lead">"Checked" in the directory only means a project's details are accurate, not that it works well. This page holds the tests: <strong>the same premise goes to different skills, and the outputs are laid side by side unedited</strong> so you can judge for yourself.</p>
+
+<div class="note"><p><strong>Status:</strong> round one, covering script-writing skills, is in preparation. Results will be posted here.</p></div>
+
+<h2>Method</h2>
+<ol>
+  <li><strong>Same input</strong>: one premise with genre, episode count and platform, shared by every skill in the round.</li>
+  <li><strong>Same environment</strong>: the same agent, model and reasoning effort, with versions recorded.</li>
+  <li><strong>Pinned skill versions</strong>: the commit of each repo at test time is recorded.</li>
+  <li><strong>Each skill's own process</strong>: if a skill asks questions, we answer them honestly and add no extra instructions; the whole exchange is recorded.</li>
+  <li><strong>Every output kept</strong>: no cherry-picking; every run is published.</li>
+</ol>
+
+<h2>What we look at</h2>
+<table>
+  <thead><tr><th>Dimension</th><th>What we look for</th></tr></thead>
+  <tbody>
+    <tr><td>Hooks</td><td>Do the opening and each episode ending make you want to keep watching?</td></tr>
+    <tr><td>Characters</td><td>Are motives clear and behavior consistent?</td></tr>
+    <tr><td>Structure</td><td>Do pacing, escalation and twists hold up?</td></tr>
+    <tr><td>Dialogue</td><td>Does it sound like people talking, and do characters sound different?</td></tr>
+    <tr><td>AI tells</td><td>How many stock phrases, tricolons and empty adjectives?</td></tr>
+    <tr><td>Usability</td><td>How much editing before it is usable, and how smooth is the process?</td></tr>
+  </tbody>
+</table>
+<p>Reviews give observations and examples, not overall scores. Raw outputs and logs go in the <a href="{{repo_url}}/tree/main/evals">evals folder on GitHub</a>, so anyone can reproduce the method.</p>
+
+<h2>Want a skill included?</h2>
+<p><a href="{{repo_url}}/issues">Open an issue on GitHub</a> with the repo link and the genres it is good at.</p>

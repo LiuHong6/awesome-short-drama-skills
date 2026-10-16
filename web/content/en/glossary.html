@@ -1,0 +1,72 @@
+<!--
+title: AI short drama glossary
+seo_title: AI short drama and manju glossary: episode outline, hook, paywall point, storyboard, character consistency
+description: Terms used in making AI short dramas and manju: micro drama, vertical drama, manju, agent skill, episode outline, hook, paywall point, payoff beats, adaptation, storyboard, character consistency, turnaround sheet, video prompt, T2V / I2V / R2V, de-AI.
+crumb: Glossary
+updated: 2026-10-17
+-->
+<p class="lead">Terms you will meet when making AI short dramas, in production order. Each term has its own link, for example <code>/en/glossary/#manju</code>.</p>
+
+<h2>Formats</h2>
+<dl>
+  <dt id="micro-drama">Short drama (micro drama)</dt>
+  <dd>A serialized drama with episodes from tens of seconds to a few minutes, mostly in vertical format, usually tens to over a hundred episodes long. The first episodes are free; later ones are unlocked by paying per episode or watching ads. In China it airs mainly on Hongguo, Douyin and Kuaishou; overseas apps include ReelShort and DramaBox. Also called vertical drama or 短剧 / 微短剧.</dd>
+  <dt id="vertical-drama">Vertical drama</dt>
+  <dd>A drama shot or generated in the phone's portrait ratio (9:16). When generating with AI, state the aspect ratio in the prompt; many video models default to landscape.</dd>
+  <dt id="manju">Manju (AI manju, motion comic)</dt>
+  <dd>A serialized drama made of AI-generated anime or illustration-style images with voiceover, subtitles and simple motion. It needs no actors or shooting and costs less than live action; the hardest part is keeping each character looking the same across dozens of episodes. From the Chinese 漫剧.</dd>
+  <dt id="overseas">Overseas short drama</dt>
+  <dd>A short drama made or localized for audiences outside China. Scripts need to fit local viewing habits, so they are usually rewritten to English screenwriting conventions rather than translated line by line.</dd>
+</dl>
+
+<h2>Tools</h2>
+<dl>
+  <dt id="agent-skill">Agent skill (SKILL.md)</dt>
+  <dd>A folder installed into an agent such as Claude Code or Codex. At its core is a SKILL.md that spells out the steps, format and standards for a task; it can also ship templates and scripts. See <a href="/en/guides/what-is-a-short-drama-skill/">what is an AI short drama skill</a>.</dd>
+  <dt id="agent">Agent</dt>
+  <dd>An AI assistant that can read files, run commands and complete a task step by step, such as Claude Code, Codex, Cursor or OpenClaw. A skill is its set of working instructions.</dd>
+  <dt id="workflow">Workflow (pipeline)</dt>
+  <dd>Short drama production split into fixed steps, each handing its output to the next. A full-pipeline skill packages the whole line; a focused skill handles one or two steps.</dd>
+</dl>
+
+<h2>Script</h2>
+<dl>
+  <dt id="adaptation">Adaptation</dt>
+  <dd>Turning a novel or web novel into a short drama script: cutting subplots, compressing the timeline, turning inner monologue into action and dialogue that can be filmed, and redistributing the plot across episodes.</dd>
+  <dt id="episode-outline">Episode outline</dt>
+  <dd>Before writing scripts, a list of what happens in each episode and where it ends. Once the outline is set, the scripts are written episode by episode. From the Chinese 集纲.</dd>
+  <dt id="hook">Hook</dt>
+  <dd>Anything that makes viewers stop and keep watching. The opening hook grabs attention in the first seconds; the end hook is a cliffhanger that makes viewers tap the next episode.</dd>
+  <dt id="paywall-point">Paywall point</dt>
+  <dd>Where the free episodes end and paid ones begin. It is usually placed at the peak of a conflict, when viewers most want to know what happens, and is a key part of short drama script design. From the Chinese 付费卡点.</dd>
+  <dt id="shuangdian">Payoff beat (shuangdian)</dt>
+  <dd>A plot moment that gives viewers a rush of satisfaction: a comeback, a humiliation reversed, a hidden identity revealed, a twist. Fast-paced short dramas pack these beats densely. From the Chinese 爽点.</dd>
+  <dt id="de-ai">De-AI</dt>
+  <dd>Editing AI-written text to remove stock phrases, tricolons, empty adjectives and repetitive sentence patterns, so scripts and dialogue read as human-written. From the Chinese 去 AI 味.</dd>
+</dl>
+
+<h2>Visuals</h2>
+<dl>
+  <dt id="storyboard">Storyboard</dt>
+  <dd>The script broken into individual shots, each with shot size, camera position and movement, what is on screen, dialogue and duration. Storyboarding before generating video saves a lot of generation cost.</dd>
+  <dt id="shot-language">Shot size and camera movement</dt>
+  <dd>Shot size is how much the frame shows (wide, full, medium, close-up, extreme close-up); camera movement is how the camera moves (push in, pull out, pan, track, follow). Both belong in storyboards and video prompts.</dd>
+  <dt id="character-consistency">Character consistency</dt>
+  <dd>Keeping a character's face and costume the same across shots and episodes in AI generation. Common methods are fixed reference images, turnaround sheets and unchanging descriptions.</dd>
+  <dt id="turnaround">Turnaround sheet (character sheet)</dt>
+  <dd>Full-body front, side and back views of one character, often with expressions and details. Used as a reference image for later shots to keep the character consistent.</dd>
+  <dt id="video-prompt">Video prompt</dt>
+  <dd>Text instructions for a video model describing the image, character action, camera movement, lighting and duration. Each model has its own syntax, which is why this site groups skills <a href="/en/model/">by video model</a>.</dd>
+  <dt id="t2v-i2v-r2v">Text-, image- and reference-to-video (T2V / I2V / R2V)</dt>
+  <dd>T2V generates video from text alone; I2V uses an image as the first frame; R2V gives the model several character or scene reference images and generates a video containing them. Manju relies on I2V and R2V to keep characters consistent.</dd>
+</dl>
+
+<h2>Platforms and models</h2>
+<dl>
+  <dt id="hongguo">Hongguo</dt>
+  <dd>ByteDance's free short drama app, supported by ads. Many Chinese short drama skills are built around the pacing of hits on Hongguo and Douyin.</dd>
+  <dt id="seedance">Seedance / Jimeng</dt>
+  <dd>Seedance is ByteDance's video generation model; Jimeng (Dreamina) is ByteDance's AI creation platform, where Seedance can be used. It is the model Chinese short drama skills target most often.</dd>
+  <dt id="kling">Kling</dt>
+  <dd>Kuaishou's video generation model and creation platform.</dd>
+</dl>

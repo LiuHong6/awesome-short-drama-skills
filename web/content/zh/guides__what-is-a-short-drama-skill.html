@@ -1,0 +1,66 @@
+<!--
+title: 什么是 AI 短剧 Skill？
+seo_title: 什么是 AI 短剧 Skill：定义、能做什么，和提示词、平台有什么区别
+description: AI 短剧 skill 是装进 Claude Code、Codex 等 agent 的一份工作说明（SKILL.md），让 agent 按固定流程写集纲、剧本、分镜和视频提示词。这篇讲清它是什么、能做什么、和提示词与短剧平台的区别。
+crumb: 什么是短剧 skill
+updated: 2026-10-17
+-->
+<p class="lead"><strong>一句话：</strong>AI 短剧 skill 是一个装进 agent（Claude Code、Codex 等）的文件夹，核心是一份 <code>SKILL.md</code>，写明做短剧的某个环节该按什么流程、交什么格式、守什么标准。装上以后，你用对话提需求，agent 就按这套方法去写集纲、剧本、分镜或视频提示词。</p>
+
+<h2>SKILL.md 里写了什么？</h2>
+<ul>
+  <li><strong>开头的 name 和 description</strong>：告诉 agent 这个 skill 叫什么、什么时候该用。agent 平时只读这两行，遇到相关任务才读全文。</li>
+  <li><strong>正文</strong>：分几步做、每一步问你什么、产出什么格式，比如「每集 1 到 2 分钟、第 10 集设付费卡点、结尾必须留钩子」。</li>
+  <li><strong>可选的附件</strong>：模板、参考资料、检查脚本。有的短剧 skill 会用脚本检查分镜时长、角色有没有漏掉参考图。</li>
+</ul>
+<p>这种格式叫 Agent Skills，最早由 Anthropic 提出，现在 Claude Code、Codex、Cursor、OpenCode、Gemini CLI、OpenClaw 等都能用。同一个 skill 一般不用改就能装进不同的 agent。</p>
+
+<h2>短剧 skill 能做哪些事？</h2>
+<p>按短剧的制作流程，本站把 skill 分到九个阶段（一个 skill 可以覆盖多个阶段）：</p>
+<ul>
+  <li><a href="/stage/market/">选题 · IP 评估</a>：判断一个故事值不值得拍、适合什么平台。</li>
+  <li><a href="/stage/adaptation/">改编</a>：把小说、网文改成短剧：删支线、压时间线、把心理描写变成动作和台词。</li>
+  <li><a href="/stage/character/">人物 · 角色资产</a>：人物小传、角色设定图、形象和音色提示词。</li>
+  <li><a href="/stage/structure/">结构 · 集纲 · 钩子</a>：定集数、排每集的事件、设计开头钩子和付费卡点。</li>
+  <li><a href="/stage/drafting/">剧本 · 对白</a>：写分集剧本。</li>
+  <li><a href="/stage/revision/">审稿 · 质检 · 去 AI 味</a>：按规则挑毛病，去掉一看就是 AI 写的套话。</li>
+  <li><a href="/stage/storyboard/">分镜 · 镜头设计</a>：把剧本拆成镜头，写清景别、运镜、时长。</li>
+  <li><a href="/stage/prompt/">视频 / 图像提示词</a>：给 Seedance、可灵、MiniMax 等模型写提示词。</li>
+  <li><a href="/stage/production/">出片 · 配音 · 剪辑</a>：调用视频和配音接口生成素材，再剪成成片。</li>
+</ul>
+<p>目前收录 {{count}} 个 skill 项目，共 {{skill_files}} 个 SKILL.md。只做一两个阶段的叫「专项」，从一句话跑到成片的叫「全流程」。</p>
+
+<h2>和提示词、平台自带的 skill、短剧生成应用有什么区别？</h2>
+<table>
+  <thead><tr><th></th><th>短剧 skill</th><th>一段提示词</th><th>平台自带的 skill</th><th>开源短剧平台</th></tr></thead>
+  <tbody>
+    <tr><td>在哪里用</td><td>你自己的 agent</td><td>任何对话框</td><td>只在那个平台里</td><td>自己部署的网页应用</td></tr>
+    <tr><td>能不能带脚本和检查</td><td>能</td><td>不能</td><td>由平台决定</td><td>本身就是完整程序</td></tr>
+    <tr><td>能不能自己改</td><td>直接改文件</td><td>改文字</td><td>一般不能</td><td>要改代码</td></tr>
+    <tr><td>举例</td><td><a href="/skills/eternityspring/shuohao-skills/">shuohao-skills</a>、<a href="/skills/zenstory-ai/drama-skills/">drama-skills</a></td><td>收藏的爆款剧本模板</td><td>Seko、豆包里的技能</td><td><a href="/type/platform/">Toonflow、火宝短剧</a></td></tr>
+  </tbody>
+</table>
+<p>本站只收开源、能装进 agent 的 skill；开源平台单独列在<a href="/type/platform/">相关开源平台</a>，供对照。</p>
+
+<h2>为什么用 skill，而不是每次贴提示词？</h2>
+<ul>
+  <li><strong>稳定</strong>：同一套流程反复跑，第 1 集和第 60 集按同样的标准写。</li>
+  <li><strong>能检查</strong>：skill 可以带脚本，自动检查格式、时长、人设有没有前后矛盾。</li>
+  <li><strong>能串起来</strong>：改编 skill 的产出交给分镜 skill，分镜的产出交给提示词 skill，见<a href="/packs/">推荐组合</a>。</li>
+  <li><strong>能改</strong>：觉得哪条规则不合适，直接改 SKILL.md。</li>
+</ul>
+
+<h2>有什么局限？</h2>
+<ul>
+  <li>剧本好不好，最终取决于 agent 背后的模型；skill 管的是方法和格式。</li>
+  <li>出片要调用视频模型，需要你自己的账号或 API key，会产生费用。</li>
+  <li>带脚本的 skill 会在你的电脑上执行代码，安装前先读一遍 SKILL.md。</li>
+  <li>本站的「人工核对」只核对仓库说明和分类，不代表实测过效果；实测结果会陆续放在<a href="/evals/">实测</a>页。</li>
+</ul>
+
+<h2>从哪里开始？</h2>
+<ol>
+  <li>先看<a href="/packs/">推荐组合</a>，找一个和你的目标最接近的。</li>
+  <li>按<a href="/guides/install/">安装指南</a>装上，先跑一集。</li>
+  <li>不合适再按<a href="/guides/how-to-choose/">怎么选</a>换。</li>
+</ol>

@@ -1,0 +1,73 @@
+<!--
+title: How to install a short drama skill in Claude Code or Codex
+seo_title: How to install AI short drama skills in Claude Code, Codex and other agents
+description: Install a short drama skill into Claude Code, Codex, Cursor, OpenClaw and other agents with one npx skills add command: global or project install, installing a single skill, where files go, manual install and how to use it afterwards.
+crumb: Install
+updated: 2026-10-17
+-->
+<p class="lead"><strong>The quickest way:</strong> with Node.js installed, run <code>npx skills add owner/repo</code> in a terminal and pick which agents to install into. Details below.</p>
+
+<h2>1. What you need</h2>
+<ul>
+  <li>An agent that supports Agent Skills: Claude Code, Codex, Cursor, OpenCode, Gemini CLI, OpenClaw and others.</li>
+  <li><a href="https://nodejs.org/">Node.js</a>, because the commands below use <code>npx</code>.</li>
+</ul>
+
+<h2>2. Install with one command</h2>
+<pre><code># install into the current project (default)
+npx skills add eternityspring/shuohao-skills
+
+# install into your user directory, available in every project
+npx skills add eternityspring/shuohao-skills -g
+
+# choose which agents to install into
+npx skills add eternityspring/shuohao-skills -a claude-code -a codex
+
+# list the skills in a repo, then install just one
+npx skills add eternityspring/shuohao-skills --list
+npx skills add eternityspring/shuohao-skills --skill novel-outline</code></pre>
+<p>Every project page shows its install command. The commands come from the <a href="https://github.com/vercel-labs/skills">skills CLI</a> and were not verified one by one; if a repo's README says otherwise, follow the README.</p>
+
+<h2>3. Where do the files go?</h2>
+<table>
+  <thead><tr><th>Agent</th><th>Project install</th><th>Global install (-g)</th></tr></thead>
+  <tbody>
+    <tr><td>Claude Code</td><td><code>.claude/skills/</code></td><td><code>~/.claude/skills/</code></td></tr>
+    <tr><td>Codex</td><td><code>.agents/skills/</code></td><td><code>~/.agents/skills/</code></td></tr>
+    <tr><td>Cursor</td><td><code>.agents/skills/</code></td><td><code>~/.cursor/skills/</code></td></tr>
+    <tr><td>OpenCode</td><td><code>.agents/skills/</code></td><td><code>~/.config/opencode/skills/</code></td></tr>
+    <tr><td>Gemini CLI</td><td><code>.agents/skills/</code></td><td><code>~/.gemini/skills/</code></td></tr>
+    <tr><td>OpenClaw</td><td><code>skills/</code></td><td><code>~/.openclaw/skills/</code></td></tr>
+  </tbody>
+</table>
+
+<h2>4. Manual install</h2>
+<p>You can also install by hand: download the repo, find each folder that contains a <code>SKILL.md</code>, and copy the whole folder into the matching directory above. One folder is one skill.</p>
+
+<h2>5. How to use it</h2>
+<ul>
+  <li>Start a new session so the agent loads the skill.</li>
+  <li>Describe what you want, for example "Adapt this novel into a 60-episode short drama, start with the episode outline." The agent picks the skill from its description.</li>
+  <li>You can also name the skill you want. In Claude Code you can call a skill directly with <code>/skill-name</code>.</li>
+  <li>Some skills ask a few questions first (genre, episode count, platform). Answer them as you would for a writer.</li>
+</ul>
+
+<h2>6. What about prompt files?</h2>
+<p>Projects marked "prompt files" are not standard skills and cannot be installed with the CLI. Copy the prompts into your chat or project as the README describes.</p>
+
+<h2>7. Safety checks before installing</h2>
+<ul>
+  <li>Read the <code>SKILL.md</code> to see what it will make the agent do.</li>
+  <li>If there is a <code>scripts/</code> folder, look at what commands the scripts run and whether they upload anything.</li>
+  <li>For skills that need API keys (image, video, voice), use your own key and keep an eye on cost.</li>
+</ul>
+
+<h2>Common questions</h2>
+<dl>
+  <dt>I installed it but nothing happens.</dt>
+  <dd>Check that the folder is in one of the directories above with <code>SKILL.md</code> directly inside it, start a new session, and try naming the skill.</dd>
+  <dt>Can I use a Chinese-language skill in English?</dt>
+  <dd>Yes. The model reads the Chinese instructions fine and writes in whatever language you ask for. Of the listed projects, {{lang_zh}} are written in Chinese, {{lang_en}} in English and {{lang_multi}} in both.</dd>
+  <dt>Can I install several short drama skills at once?</dt>
+  <dd>Yes, but full-pipeline projects each use their own file layout. Run one episode all the way through a single project before mixing.</dd>
+</dl>

@@ -1,0 +1,52 @@
+<!--
+title: About this site
+seo_title: About Awesome Short Drama Skills: inclusion criteria, updates and maintainer
+description: Awesome Short Drama Skills is an open-source, bilingual directory of AI short drama and manju skills. Who maintains it, what gets listed, what "checked" means, how often it updates, and the data license.
+crumb: About
+updated: 2026-10-17
+-->
+<p class="lead">Awesome Short Drama Skills is an open-source directory of AI short drama and manju skills. The website and the <a href="{{repo_url}}">GitHub list</a> are built from the same data. {{maintainer_line}}</p>
+
+<h2>What is listed</h2>
+<p>{{count}} skill projects and {{platforms}} related open-source platforms. Another {{ignored}} projects were reviewed and declined, each with a reason recorded in <code>data/ignore.toml</code> on GitHub.</p>
+
+<h2>Inclusion criteria</h2>
+<p>A project must meet all of these:</p>
+<ol>
+  <li><strong>Serves short drama or manju creation</strong>: topic selection, adaptation, scripts, review, storyboards, visual assets, video prompts, production, or a companion tool that directly serves these steps.</li>
+  <li><strong>Works inside an agent</strong>: a standard SKILL.md, a Claude Code plugin, or a clearly structured prompt workflow. Full applications go only under "related open-source platforms", with a 1,000-star bar.</li>
+  <li><strong>Documented</strong>: the README says what it does and how to install it.</li>
+  <li><strong>Maintained</strong>: updated in the last six months, or stable enough not to need updates.</li>
+  <li><strong>No real people</strong>: projects that generate content about real individuals are not listed.</li>
+</ol>
+<p>Stars are not a bar; lesser-known projects with a distinctive method are welcome. Forks and near-duplicate derivatives are not listed; the original is.</p>
+
+<h2>What "checked" means</h2>
+<p>A person read each project's README and folder structure and confirmed that its description, type, agents and video models are accurate. It <strong>does not mean the skill was tested</strong>. Tests are done separately and published on the <a href="/en/evals/">tests</a> page.</p>
+
+<h2>How it updates</h2>
+<ul>
+  <li>Every Monday, stars, update dates, licenses and skill lists refresh automatically and the site rebuilds.</li>
+  <li>A script searches for candidates by keyword; a person reviews each one before it is listed.</li>
+  <li>"New this week" on the home page shows projects added in the last seven days.</li>
+</ul>
+
+<h2>Ordering and featured picks</h2>
+<p>Lists show featured projects first, then sort by GitHub stars. "Featured" reflects only our judgment of quality. There is currently no paid listing and no paid placement.</p>
+
+<h2>Data and citation</h2>
+<p>The data is released under CC0: use and cite it freely, no attribution required. Machine-readable versions:</p>
+<ul>
+  <li><a href="/data.json">/data.json</a>: every entry and category as JSON.</li>
+  <li><a href="/llms.txt">/llms.txt</a>: a site summary for language models.</li>
+  <li><a href="{{repo_url}}">GitHub repo</a>: raw data, build scripts and change history.</li>
+</ul>
+
+<h2>Suggest a project or a correction</h2>
+<p><a href="{{repo_url}}/issues/new?template=submit-skill.yml">Open an issue</a> to suggest a project; self-submissions are welcome. Every project page has a "Report an error" button for corrections.</p>
+
+<h2>Sister lists</h2>
+<ul>
+  <li><a href="https://github.com/UnderleveledBuilder/awesome-novel-skills">awesome-novel-skills</a>: skills for writing novels and web fiction with AI.</li>
+  <li><a href="https://github.com/UnderleveledBuilder/awesome-story-skills">awesome-story-skills</a>: methods for getting LLMs to tell good stories.</li>
+</ul>

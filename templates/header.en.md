@@ -1,6 +1,6 @@
 # Awesome Short Drama Skills
 
-[中文](README.md) · **English**
+[中文](README.md) · **English** · Website: [shortdramaskills.com](https://shortdramaskills.com/en/)
 
 > A curated list of agent skills for AI short drama (micro drama / vertical drama) and AI manju: screenwriting, adaptation, storyboards, video prompts and production. Install them into Claude Code or Codex and start producing.
 

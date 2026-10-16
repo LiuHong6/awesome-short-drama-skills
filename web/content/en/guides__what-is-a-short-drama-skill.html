@@ -1,0 +1,66 @@
+<!--
+title: What is an AI short drama skill?
+seo_title: What is an AI short drama skill? Definition, what it does, and how it differs from prompts and platforms
+description: An AI short drama skill is a set of working instructions (SKILL.md) installed into an agent such as Claude Code or Codex, so it writes episode outlines, scripts, storyboards and video prompts by a fixed method. What it is, what it does, and how it differs from prompts and drama platforms.
+crumb: What is a short drama skill
+updated: 2026-10-17
+-->
+<p class="lead"><strong>In one sentence:</strong> an AI short drama skill is a folder you install into an agent (Claude Code, Codex and others). At its core is a <code>SKILL.md</code> file that spells out the steps, output format and standards for one part of making a short drama. Once installed, you describe what you want in plain language and the agent follows that method to write episode outlines, scripts, storyboards or video prompts.</p>
+
+<h2>What is inside a SKILL.md?</h2>
+<ul>
+  <li><strong>A name and description at the top</strong>: they tell the agent what the skill is and when to use it. The agent reads only these two lines until a task calls for the full file.</li>
+  <li><strong>The body</strong>: the steps, what to ask you at each step and the output format, for example "1–2 minutes per episode, paywall point at episode 10, every episode ends on a hook".</li>
+  <li><strong>Optional extras</strong>: templates, reference material and check scripts. Some short drama skills use scripts to check shot durations or catch characters missing a reference image.</li>
+</ul>
+<p>The format is called Agent Skills. Anthropic introduced it, and Claude Code, Codex, Cursor, OpenCode, Gemini CLI, OpenClaw and others now support it. The same skill usually installs into different agents without changes.</p>
+
+<h2>What can a short drama skill do?</h2>
+<p>This site sorts skills into nine production stages (one skill can cover several):</p>
+<ul>
+  <li><a href="/en/stage/market/">Topic selection · IP evaluation</a>: decide whether a story is worth making and which platform suits it.</li>
+  <li><a href="/en/stage/adaptation/">Adaptation</a>: turn a novel or web novel into a short drama by cutting subplots, compressing the timeline and turning inner monologue into action and dialogue.</li>
+  <li><a href="/en/stage/character/">Characters · character assets</a>: character bios, design sheets, appearance and voice prompts.</li>
+  <li><a href="/en/stage/structure/">Structure · episode outlines · hooks</a>: set the episode count, plan each episode, design opening hooks and paywall points.</li>
+  <li><a href="/en/stage/drafting/">Script · dialogue</a>: write the episode scripts.</li>
+  <li><a href="/en/stage/revision/">Review · QA · de-AI</a>: check against rules and strip phrasing that reads as AI-written.</li>
+  <li><a href="/en/stage/storyboard/">Storyboard · shot design</a>: break the script into shots with shot size, camera movement and duration.</li>
+  <li><a href="/en/stage/prompt/">Video / image prompts</a>: write prompts for Seedance, Kling, MiniMax and other models.</li>
+  <li><a href="/en/stage/production/">Video generation · voiceover · editing</a>: call video and voice APIs, then cut the footage into episodes.</li>
+</ul>
+<p>The directory lists {{count}} skill projects containing {{skill_files}} SKILL.md files. Skills that cover one or two stages are "focused"; ones that run from a one-line idea to a finished video are "full pipelines".</p>
+
+<h2>How is it different from a prompt, a platform's built-in skills, or a drama app?</h2>
+<table>
+  <thead><tr><th></th><th>Short drama skill</th><th>A prompt</th><th>Platform built-in skill</th><th>Open-source drama platform</th></tr></thead>
+  <tbody>
+    <tr><td>Where it runs</td><td>Your own agent</td><td>Any chat box</td><td>Only inside that platform</td><td>A web app you host</td></tr>
+    <tr><td>Can ship scripts and checks</td><td>Yes</td><td>No</td><td>Up to the platform</td><td>It is a full program</td></tr>
+    <tr><td>Can you change it</td><td>Edit the file</td><td>Edit the text</td><td>Usually not</td><td>Edit the code</td></tr>
+    <tr><td>Examples</td><td><a href="/en/skills/eternityspring/shuohao-skills/">shuohao-skills</a>, <a href="/en/skills/zenstory-ai/drama-skills/">drama-skills</a></td><td>A saved hit-script template</td><td>Skills inside Seko or Doubao</td><td><a href="/en/type/platform/">Toonflow, Huobao Drama</a></td></tr>
+  </tbody>
+</table>
+<p>This site lists only open-source skills that install into an agent. Open-source platforms are listed separately under <a href="/en/type/platform/">related open-source platforms</a> for comparison.</p>
+
+<h2>Why use a skill instead of pasting a prompt each time?</h2>
+<ul>
+  <li><strong>Consistency</strong>: the same method runs every time, so episode 1 and episode 60 follow the same standards.</li>
+  <li><strong>Checks</strong>: a skill can ship scripts that check format, duration and character continuity.</li>
+  <li><strong>Chaining</strong>: an adaptation skill hands off to a storyboard skill, which hands off to a prompt skill. See <a href="/en/packs/">suggested stacks</a>.</li>
+  <li><strong>Editable</strong>: if a rule does not suit you, change the SKILL.md.</li>
+</ul>
+
+<h2>What are the limits?</h2>
+<ul>
+  <li>Script quality ultimately depends on the model behind the agent; the skill supplies the method and format.</li>
+  <li>Generating video calls a video model, which needs your own account or API key and costs money.</li>
+  <li>Skills that ship scripts run code on your machine. Read the SKILL.md before installing.</li>
+  <li>"Checked" on this site means the README and category were reviewed, not that the skill was tested. Test results will appear on the <a href="/en/evals/">tests</a> page.</li>
+</ul>
+
+<h2>Where to start</h2>
+<ol>
+  <li>Look through the <a href="/en/packs/">suggested stacks</a> and pick the one closest to your goal.</li>
+  <li>Install it with the <a href="/en/guides/install/">install guide</a> and run one episode.</li>
+  <li>If it does not fit, use <a href="/en/guides/how-to-choose/">how to choose</a> to find another.</li>
+</ol>

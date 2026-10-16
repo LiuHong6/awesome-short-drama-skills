@@ -1,0 +1,72 @@
+<!--
+title: AI 短剧术语表
+seo_title: AI 短剧、漫剧术语表：集纲、钩子、付费卡点、分镜、角色一致性是什么意思
+description: AI 短剧和漫剧制作中的常用词：短剧、竖屏剧、漫剧、Agent Skill、集纲、钩子、付费卡点、爽点、改编、分镜、角色一致性、三视图、视频提示词、T2V / I2V / R2V、去 AI 味等。
+crumb: 术语表
+updated: 2026-10-17
+-->
+<p class="lead">做 AI 短剧时常遇到的词，按制作流程排列。每个词都可以直接链接，比如 <code>/glossary/#manju</code>。</p>
+
+<h2>形式</h2>
+<dl>
+  <dt id="micro-drama">短剧（微短剧）</dt>
+  <dd>单集几十秒到几分钟、以竖屏为主的连续剧，通常几十集到上百集一部，前几集免费、之后按集付费或看广告解锁。国内主要在红果短剧、抖音、快手等平台播出，海外有 ReelShort、DramaBox 等 App。英文常叫 micro drama、vertical drama 或 short drama。</dd>
+  <dt id="vertical-drama">竖屏剧</dt>
+  <dd>按手机竖屏比例（9:16）拍摄或生成的剧。AI 生成时要在提示词里写明画幅，很多视频模型默认是横屏。</dd>
+  <dt id="manju">漫剧（AI 漫剧、动态漫）</dt>
+  <dd>用 AI 生成动漫或插画风格的画面，配上配音、字幕和简单动效做成的连续剧集。不需要演员和拍摄，成本比真人短剧低，最大的难点是同一个角色在几十集里保持长相一致。</dd>
+  <dt id="overseas">出海短剧</dt>
+  <dd>面向海外观众制作或译制的短剧。剧本要符合当地观众的习惯，常见做法是用英文写作规范重写，而不是直接翻译中文剧本。</dd>
+</dl>
+
+<h2>工具</h2>
+<dl>
+  <dt id="agent-skill">Agent Skill（SKILL.md）</dt>
+  <dd>装进 Claude Code、Codex 等 agent 的一个文件夹，核心是一份 SKILL.md，写明做某件事的流程、格式和标准，也可以附带模板和脚本。详见<a href="/guides/what-is-a-short-drama-skill/">什么是 AI 短剧 Skill</a>。</dd>
+  <dt id="agent">Agent（智能体）</dt>
+  <dd>能自己读文件、执行命令、分步骤完成任务的 AI 助手，例如 Claude Code、Codex、Cursor、OpenClaw。skill 就是给它的工作说明。</dd>
+  <dt id="workflow">工作流（流水线）</dt>
+  <dd>把短剧制作拆成固定的几步，前一步的产出交给下一步。全流程 skill 把整条流水线装在一起，专项 skill 只做其中一两步。</dd>
+</dl>
+
+<h2>剧本</h2>
+<dl>
+  <dt id="adaptation">改编</dt>
+  <dd>把小说、网文改成短剧剧本：删掉支线，压缩时间线，把心理描写改成能拍出来的动作和台词，并按集数重新分配情节。</dd>
+  <dt id="episode-outline">集纲（分集大纲）</dt>
+  <dd>写剧本之前，先列出每一集要发生什么、在哪里结束。集纲定下来，再一集一集写成剧本。</dd>
+  <dt id="hook">钩子</dt>
+  <dd>让观众停下来、看下去的设计。开头钩子要在前几秒抓住人；结尾钩子是每集结尾的悬念，让观众点开下一集。</dd>
+  <dt id="paywall-point">付费卡点</dt>
+  <dd>免费集结束、开始收费的那个位置。一般放在冲突最高、观众最想知道结果的时候，是短剧剧本设计的关键。</dd>
+  <dt id="shuangdian">爽点</dt>
+  <dd>让观众觉得痛快的情节，比如打脸、逆袭、身份揭晓、反转。爽剧的节奏就是密集安排爽点。</dd>
+  <dt id="de-ai">去 AI 味</dt>
+  <dd>修改 AI 写出的文字，去掉套话、排比、空洞的形容词和千篇一律的句式，让剧本和对白读起来像人写的。</dd>
+</dl>
+
+<h2>画面</h2>
+<dl>
+  <dt id="storyboard">分镜</dt>
+  <dd>把剧本拆成一个个镜头，写清每个镜头的景别、机位和运镜、画面内容、台词和时长。AI 出片前先做分镜，能少浪费很多生成费用。</dd>
+  <dt id="shot-language">景别与运镜</dt>
+  <dd>景别指画面拍多大范围（远景、全景、中景、近景、特写）；运镜指镜头怎么动（推、拉、摇、移、跟）。分镜和视频提示词里都要写。</dd>
+  <dt id="character-consistency">角色一致性</dt>
+  <dd>AI 生成时，同一个角色在不同镜头、不同集里长相和服装保持一致。常用办法是固定参考图、三视图和不变的描述词。</dd>
+  <dt id="turnaround">三视图（角色设定图）</dt>
+  <dd>同一个角色的正面、侧面、背面全身图，常配表情和细节。生成后续镜头时作为参考图，帮助保持角色一致。</dd>
+  <dt id="video-prompt">视频提示词</dt>
+  <dd>给视频模型的文字指令，描述画面、人物动作、运镜、光线和时长。不同模型的写法不同，所以本站按<a href="/model/">视频模型</a>分类。</dd>
+  <dt id="t2v-i2v-r2v">文生视频、图生视频、参考生视频（T2V / I2V / R2V）</dt>
+  <dd>T2V 只用文字生成视频；I2V 以一张图作为首帧生成视频；R2V 给模型若干张角色或场景参考图，让它生成包含这些元素的视频。漫剧保持角色一致，多用 I2V 和 R2V。</dd>
+</dl>
+
+<h2>平台和模型</h2>
+<dl>
+  <dt id="hongguo">红果短剧</dt>
+  <dd>字节跳动旗下的免费短剧 App，靠广告变现。很多中文短剧 skill 按红果和抖音的爆款节奏设计。</dd>
+  <dt id="seedance">Seedance / 即梦</dt>
+  <dd>Seedance 是字节跳动的视频生成模型，即梦是字节跳动的 AI 创作平台，可以用 Seedance 生成视频。中文短剧 skill 适配最多的就是它。</dd>
+  <dt id="kling">可灵（Kling）</dt>
+  <dd>快手的视频生成模型和创作平台。</dd>
+</dl>

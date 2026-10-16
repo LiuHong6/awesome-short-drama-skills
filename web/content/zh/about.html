@@ -1,0 +1,52 @@
+<!--
+title: 关于本站
+seo_title: 关于 Awesome Short Drama Skills：收录标准、更新方式和维护者
+description: Awesome Short Drama Skills 是一份开源、中英双语的 AI 短剧 / 漫剧 skill 目录。这里说明谁在维护、收录标准、「人工核对」的含义、更新频率和数据许可。
+crumb: 关于
+updated: 2026-10-17
+-->
+<p class="lead">Awesome Short Drama Skills 是一份开源的 AI 短剧 / 漫剧 skill 目录，网站和 <a href="{{repo_url}}">GitHub 清单</a>用的是同一份数据。{{maintainer_line}}</p>
+
+<h2>收录了什么</h2>
+<p>目前收录 {{count}} 个 skill 项目和 {{platforms}} 个相关开源平台。看过但决定不收的有 {{ignored}} 个，每个都写了原因，记在 GitHub 仓库的 <code>data/ignore.toml</code> 里。</p>
+
+<h2>收录标准</h2>
+<p>同时满足以下条件：</p>
+<ol>
+  <li><strong>服务短剧或漫剧创作</strong>：选题、改编、剧本、审稿、分镜、视觉资产、视频提示词、出片，或者直接服务这些环节的配套工具。</li>
+  <li><strong>能装进 agent 使用</strong>：标准 SKILL.md、Claude Code 插件，或结构清晰的提示词工作流。完整应用只收进「相关开源平台」，门槛是 1000 星。</li>
+  <li><strong>有说明</strong>：README 写清楚做什么、怎么装。</li>
+  <li><strong>还在维护</strong>：近 6 个月有更新，或者内容足够稳定、不需要更新。</li>
+  <li><strong>不涉及真实个人</strong>：不收以真实个人为对象生成内容的项目。</li>
+</ol>
+<p>星数不是门槛，冷门但有独到方法的项目同样收。fork 和高度重合的派生版不收，只收原版。</p>
+
+<h2>「人工核对」是什么意思</h2>
+<p>每个项目都由人读过 README 和目录结构，确认简介、分类、适配的 agent 和视频模型是准确的。它<strong>不等于实测过效果</strong>。实测单独做，结果放在<a href="/evals/">实测</a>页。</p>
+
+<h2>怎么更新</h2>
+<ul>
+  <li>每周一自动刷新星数、更新时间、许可证和 skill 列表，网站随之重新生成。</li>
+  <li>新项目先由脚本按关键词搜出候选，再人工审核后收录。</li>
+  <li>首页的「本周新增」列出最近 7 天收录的项目。</li>
+</ul>
+
+<h2>排序和精选</h2>
+<p>列表默认精选在前，其余按 GitHub 星数排序。「精选」只按我们对项目质量的判断给出。目前没有付费收录，也没有付费排名。</p>
+
+<h2>数据和引用</h2>
+<p>收录数据以 CC0 发布，可以自由使用和引用，不需要署名。机器可读的版本：</p>
+<ul>
+  <li><a href="/data.json">/data.json</a>：全部条目和分类的 JSON。</li>
+  <li><a href="/llms.txt">/llms.txt</a>：给大模型读的站点摘要。</li>
+  <li><a href="{{repo_url}}">GitHub 仓库</a>：原始数据、生成脚本和修改历史。</li>
+</ul>
+
+<h2>推荐项目、更正信息</h2>
+<p>推荐项目请<a href="{{repo_url}}/issues/new?template=submit-skill.yml">提交 issue</a>，自己写的短剧 skill 也欢迎自荐。发现信息有误，每个项目页都有「提交更正」按钮。</p>
+
+<h2>姊妹清单</h2>
+<ul>
+  <li><a href="https://github.com/UnderleveledBuilder/awesome-novel-skills">awesome-novel-skills</a>：AI 写小说、网文的 skill。</li>
+  <li><a href="https://github.com/UnderleveledBuilder/awesome-story-skills">awesome-story-skills</a>：让大模型讲好故事的方法合集。</li>
+</ul>

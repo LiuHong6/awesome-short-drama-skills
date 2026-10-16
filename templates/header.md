@@ -1,6 +1,6 @@
 # Awesome Short Drama Skills
 
-**中文** · [English](README.en.md)
+**中文** · [English](README.en.md) · 网站：[shortdramaskills.com](https://shortdramaskills.com)
 
 > AI 短剧 · 漫剧 Skill 精选：从小说改编、分集剧本到分镜、视频提示词和出片，装进 Claude Code / Codex 就能用。
 >

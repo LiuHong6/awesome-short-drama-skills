@@ -1,0 +1,73 @@
+<!--
+title: 怎么在 Claude Code / Codex 里安装短剧 Skill
+seo_title: 怎么安装 AI 短剧 Skill：Claude Code、Codex 一行命令安装教程
+description: 用 npx skills add 一行命令把短剧 skill 装进 Claude Code、Codex、Cursor、OpenClaw 等 agent：全局还是项目安装、只装其中一个、装到了哪里、手动安装和装完怎么用。
+crumb: 安装
+updated: 2026-10-17
+-->
+<p class="lead"><strong>最快的方法：</strong>装好 Node.js 后，在终端运行 <code>npx skills add 作者/仓库名</code>，按提示选择要装进哪个 agent。下面是细节。</p>
+
+<h2>一、准备</h2>
+<ul>
+  <li>一个支持 Agent Skills 的 agent：Claude Code、Codex、Cursor、OpenCode、Gemini CLI、OpenClaw 等。</li>
+  <li><a href="https://nodejs.org/">Node.js</a>，因为下面的命令要用 <code>npx</code>。</li>
+</ul>
+
+<h2>二、一行命令安装</h2>
+<pre><code># 装到当前项目（默认）
+npx skills add eternityspring/shuohao-skills
+
+# 装到用户目录，所有项目都能用
+npx skills add eternityspring/shuohao-skills -g
+
+# 指定装进哪些 agent
+npx skills add eternityspring/shuohao-skills -a claude-code -a codex
+
+# 先看仓库里有哪些 skill，再只装其中一个
+npx skills add eternityspring/shuohao-skills --list
+npx skills add eternityspring/shuohao-skills --skill novel-outline</code></pre>
+<p>每个项目页都写好了这个项目的安装命令。命令来自 <a href="https://github.com/vercel-labs/skills">skills CLI</a>，本站没有逐个验证，个别仓库的安装方式以它自己的 README 为准。</p>
+
+<h2>三、装到了哪里？</h2>
+<table>
+  <thead><tr><th>agent</th><th>项目安装</th><th>全局安装（-g）</th></tr></thead>
+  <tbody>
+    <tr><td>Claude Code</td><td><code>.claude/skills/</code></td><td><code>~/.claude/skills/</code></td></tr>
+    <tr><td>Codex</td><td><code>.agents/skills/</code></td><td><code>~/.agents/skills/</code></td></tr>
+    <tr><td>Cursor</td><td><code>.agents/skills/</code></td><td><code>~/.cursor/skills/</code></td></tr>
+    <tr><td>OpenCode</td><td><code>.agents/skills/</code></td><td><code>~/.config/opencode/skills/</code></td></tr>
+    <tr><td>Gemini CLI</td><td><code>.agents/skills/</code></td><td><code>~/.gemini/skills/</code></td></tr>
+    <tr><td>OpenClaw</td><td><code>skills/</code></td><td><code>~/.openclaw/skills/</code></td></tr>
+  </tbody>
+</table>
+
+<h2>四、手动安装</h2>
+<p>不想用命令行工具，也可以手动装：把仓库下载下来，找到包含 <code>SKILL.md</code> 的文件夹，整个复制到上表对应的目录里。一个文件夹就是一个 skill。</p>
+
+<h2>五、装完怎么用？</h2>
+<ul>
+  <li>新开一个会话，让 agent 重新加载 skill。</li>
+  <li>直接说需求，比如「把这本小说改成 60 集短剧，先出集纲」。agent 会根据 skill 的描述自动选用。</li>
+  <li>也可以点名要用哪个 skill。在 Claude Code 里，skill 还可以用 <code>/skill 名字</code> 直接调用。</li>
+  <li>有的 skill 会先问你几个问题（题材、集数、平台），如实回答就行。</li>
+</ul>
+
+<h2>六、提示词文件怎么用？</h2>
+<p>标着「提示词文件」的项目不是标准 skill，不能用命令安装。按它的 README 把提示词复制进对话或项目里使用。</p>
+
+<h2>七、安装前的安全检查</h2>
+<ul>
+  <li>先读一遍 <code>SKILL.md</code>，看它会让 agent 做什么。</li>
+  <li>有 <code>scripts/</code> 目录的，看一眼脚本会执行什么命令、会不会联网上传文件。</li>
+  <li>需要 API key 的（出图、出视频、配音），用你自己的 key，并留意费用。</li>
+</ul>
+
+<h2>常见问题</h2>
+<dl>
+  <dt>装了没反应？</dt>
+  <dd>确认文件夹在上表的目录里、里面直接就有 <code>SKILL.md</code>；新开会话再试；直接点名 skill 的名字。</dd>
+  <dt>中文 skill 能在英文环境用吗？</dt>
+  <dd>能。模型读得懂中文说明，产出的语言按你的要求来。目前收录的项目里，中文写的 {{lang_zh}} 个、英文 {{lang_en}} 个、中英都有 {{lang_multi}} 个。</dd>
+  <dt>能同时装好几个短剧 skill 吗？</dt>
+  <dd>能，但全流程类的项目各有一套文件结构，混用前先用一个项目完整跑通一集。</dd>
+</dl>

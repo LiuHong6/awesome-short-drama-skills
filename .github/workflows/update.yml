@@ -31,6 +31,9 @@ jobs:
       - name: 刷新元数据
         run: python scripts/refresh.py --fix-renames
 
+      - name: 刷新 SKILL.md 索引（网站项目页用）
+        run: python scripts/index_skills.py
+
       - name: 生成 README
         run: python scripts/build.py
 
