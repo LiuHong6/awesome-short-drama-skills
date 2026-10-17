@@ -31,6 +31,7 @@ Most projects come from China's short-drama scene (Hongguo, Douyin and others), 
   - [Related open-source platforms (full apps, not skills)](#group-platform) (14)
 - [By production stage](#by-stage)
 - [By video model](#by-model)
+- [FAQ](#faq)
 - [Resources](#resources)
 - [Badge](#badge)
 
@@ -597,6 +598,37 @@ Image and video models the repo's README explicitly says it supports (sorted by 
 **Veo** (3): [higgsfield-ai-prompt-skill](https://github.com/OSideMedia/higgsfield-ai-prompt-skill) · [ai-shortfilm-prompts](https://github.com/jnMetaCode/ai-shortfilm-prompts) · [vision_art_creator](https://github.com/ilkaydemiralay/vision_art_creator)
 
 **Sora** (2): [ai-shortfilm-prompts](https://github.com/jnMetaCode/ai-shortfilm-prompts) · [vision_art_creator](https://github.com/ilkaydemiralay/vision_art_creator)
+
+<a id="faq"></a>
+## FAQ
+
+### What are the best agent skills for AI short dramas (microdramas)?
+
+This list has 82 hand-checked short-drama skill projects (data updated 2026-10-16). To go from a novel all the way to storyboards and video prompts, start with the [All-in-one](#group-pipeline) group (23); the most-starred are [shuohao-skills](https://github.com/eternityspring/shuohao-skills), [drama-skills](https://github.com/zenstory-ai/drama-skills) and [manju-laoli-skill](https://github.com/lixiaoxiao9888-create/manju-laoli-skill). Missing just one step? Look it up in [By production stage](#by-stage). Not sure how to combine them? Start from [Suggested stacks](#packs).
+
+### What is a short drama skill?
+
+A capability pack for AI agents such as Claude Code, Codex and OpenClaw. A skill is a folder built around a `SKILL.md` file, sometimes with scripts and templates. Once it's installed, the agent follows it for one step of making a short drama: breaking a novel into an episode outline, writing a vertical-drama script, building a storyboard or writing video prompts for Seedance.
+
+### Can Claude Code or Codex make an AI short drama?
+
+Yes. Of the 82 projects, 80 use the standard `SKILL.md` format, which Claude Code, Codex and other agents that support Agent Skills can install. 25 repos say they support Claude Code and 27 say they support Codex. Install a standard skill with `npx skills add owner/repo`; each group ends with ready-made install commands.
+
+### Which short drama skills work with Seedance?
+
+Of the 42 projects that name a video model, 33 support Seedance (Jimeng), more than any other; next are MiniMax H3 (14) and Kling (6). The most-starred Seedance projects are [seedance2-skill](https://github.com/dexhunter/seedance2-skill), [Seedance2-Storyboard-Generator](https://github.com/liangdabiao/Seedance2-Storyboard-Generator) and [awesome-seedance](https://github.com/LearnPrompt/awesome-seedance). See [By video model](#by-model) for the full list.
+
+### How do I adapt a novel into a short drama script with AI?
+
+Use adaptation skills and have the agent work step by step: break down the novel → adaptation outline → episode outlines and hooks → episode scripts → review. 21 projects cover the Adaptation (novel → script) stage; the most-starred are [shuohao-skills](https://github.com/eternityspring/shuohao-skills), [drama-skills](https://github.com/zenstory-ai/drama-skills) and [Seedance2-Storyboard-Generator](https://github.com/liangdabiao/Seedance2-Storyboard-Generator).
+
+### Are these skills safe to install?
+
+Every repo was checked by hand: README, folders and files. So far 198 repos have been reviewed: 82 skill projects and 14 open-source platforms made the list, and the other 102 didn't. The reasons are listed in [data/ignore.toml](data/ignore.toml) (in Chinese); one of them copied a popular skill and then pushed an installer download. A normal skill is a few text files and never needs an .exe or .dmg. Skills can ship scripts, so read the `SKILL.md` before installing.
+
+### How often is the list updated?
+
+Every Monday, stars, last-updated dates and licenses refresh automatically and new repos are searched; new repos are added only after a manual check. See [New this week](#new).
 
 <a id="resources"></a>
 ## Resources

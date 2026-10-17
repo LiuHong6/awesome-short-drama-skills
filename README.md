@@ -31,6 +31,7 @@
   - [相关开源平台（完整应用，非 skill）](#group-platform)（14）
 - [按创作阶段查找](#by-stage)
 - [按视频模型查找](#by-model)
+- [常见问题](#faq)
 - [相关资源](#resources)
 - [收录徽章](#badge)
 
@@ -597,6 +598,37 @@ npx skills add Nanako0129/sepia
 **Veo**（3）：[higgsfield-ai-prompt-skill](https://github.com/OSideMedia/higgsfield-ai-prompt-skill) · [ai-shortfilm-prompts](https://github.com/jnMetaCode/ai-shortfilm-prompts) · [vision_art_creator](https://github.com/ilkaydemiralay/vision_art_creator)
 
 **Sora**（2）：[ai-shortfilm-prompts](https://github.com/jnMetaCode/ai-shortfilm-prompts) · [vision_art_creator](https://github.com/ilkaydemiralay/vision_art_creator)
+
+<a id="faq"></a>
+## 常见问题
+
+### 做 AI 短剧有哪些好用的 skill？
+
+目前收录 82 个人工核对过的短剧 skill 项目（数据更新于 2026-10-16）。想从小说一路跑到分镜和视频提示词，先看[全流程](#group-pipeline)分组（23 个），星数最高的是 [shuohao-skills](https://github.com/eternityspring/shuohao-skills)、[drama-skills](https://github.com/zenstory-ai/drama-skills)、[manju-laoli-skill](https://github.com/lixiaoxiao9888-create/manju-laoli-skill)；只缺某一步，就到[按创作阶段查找](#by-stage)里找对应阶段；不知道怎么搭配，可以从[推荐组合](#packs)开始。
+
+### 短剧 skill 是什么？
+
+给 Claude Code、Codex、OpenClaw 等 AI agent 装的能力包。一个 skill 就是一个文件夹，核心是一份 `SKILL.md` 说明，有的还带脚本和模板。装上之后，agent 会按里面的方法完成短剧制作的某一步，比如把小说拆成分集大纲、写竖屏短剧剧本、出分镜，或者给 Seedance 写视频提示词。
+
+### Claude Code 或 Codex 能做 AI 短剧吗？
+
+能。收录的 82 个项目里，80 个是标准 `SKILL.md` 格式，Claude Code、Codex 等支持 Agent Skills 的 agent 都能装；仓库里明确写了支持 Claude Code 的 25 个、支持 Codex 的 27 个。标准 skill 用 `npx skills add 作者/仓库名` 安装，每个分组末尾的「安装命令」里有现成命令。
+
+### 有哪些适配 Seedance 的短剧 skill？
+
+写明适配哪个视频模型的 42 个项目里，33 个适配 Seedance（即梦），是最多的；其次是 MiniMax H3 14 个、可灵 Kling 6 个。星数最高的 Seedance 项目是 [seedance2-skill](https://github.com/dexhunter/seedance2-skill)、[Seedance2-Storyboard-Generator](https://github.com/liangdabiao/Seedance2-Storyboard-Generator)、[awesome-seedance](https://github.com/LearnPrompt/awesome-seedance)。完整对照见[按视频模型查找](#by-model)。
+
+### 怎么用 AI 把小说改编成短剧剧本？
+
+用改编类 skill，让 agent 按「拆小说 → 改编大纲 → 分集集纲和钩子 → 分集剧本 → 审稿」一步步做。收录的项目里覆盖「改编（小说 → 剧本）」阶段的有 21 个，星数最高的是 [shuohao-skills](https://github.com/eternityspring/shuohao-skills)、[drama-skills](https://github.com/zenstory-ai/drama-skills)、[Seedance2-Storyboard-Generator](https://github.com/liangdabiao/Seedance2-Storyboard-Generator)。
+
+### 这些 skill 安全吗？
+
+收录前逐个核对过仓库说明、目录和文件。至今审过 198 个仓库：收录 82 个 skill 项目和 14 个开源平台，其余 102 个没收，原因逐条记在 [data/ignore.toml](data/ignore.toml)，其中有照搬热门 skill、再诱导下载安装包的仓库。正常的 skill 只是几份文本文件，用不着 exe 或 dmg。skill 可能附带脚本，安装前先读一遍它的 `SKILL.md`。
+
+### 多久更新一次？
+
+每周一自动刷新星数、最近更新时间和许可证，并搜索新仓库；新仓库人工核对后才收录，见[本周新增](#new)。
 
 <a id="resources"></a>
 ## 相关资源
