@@ -1,7 +1,7 @@
 <!--
 title: AI 短剧术语表
 seo_title: AI 短剧、漫剧术语表：集纲、钩子、付费卡点、分镜、角色一致性是什么意思
-description: AI 短剧和漫剧制作中的常用词：短剧、竖屏剧、漫剧、Agent Skill、集纲、钩子、付费卡点、爽点、改编、分镜、角色一致性、三视图、视频提示词、T2V / I2V / R2V、去 AI 味等。
+description: AI 短剧和漫剧制作中的常用词：短剧、竖屏剧、漫剧、Agent Skill（技能包）、智能体、龙虾（OpenClaw）、集纲、钩子、付费卡点、爽点、改编、分镜、角色一致性、三视图、视频提示词、T2V / I2V / R2V、去 AI 味等。
 crumb: 术语表
 updated: 2026-10-17
 -->
@@ -21,10 +21,12 @@ updated: 2026-10-17
 
 <h2>工具</h2>
 <dl>
-  <dt id="agent-skill">Agent Skill（SKILL.md）</dt>
-  <dd>装进 Claude Code、Codex 等 agent 的一个文件夹，核心是一份 SKILL.md，写明做某件事的流程、格式和标准，也可以附带模板和脚本。详见<a href="/guides/what-is-a-short-drama-skill/">什么是 AI 短剧 Skill</a>。</dd>
+  <dt id="agent-skill">Agent Skill（技能、技能包，SKILL.md）</dt>
+  <dd>装进千问办公、豆包电脑版、龙虾（OpenClaw）、Claude Code、Codex 等智能体的一个文件夹，核心是一份 SKILL.md，写明做某件事的流程、格式和标准，也可以附带模板和脚本。详见<a href="/guides/what-is-a-short-drama-skill/">什么是 AI 短剧 Skill</a>。</dd>
   <dt id="agent">Agent（智能体）</dt>
-  <dd>能自己读文件、执行命令、分步骤完成任务的 AI 助手，例如 Claude Code、Codex、Cursor、OpenClaw。skill 就是给它的工作说明。</dd>
+  <dd>能自己读文件、执行命令、分步骤完成任务的 AI 助手，例如国产的千问办公、豆包电脑版、龙虾（OpenClaw）、WorkBuddy、Kimi Code、Trae，海外的 Claude Code、Codex、Cursor。skill 就是给它的工作说明。</dd>
+  <dt id="openclaw">龙虾（OpenClaw）</dt>
+  <dd>开源的 AI 智能体，国内俗称「龙虾」，腾讯 QClaw、Kimi 的 KimiClaw 等「龙虾」产品都基于它。它的技能就是标准 SKILL.md，本站收录的短剧 skill 可以直接装进去，装法见<a href="/guides/install/">安装指南</a>。</dd>
   <dt id="workflow">工作流（流水线）</dt>
   <dd>把短剧制作拆成固定的几步，前一步的产出交给下一步。全流程 skill 把整条流水线装在一起，专项 skill 只做其中一两步。</dd>
 </dl>

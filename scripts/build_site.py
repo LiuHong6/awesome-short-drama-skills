@@ -334,8 +334,8 @@ class Site:
         body = f"""
 <h1>{L(lang, 'AI 短剧 · 漫剧 Skill 精选', 'AI Short Drama Skills')}</h1>
 <p class="lead">{L(lang,
-    f'给 Claude Code、Codex 等 agent 用的短剧 skill 目录：从小说改编、分集剧本、钩子和付费卡点，到分镜、角色资产和 Seedance / 可灵 / MiniMax 视频提示词。收录 {n} 个 skill 项目和 {platforms} 个开源平台，按创作阶段和视频模型整理。',
-    f'A curated directory of agent skills for AI short drama (micro drama, vertical drama) and AI manju, for Claude Code, Codex and other agents: novel adaptation, episode scripts, hooks and paywall points, storyboards, character assets and prompts for Seedance, Kling and MiniMax. {n} skill projects and {platforms} open-source platforms, organized by production stage and video model.')}</p>
+    f'给千问、豆包、龙虾（OpenClaw）、WorkBuddy、Claude Code、Codex 等智能体用的短剧 skill（技能包）目录：从小说改编、分集剧本、钩子和付费卡点，到分镜、角色资产和 Seedance / 可灵 / MiniMax 视频提示词。收录 {n} 个 skill 项目和 {platforms} 个开源平台，按创作阶段和视频模型整理。',
+    f'A curated directory of agent skills for AI short drama (micro drama, vertical drama) and AI manju, for Claude Code, Codex, OpenClaw and Chinese agents such as Qwen, Doubao and WorkBuddy: novel adaptation, episode scripts, hooks and paywall points, storyboards, character assets and prompts for Seedance, Kling and MiniMax. {n} skill projects and {platforms} open-source platforms, organized by production stage and video model.')}</p>
 <p class="sub">{L(lang, f'每个项目都人工核对过仓库说明和分类；看过但没收的项目有 {len(d.ignored)} 个，都写了原因。数据更新于 {d.updated}。',
     f'Every entry was checked by hand against its README; {len(d.ignored)} more projects were reviewed and declined, each with a reason. Data updated {d.updated}.')}</p>
 <div class="note"><p>{L(lang, '「人工核对」不等于实测过效果。安装前请先读一遍 skill 的 SKILL.md，带脚本的 skill 会在你的电脑上执行代码。', '"Checked" does not mean tested. Read a skill\'s SKILL.md before installing; skills that ship scripts run code on your machine.')} <a href="{url(lang, '/guides/install/')}">{L(lang, '怎么安装 →', 'How to install →')}</a></p></div>
@@ -354,10 +354,10 @@ class Site:
 <h2 id="by-type">{L(lang, '按类型', 'By type')}</h2>
 {groups}
 """
-        title = L(lang, f"AI 短剧 Skill 精选：{n} 个短剧、漫剧 Agent Skill（Claude Code / Codex）",
-                  f"AI Short Drama Skills: {n} curated agent skills for micro drama and manju (Claude Code / Codex)")
-        desc = L(lang, f"收录 {n} 个 AI 短剧 / 漫剧 skill：小说改编、分集剧本、分镜、角色资产、Seedance / 可灵 / MiniMax 视频提示词，按创作阶段和视频模型整理，每周更新。",
-                 f"{n} curated agent skills for AI short drama and manju: adaptation, episode scripts, storyboards, character assets and Seedance / Kling / MiniMax prompts, organized by stage and video model, updated weekly.")
+        title = L(lang, f"AI 短剧 Skill 精选：{n} 个短剧、漫剧技能包（千问、豆包、龙虾、Claude Code 可用）",
+                  f"AI Short Drama Skills: {n} curated agent skills for micro drama and manju (Claude Code, Codex, OpenClaw, Qwen, Doubao)")
+        desc = L(lang, f"收录 {n} 个 AI 短剧 / 漫剧 skill：小说改编、分集剧本、分镜、角色资产、Seedance / 可灵 / MiniMax 视频提示词，按创作阶段和视频模型整理，千问、豆包、龙虾、Claude Code 等智能体都能装，每周更新。",
+                 f"{n} curated agent skills for AI short drama and manju: adaptation, episode scripts, storyboards, character assets and Seedance / Kling / MiniMax prompts, organized by stage and video model, for Claude Code, Codex, OpenClaw and Chinese agents such as Qwen and Doubao, updated weekly.")
         website = {"@context": "https://schema.org", "@type": "WebSite", "name": "Awesome Short Drama Skills",
                    "alternateName": L(lang, "AI 短剧 Skill 精选", "AI Short Drama Skills"), "url": abs_url(lang, "/"),
                    "inLanguage": LANGS[lang]["hreflang"], "description": desc, "publisher": publisher(),
@@ -695,8 +695,8 @@ class Site:
         body = (f'<h1>{L(lang, "指南", "Guides")}</h1><p class="lead">{L(lang, "第一次用 agent 做短剧，从这几篇看起。", "New to making short dramas with an agent? Start here.")}</p>'
                 f'<ul class="entries">{items}</ul>')
         self.page(lang, "/guides/", title=L(lang, "AI 短剧 Skill 指南：是什么、怎么装、怎么选", "AI short drama skill guides: what they are, how to install, how to choose"),
-                  description=L(lang, "AI 短剧 skill 入门：什么是短剧 skill、在 Claude Code / Codex 里怎么安装、怎么挑选，以及常用术语。",
-                                "Getting started with AI short drama skills: what they are, how to install them in Claude Code or Codex, how to choose, and key terms."),
+                  description=L(lang, "AI 短剧 skill 入门：什么是短剧 skill、在千问、豆包、龙虾、Claude Code 等智能体里怎么安装、怎么挑选，以及常用术语。",
+                                "Getting started with AI short drama skills: what they are, how to install them in Claude Code, Codex, OpenClaw, Qwen or Doubao, how to choose, and key terms."),
                   body=body, crumbs=[(L(lang, "指南", "Guides"), "/guides/")])
 
     def not_found(self) -> None:
@@ -751,7 +751,8 @@ class Site:
             "# Awesome Short Drama Skills",
             "",
             f"> A curated, bilingual (Chinese / English) directory of {n} agent skills for AI short drama "
-            "(micro drama, vertical drama) and AI manju (AI 漫剧), for Claude Code, Codex and other agents: novel "
+            "(micro drama, vertical drama) and AI manju (AI 漫剧), for Claude Code, Codex, OpenClaw (龙虾) and Chinese agents "
+            "such as QwenWork (千问办公), Doubao (豆包) and WorkBuddy: novel "
             "adaptation, episode scripts, hooks and paywall points, script review, storyboards, character assets and "
             f"prompts for Seedance, Kling and MiniMax H3. Plus {len(d.skills) - n} open-source platforms. "
             f"Every entry is checked by hand against its README; data updated {d.updated} and refreshed weekly.",
@@ -762,7 +763,7 @@ class Site:
             "",
             "## Start here",
             f"- [What is an AI short drama skill]({abs_url('en', '/guides/what-is-a-short-drama-skill/')}): definition, how it differs from prompts and apps",
-            f"- [How to install]({abs_url('en', '/guides/install/')}): Claude Code, Codex and other agents",
+            f"- [How to install]({abs_url('en', '/guides/install/')}): Claude Code, Codex, OpenClaw, QwenWork, Doubao, WorkBuddy, Kimi Code, Trae and other agents",
             f"- [How to choose]({abs_url('en', '/guides/how-to-choose/')}): what to check before installing",
             f"- [Glossary]({abs_url('en', '/glossary/')}): manju, episode outlines, hooks, paywall points, storyboards",
             f"- [Suggested stacks]({abs_url('en', '/packs/')}): projects that work together toward one goal",
