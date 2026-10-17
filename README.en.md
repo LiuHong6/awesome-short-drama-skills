@@ -42,7 +42,7 @@ Most projects come from China's short-drama scene (Hongguo, Douyin and others), 
 
 - [shanyin-screenwriting-master](https://github.com/Shanyin-ai/shanyin-screenwriting-master) ★1.3k: Shanyin Super Screenwriting Master: characters, outline, scene breakdown and full script in four formats: concept micro-film, narrative short, feature and multi-episode series
 - [higgsfield-ai-prompt-skill](https://github.com/OSideMedia/higgsfield-ai-prompt-skill) ★750: Prompts for the Higgsfield platform: MCSLA formula, Seedance 2.5 multi-reference directing, performance direction, Soul ID character consistency, shot lists and failure diagnosis
-- [zy-cinematic-realism](https://github.com/popopo-99/zy-cinematic-realism) ★588: Zaomengshi (Dreammaker): develops a script, story or scene idea into motivated narrative keyframes, compiled into native prompts for each image model, with sequential image sets and result fixes
+- [zy-cinematic-realism](https://github.com/popopo-99/zy-cinematic-realism) ★590: Zaomengshi (Dreammaker): develops a script, story or scene idea into motivated narrative keyframes, compiled into native prompts for each image model, with sequential image sets and result fixes
 - [shanyin-director-master](https://github.com/Shanyin-ai/shanyin-director-master) ★586: Shanyin Super Director Master: script → director's tone-setting, pacing plan, script tweaks, storyboard breakdown, output as a nine-column storyboard sheet (xlsx), with built-in genre director-style templates
 - [awesome-seedance-2.5-prompts-skills](https://github.com/AtlasCloudAI/awesome-seedance-2.5-prompts-skills) ★239: Seedance 2.5 prompt library plus skill: picks a T2V/R2V/I2V route, Seedream storyboards, multi-reference and shot-continuity design
 - [ComfyUI-Agent-Kit](https://github.com/SlavaSexton/ComfyUI-Agent-Kit) ★106: Drives a local ComfyUI for image and video generation, with Seedance and MiniMax H3 video-prompt skills: multi-shot storyboards, reference-asset tagging, failure troubleshooting
@@ -111,7 +111,7 @@ Complete workflows that go from a one-line idea or a novel to storyboards, video
 
 - **[ai-short-drama](https://github.com/Hao0321/ai-short-drama)** · ★ 71<br>Compiles premises such as rebirth, underdog comeback and hidden big shot into serials with payoff beats and keep-watching hooks: genre research, story architecture, shot timelines, continuity checks<br><sub>Stages: Topic · Episodes · Script · Review · Storyboard</sub><br><sub>updated 2026-08-13 · Chinese · MIT</sub><br><sub>💡 README is in Traditional Chinese</sub>
 
-- **[novel-to-manju](https://github.com/senmanx/novel-to-manju)** · ★ 58<br>Novel-to-manju workflow: hit-style rewrite → script → three-view character/scene sheets → storyboard → video prompts<br><sub>Stages: Adaptation · Characters · Script · Storyboard · Prompts</sub><br><sub>updated 2026-08-17 · Chinese</sub><br><sub>🎬 MiniMax H3</sub>
+- **[novel-to-manju](https://github.com/senmanx/novel-to-manju)** · ★ 59<br>Novel-to-manju workflow: hit-style rewrite → script → three-view character/scene sheets → storyboard → video prompts<br><sub>Stages: Adaptation · Characters · Script · Storyboard · Prompts</sub><br><sub>updated 2026-08-17 · Chinese</sub><br><sub>🎬 MiniMax H3</sub>
 
 - **[ai-short-drama-skill](https://github.com/xixihhhh/ai-short-drama-skill)** · ★ 52<br>Dramake: text to AI short drama, chaining script, storyboard, voiceover, editing and QC, for Douyin/Hongguo in landscape or vertical, with built-in evals<br><sub>Stages: Adaptation · Script · Review · Storyboard · Prompts · Production</sub><br><sub>updated 2026-08-29 · Chinese · MIT</sub><br><sub>🎬 Wan (Tongyi Wanxiang) · Seedance / Jimeng · MiniMax H3</sub>
 
@@ -197,7 +197,7 @@ npx skills add ilkaydemiralay/vision_art_creator
 
 Focused on the script itself: episode outlines, hooks, paywall points, dialogue and review.
 
-- **[short-drama-factory](https://github.com/lixiaoxiao9888-create/short-drama-factory)** · ★ 386<br>Industrial short-drama writing for Douyin/Hongguo: a one-line idea or a web novel → a 60–100 episode script with paywall points, plus hook, cliffhanger and twist formulas and machine-check rules<br><sub>Stages: Adaptation · Episodes · Script · Review</sub><br><sub>updated 2026-10-16 · Chinese · MIT</sub>
+- **[short-drama-factory](https://github.com/lixiaoxiao9888-create/short-drama-factory)** · ★ 387<br>Industrial short-drama writing for Douyin/Hongguo: a one-line idea or a web novel → a 60–100 episode script with paywall points, plus hook, cliffhanger and twist formulas and machine-check rules<br><sub>Stages: Adaptation · Episodes · Script · Review</sub><br><sub>updated 2026-10-16 · Chinese · MIT</sub>
 
 - **[screenwriter-skill](https://github.com/Vi7QY/screenwriter-skill)** · ★ 79<br>Short drama / manju script review: 38 rules distilled from experience running Hongguo Top 100 shows<br><sub>Stages: Review</sub><br><sub>updated 2026-04-12 💤 · Multilingual · MIT</sub>
 
@@ -257,9 +257,9 @@ Turn a script into shots: storyboards, character and scene assets, and prompts f
 
 - **[make-prompt-seedance2](https://github.com/liangdabiao/make-prompt-seedance2)** · ★ 718<br>Structured prompt-writing method for Seedance 2.0, with a general-purpose skill<br><sub>Stages: Prompts</sub><br><sub>updated 2026-10-04 · Chinese</sub><br><sub>🎬 Seedance / Jimeng</sub>
 
-- **[seedance-2-5-video-director](https://github.com/liyue-aigc/seedance-2-5-video-director)** · ★ 705<br>Seedance 2.5 video director: prompts, scripts, diagnosis, character locking, continuation, editing, transitions<br><sub>Stages: Script · Review · Prompts</sub><br><sub>updated 2026-08-26 · Chinese · MIT</sub><br><sub>🎬 Seedance / Jimeng</sub>
+- **[seedance-2-5-video-director](https://github.com/liyue-aigc/seedance-2-5-video-director)** · ★ 706<br>Seedance 2.5 video director: prompts, scripts, diagnosis, character locking, continuation, editing, transitions<br><sub>Stages: Script · Review · Prompts</sub><br><sub>updated 2026-08-26 · Chinese · MIT</sub><br><sub>🎬 Seedance / Jimeng</sub>
 
-- **[zy-cinematic-realism](https://github.com/popopo-99/zy-cinematic-realism)** · ★ 588<br>Zaomengshi (Dreammaker): develops a script, story or scene idea into motivated narrative keyframes, compiled into native prompts for each image model, with sequential image sets and result fixes<br><sub>Stages: Prompts</sub><br><sub>updated 2026-10-03 · English</sub><br><sub>🎬 Nano Banana</sub><br><sub>💡 README is in Chinese; mainly for still-image generation; CC BY-NC 4.0, commercial use needs a separate license</sub>
+- **[zy-cinematic-realism](https://github.com/popopo-99/zy-cinematic-realism)** · ★ 590<br>Zaomengshi (Dreammaker): develops a script, story or scene idea into motivated narrative keyframes, compiled into native prompts for each image model, with sequential image sets and result fixes<br><sub>Stages: Prompts</sub><br><sub>updated 2026-10-03 · English</sub><br><sub>🎬 Nano Banana</sub><br><sub>💡 README is in Chinese; mainly for still-image generation; CC BY-NC 4.0, commercial use needs a separate license</sub>
 
 - **[shanyin-director-master](https://github.com/Shanyin-ai/shanyin-director-master)** · ★ 586<br>Shanyin Super Director Master: script → director's tone-setting, pacing plan, script tweaks, storyboard breakdown, output as a nine-column storyboard sheet (xlsx), with built-in genre director-style templates<br><sub>Stages: Review · Storyboard</sub><br><sub>updated 2026-05-11 · Chinese · MIT</sub><br><sub>💡 Built for the Claude app; can be paired with Shanyin Super Screenwriting Master</sub>
 
@@ -277,7 +277,7 @@ Turn a script into shots: storyboards, character and scene assets, and prompts f
 
 - **[DirectorSKILL](https://github.com/wuwangzhang1216/DirectorSKILL)** · ★ 234<br>AI filmmaking: shot lists, keyframe and video prompts, with 20 built-in director styles such as Spielberg<br><sub>Stages: Storyboard · Prompts</sub><br><sub>updated 2026-08-31 · Multilingual · MIT</sub>
 
-- **[qisi-video-remix](https://github.com/wyuzhi/qisi-video-remix)** · ★ 179<br>Creative video remix: reference video → script → storyboard → per-segment generation prompts<br><sub>Stages: Adaptation · Script · Storyboard · Prompts</sub><br><sub>updated 2026-09-11 · Chinese · MIT</sub>
+- **[qisi-video-remix](https://github.com/wyuzhi/qisi-video-remix)** · ★ 180<br>Creative video remix: reference video → script → storyboard → per-segment generation prompts<br><sub>Stages: Adaptation · Script · Storyboard · Prompts</sub><br><sub>updated 2026-09-11 · Chinese · MIT</sub>
 
 - **[h3-storyboard-skill](https://github.com/phileiny/h3-storyboard-skill)** · ★ 178<br>MiniMax H3 shot breakdown and character performance design<br><sub>Stages: Storyboard · Prompts</sub><br><sub>updated 2026-10-03 · English · MIT</sub><br><sub>🎬 MiniMax H3</sub>
 
@@ -509,7 +509,7 @@ Self-hostable short-drama and manju production platforms; not skills, listed for
 
 - **[Jellyfish](https://github.com/Forget-C/Jellyfish)** · ★ 6.7k<br>End-to-end AI short-drama workspace: script input, structured storyboarding, consistency management, video generation<br><sub>Stages: Script · Storyboard · Production</sub><br><sub>updated 2026-07-30 · 🧩 app · Multilingual · Apache-2.0</sub>
 
-- **[dramaclaw](https://github.com/dramaclaw/dramaclaw)** · ★ 6.3k<br>General-purpose AIGC video engine: one pipeline from script to final video, covering manju, ads, e-commerce and otome games<br><sub>Stages: Script · Storyboard · Production</sub><br><sub>updated 2026-10-16 · 🧩 app · Multilingual · 6 skills</sub>
+- **[dramaclaw](https://github.com/dramaclaw/dramaclaw)** · ★ 6.3k<br>General-purpose AIGC video engine: one pipeline from script to final video, covering manju, ads, e-commerce and otome games<br><sub>Stages: Script · Storyboard · Production</sub><br><sub>updated 2026-10-17 · 🧩 app · Multilingual · 6 skills</sub>
 
 - **[ArcReel](https://github.com/ArcReel/ArcReel)** · ★ 5.5k<br>Self-hostable video workspace: novel/script → character, scene and prop assets, storyboard, video and Jianying (CapCut) drafts, with cross-shot consistency and cost tracking<br><sub>Stages: Adaptation · Characters · Storyboard · Production</sub><br><sub>updated 2026-10-16 · 🧩 app · Multilingual · 51 skills · AGPL-3.0</sub>
 
