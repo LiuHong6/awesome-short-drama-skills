@@ -814,6 +814,7 @@ class Site:
             shutil.rmtree(DIST)
         shutil.copytree(WEB / "static", DIST / "static")
         shutil.copy(WEB / "_headers", DIST / "_headers")
+        shutil.copy(WEB / "_routes.json", DIST / "_routes.json")  # Functions（访问日志）只跑在页面上
         d = self.d
         for lang in LANGS:
             self.home(lang)
