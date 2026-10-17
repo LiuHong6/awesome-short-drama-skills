@@ -31,6 +31,8 @@ DIST = WEB / "dist"
 SITE = tomllib.loads((WEB / "site.toml").read_text(encoding="utf-8"))
 BASE = SITE["base_url"].rstrip("/")
 REPO_URL = f"https://github.com/{SITE['repo']}"
+# 搜索引擎站长平台的所有权验证标签，写进每页 <head>（site.toml 的 [verify]）
+VERIFY_META = "".join(f'<meta name="{k}" content="{html.escape(v)}">\n' for k, v in SITE.get("verify", {}).items())
 LANGS = {
     "zh": {"prefix": "", "hreflang": "zh-CN", "locale": "zh_CN"},
     "en": {"prefix": "/en", "hreflang": "en", "locale": "en_US"},
@@ -216,7 +218,7 @@ class Site:
 <meta property="og:locale" content="{LANGS[lang]['locale']}">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#2a130a">
-<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+{VERIFY_META}<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="{self.css}">
 <link rel="alternate" type="application/json" href="/data.json" title="Awesome Short Drama Skills data">
 {head_ld}
