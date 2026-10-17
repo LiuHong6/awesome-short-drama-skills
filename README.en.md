@@ -4,9 +4,9 @@
 
 [中文](README.md) · **English** · Website: [shortdramaskills.com](https://shortdramaskills.com/en/)
 
-> A curated list of agent skills for AI short drama (micro drama / vertical drama) and AI manju: screenwriting, adaptation, storyboards, video prompts and production. Install them into Claude Code or Codex and start producing.
+> A curated list of agent skills for AI short drama (micro drama / vertical drama) and AI manju: screenwriting, adaptation, storyboards, video prompts and production. Install them into Claude Code, Codex, OpenClaw, Qwen, Doubao or WorkBuddy and start producing.
 
-This list collects short-drama skills for agents such as Claude Code, Codex and OpenClaw. They cover adapting novels, episode outlines, hooks and paywall points, script review, storyboards, character assets, and prompts for video models such as Seedance, MiniMax and Kling. Every project has been checked by hand and sorted by type, production stage and supported video model.
+This list collects short-drama skills for AI agents. Most use the standard SKILL.md format, so they work in Claude Code, Codex and OpenClaw, and in Chinese agents such as QwenWork, Doubao desktop, WorkBuddy, Kimi Code, Qwen Code, CodeBuddy, Trae and Qoder; see the [FAQ](#faq) for how to install them. They cover adapting novels, episode outlines, hooks and paywall points, script review, storyboards, character assets, and prompts for video models such as Seedance, MiniMax and Kling. Every project has been checked by hand and sorted by type, production stage and supported video model.
 
 Most projects come from China's short-drama scene (Hongguo, Douyin and others), and many are documented in Chinese; the descriptions below are translated. "Manju" (漫剧) is a serialized comic-style drama, now usually generated with AI image and video models.
 
@@ -606,21 +606,41 @@ Image and video models the repo's README explicitly says it supports (sorted by 
 
 This list has 82 hand-checked short-drama skill projects (data updated 2026-10-17). To go from a novel all the way to storyboards and video prompts, start with the [All-in-one](#group-pipeline) group (23); the most-starred are [shuohao-skills](https://github.com/eternityspring/shuohao-skills), [drama-skills](https://github.com/zenstory-ai/drama-skills) and [manju-laoli-skill](https://github.com/lixiaoxiao9888-create/manju-laoli-skill). Missing just one step? Look it up in [By production stage](#by-stage). Not sure how to combine them? Start from [Suggested stacks](#packs).
 
-### What is a short drama skill?
+### What is an AI short drama skill (manju skill)?
 
-A capability pack for AI agents such as Claude Code, Codex and OpenClaw. A skill is a folder built around a `SKILL.md` file, sometimes with scripts and templates. Once it's installed, the agent follows it for one step of making a short drama: breaking a novel into an episode outline, writing a vertical-drama script, building a storyboard or writing video prompts for Seedance.
+A capability pack for AI agents such as Claude Code, Codex, OpenClaw, Qwen and Doubao. A skill is a folder built around a `SKILL.md` file, sometimes with scripts and templates. Once it's installed, the agent follows it for one step of making a short drama: breaking a novel into an episode outline, writing a vertical-drama script, building a storyboard or writing video prompts for Seedance.
 
 ### Can Claude Code or Codex make an AI short drama?
 
 Yes. Of the 82 projects, 80 use the standard `SKILL.md` format, which Claude Code, Codex and other agents that support Agent Skills can install. 25 repos say they support Claude Code and 27 say they support Codex. Install a standard skill with `npx skills add owner/repo`; each group ends with ready-made install commands.
 
+### Can I use them in Chinese agents such as Qwen, Doubao, OpenClaw or WorkBuddy?
+
+Yes. Any agent that supports skills can load a standard `SKILL.md` skill:
+
+- **QwenWork** (Alibaba): put the skill folder in `~/.qwenworkcn/skills/`
+- **Doubao desktop** (ByteDance): open the Skills page, click "+ Add" and upload the skill folder
+- **OpenClaw**: `npx skills add owner/repo -a openclaw`
+- **WorkBuddy** (Tencent): put the skill folder in `~/.workbuddy/skills/`
+- **Kimi Code, Qwen Code, CodeBuddy, Trae, Qoder, Lingma, MiniMax Code**: `npx skills add owner/repo -a name`, where the names are `kimi-code-cli`, `qwen-code`, `codebuddy`, `trae` (China edition `trae-cn`), `qoder` (China edition `qoder-cn`), `lingma` and `minimax-code`
+
+Each entry lists only the agents its repo explicitly names; an unlisted agent may still work. See the [install guide](https://shortdramaskills.com/en/guides/install/) for every agent's directory.
+
 ### Which short drama skills work with Seedance?
 
 Of the 42 projects that name a video model, 33 support Seedance (Jimeng), more than any other; next are MiniMax H3 (14) and Kling (6). The most-starred Seedance projects are [seedance2-skill](https://github.com/dexhunter/seedance2-skill), [Seedance2-Storyboard-Generator](https://github.com/liangdabiao/Seedance2-Storyboard-Generator) and [awesome-seedance](https://github.com/LearnPrompt/awesome-seedance). See [By video model](#by-model) for the full list.
 
+### Are there skills for short drama scripts and storyboards?
+
+Yes. 41 projects cover the Script · dialogue stage; the most-starred script specialists (3 stages or fewer) are [shanyin-screenwriting-master](https://github.com/Shanyin-ai/shanyin-screenwriting-master), [seedance-2-5-video-director](https://github.com/liyue-aigc/seedance-2-5-video-director) and [film-studio-skills](https://github.com/machina-exm/film-studio-skills). 46 cover the Storyboard · shot design stage; the most-starred storyboard specialists are [shanyin-director-master](https://github.com/Shanyin-ai/shanyin-director-master), [visual-skills](https://github.com/smixs/visual-skills) and [lanshu-awesome-ai-video-kit](https://github.com/cclank/lanshu-awesome-ai-video-kit). See the [Screenwriting](#group-writing) and [Storyboards · visual assets · video prompts](#group-visual) groups.
+
 ### How do I adapt a novel into a short drama script with AI?
 
-Use adaptation skills and have the agent work step by step: break down the novel → adaptation outline → episode outlines and hooks → episode scripts → review. 21 projects cover the Adaptation (novel → script) stage; the most-starred are [shuohao-skills](https://github.com/eternityspring/shuohao-skills), [drama-skills](https://github.com/zenstory-ai/drama-skills) and [Seedance2-Storyboard-Generator](https://github.com/liangdabiao/Seedance2-Storyboard-Generator).
+Use adaptation skills and have the agent work step by step: break down the novel → adaptation outline → episode outlines and hooks → episode scripts → review. 21 projects cover the Adaptation (novel → script) stage; the most-starred are [shuohao-skills](https://github.com/eternityspring/shuohao-skills), [drama-skills](https://github.com/zenstory-ai/drama-skills) and [Seedance2-Storyboard-Generator](https://github.com/liangdabiao/Seedance2-Storyboard-Generator). To judge whether a novel is worth adapting first, see [Upstream: IP evaluation and story breakdown](#group-source) (3).
+
+### How are skills different from Coze workflows or short-drama agent apps like Xiaoyunque?
+
+Coze workflows and apps such as Xiaoyunque and LibTV are built and run inside their own platforms. A skill is a set of instructions you install into your own agent: the same skill works in QwenWork, Doubao, OpenClaw or Claude Code, and you can combine it with other skills and change it to fit your workflow. They also work together: write the script, storyboard and prompts with skills, then render in Jimeng, Kling or Xiaoyunque. For self-hosted open-source short-drama platforms, see [Related open-source platforms](#group-platform).
 
 ### Are these skills safe to install?
 

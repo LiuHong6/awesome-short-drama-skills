@@ -1,16 +1,16 @@
 <!--
-title: How to install a short drama skill in Claude Code or Codex
-seo_title: How to install AI short drama skills in Claude Code, Codex and other agents
-description: Install a short drama skill into Claude Code, Codex, Cursor, OpenClaw and other agents with one npx skills add command: global or project install, installing a single skill, where files go, manual install and how to use it afterwards.
+title: How to install a short drama skill in Claude Code, Codex, OpenClaw or Chinese agents
+seo_title: How to install AI short drama skills in Claude Code, Codex, OpenClaw, QwenWork, Doubao, WorkBuddy and Trae
+description: Install a short drama skill into Claude Code, Codex, OpenClaw and Chinese agents such as QwenWork, Doubao desktop, WorkBuddy, Kimi Code, Qwen Code, CodeBuddy, Trae and Qoder: one-command install, each agent's skills directory, manual install and how to use it afterwards.
 crumb: Install
 updated: 2026-10-17
 -->
-<p class="lead"><strong>The quickest way:</strong> with Node.js installed, run <code>npx skills add owner/repo</code> in a terminal and pick which agents to install into. Details below.</p>
+<p class="lead"><strong>The quickest way:</strong> with Node.js installed, run <code>npx skills add owner/repo</code> in a terminal and pick which agents to install into. QwenWork, Doubao desktop and WorkBuddy don't use the command line; see section 4.</p>
 
 <h2>1. What you need</h2>
 <ul>
-  <li>An agent that supports Agent Skills: Claude Code, Codex, Cursor, OpenCode, Gemini CLI, OpenClaw and others.</li>
-  <li><a href="https://nodejs.org/">Node.js</a>, because the commands below use <code>npx</code>.</li>
+  <li>An agent that supports Agent Skills: Claude Code, Codex, Cursor, OpenCode, Gemini CLI and OpenClaw, or Chinese agents such as QwenWork, Doubao desktop, WorkBuddy, Kimi Code, Qwen Code, CodeBuddy, Trae, Qoder and Lingma.</li>
+  <li>For the command-line install, <a href="https://nodejs.org/">Node.js</a>, because the commands below use <code>npx</code>.</li>
 </ul>
 
 <h2>2. Install with one command</h2>
@@ -22,6 +22,7 @@ npx skills add eternityspring/shuohao-skills -g
 
 # choose which agents to install into
 npx skills add eternityspring/shuohao-skills -a claude-code -a codex
+npx skills add eternityspring/shuohao-skills -a openclaw -a trae
 
 # list the skills in a repo, then install just one
 npx skills add eternityspring/shuohao-skills --list
@@ -30,19 +31,39 @@ npx skills add eternityspring/shuohao-skills --skill novel-outline</code></pre>
 
 <h2>3. Where do the files go?</h2>
 <table>
-  <thead><tr><th>Agent</th><th>Project install</th><th>Global install (-g)</th></tr></thead>
+  <thead><tr><th>Agent</th><th>-a name</th><th>Project install</th><th>Global install (-g)</th></tr></thead>
   <tbody>
-    <tr><td>Claude Code</td><td><code>.claude/skills/</code></td><td><code>~/.claude/skills/</code></td></tr>
-    <tr><td>Codex</td><td><code>.agents/skills/</code></td><td><code>~/.agents/skills/</code></td></tr>
-    <tr><td>Cursor</td><td><code>.agents/skills/</code></td><td><code>~/.cursor/skills/</code></td></tr>
-    <tr><td>OpenCode</td><td><code>.agents/skills/</code></td><td><code>~/.config/opencode/skills/</code></td></tr>
-    <tr><td>Gemini CLI</td><td><code>.agents/skills/</code></td><td><code>~/.gemini/skills/</code></td></tr>
-    <tr><td>OpenClaw</td><td><code>skills/</code></td><td><code>~/.openclaw/skills/</code></td></tr>
+    <tr><td>Claude Code</td><td><code>claude-code</code></td><td><code>.claude/skills/</code></td><td><code>~/.claude/skills/</code></td></tr>
+    <tr><td>Codex</td><td><code>codex</code></td><td><code>.agents/skills/</code></td><td><code>~/.agents/skills/</code></td></tr>
+    <tr><td>Cursor</td><td><code>cursor</code></td><td><code>.agents/skills/</code></td><td><code>~/.cursor/skills/</code></td></tr>
+    <tr><td>OpenCode</td><td><code>opencode</code></td><td><code>.agents/skills/</code></td><td><code>~/.config/opencode/skills/</code></td></tr>
+    <tr><td>Gemini CLI</td><td><code>gemini-cli</code></td><td><code>.agents/skills/</code></td><td><code>~/.gemini/skills/</code></td></tr>
+    <tr><td>OpenClaw</td><td><code>openclaw</code></td><td><code>skills/</code></td><td><code>~/.openclaw/skills/</code></td></tr>
+    <tr><td>Kimi Code CLI</td><td><code>kimi-code-cli</code></td><td><code>.agents/skills/</code></td><td><code>~/.agents/skills/</code></td></tr>
+    <tr><td>Qwen Code</td><td><code>qwen-code</code></td><td><code>.qwen/skills/</code></td><td><code>~/.qwen/skills/</code></td></tr>
+    <tr><td>CodeBuddy</td><td><code>codebuddy</code></td><td><code>.codebuddy/skills/</code></td><td><code>~/.codebuddy/skills/</code></td></tr>
+    <tr><td>Trae</td><td><code>trae</code></td><td><code>.trae/skills/</code></td><td><code>~/.trae/skills/</code></td></tr>
+    <tr><td>Trae CN</td><td><code>trae-cn</code></td><td><code>.trae/skills/</code></td><td><code>~/.trae-cn/skills/</code></td></tr>
+    <tr><td>Qoder</td><td><code>qoder</code></td><td><code>.qoder/skills/</code></td><td><code>~/.qoder/skills/</code></td></tr>
+    <tr><td>Qoder CN</td><td><code>qoder-cn</code></td><td><code>.qoder/skills/</code></td><td><code>~/.qoder-cn/skills/</code></td></tr>
+    <tr><td>Lingma (Tongyi Lingma)</td><td><code>lingma</code></td><td><code>.lingma/skills/</code></td><td><code>~/.lingma/skills/</code></td></tr>
+    <tr><td>MiniMax Code</td><td><code>minimax-code</code></td><td><code>.minimax/skills/</code></td><td><code>~/.minimax/skills/</code></td></tr>
   </tbody>
 </table>
+<p>Names and directories come from the skills CLI's list of supported agents and may change as each product updates; each product's own docs win.</p>
 
 <h2>4. Manual install</h2>
 <p>You can also install by hand: download the repo, find each folder that contains a <code>SKILL.md</code>, and copy the whole folder into the matching directory above. One folder is one skill.</p>
+<p>QwenWork, Doubao desktop and WorkBuddy are not in the skills CLI's list. Install like this:</p>
+<table>
+  <thead><tr><th>Agent</th><th>How to install</th></tr></thead>
+  <tbody>
+    <tr><td>QwenWork (Alibaba)</td><td>Copy the skill folder into <code>~/.qwenworkcn/skills/</code></td></tr>
+    <tr><td>Doubao desktop (ByteDance)</td><td>On the Skills page, click "+ Add", choose upload and pick the skill folder. The <code>SKILL.md</code> must start with a YAML name and description; menu names vary a little between versions</td></tr>
+    <tr><td>WorkBuddy (Tencent)</td><td>Copy the skill folder into <code>~/.workbuddy/skills/</code>, or into <code>.workbuddy/skills/</code> inside a project to use it only there</td></tr>
+  </tbody>
+</table>
+<p>OpenClaw-based products such as QClaw and KimiClaw each have their own skills page; follow the product's instructions.</p>
 
 <h2>5. How to use it</h2>
 <ul>

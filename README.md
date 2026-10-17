@@ -4,11 +4,11 @@
 
 **中文** · [English](README.en.md) · 网站：[shortdramaskills.com](https://shortdramaskills.com)
 
-> AI 短剧 · 漫剧 Skill 精选：从小说改编、分集剧本到分镜、视频提示词和出片，装进 Claude Code / Codex 就能用。
+> AI 短剧 · 漫剧 Skill（技能包）精选：从小说改编、分集剧本到分镜、视频提示词和出片，装进千问、豆包、龙虾（OpenClaw）、WorkBuddy、Claude Code、Codex 等智能体就能用。
 >
 > A curated list of agent skills for AI short drama (micro drama / vertical drama) and AI manju: screenwriting, adaptation, storyboards, video prompts and production.
 
-这里收录给 Claude Code、Codex、OpenClaw 等 agent 用的短剧 skill，覆盖小说改编、集纲、钩子和付费卡点、剧本审稿、分镜、角色资产，以及给 Seedance、MiniMax、可灵等视频模型的提示词。每个项目都经过人工核对，按类型、创作阶段和适配的视频模型整理。
+这里收录给 AI 智能体（agent）用的短剧 skill，覆盖小说改编、集纲、钩子和付费卡点、剧本审稿、分镜、角色资产，以及给 Seedance、MiniMax、可灵等视频模型的提示词。大多是标准 SKILL.md 格式，千问办公、豆包电脑版、龙虾（OpenClaw）、WorkBuddy、Kimi Code、Qwen Code、CodeBuddy、Trae、Qoder、Claude Code、Codex 等支持技能的智能体都能装，装法见[常见问题](#faq)。每个项目都经过人工核对，按类型、创作阶段和适配的视频模型整理。
 
 收录 82 个 skill 项目 + 14 个相关开源平台 · 元数据更新于 2026-10-17
 
@@ -606,21 +606,41 @@ npx skills add Nanako0129/sepia
 
 目前收录 82 个人工核对过的短剧 skill 项目（数据更新于 2026-10-17）。想从小说一路跑到分镜和视频提示词，先看[全流程](#group-pipeline)分组（23 个），星数最高的是 [shuohao-skills](https://github.com/eternityspring/shuohao-skills)、[drama-skills](https://github.com/zenstory-ai/drama-skills)、[manju-laoli-skill](https://github.com/lixiaoxiao9888-create/manju-laoli-skill)；只缺某一步，就到[按创作阶段查找](#by-stage)里找对应阶段；不知道怎么搭配，可以从[推荐组合](#packs)开始。
 
-### 短剧 skill 是什么？
+### AI 短剧 skill（漫剧 skill）是什么？
 
-给 Claude Code、Codex、OpenClaw 等 AI agent 装的能力包。一个 skill 就是一个文件夹，核心是一份 `SKILL.md` 说明，有的还带脚本和模板。装上之后，agent 会按里面的方法完成短剧制作的某一步，比如把小说拆成分集大纲、写竖屏短剧剧本、出分镜，或者给 Seedance 写视频提示词。
+给 AI 智能体（agent）装的能力包，也叫技能、技能包。一个 skill 就是一个文件夹，核心是一份 `SKILL.md` 说明，有的还带脚本和模板。装上之后，agent 会按里面的方法完成短剧制作的某一步，比如把小说拆成分集大纲、写竖屏短剧剧本、出分镜，或者给 Seedance 写视频提示词。
 
 ### Claude Code 或 Codex 能做 AI 短剧吗？
 
 能。收录的 82 个项目里，80 个是标准 `SKILL.md` 格式，Claude Code、Codex 等支持 Agent Skills 的 agent 都能装；仓库里明确写了支持 Claude Code 的 25 个、支持 Codex 的 27 个。标准 skill 用 `npx skills add 作者/仓库名` 安装，每个分组末尾的「安装命令」里有现成命令。
 
+### 能装进千问、豆包、龙虾（OpenClaw）、WorkBuddy 这些国产智能体吗？
+
+能。标准 `SKILL.md` 格式的 skill，支持技能的智能体都能装：
+
+- **千问办公**（阿里）：把 skill 文件夹放进 `~/.qwenworkcn/skills/`
+- **豆包电脑版**（字节）：在「技能」页面点「+ 添加」，上传 skill 文件夹
+- **龙虾 OpenClaw**：`npx skills add 作者/仓库名 -a openclaw`
+- **WorkBuddy**（腾讯）：把 skill 文件夹放进 `~/.workbuddy/skills/`
+- **Kimi Code、Qwen Code、CodeBuddy、Trae、Qoder、通义灵码、MiniMax Code**：`npx skills add 作者/仓库名 -a 名字`，名字依次是 `kimi-code-cli`、`qwen-code`、`codebuddy`、`trae`（国内版 `trae-cn`）、`qoder`（国内版 `qoder-cn`）、`lingma`、`minimax-code`
+
+各条目只标仓库里明确写了的智能体，没标的不代表不能用。各家的安装目录见网站的[安装指南](https://shortdramaskills.com/guides/install/)。
+
 ### 有哪些适配 Seedance 的短剧 skill？
 
 写明适配哪个视频模型的 42 个项目里，33 个适配 Seedance（即梦），是最多的；其次是 MiniMax H3 14 个、可灵 Kling 6 个。星数最高的 Seedance 项目是 [seedance2-skill](https://github.com/dexhunter/seedance2-skill)、[Seedance2-Storyboard-Generator](https://github.com/liangdabiao/Seedance2-Storyboard-Generator)、[awesome-seedance](https://github.com/LearnPrompt/awesome-seedance)。完整对照见[按视频模型查找](#by-model)。
 
-### 怎么用 AI 把小说改编成短剧剧本？
+### 有短剧剧本 skill、分镜 skill 吗？
 
-用改编类 skill，让 agent 按「拆小说 → 改编大纲 → 分集集纲和钩子 → 分集剧本 → 审稿」一步步做。收录的项目里覆盖「改编（小说 → 剧本）」阶段的有 21 个，星数最高的是 [shuohao-skills](https://github.com/eternityspring/shuohao-skills)、[drama-skills](https://github.com/zenstory-ai/drama-skills)、[Seedance2-Storyboard-Generator](https://github.com/liangdabiao/Seedance2-Storyboard-Generator)。
+有。覆盖「剧本 · 对白」阶段的有 41 个，专做剧本的（只管 3 步以内）星数最高的是 [shanyin-screenwriting-master](https://github.com/Shanyin-ai/shanyin-screenwriting-master)、[seedance-2-5-video-director](https://github.com/liyue-aigc/seedance-2-5-video-director)、[film-studio-skills](https://github.com/machina-exm/film-studio-skills)；覆盖「分镜 · 镜头设计」阶段的有 46 个，专做分镜的星数最高的是 [shanyin-director-master](https://github.com/Shanyin-ai/shanyin-director-master)、[visual-skills](https://github.com/smixs/visual-skills)、[lanshu-awesome-ai-video-kit](https://github.com/cclank/lanshu-awesome-ai-video-kit)。分组见[编剧：剧本 · 改编 · 审稿](#group-writing)和[分镜 · 视觉资产 · 视频提示词](#group-visual)。
+
+### 小说转短剧：怎么用 AI 把小说改编成短剧剧本？
+
+用改编类 skill，让 agent 按「拆小说 → 改编大纲 → 分集集纲和钩子 → 分集剧本 → 审稿」一步步做。收录的项目里覆盖「改编（小说 → 剧本）」阶段的有 21 个，星数最高的是 [shuohao-skills](https://github.com/eternityspring/shuohao-skills)、[drama-skills](https://github.com/zenstory-ai/drama-skills)、[Seedance2-Storyboard-Generator](https://github.com/liangdabiao/Seedance2-Storyboard-Generator)。改编前想先判断一本小说值不值得拍，看[上游：IP 评估与故事拆解](#group-source)（3 个）。
+
+### skill 和扣子工作流、小云雀这类短剧智能体有什么区别？
+
+扣子工作流、小云雀、LibTV 这类工具，流程在平台里搭、在平台里跑。skill 是装进你自己的智能体的一份方法说明，同一个 skill 可以在千问办公、豆包、龙虾、Claude Code 之间换着用，也能和别的 skill 组合、按自己的流程改。两者可以配合：用 skill 写剧本、拆分镜、写提示词，再到即梦、可灵、小云雀出片。能自己部署的开源短剧平台见[相关开源平台](#group-platform)。
 
 ### 这些 skill 安全吗？
 

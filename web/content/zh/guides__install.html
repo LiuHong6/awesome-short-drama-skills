@@ -1,16 +1,16 @@
 <!--
-title: 怎么在 Claude Code / Codex 里安装短剧 Skill
-seo_title: 怎么安装 AI 短剧 Skill：Claude Code、Codex 一行命令安装教程
-description: 用 npx skills add 一行命令把短剧 skill 装进 Claude Code、Codex、Cursor、OpenClaw 等 agent：全局还是项目安装、只装其中一个、装到了哪里、手动安装和装完怎么用。
+title: 怎么把短剧 Skill 装进千问、豆包、龙虾、Claude Code 等智能体
+seo_title: 怎么安装 AI 短剧 Skill：千问办公、豆包、龙虾 OpenClaw、WorkBuddy、Trae、Claude Code 安装教程
+description: 把短剧 skill 装进千问办公、豆包电脑版、龙虾（OpenClaw）、WorkBuddy、Kimi Code、Qwen Code、CodeBuddy、Trae、Qoder、Claude Code、Codex 等智能体：一行命令安装、各家的技能目录、手动安装和装完怎么用。
 crumb: 安装
 updated: 2026-10-17
 -->
-<p class="lead"><strong>最快的方法：</strong>装好 Node.js 后，在终端运行 <code>npx skills add 作者/仓库名</code>，按提示选择要装进哪个 agent。下面是细节。</p>
+<p class="lead"><strong>最快的方法：</strong>装好 Node.js 后，在终端运行 <code>npx skills add 作者/仓库名</code>，按提示选择要装进哪个智能体。千问办公、豆包电脑版、WorkBuddy 不走命令行，见第四节。</p>
 
 <h2>一、准备</h2>
 <ul>
-  <li>一个支持 Agent Skills 的 agent：Claude Code、Codex、Cursor、OpenCode、Gemini CLI、OpenClaw 等。</li>
-  <li><a href="https://nodejs.org/">Node.js</a>，因为下面的命令要用 <code>npx</code>。</li>
+  <li>一个支持技能（Agent Skills）的智能体：国产的千问办公、豆包电脑版、龙虾（OpenClaw）、WorkBuddy、Kimi Code、Qwen Code、CodeBuddy、Trae、Qoder、通义灵码，海外的 Claude Code、Codex、Cursor、OpenCode、Gemini CLI 等。</li>
+  <li>用命令安装的话，需要 <a href="https://nodejs.org/">Node.js</a>，因为下面的命令要用 <code>npx</code>。</li>
 </ul>
 
 <h2>二、一行命令安装</h2>
@@ -22,6 +22,7 @@ npx skills add eternityspring/shuohao-skills -g
 
 # 指定装进哪些 agent
 npx skills add eternityspring/shuohao-skills -a claude-code -a codex
+npx skills add eternityspring/shuohao-skills -a openclaw -a trae-cn
 
 # 先看仓库里有哪些 skill，再只装其中一个
 npx skills add eternityspring/shuohao-skills --list
@@ -30,19 +31,39 @@ npx skills add eternityspring/shuohao-skills --skill novel-outline</code></pre>
 
 <h2>三、装到了哪里？</h2>
 <table>
-  <thead><tr><th>agent</th><th>项目安装</th><th>全局安装（-g）</th></tr></thead>
+  <thead><tr><th>智能体</th><th>-a 名字</th><th>项目安装</th><th>全局安装（-g）</th></tr></thead>
   <tbody>
-    <tr><td>Claude Code</td><td><code>.claude/skills/</code></td><td><code>~/.claude/skills/</code></td></tr>
-    <tr><td>Codex</td><td><code>.agents/skills/</code></td><td><code>~/.agents/skills/</code></td></tr>
-    <tr><td>Cursor</td><td><code>.agents/skills/</code></td><td><code>~/.cursor/skills/</code></td></tr>
-    <tr><td>OpenCode</td><td><code>.agents/skills/</code></td><td><code>~/.config/opencode/skills/</code></td></tr>
-    <tr><td>Gemini CLI</td><td><code>.agents/skills/</code></td><td><code>~/.gemini/skills/</code></td></tr>
-    <tr><td>OpenClaw</td><td><code>skills/</code></td><td><code>~/.openclaw/skills/</code></td></tr>
+    <tr><td>Claude Code</td><td><code>claude-code</code></td><td><code>.claude/skills/</code></td><td><code>~/.claude/skills/</code></td></tr>
+    <tr><td>Codex</td><td><code>codex</code></td><td><code>.agents/skills/</code></td><td><code>~/.agents/skills/</code></td></tr>
+    <tr><td>Cursor</td><td><code>cursor</code></td><td><code>.agents/skills/</code></td><td><code>~/.cursor/skills/</code></td></tr>
+    <tr><td>OpenCode</td><td><code>opencode</code></td><td><code>.agents/skills/</code></td><td><code>~/.config/opencode/skills/</code></td></tr>
+    <tr><td>Gemini CLI</td><td><code>gemini-cli</code></td><td><code>.agents/skills/</code></td><td><code>~/.gemini/skills/</code></td></tr>
+    <tr><td>龙虾 OpenClaw</td><td><code>openclaw</code></td><td><code>skills/</code></td><td><code>~/.openclaw/skills/</code></td></tr>
+    <tr><td>Kimi Code CLI</td><td><code>kimi-code-cli</code></td><td><code>.agents/skills/</code></td><td><code>~/.agents/skills/</code></td></tr>
+    <tr><td>Qwen Code</td><td><code>qwen-code</code></td><td><code>.qwen/skills/</code></td><td><code>~/.qwen/skills/</code></td></tr>
+    <tr><td>CodeBuddy</td><td><code>codebuddy</code></td><td><code>.codebuddy/skills/</code></td><td><code>~/.codebuddy/skills/</code></td></tr>
+    <tr><td>Trae</td><td><code>trae</code></td><td><code>.trae/skills/</code></td><td><code>~/.trae/skills/</code></td></tr>
+    <tr><td>Trae CN</td><td><code>trae-cn</code></td><td><code>.trae/skills/</code></td><td><code>~/.trae-cn/skills/</code></td></tr>
+    <tr><td>Qoder</td><td><code>qoder</code></td><td><code>.qoder/skills/</code></td><td><code>~/.qoder/skills/</code></td></tr>
+    <tr><td>Qoder CN</td><td><code>qoder-cn</code></td><td><code>.qoder/skills/</code></td><td><code>~/.qoder-cn/skills/</code></td></tr>
+    <tr><td>通义灵码</td><td><code>lingma</code></td><td><code>.lingma/skills/</code></td><td><code>~/.lingma/skills/</code></td></tr>
+    <tr><td>MiniMax Code</td><td><code>minimax-code</code></td><td><code>.minimax/skills/</code></td><td><code>~/.minimax/skills/</code></td></tr>
   </tbody>
 </table>
+<p>表里的名字和目录来自 skills CLI 的支持列表，各家改版后可能变化，以产品自己的说明为准。</p>
 
 <h2>四、手动安装</h2>
 <p>不想用命令行工具，也可以手动装：把仓库下载下来，找到包含 <code>SKILL.md</code> 的文件夹，整个复制到上表对应的目录里。一个文件夹就是一个 skill。</p>
+<p>千问办公、豆包电脑版、WorkBuddy 不在 skills CLI 的列表里，这样装：</p>
+<table>
+  <thead><tr><th>智能体</th><th>怎么装</th></tr></thead>
+  <tbody>
+    <tr><td>千问办公（阿里）</td><td>把 skill 文件夹复制到 <code>~/.qwenworkcn/skills/</code></td></tr>
+    <tr><td>豆包电脑版（字节）</td><td>在「技能」页面点「+ 添加」，选择上传，选中 skill 文件夹。<code>SKILL.md</code> 开头要有 YAML 格式的名称和描述，菜单名称随版本略有不同</td></tr>
+    <tr><td>WorkBuddy（腾讯）</td><td>把 skill 文件夹复制到 <code>~/.workbuddy/skills/</code>，只给某个项目用就放进项目里的 <code>.workbuddy/skills/</code></td></tr>
+  </tbody>
+</table>
+<p>QClaw、KimiClaw 等基于龙虾（OpenClaw）的产品各有自己的技能页面，以产品内的说明为准。</p>
 
 <h2>五、装完怎么用？</h2>
 <ul>

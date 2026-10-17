@@ -99,21 +99,42 @@ FAQ = {
          "目前收录 {count} 个人工核对过的短剧 skill 项目（数据更新于 {updated}）。想从小说一路跑到分镜和视频提示词，"
          "先看[全流程](#group-pipeline)分组（{n_pipeline} 个），星数最高的是 {top_pipeline}；只缺某一步，"
          "就到[按创作阶段查找](#by-stage)里找对应阶段；不知道怎么搭配，可以从[推荐组合](#packs)开始。"),
-        ("短剧 skill 是什么？",
-         "给 Claude Code、Codex、OpenClaw 等 AI agent 装的能力包。一个 skill 就是一个文件夹，核心是一份 `SKILL.md` 说明，"
+        ("AI 短剧 skill（漫剧 skill）是什么？",
+         "给 AI 智能体（agent）装的能力包，也叫技能、技能包。一个 skill 就是一个文件夹，核心是一份 `SKILL.md` 说明，"
          "有的还带脚本和模板。装上之后，agent 会按里面的方法完成短剧制作的某一步，比如把小说拆成分集大纲、写竖屏短剧剧本、"
          "出分镜，或者给 Seedance 写视频提示词。"),
         ("Claude Code 或 Codex 能做 AI 短剧吗？",
          "能。收录的 {count} 个项目里，{n_std} 个是标准 `SKILL.md` 格式，Claude Code、Codex 等支持 Agent Skills 的 agent 都能装；"
          "仓库里明确写了支持 Claude Code 的 {n_cc} 个、支持 Codex 的 {n_codex} 个。标准 skill 用 `npx skills add 作者/仓库名` 安装，"
          "每个分组末尾的「安装命令」里有现成命令。"),
+        ("能装进千问、豆包、龙虾（OpenClaw）、WorkBuddy 这些国产智能体吗？",
+         "能。标准 `SKILL.md` 格式的 skill，支持技能的智能体都能装：\n\n"
+         "- **千问办公**（阿里）：把 skill 文件夹放进 `~/.qwenworkcn/skills/`\n"
+         "- **豆包电脑版**（字节）：在「技能」页面点「+ 添加」，上传 skill 文件夹\n"
+         "- **龙虾 OpenClaw**：`npx skills add 作者/仓库名 -a openclaw`\n"
+         "- **WorkBuddy**（腾讯）：把 skill 文件夹放进 `~/.workbuddy/skills/`\n"
+         "- **Kimi Code、Qwen Code、CodeBuddy、Trae、Qoder、通义灵码、MiniMax Code**："
+         "`npx skills add 作者/仓库名 -a 名字`，名字依次是 `kimi-code-cli`、`qwen-code`、`codebuddy`、"
+         "`trae`（国内版 `trae-cn`）、`qoder`（国内版 `qoder-cn`）、`lingma`、`minimax-code`\n\n"
+         "各条目只标仓库里明确写了的智能体，没标的不代表不能用。各家的安装目录见网站的"
+         "[安装指南](https://shortdramaskills.com/guides/install/)。"),
         ("有哪些适配 Seedance 的短剧 skill？",
          "写明适配哪个视频模型的 {n_models} 个项目里，{n_seedance} 个适配 Seedance（即梦），是最多的；"
          "其次是 {model2} {n_model2} 个、{model3} {n_model3} 个。星数最高的 Seedance 项目是 {top_seedance}。"
          "完整对照见[按视频模型查找](#by-model)。"),
-        ("怎么用 AI 把小说改编成短剧剧本？",
+        ("有短剧剧本 skill、分镜 skill 吗？",
+         "有。覆盖「剧本 · 对白」阶段的有 {n_draft} 个，专做剧本的（只管 3 步以内）星数最高的是 {top_draft}；"
+         "覆盖「分镜 · 镜头设计」阶段的有 {n_board} 个，专做分镜的星数最高的是 {top_board}。"
+         "分组见[编剧：剧本 · 改编 · 审稿](#group-writing)和[分镜 · 视觉资产 · 视频提示词](#group-visual)。"),
+        ("小说转短剧：怎么用 AI 把小说改编成短剧剧本？",
          "用改编类 skill，让 agent 按「拆小说 → 改编大纲 → 分集集纲和钩子 → 分集剧本 → 审稿」一步步做。"
-         "收录的项目里覆盖「改编（小说 → 剧本）」阶段的有 {n_adapt} 个，星数最高的是 {top_adapt}。"),
+         "收录的项目里覆盖「改编（小说 → 剧本）」阶段的有 {n_adapt} 个，星数最高的是 {top_adapt}。"
+         "改编前想先判断一本小说值不值得拍，看[上游：IP 评估与故事拆解](#group-source)（{n_source} 个）。"),
+        ("skill 和扣子工作流、小云雀这类短剧智能体有什么区别？",
+         "扣子工作流、小云雀、LibTV 这类工具，流程在平台里搭、在平台里跑。skill 是装进你自己的智能体的一份方法说明，"
+         "同一个 skill 可以在千问办公、豆包、龙虾、Claude Code 之间换着用，也能和别的 skill 组合、按自己的流程改。"
+         "两者可以配合：用 skill 写剧本、拆分镜、写提示词，再到即梦、可灵、小云雀出片。"
+         "能自己部署的开源短剧平台见[相关开源平台](#group-platform)。"),
         ("这些 skill 安全吗？",
          "收录前逐个核对过仓库说明、目录和文件。至今审过 {total} 个仓库：收录 {count} 个 skill 项目和 {platforms} 个开源平台，"
          "其余 {n_ignored} 个没收，原因逐条记在 [data/ignore.toml](data/ignore.toml)，其中有照搬热门 skill、再诱导下载安装包的仓库。"
@@ -127,8 +148,8 @@ FAQ = {
          "to storyboards and video prompts, start with the [All-in-one](#group-pipeline) group ({n_pipeline}); the most-starred "
          "are {top_pipeline}. Missing just one step? Look it up in [By production stage](#by-stage). Not sure how to combine "
          "them? Start from [Suggested stacks](#packs)."),
-        ("What is a short drama skill?",
-         "A capability pack for AI agents such as Claude Code, Codex and OpenClaw. A skill is a folder built around a "
+        ("What is an AI short drama skill (manju skill)?",
+         "A capability pack for AI agents such as Claude Code, Codex, OpenClaw, Qwen and Doubao. A skill is a folder built around a "
          "`SKILL.md` file, sometimes with scripts and templates. Once it's installed, the agent follows it for one step of "
          "making a short drama: breaking a novel into an episode outline, writing a vertical-drama script, building a "
          "storyboard or writing video prompts for Seedance."),
@@ -136,14 +157,37 @@ FAQ = {
          "Yes. Of the {count} projects, {n_std} use the standard `SKILL.md` format, which Claude Code, Codex and other agents "
          "that support Agent Skills can install. {n_cc} repos say they support Claude Code and {n_codex} say they support "
          "Codex. Install a standard skill with `npx skills add owner/repo`; each group ends with ready-made install commands."),
+        ("Can I use them in Chinese agents such as Qwen, Doubao, OpenClaw or WorkBuddy?",
+         "Yes. Any agent that supports skills can load a standard `SKILL.md` skill:\n\n"
+         "- **QwenWork** (Alibaba): put the skill folder in `~/.qwenworkcn/skills/`\n"
+         "- **Doubao desktop** (ByteDance): open the Skills page, click \"+ Add\" and upload the skill folder\n"
+         "- **OpenClaw**: `npx skills add owner/repo -a openclaw`\n"
+         "- **WorkBuddy** (Tencent): put the skill folder in `~/.workbuddy/skills/`\n"
+         "- **Kimi Code, Qwen Code, CodeBuddy, Trae, Qoder, Lingma, MiniMax Code**: `npx skills add owner/repo -a name`, "
+         "where the names are `kimi-code-cli`, `qwen-code`, `codebuddy`, `trae` (China edition `trae-cn`), "
+         "`qoder` (China edition `qoder-cn`), `lingma` and `minimax-code`\n\n"
+         "Each entry lists only the agents its repo explicitly names; an unlisted agent may still work. See the "
+         "[install guide](https://shortdramaskills.com/en/guides/install/) for every agent's directory."),
         ("Which short drama skills work with Seedance?",
          "Of the {n_models} projects that name a video model, {n_seedance} support Seedance (Jimeng), more than any other; "
          "next are {model2} ({n_model2}) and {model3} ({n_model3}). The most-starred Seedance projects are {top_seedance}. "
          "See [By video model](#by-model) for the full list."),
+        ("Are there skills for short drama scripts and storyboards?",
+         "Yes. {n_draft} projects cover the Script · dialogue stage; the most-starred script specialists (3 stages or fewer) "
+         "are {top_draft}. {n_board} cover the Storyboard · shot design stage; the most-starred storyboard specialists are "
+         "{top_board}. See the [Screenwriting](#group-writing) and [Storyboards · visual assets · video prompts](#group-visual) "
+         "groups."),
         ("How do I adapt a novel into a short drama script with AI?",
          "Use adaptation skills and have the agent work step by step: break down the novel → adaptation outline → episode "
          "outlines and hooks → episode scripts → review. {n_adapt} projects cover the Adaptation (novel → script) stage; "
-         "the most-starred are {top_adapt}."),
+         "the most-starred are {top_adapt}. To judge whether a novel is worth adapting first, see "
+         "[Upstream: IP evaluation and story breakdown](#group-source) ({n_source})."),
+        ("How are skills different from Coze workflows or short-drama agent apps like Xiaoyunque?",
+         "Coze workflows and apps such as Xiaoyunque and LibTV are built and run inside their own platforms. A skill is a "
+         "set of instructions you install into your own agent: the same skill works in QwenWork, Doubao, OpenClaw or "
+         "Claude Code, and you can combine it with other skills and change it to fit your workflow. They also work "
+         "together: write the script, storyboard and prompts with skills, then render in Jimeng, Kling or Xiaoyunque. "
+         "For self-hosted open-source short-drama platforms, see [Related open-source platforms](#group-platform)."),
         ("Are these skills safe to install?",
          "Every repo was checked by hand: README, folders and files. So far {total} repos have been reviewed: {count} skill "
          "projects and {platforms} open-source platforms made the list, and the other {n_ignored} didn't. The reasons are "
@@ -328,6 +372,9 @@ def render_faq(taxonomy: dict, skills: list[dict], indexed: list[dict], ignored:
     pipeline = [s for s in indexed if s["group"] == "pipeline"]
     seedance = [s for s in indexed if "seedance" in s.get("models", [])]
     adapt = [s for s in indexed if "adaptation" in s["stages"]]
+    draft = [s for s in indexed if "drafting" in s["stages"]]
+    board = [s for s in indexed if "storyboard" in s["stages"]]
+    focused = lambda items: [s for s in items if len(s["stages"]) <= SPECIALIST_MAX]
     values = {
         "count": len(indexed), "platforms": len(skills) - len(indexed), "updated": meta_all.get("fetched_at") or "—",
         "total": len(skills) + len(ignored), "n_ignored": len(ignored),
@@ -338,6 +385,9 @@ def render_faq(taxonomy: dict, skills: list[dict], indexed: list[dict], ignored:
         "n_models": len(with_models), "n_seedance": len(seedance), "top_seedance": top(seedance),
         "model2": others[0][0], "n_model2": others[0][1], "model3": others[1][0], "n_model3": others[1][1],
         "n_adapt": len(adapt), "top_adapt": top(adapt),
+        "n_draft": len(draft), "top_draft": top(focused(draft)),
+        "n_board": len(board), "top_board": top(focused(board)),
+        "n_source": sum(s["group"] == "source" for s in indexed),
     }
     out = ['<a id="faq"></a>', f"## {ui['faq']}", ""]
     for q, a in FAQ[lang]:
