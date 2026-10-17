@@ -105,7 +105,7 @@
 
 - **[short-drama-production](https://github.com/suihe1/short-drama-production)** · ★ 183<br>短剧生产总控：小说大纲/人物/剧本、导演分镜、提示词、声音资产、粗剪与 QC（默认 16:9）<br><sub>阶段：改编 · 集纲 · 剧本 · 分镜 · 提示词 · 出片</sub><br><sub>更新于 2026-09-16 · 中文 · 8 个 skill · Apache-2.0</sub><br><sub>🎬 MiniMax H3</sub><br><sub>💡 5 个 novel-* skill 与 shuohao-skills 的文件结构和示例相同，仓库未注明来源</sub>
 
-- **[workrally](https://github.com/Tencent/workrally)** · ★ 172<br>腾讯开源：面向 AI Agent 的 AIGC 漫剧视频创作全流程工具集<br><sub>阶段：剧本 · 分镜 · 提示词 · 出片</sub><br><sub>更新于 2026-09-29 · 中文</sub>
+- **[workrally](https://github.com/Tencent/workrally)** · ★ 173<br>腾讯开源：面向 AI Agent 的 AIGC 漫剧视频创作全流程工具集<br><sub>阶段：剧本 · 分镜 · 提示词 · 出片</sub><br><sub>更新于 2026-09-29 · 中文</sub>
 
 - **[infinite-creation](https://github.com/SwotAtmk/infinite-creation)** · ★ 76<br>提交小说或剧本，用本地 ComfyUI + MiniMax H3 + Agent 自动连续生产视频，不限时长<br><sub>阶段：改编 · 提示词 · 出片</sub><br><sub>更新于 2026-10-16 · 中文 · 30 个 skill · MIT</sub><br><sub>🎬 ComfyUI（本地） · MiniMax H3</sub><br><sub>💡 28 个 skill 里也有广告、宣传片类</sub>
 
@@ -199,7 +199,7 @@ npx skills add ilkaydemiralay/vision_art_creator
 
 专注剧本本身：集纲、钩子、付费卡点、对白、审稿。
 
-- **[short-drama-factory](https://github.com/lixiaoxiao9888-create/short-drama-factory)** · ★ 387<br>抖音/红果短剧工业化编剧：一句创意或一部网文 → 60–100 集带付费卡点的剧本，配钩子、断章、反转公式和机检规则<br><sub>阶段：改编 · 集纲 · 剧本 · 审稿</sub><br><sub>更新于 2026-10-16 · 中文 · MIT</sub>
+- **[short-drama-factory](https://github.com/lixiaoxiao9888-create/short-drama-factory)** · ★ 389<br>抖音/红果短剧工业化编剧：一句创意或一部网文 → 60–100 集带付费卡点的剧本，配钩子、断章、反转公式和机检规则<br><sub>阶段：改编 · 集纲 · 剧本 · 审稿</sub><br><sub>更新于 2026-10-16 · 中文 · MIT</sub>
 
 - **[screenwriter-skill](https://github.com/Vi7QY/screenwriter-skill)** · ★ 79<br>短剧/漫剧剧本审稿：红果 Top100 操盘经验蒸馏的 38 条规则<br><sub>阶段：审稿</sub><br><sub>更新于 2026-04-12 💤 · 多语言 · MIT</sub>
 
@@ -257,7 +257,7 @@ npx skills add zhu5859243-free/hongguo-shortdrama-screenwriting
 
 - **[higgsfield-ai-prompt-skill](https://github.com/OSideMedia/higgsfield-ai-prompt-skill)** · ★ 750<br>Higgsfield 平台提示词：MCSLA 公式、Seedance 2.5 多参考导演、表演指导、Soul ID 角色一致性、镜头清单与失败诊断<br><sub>阶段：人物 · 提示词</sub><br><sub>更新于 2026-09-27 · 英文 · 36 个 skill · MIT</sub><br><sub>🎬 Seedance / 即梦 · 可灵 Kling · Veo · 通义万相 Wan</sub><br><sub>💡 面向 Higgsfield 付费平台，也含广告营销模块</sub>
 
-- **[make-prompt-seedance2](https://github.com/liangdabiao/make-prompt-seedance2)** · ★ 718<br>Seedance 2.0 结构化提示词写法与通用 skill<br><sub>阶段：提示词</sub><br><sub>更新于 2026-10-04 · 中文</sub><br><sub>🎬 Seedance / 即梦</sub>
+- **[make-prompt-seedance2](https://github.com/liangdabiao/make-prompt-seedance2)** · ★ 719<br>Seedance 2.0 结构化提示词写法与通用 skill<br><sub>阶段：提示词</sub><br><sub>更新于 2026-10-04 · 中文</sub><br><sub>🎬 Seedance / 即梦</sub>
 
 - **[seedance-2-5-video-director](https://github.com/liyue-aigc/seedance-2-5-video-director)** · ★ 706<br>Seedance 2.5 视频导演：提示词、脚本、诊断、人物锁定、续写、编辑、转场<br><sub>阶段：剧本 · 审稿 · 提示词</sub><br><sub>更新于 2026-08-26 · 中文 · MIT</sub><br><sub>🎬 Seedance / 即梦</sub>
 
@@ -265,7 +265,7 @@ npx skills add zhu5859243-free/hongguo-shortdrama-screenwriting
 
 - **[shanyin-director-master](https://github.com/Shanyin-ai/shanyin-director-master)** · ★ 586<br>山音超级导演大师：剧本 → 导演定调、节奏规划、剧本微调、分镜拆解，输出九列分镜表（xlsx），内置类型片导演风格模板<br><sub>阶段：审稿 · 分镜</sub><br><sub>更新于 2026-05-11 · 中文 · MIT</sub><br><sub>💡 面向 Claude App；可与山音超级编剧大师联用</sub>
 
-- **[visual-skills](https://github.com/smixs/visual-skills)** · ★ 523<br>AI 电影导演：Murch 剪辑、走位、蒙太奇等戏剧法则 + Seedance 精确提示词语法<br><sub>阶段：分镜 · 提示词</sub><br><sub>更新于 2026-09-16 · 英文 · 2 个 skill · CC-BY-4.0</sub><br><sub>🎬 Seedance / 即梦</sub>
+- **[visual-skills](https://github.com/smixs/visual-skills)** · ★ 525<br>AI 电影导演：Murch 剪辑、走位、蒙太奇等戏剧法则 + Seedance 精确提示词语法<br><sub>阶段：分镜 · 提示词</sub><br><sub>更新于 2026-09-16 · 英文 · 2 个 skill · CC-BY-4.0</sub><br><sub>🎬 Seedance / 即梦</sub>
 
 - **[XiaoLuo-AI-Drama-Skill](https://github.com/zhurui0523/XiaoLuo-AI-Drama-Skill)** · ★ 477<br>小逻系列：剧本分析、原创改编、分镜脚本、角色三视图/服装/表情、场景布局<br><sub>阶段：改编 · 人物 · 剧本 · 分镜</sub><br><sub>更新于 2026-07-23 · 📝 提示词 · 中文</sub><br><sub>💡 一组提示词 .md，不是标准 SKILL.md</sub>
 
@@ -283,7 +283,7 @@ npx skills add zhu5859243-free/hongguo-shortdrama-screenwriting
 
 - **[h3-storyboard-skill](https://github.com/phileiny/h3-storyboard-skill)** · ★ 178<br>MiniMax H3 分镜拆解与角色表演设计<br><sub>阶段：分镜 · 提示词</sub><br><sub>更新于 2026-10-03 · 英文 · MIT</sub><br><sub>🎬 MiniMax H3</sub>
 
-- **[smy-seedance-storyboard](https://github.com/liangdabiao/smy-seedance-storyboard)** · ★ 176<br>故事 → 上美影复古手绘风格的短剧制作文档：剧本、分镜、资产生图提示词，附完整示例项目<br><sub>阶段：改编 · 剧本 · 分镜 · 提示词</sub><br><sub>更新于 2026-10-08 · 中文</sub><br><sub>🎬 Seedance / 即梦</sub>
+- **[smy-seedance-storyboard](https://github.com/liangdabiao/smy-seedance-storyboard)** · ★ 177<br>故事 → 上美影复古手绘风格的短剧制作文档：剧本、分镜、资产生图提示词，附完整示例项目<br><sub>阶段：改编 · 剧本 · 分镜 · 提示词</sub><br><sub>更新于 2026-10-08 · 中文</sub><br><sub>🎬 Seedance / 即梦</sub>
 
 - **[film-studio-skills](https://github.com/machina-exm/film-studio-skills)** · ★ 153<br>剧本 → 锁定、可直接生成的镜头：7 个 skill 复刻商业 AI 视频制作流程<br><sub>阶段：剧本 · 分镜 · 提示词</sub><br><sub>更新于 2026-08-14 · 英文 · 7 个 skill</sub><br><sub>🎬 Seedance / 即梦</sub>
 
@@ -415,7 +415,7 @@ npx skills add momo5213/live-action-drama-16x9
 
 改编之前先判断：这个故事值不值得拍、怎么拆。
 
-- **[screen-creative-skills](https://github.com/VanGong1999/screen-creative-skills)** · ★ 460<br>影视策划与评估：小说/IP 评估、情节点拆解、人物小传与关系、大纲、小说改编短剧或长剧<br><sub>阶段：选题 · 改编 · 人物 · 集纲</sub><br><sub>更新于 2026-10-12 · 中文 · 31 个 skill · MIT</sub><br><sub>💡 31 个 skill 在仓库里有两份副本</sub>
+- **[screen-creative-skills](https://github.com/VanGong1999/screen-creative-skills)** · ★ 462<br>影视策划与评估：小说/IP 评估、情节点拆解、人物小传与关系、大纲、小说改编短剧或长剧<br><sub>阶段：选题 · 改编 · 人物 · 集纲</sub><br><sub>更新于 2026-10-12 · 中文 · 31 个 skill · MIT</sub><br><sub>💡 31 个 skill 在仓库里有两份副本</sub>
 
 - **[narrative-to-screen-reader](https://github.com/zhlmi/narrative-to-screen-reader)** · ★ 122<br>把手上的故事翻译成影视开发语言：快速诊断、编剧改编读本、导演视听读本、演员读本、制片摘要<br><sub>阶段：选题 · 改编 · 人物</sub><br><sub>更新于 2026-10-01 · 中文</sub>
 

@@ -105,7 +105,7 @@ Complete workflows that go from a one-line idea or a novel to storyboards, video
 
 - **[short-drama-production](https://github.com/suihe1/short-drama-production)** · ★ 183<br>Short-drama production controller: novel outline/characters/script, director's storyboard, prompts, sound assets, rough cut and QC (16:9 by default)<br><sub>Stages: Adaptation · Episodes · Script · Storyboard · Prompts · Production</sub><br><sub>updated 2026-09-16 · Chinese · 8 skills · Apache-2.0</sub><br><sub>🎬 MiniMax H3</sub><br><sub>💡 Its 5 novel-* skills match shuohao-skills in file layout and examples; the repo does not credit it</sub>
 
-- **[workrally](https://github.com/Tencent/workrally)** · ★ 172<br>Open-sourced by Tencent: end-to-end toolkit for AI agents to create AIGC manju videos<br><sub>Stages: Script · Storyboard · Prompts · Production</sub><br><sub>updated 2026-09-29 · Chinese</sub>
+- **[workrally](https://github.com/Tencent/workrally)** · ★ 173<br>Open-sourced by Tencent: end-to-end toolkit for AI agents to create AIGC manju videos<br><sub>Stages: Script · Storyboard · Prompts · Production</sub><br><sub>updated 2026-09-29 · Chinese</sub>
 
 - **[infinite-creation](https://github.com/SwotAtmk/infinite-creation)** · ★ 76<br>Submit a novel or script and it produces video continuously with local ComfyUI + MiniMax H3 + an agent, with no length limit<br><sub>Stages: Adaptation · Prompts · Production</sub><br><sub>updated 2026-10-16 · Chinese · 30 skills · MIT</sub><br><sub>🎬 ComfyUI (local) · MiniMax H3</sub><br><sub>💡 Its 28 skills also include ad and promo-video ones</sub>
 
@@ -199,7 +199,7 @@ npx skills add ilkaydemiralay/vision_art_creator
 
 Focused on the script itself: episode outlines, hooks, paywall points, dialogue and review.
 
-- **[short-drama-factory](https://github.com/lixiaoxiao9888-create/short-drama-factory)** · ★ 387<br>Industrial short-drama writing for Douyin/Hongguo: a one-line idea or a web novel → a 60–100 episode script with paywall points, plus hook, cliffhanger and twist formulas and machine-check rules<br><sub>Stages: Adaptation · Episodes · Script · Review</sub><br><sub>updated 2026-10-16 · Chinese · MIT</sub>
+- **[short-drama-factory](https://github.com/lixiaoxiao9888-create/short-drama-factory)** · ★ 389<br>Industrial short-drama writing for Douyin/Hongguo: a one-line idea or a web novel → a 60–100 episode script with paywall points, plus hook, cliffhanger and twist formulas and machine-check rules<br><sub>Stages: Adaptation · Episodes · Script · Review</sub><br><sub>updated 2026-10-16 · Chinese · MIT</sub>
 
 - **[screenwriter-skill](https://github.com/Vi7QY/screenwriter-skill)** · ★ 79<br>Short drama / manju script review: 38 rules distilled from experience running Hongguo Top 100 shows<br><sub>Stages: Review</sub><br><sub>updated 2026-04-12 💤 · Multilingual · MIT</sub>
 
@@ -257,7 +257,7 @@ Turn a script into shots: storyboards, character and scene assets, and prompts f
 
 - **[higgsfield-ai-prompt-skill](https://github.com/OSideMedia/higgsfield-ai-prompt-skill)** · ★ 750<br>Prompts for the Higgsfield platform: MCSLA formula, Seedance 2.5 multi-reference directing, performance direction, Soul ID character consistency, shot lists and failure diagnosis<br><sub>Stages: Characters · Prompts</sub><br><sub>updated 2026-09-27 · English · 36 skills · MIT</sub><br><sub>🎬 Seedance / Jimeng · Kling · Veo · Wan (Tongyi Wanxiang)</sub><br><sub>💡 Targets the paid Higgsfield platform; also includes advertising and marketing modules</sub>
 
-- **[make-prompt-seedance2](https://github.com/liangdabiao/make-prompt-seedance2)** · ★ 718<br>Structured prompt-writing method for Seedance 2.0, with a general-purpose skill<br><sub>Stages: Prompts</sub><br><sub>updated 2026-10-04 · Chinese</sub><br><sub>🎬 Seedance / Jimeng</sub>
+- **[make-prompt-seedance2](https://github.com/liangdabiao/make-prompt-seedance2)** · ★ 719<br>Structured prompt-writing method for Seedance 2.0, with a general-purpose skill<br><sub>Stages: Prompts</sub><br><sub>updated 2026-10-04 · Chinese</sub><br><sub>🎬 Seedance / Jimeng</sub>
 
 - **[seedance-2-5-video-director](https://github.com/liyue-aigc/seedance-2-5-video-director)** · ★ 706<br>Seedance 2.5 video director: prompts, scripts, diagnosis, character locking, continuation, editing, transitions<br><sub>Stages: Script · Review · Prompts</sub><br><sub>updated 2026-08-26 · Chinese · MIT</sub><br><sub>🎬 Seedance / Jimeng</sub>
 
@@ -265,7 +265,7 @@ Turn a script into shots: storyboards, character and scene assets, and prompts f
 
 - **[shanyin-director-master](https://github.com/Shanyin-ai/shanyin-director-master)** · ★ 586<br>Shanyin Super Director Master: script → director's tone-setting, pacing plan, script tweaks, storyboard breakdown, output as a nine-column storyboard sheet (xlsx), with built-in genre director-style templates<br><sub>Stages: Review · Storyboard</sub><br><sub>updated 2026-05-11 · Chinese · MIT</sub><br><sub>💡 Built for the Claude app; can be paired with Shanyin Super Screenwriting Master</sub>
 
-- **[visual-skills](https://github.com/smixs/visual-skills)** · ★ 523<br>AI film director: dramaturgy rules such as Murch's editing principles, blocking and montage, plus exact Seedance prompt syntax<br><sub>Stages: Storyboard · Prompts</sub><br><sub>updated 2026-09-16 · English · 2 skills · CC-BY-4.0</sub><br><sub>🎬 Seedance / Jimeng</sub>
+- **[visual-skills](https://github.com/smixs/visual-skills)** · ★ 525<br>AI film director: dramaturgy rules such as Murch's editing principles, blocking and montage, plus exact Seedance prompt syntax<br><sub>Stages: Storyboard · Prompts</sub><br><sub>updated 2026-09-16 · English · 2 skills · CC-BY-4.0</sub><br><sub>🎬 Seedance / Jimeng</sub>
 
 - **[XiaoLuo-AI-Drama-Skill](https://github.com/zhurui0523/XiaoLuo-AI-Drama-Skill)** · ★ 477<br>XiaoLuo series: script analysis, original adaptation, storyboard script, character three-views/costumes/expressions, scene layout<br><sub>Stages: Adaptation · Characters · Script · Storyboard</sub><br><sub>updated 2026-07-23 · 📝 prompts · Chinese</sub><br><sub>💡 A set of prompt .md files, not standard SKILL.md</sub>
 
@@ -283,7 +283,7 @@ Turn a script into shots: storyboards, character and scene assets, and prompts f
 
 - **[h3-storyboard-skill](https://github.com/phileiny/h3-storyboard-skill)** · ★ 178<br>MiniMax H3 shot breakdown and character performance design<br><sub>Stages: Storyboard · Prompts</sub><br><sub>updated 2026-10-03 · English · MIT</sub><br><sub>🎬 MiniMax H3</sub>
 
-- **[smy-seedance-storyboard](https://github.com/liangdabiao/smy-seedance-storyboard)** · ★ 176<br>Story → short-drama production docs in the retro hand-drawn style of Shanghai Animation Film Studio: script, storyboard, asset image prompts, with a complete sample project<br><sub>Stages: Adaptation · Script · Storyboard · Prompts</sub><br><sub>updated 2026-10-08 · Chinese</sub><br><sub>🎬 Seedance / Jimeng</sub>
+- **[smy-seedance-storyboard](https://github.com/liangdabiao/smy-seedance-storyboard)** · ★ 177<br>Story → short-drama production docs in the retro hand-drawn style of Shanghai Animation Film Studio: script, storyboard, asset image prompts, with a complete sample project<br><sub>Stages: Adaptation · Script · Storyboard · Prompts</sub><br><sub>updated 2026-10-08 · Chinese</sub><br><sub>🎬 Seedance / Jimeng</sub>
 
 - **[film-studio-skills](https://github.com/machina-exm/film-studio-skills)** · ★ 153<br>Script → locked, generation-ready shots: 7 skills replicating a commercial AI video production pipeline<br><sub>Stages: Script · Storyboard · Prompts</sub><br><sub>updated 2026-08-14 · English · 7 skills</sub><br><sub>🎬 Seedance / Jimeng</sub>
 
@@ -415,7 +415,7 @@ npx skills add momo5213/live-action-drama-16x9
 
 Before adapting, decide whether a story is worth shooting and how to break it down.
 
-- **[screen-creative-skills](https://github.com/VanGong1999/screen-creative-skills)** · ★ 460<br>Film and TV development and evaluation: novel/IP evaluation, plot-point breakdown, character bios and relationships, outline, adapting novels into short drama or long series<br><sub>Stages: Topic · Adaptation · Characters · Episodes</sub><br><sub>updated 2026-10-12 · Chinese · 31 skills · MIT</sub><br><sub>💡 The repo contains two copies of its 31 skills</sub>
+- **[screen-creative-skills](https://github.com/VanGong1999/screen-creative-skills)** · ★ 462<br>Film and TV development and evaluation: novel/IP evaluation, plot-point breakdown, character bios and relationships, outline, adapting novels into short drama or long series<br><sub>Stages: Topic · Adaptation · Characters · Episodes</sub><br><sub>updated 2026-10-12 · Chinese · 31 skills · MIT</sub><br><sub>💡 The repo contains two copies of its 31 skills</sub>
 
 - **[narrative-to-screen-reader](https://github.com/zhlmi/narrative-to-screen-reader)** · ★ 122<br>Translates your story into film-development language: quick diagnosis, a screenwriter's adaptation reader, a director's audiovisual reader, an actor's reader and a producer's summary<br><sub>Stages: Topic · Adaptation · Characters</sub><br><sub>updated 2026-10-01 · Chinese</sub>
 
