@@ -41,7 +41,7 @@ Most projects come from China's short-drama scene (Hongguo, Douyin and others), 
 24 added in the last 7 days:
 
 - [shanyin-screenwriting-master](https://github.com/Shanyin-ai/shanyin-screenwriting-master) ★1.3k: Shanyin Super Screenwriting Master: characters, outline, scene breakdown and full script in four formats: concept micro-film, narrative short, feature and multi-episode series
-- [higgsfield-ai-prompt-skill](https://github.com/OSideMedia/higgsfield-ai-prompt-skill) ★749: Prompts for the Higgsfield platform: MCSLA formula, Seedance 2.5 multi-reference directing, performance direction, Soul ID character consistency, shot lists and failure diagnosis
+- [higgsfield-ai-prompt-skill](https://github.com/OSideMedia/higgsfield-ai-prompt-skill) ★750: Prompts for the Higgsfield platform: MCSLA formula, Seedance 2.5 multi-reference directing, performance direction, Soul ID character consistency, shot lists and failure diagnosis
 - [zy-cinematic-realism](https://github.com/popopo-99/zy-cinematic-realism) ★588: Zaomengshi (Dreammaker): develops a script, story or scene idea into motivated narrative keyframes, compiled into native prompts for each image model, with sequential image sets and result fixes
 - [shanyin-director-master](https://github.com/Shanyin-ai/shanyin-director-master) ★586: Shanyin Super Director Master: script → director's tone-setting, pacing plan, script tweaks, storyboard breakdown, output as a nine-column storyboard sheet (xlsx), with built-in genre director-style templates
 - [awesome-seedance-2.5-prompts-skills](https://github.com/AtlasCloudAI/awesome-seedance-2.5-prompts-skills) ★239: Seedance 2.5 prompt library plus skill: picks a T2V/R2V/I2V route, Seedream storyboards, multi-reference and shot-continuity design
@@ -197,7 +197,7 @@ npx skills add ilkaydemiralay/vision_art_creator
 
 Focused on the script itself: episode outlines, hooks, paywall points, dialogue and review.
 
-- **[short-drama-factory](https://github.com/lixiaoxiao9888-create/short-drama-factory)** · ★ 387<br>Industrial short-drama writing for Douyin/Hongguo: a one-line idea or a web novel → a 60–100 episode script with paywall points, plus hook, cliffhanger and twist formulas and machine-check rules<br><sub>Stages: Adaptation · Episodes · Script · Review</sub><br><sub>updated 2026-10-16 · Chinese · MIT</sub>
+- **[short-drama-factory](https://github.com/lixiaoxiao9888-create/short-drama-factory)** · ★ 386<br>Industrial short-drama writing for Douyin/Hongguo: a one-line idea or a web novel → a 60–100 episode script with paywall points, plus hook, cliffhanger and twist formulas and machine-check rules<br><sub>Stages: Adaptation · Episodes · Script · Review</sub><br><sub>updated 2026-10-16 · Chinese · MIT</sub>
 
 - **[screenwriter-skill](https://github.com/Vi7QY/screenwriter-skill)** · ★ 79<br>Short drama / manju script review: 38 rules distilled from experience running Hongguo Top 100 shows<br><sub>Stages: Review</sub><br><sub>updated 2026-04-12 💤 · Multilingual · MIT</sub>
 
@@ -253,7 +253,7 @@ Turn a script into shots: storyboards, character and scene assets, and prompts f
 
 - **[awesome-seedance](https://github.com/LearnPrompt/awesome-seedance)** · ★ 2.1k<br>Seedance 2.5/2.0 prompt library: 800+ cases traceable to original posts and nearly 500 cross-model retests, with skills<br><sub>Stages: Prompts</sub><br><sub>updated 2026-10-16 · Multilingual · 15 skills · MIT</sub><br><sub>🎬 Seedance / Jimeng</sub>
 
-- **[higgsfield-ai-prompt-skill](https://github.com/OSideMedia/higgsfield-ai-prompt-skill)** · ★ 749<br>Prompts for the Higgsfield platform: MCSLA formula, Seedance 2.5 multi-reference directing, performance direction, Soul ID character consistency, shot lists and failure diagnosis<br><sub>Stages: Characters · Prompts</sub><br><sub>updated 2026-09-27 · English · 36 skills · MIT</sub><br><sub>🎬 Seedance / Jimeng · Kling · Veo · Wan (Tongyi Wanxiang)</sub><br><sub>💡 Targets the paid Higgsfield platform; also includes advertising and marketing modules</sub>
+- **[higgsfield-ai-prompt-skill](https://github.com/OSideMedia/higgsfield-ai-prompt-skill)** · ★ 750<br>Prompts for the Higgsfield platform: MCSLA formula, Seedance 2.5 multi-reference directing, performance direction, Soul ID character consistency, shot lists and failure diagnosis<br><sub>Stages: Characters · Prompts</sub><br><sub>updated 2026-09-27 · English · 36 skills · MIT</sub><br><sub>🎬 Seedance / Jimeng · Kling · Veo · Wan (Tongyi Wanxiang)</sub><br><sub>💡 Targets the paid Higgsfield platform; also includes advertising and marketing modules</sub>
 
 - **[make-prompt-seedance2](https://github.com/liangdabiao/make-prompt-seedance2)** · ★ 718<br>Structured prompt-writing method for Seedance 2.0, with a general-purpose skill<br><sub>Stages: Prompts</sub><br><sub>updated 2026-10-04 · Chinese</sub><br><sub>🎬 Seedance / Jimeng</sub>
 
