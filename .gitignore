@@ -3,3 +3,5 @@ __pycache__/
 .DS_Store
 candidates.md
 web/dist/
+node_modules/
+.wrangler/
