@@ -10,7 +10,7 @@
       "pushed_at": "2026-10-15",
       "skill_count": 21,
       "skill_count_truncated": false,
-      "stars": 71,
+      "stars": 72,
       "status": "ok"
     },
     "A-cat-with-carrots/OnlyShot": {
@@ -22,7 +22,7 @@
       "pushed_at": "2026-07-07",
       "skill_count": 1,
       "skill_count_truncated": false,
-      "stars": 322,
+      "stars": 323,
       "status": "ok"
     },
     "AharaOoO/acheng-director-skill": {
@@ -84,7 +84,7 @@
       "pushed_at": "2026-10-16",
       "skill_count": 5,
       "skill_count_truncated": false,
-      "stars": 17992,
+      "stars": 17997,
       "status": "ok"
     },
     "HITsz-TMG/VideoClaw": {
@@ -108,7 +108,7 @@
       "pushed_at": "2026-09-30",
       "skill_count": 0,
       "skill_count_truncated": false,
-      "stars": 12674,
+      "stars": 12675,
       "status": "ok"
     },
     "Hao0321/ai-short-drama": {
@@ -145,7 +145,7 @@
       "pushed_at": "2026-08-11",
       "skill_count": 1,
       "skill_count_truncated": false,
-      "stars": 4099,
+      "stars": 4102,
       "status": "ok"
     },
     "LearnPrompt/awesome-seedance": {
@@ -154,7 +154,7 @@
       "forks": 349,
       "full_name": "LearnPrompt/awesome-seedance",
       "license": "MIT",
-      "pushed_at": "2026-10-16",
+      "pushed_at": "2026-10-17",
       "skill_count": 15,
       "skill_count_truncated": false,
       "stars": 2106,
@@ -194,7 +194,7 @@
       "pushed_at": "2026-10-15",
       "skill_count": 6,
       "skill_count_truncated": false,
-      "stars": 3203,
+      "stars": 3204,
       "status": "ok"
     },
     "OSideMedia/higgsfield-ai-prompt-skill": {
@@ -233,7 +233,7 @@
       "pushed_at": "2026-04-01",
       "skill_count": 0,
       "skill_count_truncated": false,
-      "stars": 1338,
+      "stars": 1339,
       "status": "ok"
     },
     "SlavaSexton/ComfyUI-Agent-Kit": {
@@ -424,13 +424,13 @@
     "blader/humanizer": {
       "archived": false,
       "description": "Agent skill that removes signs of AI-generated writing from text",
-      "forks": 4560,
+      "forks": 4561,
       "full_name": "blader/humanizer",
       "license": "MIT",
       "pushed_at": "2026-10-16",
       "skill_count": 1,
       "skill_count_truncated": false,
-      "stars": 57626,
+      "stars": 57632,
       "status": "ok"
     },
     "catyiqian/qianqianwriting": {
@@ -454,7 +454,7 @@
       "pushed_at": "2026-10-07",
       "skill_count": 7,
       "skill_count_truncated": false,
-      "stars": 422,
+      "stars": 421,
       "status": "ok"
     },
     "chatfire-AI/huobao-drama": {
@@ -466,7 +466,7 @@
       "pushed_at": "2026-10-05",
       "skill_count": 7,
       "skill_count_truncated": false,
-      "stars": 16302,
+      "stars": 16307,
       "status": "ok"
     },
     "ciel-oliver/analyze-hit-novel": {
@@ -515,7 +515,7 @@
       "pushed_at": "2026-10-17",
       "skill_count": 6,
       "skill_count_truncated": false,
-      "stars": 6321,
+      "stars": 6320,
       "status": "ok"
     },
     "e06084/claude-screenwriting": {
@@ -551,7 +551,7 @@
       "pushed_at": "2026-10-15",
       "skill_count": 7,
       "skill_count_truncated": false,
-      "stars": 4678,
+      "stars": 4679,
       "status": "ok"
     },
     "geslie1/kunka-screenwriting-master": {
@@ -620,13 +620,13 @@
     "jtydhr88/screenwriting-skills": {
       "archived": false,
       "description": "Professional agent skills for screenwriting, television writing and dramaturgy",
-      "forks": 177,
+      "forks": 178,
       "full_name": "jtydhr88/screenwriting-skills",
       "license": "MIT",
       "pushed_at": "2026-10-03",
       "skill_count": 26,
       "skill_count_truncated": false,
-      "stars": 1686,
+      "stars": 1687,
       "status": "ok"
     },
     "jxshow/jingju-skills": {
@@ -724,7 +724,7 @@
       "pushed_at": "2026-10-16",
       "skill_count": 13,
       "skill_count_truncated": false,
-      "stars": 1403,
+      "stars": 1404,
       "status": "ok"
     },
     "lixiaoxiao9888-create/short-drama-factory": {
@@ -945,7 +945,7 @@
       "pushed_at": "2026-10-06",
       "skill_count": 0,
       "skill_count_truncated": false,
-      "stars": 2338,
+      "stars": 2339,
       "status": "ok"
     },
     "smixs/visual-skills": {
@@ -957,7 +957,7 @@
       "pushed_at": "2026-09-16",
       "skill_count": 2,
       "skill_count_truncated": false,
-      "stars": 522,
+      "stars": 523,
       "status": "ok"
     },
     "suihe1/short-drama-production": {
@@ -975,7 +975,7 @@
     "waooAI/waoowaoo": {
       "archived": false,
       "description": "首家工业级全流程 AI 影视生产平台。Industry-first professional AI Agent platform for controllable film & video production. From shorts to live-action with Hollywood-standard workflows.",
-      "forks": 3232,
+      "forks": 3239,
       "full_name": "waooAI/waoowaoo",
       "license": null,
       "pushed_at": "2026-09-21",
@@ -1041,7 +1041,7 @@
       "pushed_at": "2026-10-13",
       "skill_count": 0,
       "skill_count_truncated": false,
-      "stars": 1839,
+      "stars": 1841,
       "status": "ok"
     },
     "xixihhhh/ai-short-drama-skill": {
@@ -1065,7 +1065,7 @@
       "pushed_at": "2026-10-16",
       "skill_count": 2,
       "skill_count_truncated": false,
-      "stars": 2113,
+      "stars": 2112,
       "status": "ok"
     },
     "yi1108/printfilm": {
@@ -1077,7 +1077,7 @@
       "pushed_at": "2026-10-15",
       "skill_count": 1,
       "skill_count_truncated": false,
-      "stars": 5169,
+      "stars": 5171,
       "status": "ok"
     },
     "zenstory-ai/drama-skills": {
@@ -1089,7 +1089,7 @@
       "pushed_at": "2026-10-15",
       "skill_count": 12,
       "skill_count_truncated": false,
-      "stars": 2971,
+      "stars": 2975,
       "status": "ok"
     },
     "zhaihao118/Micro-Drama-Skills": {

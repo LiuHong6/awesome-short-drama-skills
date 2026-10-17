@@ -99,9 +99,9 @@ Complete workflows that go from a one-line idea or a novel to storyboards, video
 
 - 🌟 **[manju-laoli-skill](https://github.com/lixiaoxiao9888-create/manju-laoli-skill)** · ★ 1.4k<br>Manju Lao Li: full AIGC manju directing workflow with gated scripts, asset locking, storyboard, model-ready feed prompts and rule-based QC<br><sub>Stages: Script · Review · Storyboard · Prompts</sub><br><sub>updated 2026-10-16 · Chinese · 13 skills · MIT</sub><br><sub>🎬 Seedance / Jimeng · MiniMax H3</sub><br><sub>💡 Marked as a beta by the author; incorporates other open-source content</sub>
 
-- **[Micro-Drama-Skills](https://github.com/zhaihao118/Micro-Drama-Skills)** · ★ 322<br>End-to-end short-drama automation: script, character design, storyboard, image and video generation, and submission<br><sub>Stages: Script · Storyboard · Prompts · Production</sub><br><sub>updated 2026-02-23 💤 · Chinese · 4 skills</sub>
+- **[OnlyShot](https://github.com/A-cat-with-carrots/OnlyShot)** · ★ 323<br>Shenxianyu short-drama pipeline: one line → script, storyboard, storyboard images, video and editing in five steps, with 17 documented failure modes<br><sub>Stages: Script · Storyboard · Prompts · Production</sub><br><sub>updated 2026-07-07 · Chinese · MIT</sub><br><sub>🎬 Seedance / Jimeng</sub>
 
-- **[OnlyShot](https://github.com/A-cat-with-carrots/OnlyShot)** · ★ 322<br>Shenxianyu short-drama pipeline: one line → script, storyboard, storyboard images, video and editing in five steps, with 17 documented failure modes<br><sub>Stages: Script · Storyboard · Prompts · Production</sub><br><sub>updated 2026-07-07 · Chinese · MIT</sub><br><sub>🎬 Seedance / Jimeng</sub>
+- **[Micro-Drama-Skills](https://github.com/zhaihao118/Micro-Drama-Skills)** · ★ 322<br>End-to-end short-drama automation: script, character design, storyboard, image and video generation, and submission<br><sub>Stages: Script · Storyboard · Prompts · Production</sub><br><sub>updated 2026-02-23 💤 · Chinese · 4 skills</sub>
 
 - **[short-drama-production](https://github.com/suihe1/short-drama-production)** · ★ 183<br>Short-drama production controller: novel outline/characters/script, director's storyboard, prompts, sound assets, rough cut and QC (16:9 by default)<br><sub>Stages: Adaptation · Episodes · Script · Storyboard · Prompts · Production</sub><br><sub>updated 2026-09-16 · Chinese · 8 skills · Apache-2.0</sub><br><sub>🎬 MiniMax H3</sub><br><sub>💡 Its 5 novel-* skills match shuohao-skills in file layout and examples; the repo does not credit it</sub>
 
@@ -109,7 +109,7 @@ Complete workflows that go from a one-line idea or a novel to storyboards, video
 
 - **[infinite-creation](https://github.com/SwotAtmk/infinite-creation)** · ★ 76<br>Submit a novel or script and it produces video continuously with local ComfyUI + MiniMax H3 + an agent, with no length limit<br><sub>Stages: Adaptation · Prompts · Production</sub><br><sub>updated 2026-10-16 · Chinese · 30 skills · MIT</sub><br><sub>🎬 ComfyUI (local) · MiniMax H3</sub><br><sub>💡 Its 28 skills also include ad and promo-video ones</sub>
 
-- **[ai-film-skills](https://github.com/62656456/ai-film-skills)** · ★ 71<br>21 independent modules: short-drama production, storyboard directing, character assets, visual-style directing (Chinese traditional, sci-fi and more), with 3D previs<br><sub>Stages: Characters · Storyboard · Production</sub><br><sub>updated 2026-10-15 · Multilingual · 21 skills · Apache-2.0</sub><br><sub>💡 Includes a few non-film modules such as market analysis</sub>
+- **[ai-film-skills](https://github.com/62656456/ai-film-skills)** · ★ 72<br>21 independent modules: short-drama production, storyboard directing, character assets, visual-style directing (Chinese traditional, sci-fi and more), with 3D previs<br><sub>Stages: Characters · Storyboard · Production</sub><br><sub>updated 2026-10-15 · Multilingual · 21 skills · Apache-2.0</sub><br><sub>💡 Includes a few non-film modules such as market analysis</sub>
 
 - **[ai-short-drama](https://github.com/Hao0321/ai-short-drama)** · ★ 71<br>Compiles premises such as rebirth, underdog comeback and hidden big shot into serials with payoff beats and keep-watching hooks: genre research, story architecture, shot timelines, continuity checks<br><sub>Stages: Topic · Episodes · Script · Review · Storyboard</sub><br><sub>updated 2026-08-13 · Chinese · MIT</sub><br><sub>💡 README is in Traditional Chinese</sub>
 
@@ -150,10 +150,10 @@ npx skills add eternityspring/shuohao-skills
 npx skills add zenstory-ai/drama-skills
 # manju-laoli-skill
 npx skills add lixiaoxiao9888-create/manju-laoli-skill
-# Micro-Drama-Skills
-npx skills add zhaihao118/Micro-Drama-Skills
 # OnlyShot
 npx skills add A-cat-with-carrots/OnlyShot
+# Micro-Drama-Skills
+npx skills add zhaihao118/Micro-Drama-Skills
 # short-drama-production
 npx skills add suihe1/short-drama-production
 # workrally
@@ -253,7 +253,7 @@ Turn a script into shots: storyboards, character and scene assets, and prompts f
 
 - **[seedance2-skill](https://github.com/dexhunter/seedance2-skill)** · ★ 4.3k<br>Generates video prompts for Seedance 2.0<br><sub>Stages: Prompts</sub><br><sub>updated 2026-09-19 · Multilingual · 2 skills · MIT</sub><br><sub>🎬 Seedance / Jimeng</sub>
 
-- **[awesome-seedance](https://github.com/LearnPrompt/awesome-seedance)** · ★ 2.1k<br>Seedance 2.5/2.0 prompt library: 800+ cases traceable to original posts and nearly 500 cross-model retests, with skills<br><sub>Stages: Prompts</sub><br><sub>updated 2026-10-16 · Multilingual · 15 skills · MIT</sub><br><sub>🎬 Seedance / Jimeng</sub>
+- **[awesome-seedance](https://github.com/LearnPrompt/awesome-seedance)** · ★ 2.1k<br>Seedance 2.5/2.0 prompt library: 800+ cases traceable to original posts and nearly 500 cross-model retests, with skills<br><sub>Stages: Prompts</sub><br><sub>updated 2026-10-17 · Multilingual · 15 skills · MIT</sub><br><sub>🎬 Seedance / Jimeng</sub>
 
 - **[higgsfield-ai-prompt-skill](https://github.com/OSideMedia/higgsfield-ai-prompt-skill)** · ★ 750<br>Prompts for the Higgsfield platform: MCSLA formula, Seedance 2.5 multi-reference directing, performance direction, Soul ID character consistency, shot lists and failure diagnosis<br><sub>Stages: Characters · Prompts</sub><br><sub>updated 2026-09-27 · English · 36 skills · MIT</sub><br><sub>🎬 Seedance / Jimeng · Kling · Veo · Wan (Tongyi Wanxiang)</sub><br><sub>💡 Targets the paid Higgsfield platform; also includes advertising and marketing modules</sub>
 
@@ -265,13 +265,13 @@ Turn a script into shots: storyboards, character and scene assets, and prompts f
 
 - **[shanyin-director-master](https://github.com/Shanyin-ai/shanyin-director-master)** · ★ 586<br>Shanyin Super Director Master: script → director's tone-setting, pacing plan, script tweaks, storyboard breakdown, output as a nine-column storyboard sheet (xlsx), with built-in genre director-style templates<br><sub>Stages: Review · Storyboard</sub><br><sub>updated 2026-05-11 · Chinese · MIT</sub><br><sub>💡 Built for the Claude app; can be paired with Shanyin Super Screenwriting Master</sub>
 
-- **[visual-skills](https://github.com/smixs/visual-skills)** · ★ 522<br>AI film director: dramaturgy rules such as Murch's editing principles, blocking and montage, plus exact Seedance prompt syntax<br><sub>Stages: Storyboard · Prompts</sub><br><sub>updated 2026-09-16 · English · 2 skills · CC-BY-4.0</sub><br><sub>🎬 Seedance / Jimeng</sub>
+- **[visual-skills](https://github.com/smixs/visual-skills)** · ★ 523<br>AI film director: dramaturgy rules such as Murch's editing principles, blocking and montage, plus exact Seedance prompt syntax<br><sub>Stages: Storyboard · Prompts</sub><br><sub>updated 2026-09-16 · English · 2 skills · CC-BY-4.0</sub><br><sub>🎬 Seedance / Jimeng</sub>
 
 - **[XiaoLuo-AI-Drama-Skill](https://github.com/zhurui0523/XiaoLuo-AI-Drama-Skill)** · ★ 477<br>XiaoLuo series: script analysis, original adaptation, storyboard script, character three-views/costumes/expressions, scene layout<br><sub>Stages: Adaptation · Characters · Script · Storyboard</sub><br><sub>updated 2026-07-23 · 📝 prompts · Chinese</sub><br><sub>💡 A set of prompt .md files, not standard SKILL.md</sub>
 
 - **[ai-shortfilm-prompts](https://github.com/jnMetaCode/ai-shortfilm-prompts)** · ★ 475<br>Turns any idea into cinematic, model-ready video prompts<br><sub>Stages: Prompts</sub><br><sub>updated 2026-10-12 · Multilingual · MIT</sub><br><sub>🎬 Sora · Kling · Veo · Seedance / Jimeng</sub>
 
-- **[lanshu-awesome-ai-video-kit](https://github.com/cclank/lanshu-awesome-ai-video-kit)** · ★ 422<br>Toolkit from enterprise AI video projects: Seedance/Kling prompts, storyboards, model selection and debugging, with 600+ prompts and methodology write-ups<br><sub>Stages: Storyboard · Prompts</sub><br><sub>updated 2026-10-07 · Chinese · 7 skills · MIT</sub><br><sub>🎬 Seedance / Jimeng · Kling</sub>
+- **[lanshu-awesome-ai-video-kit](https://github.com/cclank/lanshu-awesome-ai-video-kit)** · ★ 421<br>Toolkit from enterprise AI video projects: Seedance/Kling prompts, storyboards, model selection and debugging, with 600+ prompts and methodology write-ups<br><sub>Stages: Storyboard · Prompts</sub><br><sub>updated 2026-10-07 · Chinese · 7 skills · MIT</sub><br><sub>🎬 Seedance / Jimeng · Kling</sub>
 
 - **[minimax-h3-prompt-skill-T8](https://github.com/T8mars/minimax-h3-prompt-skill-T8)** · ★ 290<br>Video prompt case library and installable skills for MiniMax H3 / Seedance 2.0, with a video viewer<br><sub>Stages: Prompts</sub><br><sub>updated 2026-10-11 · Multilingual · 284 skills · MIT</sub><br><sub>🎬 MiniMax H3 · Seedance / Jimeng</sub>
 
