@@ -52,7 +52,8 @@ export async function onRequest(context) {
   }
 
   try {
-    if (env.CRAWL_LOG) {
+    // geoseo 用各家爬虫 UA 自测能否访问时带这个头，不记日志，免得混进真实爬虫数据
+    if (env.CRAWL_LOG && !request.headers.has("X-Geoseo-Selftest")) {
       const ua = request.headers.get("User-Agent") || "";
       const c = classify(ua);
       const bot = c.kind === "bot";
