@@ -10,7 +10,7 @@ This list collects short-drama skills for agents such as Claude Code, Codex and 
 
 Most projects come from China's short-drama scene (Hongguo, Douyin and others), and many are documented in Chinese; the descriptions below are translated. "Manju" (漫剧) is a serialized comic-style drama, now usually generated with AI image and video models.
 
-82 skill projects + 14 related open-source platforms · metadata updated 2026-10-16
+82 skill projects + 14 related open-source platforms · metadata updated 2026-10-17
 
 **Legend**: 🌟 featured · 📝 prompt files (not a standard skill) · 🧩 full app · 🎬 supported video models · 💤 not updated for 180+ days · 📦 archived · ⚠️ repo unavailable
 
@@ -263,7 +263,7 @@ Turn a script into shots: storyboards, character and scene assets, and prompts f
 
 - **[shanyin-director-master](https://github.com/Shanyin-ai/shanyin-director-master)** · ★ 586<br>Shanyin Super Director Master: script → director's tone-setting, pacing plan, script tweaks, storyboard breakdown, output as a nine-column storyboard sheet (xlsx), with built-in genre director-style templates<br><sub>Stages: Review · Storyboard</sub><br><sub>updated 2026-05-11 · Chinese · MIT</sub><br><sub>💡 Built for the Claude app; can be paired with Shanyin Super Screenwriting Master</sub>
 
-- **[visual-skills](https://github.com/smixs/visual-skills)** · ★ 521<br>AI film director: dramaturgy rules such as Murch's editing principles, blocking and montage, plus exact Seedance prompt syntax<br><sub>Stages: Storyboard · Prompts</sub><br><sub>updated 2026-09-16 · English · 2 skills · CC-BY-4.0</sub><br><sub>🎬 Seedance / Jimeng</sub>
+- **[visual-skills](https://github.com/smixs/visual-skills)** · ★ 522<br>AI film director: dramaturgy rules such as Murch's editing principles, blocking and montage, plus exact Seedance prompt syntax<br><sub>Stages: Storyboard · Prompts</sub><br><sub>updated 2026-09-16 · English · 2 skills · CC-BY-4.0</sub><br><sub>🎬 Seedance / Jimeng</sub>
 
 - **[XiaoLuo-AI-Drama-Skill](https://github.com/zhurui0523/XiaoLuo-AI-Drama-Skill)** · ★ 477<br>XiaoLuo series: script analysis, original adaptation, storyboard script, character three-views/costumes/expressions, scene layout<br><sub>Stages: Adaptation · Characters · Script · Storyboard</sub><br><sub>updated 2026-07-23 · 📝 prompts · Chinese</sub><br><sub>💡 A set of prompt .md files, not standard SKILL.md</sub>
 
@@ -604,7 +604,7 @@ Image and video models the repo's README explicitly says it supports (sorted by 
 
 ### What are the best agent skills for AI short dramas (microdramas)?
 
-This list has 82 hand-checked short-drama skill projects (data updated 2026-10-16). To go from a novel all the way to storyboards and video prompts, start with the [All-in-one](#group-pipeline) group (23); the most-starred are [shuohao-skills](https://github.com/eternityspring/shuohao-skills), [drama-skills](https://github.com/zenstory-ai/drama-skills) and [manju-laoli-skill](https://github.com/lixiaoxiao9888-create/manju-laoli-skill). Missing just one step? Look it up in [By production stage](#by-stage). Not sure how to combine them? Start from [Suggested stacks](#packs).
+This list has 82 hand-checked short-drama skill projects (data updated 2026-10-17). To go from a novel all the way to storyboards and video prompts, start with the [All-in-one](#group-pipeline) group (23); the most-starred are [shuohao-skills](https://github.com/eternityspring/shuohao-skills), [drama-skills](https://github.com/zenstory-ai/drama-skills) and [manju-laoli-skill](https://github.com/lixiaoxiao9888-create/manju-laoli-skill). Missing just one step? Look it up in [By production stage](#by-stage). Not sure how to combine them? Start from [Suggested stacks](#packs).
 
 ### What is a short drama skill?
 
