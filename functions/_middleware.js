@@ -1,5 +1,6 @@
 // 访问日志：每个页面请求写一行到 Workers Analytics Engine（绑定名 CRAWL_LOG，数据集 shortdrama_crawl）。
-// 爬虫记 UA、IP 和 ASN，用来对照各家公布的 IP 段验真；真人只记页面、来源网站、utm_source 和国家，不记 IP、不放 cookie。
+// 爬虫记 UA 和 IP，用来对照各家公布的 IP 段验真；真人只记页面、来源网站、utm_source、国家和网络运营商（ASN），
+// 不记 IP、不放 cookie。运营商用来把数据中心来的浏览器 UA 爬虫从真人里分出来。
 // 没绑定数据集或写入出错时照常返回页面。/static/* 不经过这里（见 web/_routes.json）。
 // 字段顺序由 ~/openclaw/products/geoseo 的 collect.py 读取，改动要两边一起改。
 
@@ -65,8 +66,9 @@ export async function onRequest(context) {
           cf.country || "",
           bot ? ua.slice(0, 300) : "",
           bot ? request.headers.get("CF-Connecting-IP") || "" : "",
-          bot ? String(cf.asn || "") : "",
+          String(cf.asn || ""),
           c.token,
+          String(cf.asOrganization || "").slice(0, 100),
         ],
         doubles: [res.status],
       });
