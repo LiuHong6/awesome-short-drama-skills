@@ -1,21 +1,60 @@
 <!--
 title: Short drama skill tests
-seo_title: AI short drama skill tests: the same premise, different skills, outputs side by side
-description: We give the same short drama premise to different AI short drama skills, run them with the same agent, model and versions, keep every output and compare them side by side. Round one tests scripts: hooks, characters, structure, dialogue, AI tells and usability.
+seo_title: AI short drama skill tests: 10 script-writing skills, one premise, outputs side by side
+description: The same rebirth-revenge premise went to 10 AI short drama script-writing skills and a no-skill control, run with the same agent and model and reviewed blind for hooks, dialogue, AI tells, runtime and structure. Round one finding: the story skeletons converge; skills mainly change format and discipline.
 crumb: Tests
 updated: 2026-10-17
 -->
 <p class="lead">"Checked" in the directory only means a project's details are accurate, not that it works well. This page holds the tests: <strong>the same premise goes to different skills, and the outputs are laid side by side unedited</strong> so you can judge for yourself.</p>
 
-<div class="note"><p><strong>Status:</strong> round one, covering script-writing skills, is in preparation. Results will be posted here.</p></div>
+<div class="note"><p><strong>Round one is done (2026-10-17):</strong> 10 script-writing skills plus a control with no skill, one run each on the same premise. Every output, transcript and blind review is on <a href="{{repo_url}}/tree/main/evals/runs/001-rebirth-revenge">GitHub</a> (in Chinese).</p></div>
+
+<h2 id="round-1">Round one: script-writing skills</h2>
+<p>The premise, <em>Double-Sided Embroidery</em>: a female-audience urban rebirth-revenge story in which a Suzhou embroidery heir breaks off her engagement at the banquet. It targets Hongguo, vertical, 60 episodes of 1–2 minutes. Deliverables were a character bible, a 60-episode outline with paywall points, and full scripts for episodes 1–3. Every run used Claude Code with claude-opus-5-5 at high effort and identical prompts. Outputs were anonymized as A–K and reviewed blind, with no overall scores.</p>
+
+<h3>Findings</h3>
+<ol>
+  <li><strong>The story skeletons converge, with or without a skill.</strong> All 11 outputs have a character named Xiaoman. All put the first paywall point at episode 10, use a name hidden in the stitches and revealed by raking light as evidence, and replay the past-life fire. Ten open on that fire, and five use the identical breakup line "这婚，我不订了。" ("I'm calling off this engagement."). Skills mostly change format, writing habits and pacing discipline; a distinctive premise still has to come from a person.</li>
+  <li><strong>The control's problems are runtime and an overpowered heroine.</strong> Without a skill, each episode ran 1.5–2 times the limit, voice-over was heavy and the heroine's foreknowledge never failed. Most skill outputs read more like short drama on runtime, format and making foreknowledge costly.</li>
+  <li><strong>General screenwriting skills held their own.</strong> screenwriting-skills and Shanyin Screenwriting Master were not built for short drama, yet they were near the top on characters, dialogue and AI tells. The short-drama skills were stronger on paywall points, production feasibility and asset lists.</li>
+  <li><strong>Everything needs cleanup before it goes to a crew.</strong> Several scripts carry metadata headers, IDs and checkpoints, and none gives a per-episode list of locations, cast and props.</li>
+</ol>
+
+<h3>Entry by entry</h3>
+<table>
+  <thead><tr><th>Project</th><th>What works</th><th>Main problems</th></tr></thead>
+  <tbody>
+    <tr><td><a href="/en/skills/zenstory-ai/drama-skills/">drama-skills</a><br><small><a href="{{repo_url}}/tree/main/evals/runs/001-rebirth-revenge/zenstory-ai__drama-skills/output">raw output</a></small></td><td>A dense opening; the episode 3 ending "What you took is only paper." is one of the best hooks; lean dialogue, all three episodes within 1–2 minutes</td><td>Almost no on-screen needlework in episodes 1–3</td></tr>
+    <tr><td><a href="/en/skills/hao0321/ai-short-drama/">ai-short-drama</a><br><small><a href="{{repo_url}}/tree/main/evals/runs/001-rebirth-revenge/Hao0321__ai-short-drama/output">raw output</a></small></td><td>The strongest embroidery spectacle, with a craft-based payoff viewers can verify in every episode</td><td>Episode 1 may run long and production load is heavy; system fields left in the script</td></tr>
+    <tr><td><a href="/en/skills/lixiaoxiao9888-create/manju-laoli-skill/">manju-laoli-skill</a><br><small><a href="{{repo_url}}/tree/main/evals/runs/001-rebirth-revenge/lixiaoxiao9888-create__manju-laoli-skill/output">raw output</a></small></td><td>Gu Wan is a designer never allowed to sign her work, a mirror of the heroine; foreknowledge has a cost</td><td>The heroine loses more than she wins for 20 episodes; thin climax episodes</td></tr>
+    <tr><td><a href="/en/skills/catyiqian/qianqianwriting/">qianqianwriting</a><br><small><a href="{{repo_url}}/tree/main/evals/runs/001-rebirth-revenge/catyiqian__qianqianwriting/output">raw output</a></small></td><td>Keeps the outline closest to 2–3 sentences per episode</td><td>19 voice-over lines in three episodes, heavy AI tells; the livestream self-defence repeats six times</td></tr>
+    <tr><td><a href="/en/skills/zhu5859243-free/hongguo-shortdrama-screenwriting/">hongguo-shortdrama-screenwriting</a><br><small><a href="{{repo_url}}/tree/main/evals/runs/001-rebirth-revenge/zhu5859243-free__hongguo-shortdrama-screenwriting/output">raw output</a></small></td><td>The sharpest episode 10 paywall point and the most solid twist; only 3 locations in episodes 1–3</td><td>Labelled 115 seconds but runs about 1 minute; every line is a punchline</td></tr>
+    <tr><td><a href="/en/skills/jtydhr88/screenwriting-skills/">screenwriting-skills</a><br><small><a href="{{repo_url}}/tree/main/evals/runs/001-rebirth-revenge/jtydhr88__screenwriting-skills/output">raw output</a></small></td><td>Among the best characters; a lighter's click ties the past-life killer to the present; light AI tells</td><td>A general screenwriting skill whose README says vertical short drama is out of scope</td></tr>
+    <tr><td><a href="/en/skills/shanyin-ai/shanyin-screenwriting-master/">shanyin-screenwriting-master</a><br><small><a href="{{repo_url}}/tree/main/evals/runs/001-rebirth-revenge/Shanyin-ai__shanyin-screenwriting-master/output">raw output</a></small></td><td>Among the best dialogue, with no voice-over at all; the most solid twist in episode 58</td><td>Episode 1 may run long; episodes 40–46 sag</td></tr>
+    <tr><td><a href="/en/skills/lixiaoxiao9888-create/short-drama-factory/">short-drama-factory</a><br><small><a href="{{repo_url}}/tree/main/evals/runs/001-rebirth-revenge/lixiaoxiao9888-create__short-drama-factory/output">raw output</a></small></td><td>The only entry that does not open on the fire; the lightest production; a precise episode 10 paywall point</td><td>One dialogue pattern throughout; almost no embroidery on screen in episodes 1–3</td></tr>
+    <tr><td>Control (no skill)<br><small><a href="{{repo_url}}/tree/main/evals/runs/001-rebirth-revenge/baseline/output">raw output</a></small></td><td>Plenty of embroidery on screen</td><td>Episodes run 1.5–2 times the limit; heavy voice-over; foreknowledge never fails</td></tr>
+    <tr><td><a href="/en/skills/eternityspring/shuohao-skills/">shuohao-skills</a><br><small><a href="{{repo_url}}/tree/main/evals/runs/001-rebirth-revenge/eternityspring__shuohao-skills/output">raw output</a></small></td><td>The most complete asset list, closest to production planning; runtimes within target</td><td>The only entry without the broken engagement in episode 1; the thinnest outline (its check scripts did not run this round)</td></tr>
+    <tr><td><a href="/en/skills/adoria111/emma-screenwriting-skills/">emma-screenwriting-skills</a><br><small><a href="{{repo_url}}/tree/main/evals/runs/001-rebirth-revenge/adoria111__emma-screenwriting-skills/output">raw output</a></small></td><td>Format closest to industry standard; among the best characters; the costliest use of foreknowledge</td><td>Little embroidery on screen in episodes 1–3; reveals bunched in episodes 54–58</td></tr>
+  </tbody>
+</table>
+<p>Full write-ups (in Chinese): <a href="{{repo_url}}/blob/main/evals/runs/001-rebirth-revenge/review.md">summary</a> · <a href="{{repo_url}}/blob/main/evals/runs/001-rebirth-revenge/review-scripts.md">script review</a> · <a href="{{repo_url}}/blob/main/evals/runs/001-rebirth-revenge/review-outlines.md">outline review</a> · <a href="{{repo_url}}/blob/main/evals/runs/001-rebirth-revenge/run.md">environment, versions and prompts</a></p>
+
+<h3>Limits of this round</h3>
+<ul>
+  <li><strong>No scripts were run.</strong> For safety, the agent could only read and write its own folder, with no shell and no network. Several skills ship check scripts that were skipped; the agent checked by hand instead.</li>
+  <li><strong>One run each.</strong> Another run would give different output, so these are observations, not verdicts.</li>
+  <li><strong>The fixed reply skips confirmation steps.</strong> The standard reply told the agent to decide for itself, so skills that normally pause for approval after the outline did not.</li>
+  <li><strong>The reviewers are AI.</strong> Both blind reviewers were AI, and the editor checked quotes and conclusions. Next round we plan to add human screenwriters and allow scripts in a sandbox.</li>
+</ul>
 
 <h2>Method</h2>
 <ol>
   <li><strong>Same input</strong>: one premise with genre, episode count and platform, shared by every skill in the round.</li>
   <li><strong>Same environment</strong>: the same agent, model and reasoning effort, with versions recorded.</li>
   <li><strong>Pinned skill versions</strong>: the commit of each repo at test time is recorded.</li>
-  <li><strong>Each skill's own process</strong>: if a skill asks questions, we answer them honestly and add no extra instructions; the whole exchange is recorded.</li>
+  <li><strong>Each skill's own process</strong>: the run opens by calling the entry skill. When a skill stops to ask, it gets the same fixed reply and nothing more, and the whole exchange is recorded.</li>
   <li><strong>Every output kept</strong>: no cherry-picking; every run is published.</li>
+  <li><strong>Blind review</strong>: reviewers do not know which skill produced which output.</li>
 </ol>
 
 <h2>What we look at</h2>
@@ -24,13 +63,13 @@ updated: 2026-10-17
   <tbody>
     <tr><td>Hooks</td><td>Do the opening and each episode ending make you want to keep watching?</td></tr>
     <tr><td>Characters</td><td>Are motives clear and behavior consistent?</td></tr>
-    <tr><td>Structure</td><td>Do pacing, escalation and twists hold up?</td></tr>
+    <tr><td>Structure</td><td>Do pacing, escalation and twists hold up, and are paywall points well placed?</td></tr>
     <tr><td>Dialogue</td><td>Does it sound like people talking, and do characters sound different?</td></tr>
     <tr><td>AI tells</td><td>How many stock phrases, tricolons and empty adjectives?</td></tr>
-    <tr><td>Usability</td><td>How much editing before it is usable, and how smooth is the process?</td></tr>
+    <tr><td>Usability</td><td>Is the runtime right, and how much editing before it can be shot?</td></tr>
   </tbody>
 </table>
-<p>Reviews give observations and examples, not overall scores. Raw outputs and logs go in the <a href="{{repo_url}}/tree/main/evals">evals folder on GitHub</a>, so anyone can reproduce the method.</p>
+<p>Reviews give observations and examples, not overall scores. The runner is <a href="{{repo_url}}/blob/main/evals/run.py">evals/run.py</a>, so anyone can reproduce the method.</p>
 
 <h2>Want a skill included?</h2>
 <p><a href="{{repo_url}}/issues">Open an issue on GitHub</a> with the repo link and the genres it is good at.</p>

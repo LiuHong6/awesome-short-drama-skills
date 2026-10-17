@@ -1,21 +1,60 @@
 <!--
 title: 短剧 Skill 实测
-seo_title: AI 短剧 Skill 实测对比：同一个梗概交给不同 skill，产出并排比较
-description: 把同一个短剧梗概交给不同的 AI 短剧 skill，在同样的 agent、模型和版本下运行，完整保留产出并排比较。第一轮测剧本：钩子、人物、结构、对白、AI 味和可用性。
+seo_title: AI 短剧 Skill 实测：10 个剧本 skill 写同一个梗概，产出并排比较
+description: 同一个重生复仇梗概交给 10 个 AI 短剧剧本 skill 和一个不装 skill 的对照组，在同一个 agent 和模型下运行，匿名盲评钩子、对白、AI 味、时长和结构。第一轮发现：故事骨架高度趋同，skill 主要改变写法和格式。
 crumb: 实测
 updated: 2026-10-17
 -->
 <p class="lead">目录里的「人工核对」只说明项目信息准确，不说明好不好用。这一页放实测：<strong>同一个梗概交给不同的 skill，把产出原样并排摆出来</strong>，让你自己判断。</p>
 
-<div class="note"><p><strong>进度：</strong>第一轮测剧本类 skill，正在准备，结果出来后会发在这里，也会在公众号推送。</p></div>
+<div class="note"><p><strong>第一轮已完成（2026-10-17）：</strong>10 个剧本类 skill 加 1 个不装 skill 的对照组，同一个梗概各跑一次。全部产出、问答记录和盲评原文都在 <a href="{{repo_url}}/tree/main/evals/runs/001-rebirth-revenge">GitHub</a>。</p></div>
+
+<h2 id="round-1">第一轮：剧本类 skill</h2>
+<p>梗概是《双面绣》：都市女频重生复仇，苏绣传人在订婚宴上退婚，红果竖屏，60 集，每集 1–2 分钟。交付物是人物小传、60 集分集大纲（标出付费卡点）和第 1–3 集剧本。所有组都用 Claude Code、claude-opus-5-5、推理强度 high，开场指令和回复完全相同。产出匿名成 A–K 后盲评，结论里不打总分。</p>
+
+<h3>主要发现</h3>
+<ol>
+  <li><strong>故事骨架高度趋同，装不装 skill 都一样。</strong>11 份产出里都有一个叫「小满」的角色，首个付费卡点都在第 10 集，都用藏在针脚里、靠侧光显形的名字当证据，都让前世的火在今生重演。10 份从前世火场开场，5 份的退婚台词一字不差：「这婚，我不订了。」skill 改变的主要是写法、格式和节奏纪律，独特的设定仍然要靠人给。</li>
+  <li><strong>对照组的问题集中在时长和「开挂」。</strong>不装 skill 的那份每集篇幅约是上限的 1.5–2 倍，VO 多，女主的先知从不失手。装了 skill 的稿子大多在时长、格式和「先知要付代价」上更像短剧。</li>
+  <li><strong>通用编剧 skill 并不吃亏。</strong>screenwriting-skills 和山音编剧大师都不是为短剧设计的，这一轮却在人物、对白和 AI 味上排在前面。专做短剧的 skill 强在卡点、制作可行性和资产清单。</li>
+  <li><strong>交给剧组之前都要清理。</strong>多份剧本夹着元数据头、ID 和检查点；没有一份给出逐集的场景、人物、道具表。</li>
+</ol>
+
+<h3>逐个看</h3>
+<table>
+  <thead><tr><th>项目</th><th>写得好的地方</th><th>主要问题</th></tr></thead>
+  <tbody>
+    <tr><td><a href="/skills/zenstory-ai/drama-skills/">drama-skills</a><br><small><a href="{{repo_url}}/tree/main/evals/runs/001-rebirth-revenge/zenstory-ai__drama-skills/output">原始产出</a></small></td><td>开场信息密；第 3 集结尾「你带走的，只是纸。」是最好的钩子之一；对白省，三集都在 1–2 分钟</td><td>前三集几乎没有针线技艺画面</td></tr>
+    <tr><td><a href="/skills/hao0321/ai-short-drama/">ai-short-drama</a><br><small><a href="{{repo_url}}/tree/main/evals/runs/001-rebirth-revenge/Hao0321__ai-short-drama/output">原始产出</a></small></td><td>苏绣观赏性最强，每集都有观众能验证的技艺打脸</td><td>第 1 集可能超时，制作量重；剧本里夹着系统字段</td></tr>
+    <tr><td><a href="/skills/lixiaoxiao9888-create/manju-laoli-skill/">manju-laoli-skill</a><br><small><a href="{{repo_url}}/tree/main/evals/runs/001-rebirth-revenge/lixiaoxiao9888-create__manju-laoli-skill/output">原始产出</a></small></td><td>顾晚是没被允许署名的设计师，成了女主镜像；先知有代价</td><td>前 20 集女主输多赢少；高潮集过薄</td></tr>
+    <tr><td><a href="/skills/catyiqian/qianqianwriting/">qianqianwriting</a><br><small><a href="{{repo_url}}/tree/main/evals/runs/001-rebirth-revenge/catyiqian__qianqianwriting/output">原始产出</a></small></td><td>大纲最守每集 2–3 句</td><td>三集 19 句 OS，AI 味偏重；直播自证重复六次</td></tr>
+    <tr><td><a href="/skills/zhu5859243-free/hongguo-shortdrama-screenwriting/">hongguo-shortdrama-screenwriting</a><br><small><a href="{{repo_url}}/tree/main/evals/runs/001-rebirth-revenge/zhu5859243-free__hongguo-shortdrama-screenwriting/output">原始产出</a></small></td><td>第 10 集卡点和拍粉验稿的反转最扎实；前三集只用 3 个场景</td><td>自标 115 秒实际约 1 分钟；台词句句是金句</td></tr>
+    <tr><td><a href="/skills/jtydhr88/screenwriting-skills/">screenwriting-skills</a><br><small><a href="{{repo_url}}/tree/main/evals/runs/001-rebirth-revenge/jtydhr88__screenwriting-skills/output">原始产出</a></small></td><td>人物最好之一；打火机的「咔嗒」声把前世和今生连起来；AI 味轻</td><td>通用编剧 skill，README 写明不做竖屏短剧</td></tr>
+    <tr><td><a href="/skills/shanyin-ai/shanyin-screenwriting-master/">shanyin-screenwriting-master</a><br><small><a href="{{repo_url}}/tree/main/evals/runs/001-rebirth-revenge/Shanyin-ai__shanyin-screenwriting-master/output">原始产出</a></small></td><td>对白最好之一，全程没有 OS；第 58 集的反转最扎实</td><td>第 1 集有超时风险；第 40–46 集连续下坠</td></tr>
+    <tr><td><a href="/skills/lixiaoxiao9888-create/short-drama-factory/">short-drama-factory</a><br><small><a href="{{repo_url}}/tree/main/evals/runs/001-rebirth-revenge/lixiaoxiao9888-create__short-drama-factory/output">原始产出</a></small></td><td>唯一不从火场开场；制作量最轻；第 10 集卡点精准</td><td>对白句式单一；前三集几乎没有苏绣画面</td></tr>
+    <tr><td>对照组（不装 skill）<br><small><a href="{{repo_url}}/tree/main/evals/runs/001-rebirth-revenge/baseline/output">原始产出</a></small></td><td>苏绣画面多</td><td>每集篇幅是上限的 1.5–2 倍；VO 多；先知从不失手</td></tr>
+    <tr><td><a href="/skills/eternityspring/shuohao-skills/">shuohao-skills</a><br><small><a href="{{repo_url}}/tree/main/evals/runs/001-rebirth-revenge/eternityspring__shuohao-skills/output">原始产出</a></small></td><td>资产清单最完整，最贴近制片；时长合规</td><td>唯一第 1 集没退婚；大纲最薄（本轮没跑它的校验脚本）</td></tr>
+    <tr><td><a href="/skills/adoria111/emma-screenwriting-skills/">emma-screenwriting-skills</a><br><small><a href="{{repo_url}}/tree/main/evals/runs/001-rebirth-revenge/adoria111__emma-screenwriting-skills/output">原始产出</a></small></td><td>格式最接近行业标准；人物最好之一；先知的代价最重</td><td>前三集苏绣画面少；第 54–58 集揭示扎堆</td></tr>
+  </tbody>
+</table>
+<p>完整点评：<a href="{{repo_url}}/blob/main/evals/runs/001-rebirth-revenge/review.md">点评摘要</a> · <a href="{{repo_url}}/blob/main/evals/runs/001-rebirth-revenge/review-scripts.md">剧本盲评</a> · <a href="{{repo_url}}/blob/main/evals/runs/001-rebirth-revenge/review-outlines.md">大纲盲评</a> · <a href="{{repo_url}}/blob/main/evals/runs/001-rebirth-revenge/run.md">环境、版本和统一指令</a></p>
+
+<h3>这一轮的限制</h3>
+<ul>
+  <li><strong>没有运行脚本。</strong>为了安全，agent 只能读写自己的工作目录，不能运行命令，也不能联网。好几个 skill 带校验脚本，这一轮都没跑，agent 改用手工核对。</li>
+  <li><strong>每个只跑一次。</strong>换一次运行，产出会不同，所以以上只是观察，不是定论。</li>
+  <li><strong>统一回复会跳过确认环节。</strong>回复统一是「没写的你来定」，有的 skill 原本会在大纲后停下等确认，这一步被跳过了。</li>
+  <li><strong>评审是 AI。</strong>两位盲评评审由 AI 担任，编辑核对了引文和结论。下一轮计划请人类编剧参与，并允许在隔离环境里跑脚本。</li>
+</ul>
 
 <h2>怎么测</h2>
 <ol>
   <li><strong>同一份输入</strong>：一个梗概，写清题材、集数和平台，所有参赛 skill 共用。</li>
   <li><strong>同一个环境</strong>：同一个 agent、同一个模型、同样的推理强度，记下版本号。</li>
   <li><strong>固定 skill 版本</strong>：记下每个仓库测试时的 commit。</li>
-  <li><strong>按 skill 自己的流程走</strong>：skill 要问问题就如实回答，不额外加指令；问答过程全部记录。</li>
+  <li><strong>按 skill 自己的流程走</strong>：开场只调用入口 skill；skill 停下来问问题时，统一回复同一句话，不额外加指令；问答过程全部记录。</li>
   <li><strong>完整保留产出</strong>：不挑最好的一次，跑几次就放几次。</li>
+  <li><strong>匿名盲评</strong>：评审看不到产出来自哪个 skill。</li>
 </ol>
 
 <h2>看什么</h2>
@@ -24,13 +63,13 @@ updated: 2026-10-17
   <tbody>
     <tr><td>钩子</td><td>开头和每集结尾能不能让人想往下看</td></tr>
     <tr><td>人物</td><td>动机清不清楚，行为前后一不一致</td></tr>
-    <tr><td>结构</td><td>节奏、冲突升级、反转成不成立</td></tr>
+    <tr><td>结构</td><td>节奏、冲突升级、反转成不成立，付费卡点卡得准不准</td></tr>
     <tr><td>对白</td><td>像不像人说的话，角色之间有没有区别</td></tr>
     <tr><td>AI 味</td><td>套话、排比、空洞形容词多不多</td></tr>
-    <tr><td>可用性</td><td>离能直接用还差多少修改，流程顺不顺手</td></tr>
+    <tr><td>可用性</td><td>时长对不对，离能直接拍还差多少修改</td></tr>
   </tbody>
 </table>
-<p>点评只写观察和例子，不打总分。原始产出和记录都放在 <a href="{{repo_url}}/tree/main/evals">GitHub 的 evals 目录</a>，任何人都可以按同样的方法复现。</p>
+<p>点评只写观察和例子，不打总分。运行器是 <a href="{{repo_url}}/blob/main/evals/run.py">evals/run.py</a>，任何人都可以按同样的方法复现。</p>
 
 <h2>想推荐 skill 参加实测？</h2>
 <p>在 <a href="{{repo_url}}/issues">GitHub 提 issue</a>，写上仓库地址和它擅长的题材。</p>

@@ -1,0 +1,44 @@
+# 第一轮参赛名单：剧本类。entry 是开场用 /entry 调用的入口 skill；不写 entry 的是工具箱型仓库，开场只说「使用已安装的 skill」。
+# 入人选标准：收录在列表里、覆盖剧本写作（drafting）阶段、是可安装的 skill；全流程类取剧本环节。
+
+[[contestants]]
+repo = "baseline"          # 对照组：同一个 agent，不装任何 skill
+
+[[contestants]]
+repo  = "eternityspring/shuohao-skills"
+entry = "novel-outline"
+
+[[contestants]]
+repo  = "zenstory-ai/drama-skills"
+entry = "short-drama"
+
+[[contestants]]
+repo  = "lixiaoxiao9888-create/manju-laoli-skill"
+entry = "short-drama-director"
+
+[[contestants]]
+repo  = "jtydhr88/screenwriting-skills"
+
+[[contestants]]
+repo  = "Shanyin-ai/shanyin-screenwriting-master"
+entry = "screenwriting-master"
+
+[[contestants]]
+repo  = "lixiaoxiao9888-create/short-drama-factory"
+entry = "short-drama-factory"
+
+[[contestants]]
+repo  = "adoria111/emma-screenwriting-skills"
+entry = "em-story-architect"
+
+[[contestants]]
+repo  = "zhu5859243-free/hongguo-shortdrama-screenwriting"
+entry = "hongguo-shortdrama-screenwriting"
+
+[[contestants]]
+repo  = "catyiqian/qianqianwriting"
+entry = "qianqianwriting"
+
+[[contestants]]
+repo  = "Hao0321/ai-short-drama"
+entry = "ai-short-drama"

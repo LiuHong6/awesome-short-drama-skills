@@ -1,0 +1,24 @@
+{
+  "repo": "adoria111/emma-screenwriting-skills",
+  "premise": "001-rebirth-revenge",
+  "session": "87be5ede-1abc-49cd-a310-3f26782601b6",
+  "model": "claude-opus-5-5",
+  "effort": "high",
+  "started": "2026-10-16T16:28:40-07:00",
+  "claude_code": "2.1.302 (Claude Code)",
+  "commit": "919292cabf7b5b3ebd1027c72f1d0b711a16c189",
+  "installed": [
+    "em-adaptation",
+    "em-chief-writer",
+    "em-dialogue",
+    "em-episode-hooks",
+    "em-expectation",
+    "em-iteration",
+    "em-outline-to-script",
+    "em-script-trim",
+    "em-story-architect",
+    "em-structure"
+  ],
+  "finished": "2026-10-16T16:49:00-07:00",
+  "turns": 3
+}

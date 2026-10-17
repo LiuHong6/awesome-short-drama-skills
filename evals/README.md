@@ -16,14 +16,29 @@
 
 ```
 evals/
+├── run.py                     # 运行器：在隔离目录里用 Claude Code 无头模式跑一个 skill
 ├── premises/
 │   └── 001-<题材>.md          # 梗概：题材、体裁、篇幅要求
 └── runs/
     └── 001-<题材>/
-        ├── run.md             # 环境、版本、参赛 skill 的 commit、问答记录
-        ├── <owner>__<repo>/   # 每个 skill 的产出
-        └── review.md          # 对比点评
+        ├── contestants.toml   # 参赛名单和入口 skill
+        ├── run.md             # 环境、版本、统一指令、参赛 skill 的 commit、限制
+        ├── <owner>__<repo>/   # 每个 skill 的产出（output/）、问答记录（transcript.md）、运行信息（run.json）
+        ├── review.md          # 点评摘要
+        └── review-*.md        # 盲评原文
 ```
+
+## 已完成的轮次
+
+- [第一轮：剧本类 skill · 《双面绣》](runs/001-rebirth-revenge/review.md)（2026-10-17）：10 个剧本 skill 加 1 个不装 skill 的对照组
+
+## 复现
+
+```bash
+python evals/run.py 001-rebirth-revenge zenstory-ai/drama-skills --work /tmp/evals
+```
+
+需要已登录的 `claude` CLI 和 git。agent 只能读写自己的工作目录，不能运行命令、不能联网、不连 MCP。
 
 ## 点评维度
 

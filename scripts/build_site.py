@@ -88,6 +88,11 @@ class Data:
         tr_path = DATA / "translations.json"
         self.translations = json.loads(tr_path.read_text(encoding="utf-8")) if tr_path.exists() else {}
         self.untranslated: set[str] = set()
+        # 参加过实测的项目：evals/runs/<轮次>/contestants.toml
+        self.evaluated: dict[str, list[str]] = {}
+        for roster in sorted((ROOT / "evals" / "runs").glob("*/contestants.toml")):
+            for c in tomllib.loads(roster.read_text(encoding="utf-8"))["contestants"]:
+                self.evaluated.setdefault(c["repo"].lower(), []).append(roster.parent.name)
 
     def quote(self, text: str, lang: str) -> tuple[str, bool]:
         """第三方文字的展示版本和它是不是译文。英文页遇到中文换成译文，没有译文就先不显示。"""
@@ -592,6 +597,14 @@ class Site:
                                     f'<li><a href="{url(lang, "/packs/")}#pack-{i + 1}">{e(tr(p, "name", lang))}</a>: {e(tr(p, "goal", lang))}</li>'
                                     for i, p in in_packs) + "</ul>")
 
+        tested = ""
+        for run in d.evaluated.get(s["repo"].lower(), []):
+            out = f"{REPO_URL}/tree/main/evals/runs/{run}/{s['repo'].replace('/', '__')}/output"
+            tested = (f'<h2>{L(lang, "实测", "Tested")}</h2><p>'
+                      + L(lang, "参加了第一轮剧本实测：同一个梗概交给 10 个剧本 skill，匿名盲评。",
+                          "Took part in round one of our script tests: one premise, 10 script-writing skills, blind review. ")
+                      + f'<a href="{url(lang, "/evals/")}#round-1">{L(lang, "看点评", "Read the results")}</a> · '
+                      + f'<a href="{out}">{L(lang, "看它的原始产出", "See its raw output")}</a></p>')
         mine = set(s["stages"])
         peers = [x for x in d.skills if x is not s and x["group"] == s["group"]]
         peers.sort(key=lambda x: (-len(mine & set(x["stages"])) / len(mine | set(x["stages"])), -d.stars(x)))
@@ -606,6 +619,7 @@ class Site:
 {facts_html}
 <div class="actions"><a class="btn primary" href="https://github.com/{e(s['repo'])}">{L(lang, '在 GitHub 查看', 'View on GitHub')}</a><a class="btn" href="{issue}">{L(lang, '信息有误？提交更正', 'Report an error')}</a></div>
 {about}
+{tested}
 {skill_html}
 {install}
 {packs_html}
@@ -770,6 +784,11 @@ class Site:
             m = d.m(s)
             lines.append(f"- [{display_name(s)}]({abs_url('en', repo_path(s))}) (★{fmt_stars(m.get('stars'))}, "
                          f"{d.groups[s['group']].get('label_en')}): {s.get('desc_en') or s['desc']}")
+        lines += ["", "## Tests",
+                  f"- [Round one: script-writing skills]({abs_url('en', '/evals/')}): the same rebirth-revenge premise given to "
+                  "10 script-writing skills and a no-skill control (Claude Code, claude-opus-5-5), reviewed blind. Finding: the "
+                  "story skeletons converge; skills mainly change runtime, format and pacing discipline. Raw outputs: "
+                  f"{REPO_URL}/tree/main/evals/runs"]
         lines += ["", "## Optional", f"- [Full data as JSON]({BASE}/data.json)", f"- [GitHub source]({REPO_URL})", ""]
         (DIST / "llms.txt").write_text("\n".join(lines), encoding="utf-8")
 
