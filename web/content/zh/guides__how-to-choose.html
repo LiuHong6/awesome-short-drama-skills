@@ -34,6 +34,10 @@ updated: 2026-10-17
 <h2>6. 还有没有人维护？</h2>
 <p>项目页标了最近更新日期，超过 180 天没更新的会加提示。视频模型更新很快，给旧版本模型写的提示词可能已经过时。</p>
 
+<h2>让 agent 帮你挑</h2>
+<p>这份清单本身也是一个 skill。装上 <code>short-drama-skill-finder</code>，直接问你的 agent，比如「我用 Codex，想把小说改编成竖屏短剧，再出 Seedance 分镜，装哪个 skill？」。它会读本站的 <a href="/data.json">data.json</a>，按上面几件事筛出 3 到 5 个，并附上安装命令、许可证和更新时间。</p>
+<pre><code>npx skills add UnderleveledBuilder/awesome-short-drama-skills</code></pre>
+
 <h2>挑好之后</h2>
 <ul>
   <li><strong>先用一个项目跑通一集</strong>，再考虑混搭。全流程项目各有一套文件结构，混用容易对不上。</li>
